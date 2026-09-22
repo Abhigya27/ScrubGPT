@@ -1,0 +1,21 @@
+{
+  "_help": "Copy this to evaluation/eval_set.json and fill it in. source_id is the playlist id or video id you indexed. Each question lists WHERE the answer really is: the video and the start/end you would accept (mm:ss or h:mm:ss). Use \"expected\": [] for a question the videos do NOT answer; the app should then return nothing. Aim for 20-30 questions, including a few unanswerable ones.",
+  "source_id": "REPLACE_ME",
+  "questions": [
+    {
+      "q": "REPLACE: a question the video answers in one place",
+      "expected": [{ "video_id": "REPLACE_ME", "start": "41:02", "end": "48:53" }]
+    },
+    {
+      "q": "REPLACE: a question about a topic that comes up in two places",
+      "expected": [
+        { "video_id": "REPLACE_ME", "start": "12:10", "end": "15:00" },
+        { "video_id": "REPLACE_ME", "start": "1:02:30", "end": "1:05:00" }
+      ]
+    },
+    {
+      "q": "REPLACE: an off-topic question the videos cannot answer",
+      "expected": []
+    }
+  ]
+}
