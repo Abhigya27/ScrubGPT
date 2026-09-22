@@ -1,23 +1,13 @@
-# Dependencies for running the FastAPI backend and Streamlit frontend locally.
-# The separate frontend requirements file is kept for the Streamlit-only image.
-#
-# Bounded ranges, not exact pins. Create a lock/constraints file after a known-good local install if you need
-# fully reproducible environments.
 fastapi>=0.110,<1
 uvicorn[standard]>=0.29,<1
 pydantic>=2.6,<3
 streamlit>=1.36,<2
 requests>=2.31,<3
 python-dotenv>=1.0,<2
-# yt-dlp is a rolling release that YouTube regularly breaks: deliberately NOT capped. Rebuild now and then.
 yt-dlp
-# The transcript library: keep to the supported 1.x API line (current release 1.2.4).
 youtube-transcript-api>=1.2.4,<2
 qdrant-client>=1.10,<2
 fastembed>=0.5,<1
-# LangChain is left uncapped on purpose: its packages version independently and a cap on one can make the
-# resolver pick an old release of another. This change only relies on langchain-core's prompts, runnables
-# and JsonOutputParser, which are stable across 0.3 and later.
 langchain-core>=0.3
 langchain-groq>=0.2
 langchain-google-genai>=2.0
