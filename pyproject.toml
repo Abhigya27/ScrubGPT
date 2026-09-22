@@ -1,0 +1,31 @@
+[project]
+name = "ytrag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Abhigya Narain", email = "narainabhigya27@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.110,<1",
+    "fastembed>=0.5,<1",
+    "langchain-core>=0.3",
+    "langchain-google-genai>=2.0",
+    "langchain-groq>=0.2",
+    "pydantic>=2.6,<3",
+    "python-dotenv>=1.0,<2",
+    "qdrant-client>=1.10,<2",
+    "requests>=2.31,<3",
+    "streamlit>=1.36,<2",
+    "uvicorn[standard]>=0.29,<1",
+    "youtube-transcript-api>=1.2.4,<2",
+    "yt-dlp>=2026.8.19",
+]
+
+[project.scripts]
+ytrag = "ytrag:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
