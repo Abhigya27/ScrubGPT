@@ -1,0 +1,4 @@
+# Only what the Streamlit service needs (used by frontend/Dockerfile). The frontend holds NO secrets.
+streamlit>=1.36,<2
+requests>=2.31,<3
+python-dotenv>=1.0,<2
