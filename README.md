@@ -1,6 +1,6 @@
-# YTRAG
+# ScrubGPT
 
-**YTRAG** turns YouTube videos and playlists into a searchable, timestamp-aware knowledge base. It combines YouTube metadata, transcript retrieval, multilingual translation, dense embeddings, BM25 keyword search, and grounded language-model answers in one small local-first application.
+**ScrubGPT** turns YouTube playlist and into a searchable, timestamp-aware knowledge base. It combines YouTube metadata, transcript retrieval, multilingual translation, dense embeddings, BM25 keyword search, and grounded language-model answers in one small local-first application.
 
 The project is designed for personal and local playlist-scale use. It favors resumability, caching, transparent progress, and a simple architecture over a distributed ingestion platform.
 
