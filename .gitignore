@@ -1,0 +1,11 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+evaluation/eval_set.json
+# Local-first runtime data; keep large caches and local library metadata out of git.
+data/cache/
+data/library.json
