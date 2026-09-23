@@ -1,14 +1,4 @@
-"""yt-dlp metadata resolution: titles, durations, playlist contents (spec §3).
-
-This module used to be `captions.py` and owned transcript selection as well. It
-no longer does: `transcript.py` handles every transcript decision through
-`youtube-transcript-api`, and yt-dlp is kept strictly for what it is good at —
-resolving what a link points at (spec §3, §27).
-
-That split is also the main reason the old HTTP 429 problem is gone. Before, a
-single video cost TWO full yt-dlp watch-page extractions (one to resolve the
-title, one to find the caption track), and the second one is what YouTube
-throttled. Now it costs one.
+"""yt-dlp metadata resolution: titles, durations, playlist contents .
 """
 import logging
 
