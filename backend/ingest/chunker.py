@@ -1,10 +1,4 @@
-"""Time-domain ~90s chunking over TranscriptLine segments (spec §5 step 4, §16).
-
-This runs on the ORIGINAL-language transcript, before any translation, so every
-chunk's start_sec/end_sec is fixed by real transcript timestamps. Translation
-(translate.py) only ever rewrites a finished chunk's text afterwards. Do not
-reorder this: translating first and chunking second would lose the timestamps
-this whole application is built on (spec §16, §33).
+"""Time-domain ~90s chunking over TranscriptLine segments
 """
 import math
 import re
