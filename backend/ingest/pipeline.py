@@ -114,15 +114,21 @@ def process_video(video: Video, source_id: str, position: int = 0, progress=None
     # Step 5: translate each chunk's already-finalized text, only if it isn't English.
     # An English transcript costs zero LLM calls, which is most of the ingest budget (spec §19).
     translated = not _is_english(result.language)
+    translation_stats: translate.TranslationStats | None = None
     if translated:
         report("translating", f"Translating {len(chunks)} chunks from {result.language_name} to English...", 0.0)
-        chunks = translate.translate_chunks(
-            chunks,
-            on_progress=lambda done, total: report(
-                "translating", f"Translating chunk {done} of {total} ({result.language_name} to English)...",
-                done / total, log=False,
-            ),
-        )
+        translation_stats = translate.TranslationStats()
+        try:
+            chunks = translate.translate_chunks(
+                chunks,
+                on_progress=lambda done, total: report(
+                    "translating", f"Translating chunk {done} of {total} ({result.language_name} to English)...",
+                    done / total, log=False,
+                ),
+                stats=translation_stats,
+            )
+        finally:
+            _log_translation_stats(video.video_id, result.language, translation_stats)
         source_type = f"{result.source_type}_translated"  # provenance survives translation, whichever provider it came from
         chunks = [_retag(c, source_type) for c in chunks]
         report("translating", "Translation finished.", 1.0)
@@ -149,6 +155,20 @@ def process_video(video: Video, source_id: str, position: int = 0, progress=None
         transcript_source=source_type,
         translated=translated,
         provider=result.provider,
+        translation=translation_stats.as_dict() if translation_stats is not None else None,
+    )
+
+
+def _log_translation_stats(video_id: str, language: str, stats: "translate.TranslationStats") -> None:
+    """One line per translated video (spec 1.6), also on failure: a video that died mid-translation is the
+    interesting case for fallback tracking."""
+    rate = stats.fallback_rate
+    log.info(
+        "translation stats video=%s language=%s cache_hit=%s batches_attempted=%d fell_back_to_smaller=%d "
+        "fell_back_to_individual=%d fallback_batches=%d fallback_rate=%s chunks_translated=%d chunks_from_cache=%d",
+        video_id, language, stats.cache_hit, stats.batches_attempted, stats.batches_fell_back_to_smaller,
+        stats.batches_fell_back_to_individual, stats.fallback_batches,
+        "n/a" if rate is None else f"{rate:.2f}", stats.chunks_translated, stats.chunks_from_cache,
     )
 
 
