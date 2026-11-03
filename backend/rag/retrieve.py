@@ -12,12 +12,19 @@ from backend.index import qdrant_store
 from backend.util import body_text, format_timestamp
 
 
-def retrieve_chunks(standalone_question: str, source_id: str, expansions: Sequence[str] = ()) -> list[dict]:
+def retrieve_chunks(
+    standalone_question: str, source_id: str, expansions: Sequence[str] = (),
+    sparse_weight: float | None = None, dense_weight: float | None = None,
+) -> list[dict]:
     """The chunks that cleared the hybrid threshold (best first, not yet merged).
 
     `expansions` are extra queries from rag/enhance.py (LLM rewrites and related keywords). They are searched in
     addition to the question, and the threshold and precision guards apply to the combined candidates exactly as
     they do to a plain search.
+
+    `sparse_weight` / `dense_weight` override the fusion weights for this call only. Leave them None (the app
+    does) to use the configured SPARSE_WEIGHT / DENSE_WEIGHT; evaluation/ablation_eval.py passes them to compare
+    dense-only, sparse-only and hybrid settings.
     """
     # source_id is always required. Spec §3 calls the source filter "optional" but §7
     # says hybrid_search must "always" filter on it (multi-tenancy); §7 wins.
@@ -27,12 +34,19 @@ def retrieve_chunks(standalone_question: str, source_id: str, expansions: Sequen
         threshold=config.RETRIEVAL_THRESHOLD,
         max_results=config.MAX_RESULTS,
         expansions=expansions,
+        sparse_weight=sparse_weight,
+        dense_weight=dense_weight,
     )
 
 
-def retrieve(standalone_question: str, source_id: str, expansions: Sequence[str] = ()) -> list[dict]:
+def retrieve(
+    standalone_question: str, source_id: str, expansions: Sequence[str] = (),
+    sparse_weight: float | None = None, dense_weight: float | None = None,
+) -> list[dict]:
     """Periods for the question, in playing order. Empty if nothing cleared the threshold."""
-    return group_into_periods(retrieve_chunks(standalone_question, source_id, expansions))
+    return group_into_periods(
+        retrieve_chunks(standalone_question, source_id, expansions, sparse_weight, dense_weight)
+    )
 
 
 def group_into_periods(chunks: list[dict], gap_seconds: int | None = None) -> list[dict]:
