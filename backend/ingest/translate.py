@@ -22,7 +22,7 @@ import concurrent.futures
 import logging
 import re
 import threading
-from dataclasses import replace
+from dataclasses import asdict, dataclass, replace
 from datetime import datetime, timedelta, timezone
 
 from backend import config
@@ -93,8 +93,72 @@ def _record(n_chunks: int) -> None:
         _budget["used"] += n_chunks
 
 
+# --- fallback counters ---------------------------------------------------------------------
+@dataclass
+class TranslationStats:
+    """How often batched translation had to fall back (spec 1.6). One instance per video, plus process-wide totals.
+
+    batches_attempted                 batches sent to the LLM. A translation-cache hit sends none.
+    batches_fell_back_to_smaller      a batch whose reply was unusable and was retried as two half-size batches
+    batches_fell_back_to_individual   a (half-)batch whose reply was unusable and was translated chunk by chunk.
+                                      Counted per occurrence: a batch that splits and then has both halves go
+                                      one by one adds 1 to the "smaller" counter and 2 to this one
+    fallback_batches                  distinct batches that needed ANY fallback (so that example counts once);
+                                      this is the numerator of fallback_rate
+    chunks_translated                 chunks translated by the LLM in this run
+    chunks_from_cache                 chunks served from the on-disk translation cache instead
+    """
+
+    batches_attempted: int = 0
+    batches_fell_back_to_smaller: int = 0
+    batches_fell_back_to_individual: int = 0
+    fallback_batches: int = 0
+    chunks_translated: int = 0
+    chunks_from_cache: int = 0
+    cache_hit: bool = False
+
+    @property
+    def fallback_rate(self) -> float | None:
+        """fallback_batches / batches_attempted, or None when no batch was attempted (nothing to rate)."""
+        return self.fallback_batches / self.batches_attempted if self.batches_attempted else None
+
+    def merge(self, other: "TranslationStats") -> None:
+        for name in (
+            "batches_attempted", "batches_fell_back_to_smaller", "batches_fell_back_to_individual",
+            "fallback_batches", "chunks_translated", "chunks_from_cache",
+        ):
+            setattr(self, name, getattr(self, name) + getattr(other, name))
+        self.cache_hit = self.cache_hit or other.cache_hit
+
+    def as_dict(self) -> dict:
+        return {**asdict(self), "fallback_rate": self.fallback_rate}
+
+
+_totals = TranslationStats()
+_totals_lock = threading.Lock()
+
+
+def totals() -> dict:
+    """Process-wide counters since startup (or the last reset_totals), as a plain dict."""
+    with _totals_lock:
+        return _totals.as_dict()
+
+
+def reset_totals() -> None:
+    global _totals
+    with _totals_lock:
+        _totals = TranslationStats()
+
+
+def _record_stats(local: TranslationStats, into: TranslationStats | None) -> None:
+    with _totals_lock:
+        _totals.merge(local)
+        if into is not None:
+            into.merge(local)
+
+
 # --- translation ---------------------------------------------------------------------------
-def translate_chunks(chunks: list[Chunk], on_progress=None) -> list[Chunk]:
+def translate_chunks(chunks: list[Chunk], on_progress=None, stats: TranslationStats | None = None) -> list[Chunk]:
     """Translate chunks to English unless the transcript already was English.
 
     `on_progress(done, total)` is called as each batch finishes (done counts chunks translated
@@ -102,6 +166,9 @@ def translate_chunks(chunks: list[Chunk], on_progress=None) -> list[Chunk]:
     QuotaExhausted if the daily budget or the provider's quota is used up; the first such error
     from any in-flight batch is the one that propagates, so the video is correctly NOT marked
     indexed (spec §18, §31) even though other batches may have already spent quota.
+
+    `stats`, when given, is filled in with this call's fallback counters (see TranslationStats). The
+    process-wide totals() are always updated. Counters from a batch that later raises are still kept.
     """
     if not chunks or chunks[0].source_language.lower().replace("_", "-").split("-")[0] == "en":
         return chunks
@@ -113,6 +180,7 @@ def translate_chunks(chunks: list[Chunk], on_progress=None) -> list[Chunk]:
             "translation cache hit: %d chunks using %s/%s",
             len(chunks), config.TRANSLATE_PROVIDER, config.TRANSLATE_MODEL,
         )
+        _record_stats(TranslationStats(chunks_from_cache=len(chunks), cache_hit=True), stats)
         if on_progress:
             on_progress(len(chunks), len(chunks))
         return [replace(c, text=t) for c, t in zip(chunks, cached)]
@@ -136,7 +204,16 @@ def translate_chunks(chunks: list[Chunk], on_progress=None) -> list[Chunk]:
         nonlocal translated
         if notifier is not None:
             set_notifier(notifier)
-        texts = _translate_batch([c.text for c in batch], batch[0].source_language)
+        # Counted per batch in a private object and merged afterwards: batches run concurrently, so they must not
+        # share one counter while they are still deciding whether to fall back.
+        local = TranslationStats(batches_attempted=1)
+        try:
+            texts = _translate_batch([c.text for c in batch], batch[0].source_language, stats=local)
+            local.chunks_translated = len(batch)
+        finally:
+            if local.batches_fell_back_to_smaller or local.batches_fell_back_to_individual:
+                local.fallback_batches = 1
+            _record_stats(local, stats)
         _record(len(batch))  # spent, whether or not another in-flight batch later fails
         results[index] = [replace(c, text=t) for c, t in zip(batch, texts)]
         if on_progress:
@@ -181,7 +258,10 @@ def _make_batches(chunks: list[Chunk]) -> list[list[Chunk]]:
     return batches
 
 
-def _translate_batch(texts: list[str], language: str, allow_split: bool = True) -> list[str]:
+def _translate_batch(
+    texts: list[str], language: str, allow_split: bool = True, stats: TranslationStats | None = None
+) -> list[str]:
+    """Translate one batch, falling back to halves and then to one-by-one. `stats` (optional) counts the fallbacks."""
     if len(texts) == 1:
         return [_translate_one(texts[0], language)]
     parsed = _try_batch(texts, language)
@@ -192,8 +272,15 @@ def _translate_batch(texts: list[str], language: str, allow_split: bool = True) 
         # as its own batch before giving up on batching (a half that fails is then done one by one).
         mid = len(texts) // 2
         log.warning("batched translation of %d chunks was unusable; retrying as two batches", len(texts))
-        return _translate_batch(texts[:mid], language, False) + _translate_batch(texts[mid:], language, False)
+        if stats is not None:
+            stats.batches_fell_back_to_smaller += 1
+        return (
+            _translate_batch(texts[:mid], language, False, stats)
+            + _translate_batch(texts[mid:], language, False, stats)
+        )
     log.warning("batched translation couldn't be used for %d chunks; translating one by one", len(texts))
+    if stats is not None:
+        stats.batches_fell_back_to_individual += 1
     return [_translate_one(t, language) for t in texts]
 
 
