@@ -112,6 +112,12 @@ TRANSLATE_MODEL = _str("TRANSLATE_MODEL", "gemini-3.5-flash-lite")
 ENHANCE_PROVIDER = _str("ENHANCE_PROVIDER", "gemini").lower()
 ENHANCE_MODEL = _str("ENHANCE_MODEL", "gemini-3.5-flash-lite")
 
+# The evaluation tools (evaluation/answer_quality_eval.py, draft_eval_set.py) grade answers with an LLM "judge". Judging
+# with the same model that wrote the answers inflates scores (models favour their own style), so point these at a
+# DIFFERENT provider/model when you can. Unset, the judge falls back to the answer model and the tools print a warning.
+JUDGE_PROVIDER = _str("EVAL_JUDGE_PROVIDER").lower() or None
+JUDGE_MODEL = _str("EVAL_JUDGE_MODEL") or None
+
 QUOTA_MAX_WAIT_SECONDS = _int("QUOTA_MAX_WAIT_SECONDS", 90)
 TRANSLATION_DAILY_CHUNK_BUDGET = _int("TRANSLATION_DAILY_CHUNK_BUDGET", 0)
 
