@@ -204,8 +204,78 @@ def _clamp01(x: float) -> float:
     return max(0.0, min(1.0, x))
 
 
+def _score_candidates(
+    dense_hits, sparse_hits, n_points: int = 50, sparse_weight: float | None = None, dense_weight: float | None = None
+) -> list[tuple[float, float, dict]]:
+    """Pure function (no I/O): merge the two legs and fuse them. Returns [(distance, fused, candidate)], best first.
+
+    This is the scoring half of `_fuse_and_threshold`, split out so the ablation tool can rank candidates under
+    different fusion weights without the threshold or precision guards. `sparse_weight` / `dense_weight` default to
+    the configured SPARSE_WEIGHT / DENSE_WEIGHT; passing them explicitly never touches `config`.
+    """
+    sw = config.SPARSE_WEIGHT if sparse_weight is None else sparse_weight
+    dw = config.DENSE_WEIGHT if dense_weight is None else dense_weight
+    total_weight = sw + dw
+    if total_weight <= 0:
+        raise ValueError("sparse_weight + dense_weight must be positive")
+    half = config.SPARSE_HALF_SATURATION_TERMS * _TF_TYPICAL * math.log(max(n_points, 2))
+    candidates: dict[str, dict] = {}
+    for hit in dense_hits:
+        candidates[str(hit.id)] = {
+            "payload": hit.payload or {}, "dense": _clamp01(hit.score), "sparse": 0.0, "raw": 0.0, "in_dense": True,
+        }
+    for hit in sparse_hits:
+        raw = max(0.0, hit.score)
+        cand = candidates.setdefault(
+            str(hit.id), {"payload": hit.payload or {}, "dense": 0.0, "sparse": 0.0, "raw": 0.0, "in_dense": False},
+        )
+        cand["raw"] = raw
+        cand["sparse"] = raw / (raw + half) if raw else 0.0
+
+    ranked = []
+    for cand in candidates.values():
+        fused = (sw * cand["sparse"] + dw * cand["dense"]) / total_weight
+        ranked.append((1.0 - fused, fused, cand))
+    ranked.sort(key=lambda item: item[0])  # best (smallest distance) first
+    return ranked
+
+
+def _to_result(distance: float, fused: float, cand: dict, source_id: str | None) -> dict:
+    """A scored candidate in the shape the rest of the app (and the evaluation tools) consume."""
+    payload = cand["payload"]
+    return {
+        "chunk_id": payload.get("chunk_id"),
+        "video_id": payload.get("video_id"),
+        "video_title": payload.get("video_title"),
+        "start_sec": payload.get("start_sec", 0),
+        "end_sec": payload.get("end_sec", 0),
+        "timestamp": format_timestamp(payload.get("start_sec", 0)),
+        "text": payload.get("text", ""),
+        "source_language": payload.get("source_language"),
+        "transcript_source": payload.get("transcript_source", "youtube_manual"),
+        "position": int((payload.get("positions") or {}).get(source_id, 0)),
+        "score": round(fused, 4),
+        "distance": round(distance, 4),
+    }
+
+
+def rank_candidates(
+    dense_hits, sparse_hits, n_points: int = 50, source_id: str | None = None,
+    sparse_weight: float | None = None, dense_weight: float | None = None,
+) -> list[dict]:
+    """Every candidate with a non-zero fused score, best first. No threshold, no precision guards.
+
+    For evaluating fusion quality alone (evaluation/ablation_eval.py). A candidate whose fused score is 0 carries
+    no signal under these weights (e.g. a dense-only candidate when sparse_weight=1, dense_weight=0), so it is
+    left out rather than letting insertion order pose as a ranking.
+    """
+    ranked = _score_candidates(dense_hits, sparse_hits, n_points, sparse_weight, dense_weight)
+    return [_to_result(d, f, c, source_id) for d, f, c in ranked if f > 0.0]
+
+
 def _fuse_and_threshold(
-    dense_hits, sparse_hits, threshold: float, max_results: int, source_id: str | None = None, n_points: int = 50
+    dense_hits, sparse_hits, threshold: float, max_results: int, source_id: str | None = None, n_points: int = 50,
+    sparse_weight: float | None = None, dense_weight: float | None = None,
 ) -> list[dict]:
     """Pure function (no I/O): weighted score fusion, then a threshold cutoff.
 
@@ -242,26 +312,7 @@ def _fuse_and_threshold(
     never clear the default 0.55. That follows from weighting sparse above dense
     plus the §11 default. Raise RETRIEVAL_THRESHOLD to admit purely semantic hits.
     """
-    half = config.SPARSE_HALF_SATURATION_TERMS * _TF_TYPICAL * math.log(max(n_points, 2))
-    candidates: dict[str, dict] = {}
-    for hit in dense_hits:
-        candidates[str(hit.id)] = {
-            "payload": hit.payload or {}, "dense": _clamp01(hit.score), "sparse": 0.0, "raw": 0.0, "in_dense": True,
-        }
-    for hit in sparse_hits:
-        raw = max(0.0, hit.score)
-        cand = candidates.setdefault(
-            str(hit.id), {"payload": hit.payload or {}, "dense": 0.0, "sparse": 0.0, "raw": 0.0, "in_dense": False},
-        )
-        cand["raw"] = raw
-        cand["sparse"] = raw / (raw + half) if raw else 0.0
-
-    total_weight = config.SPARSE_WEIGHT + config.DENSE_WEIGHT
-    ranked = []
-    for cand in candidates.values():
-        fused = (config.SPARSE_WEIGHT * cand["sparse"] + config.DENSE_WEIGHT * cand["dense"]) / total_weight
-        ranked.append((1.0 - fused, fused, cand))
-    ranked.sort(key=lambda item: item[0])  # best (smallest distance) first
+    ranked = _score_candidates(dense_hits, sparse_hits, n_points, sparse_weight, dense_weight)
 
     kept = [item for item in ranked if item[0] <= threshold]  # the primary selection mechanism
     cleared = len(kept)
@@ -299,23 +350,7 @@ def _fuse_and_threshold(
         len(kept), config.MIN_DENSE_SIMILARITY, best or "-",
     )
 
-    return [
-        {
-            "chunk_id": cand["payload"].get("chunk_id"),
-            "video_id": cand["payload"].get("video_id"),
-            "video_title": cand["payload"].get("video_title"),
-            "start_sec": cand["payload"].get("start_sec", 0),
-            "end_sec": cand["payload"].get("end_sec", 0),
-            "timestamp": format_timestamp(cand["payload"].get("start_sec", 0)),
-            "text": cand["payload"].get("text", ""),
-            "source_language": cand["payload"].get("source_language"),
-            "transcript_source": cand["payload"].get("transcript_source", "youtube_manual"),
-            "position": int((cand["payload"].get("positions") or {}).get(source_id, 0)),
-            "score": round(fused, 4),
-            "distance": round(distance, 4),
-        }
-        for distance, fused, cand in kept[:max_results]  # safety cap only
-    ]
+    return [_to_result(distance, fused, cand, source_id) for distance, fused, cand in kept[:max_results]]  # cap = safety only
 
 
 class _Hit:
@@ -411,9 +446,75 @@ def fetch_candidates(query: str, source_id: str, max_results: int, expansions: S
     return dense_hits, sparse_hits, _collection_size()
 
 
-def hybrid_search(query: str, source_id: str, threshold: float, max_results: int, expansions: Sequence[str] = ()) -> list[dict]:
+def hybrid_search(
+    query: str, source_id: str, threshold: float, max_results: int, expansions: Sequence[str] = (),
+    sparse_weight: float | None = None, dense_weight: float | None = None,
+) -> list[dict]:
     """Dense + sparse search, sparse-weighted fusion, threshold cutoff. See _fuse_and_threshold.
 
-    `expansions`: extra queries from rag/enhance.py, searched in addition to `query` (best score per chunk wins)."""
+    `expansions`: extra queries from rag/enhance.py, searched in addition to `query` (best score per chunk wins).
+    `sparse_weight` / `dense_weight`: override the configured fusion weights for this call only (the evaluation
+    tools use this to compare fusion settings); None keeps SPARSE_WEIGHT / DENSE_WEIGHT."""
     dense_hits, sparse_hits, n_points = fetch_candidates(query, source_id, max_results, expansions)
-    return _fuse_and_threshold(dense_hits, sparse_hits, threshold, max_results, source_id, n_points)
+    return _fuse_and_threshold(
+        dense_hits, sparse_hits, threshold, max_results, source_id, n_points, sparse_weight, dense_weight
+    )
+
+
+# --- maintenance / statistics (used by evaluation/ingestion_stats.py) ---------------------------------------
+def _source_filter(source_id: str) -> qm.Filter:
+    return qm.Filter(must=[qm.FieldCondition(key="playlist_ids", match=qm.MatchValue(value=source_id))])
+
+
+def scan_source_chunks(source_id: str) -> list[dict]:
+    """Every chunk of one source (payload only, no vectors), in no particular order.
+
+    Read-only. The evaluation tools use it to know ALL the chunks that contain a gold answer (true recall, and
+    catching gold strings that match nothing), and to draft questions from real transcript text.
+    """
+    ensure_ready()
+    client, name = _client(), collection_name()
+    fields = ["chunk_id", "video_id", "video_title", "start_sec", "end_sec", "text", "source_language", "positions"]
+    chunks: list[dict] = []
+    offset = None
+    while True:
+        points, offset = client.scroll(
+            collection_name=name, scroll_filter=_source_filter(source_id), limit=256, offset=offset,
+            with_payload=fields, with_vectors=False,
+        )
+        chunks.extend(
+            {**(p.payload or {}), "position": int(((p.payload or {}).get("positions") or {}).get(source_id, 0))}
+            for p in points
+        )
+        if offset is None:
+            return chunks
+
+
+def count_points(source_id: str | None = None, exact: bool = True) -> int:
+    """Number of chunks (points) in the collection, or only those tagged with `source_id`."""
+    ensure_ready()
+    result = _client().count(
+        collection_name=collection_name(), count_filter=_source_filter(source_id) if source_id else None, exact=exact
+    )
+    return int(result.count)
+
+
+def count_video_points(video_id: str) -> int:
+    """Exact number of chunks stored for one video."""
+    ensure_ready()
+    return int(_client().count(collection_name=collection_name(), count_filter=_video_filter(video_id), exact=True).count)
+
+
+def delete_video_points(video_id: str) -> int:
+    """Delete every chunk of one video and return how many there were.
+
+    DESTRUCTIVE, and it ignores which playlists the video is tagged with: other playlists that contained it lose it
+    too until it is ingested again. Only the cold-start benchmark in evaluation/ingestion_stats.py calls this, and
+    only behind an explicit --reset flag.
+    """
+    before = count_video_points(video_id)
+    if before:
+        _client().delete(
+            collection_name=collection_name(), points_selector=qm.FilterSelector(filter=_video_filter(video_id)), wait=True
+        )
+    return before
