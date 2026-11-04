@@ -1,0 +1,270 @@
+{
+  "sources": {
+    "PLW4OpyGE0RdY": {
+      "source_id": "PLW4OpyGE0RdY",
+      "indexed_videos": {
+        "ahaLgJr3HcU": {
+          "video_id": "ahaLgJr3HcU",
+          "title": "I Will Make You An AI Engineer In 10 Weeks | No Maths No Theory",
+          "duration": 256,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:28:17.019540+00:00"
+        },
+        "ruxb9RjAv4E": {
+          "video_id": "ruxb9RjAv4E",
+          "title": "Free AI Engineer Course | 8 Weeks | Episode 01: Intro + Setup",
+          "duration": 1515,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:28:19.550528+00:00"
+        },
+        "Vl2WcqdizZ0": {
+          "video_id": "Vl2WcqdizZ0",
+          "title": "Episode 02: Understand Your First LLM Call | Free AI Engineer Course | 8 Weeks",
+          "duration": 2623,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:28:22.329540+00:00"
+        },
+        "aF0IK2sIQyY": {
+          "video_id": "aF0IK2sIQyY",
+          "title": "Ep 03: I Love You! System Role + Temperature | Free AI Engineer Course | 8 Weeks",
+          "duration": 1642,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:28:24.708100+00:00"
+        },
+        "e7oU6ZCvRrw": {
+          "video_id": "e7oU6ZCvRrw",
+          "title": "Episode 04 : Tokens Explained | Free AI Engineer Course | 8 Weeks",
+          "duration": 2419,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:28:26.905833+00:00"
+        },
+        "j7Re_09T-co": {
+          "video_id": "j7Re_09T-co",
+          "title": "Ep:05-Pydantic+JSON | AI Engineer Course | 8 Weeks",
+          "duration": 2398,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:28:29.426863+00:00"
+        },
+        "9Ojj6tTYI9c": {
+          "video_id": "9Ojj6tTYI9c",
+          "title": "Ep 06: Our First AI Mini Project | Free AI Engineer Course | 8 Weeks",
+          "duration": 3256,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:28:31.995974+00:00"
+        },
+        "hveoP-ioP9I": {
+          "video_id": "hveoP-ioP9I",
+          "title": "Ep 07: Prompt Engineering in 30 mins | Free AI Engineer Course | 8 Weeks",
+          "duration": 2161,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:28:34.464275+00:00"
+        },
+        "solZdnrrtG4": {
+          "video_id": "solZdnrrtG4",
+          "title": "Episode 08: ReAct Intro to AI Agents | Free AI Engineer Course | 8 Weeks",
+          "duration": 2267,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:28:36.952229+00:00"
+        },
+        "-aOdRksvZSo": {
+          "video_id": "-aOdRksvZSo",
+          "title": "Free AI Engineer Course | 8 Weeks | Episode 09: Prompt Chaining",
+          "duration": 2460,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:28:39.111946+00:00"
+        },
+        "U9za_updCsw": {
+          "video_id": "U9za_updCsw",
+          "title": "Ep 10: Streaming (Like ChatGPT) | Free AI Engineer Course | 8 Weeks",
+          "duration": 1116,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:28:41.244192+00:00"
+        },
+        "8eACtzJnAoU": {
+          "video_id": "8eACtzJnAoU",
+          "title": "Ep 11: You Have All The Tools Now | Here's Your Challenge | AI Enginner Series",
+          "duration": 607,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:28:44.002165+00:00"
+        },
+        "l-WFxXyM66s": {
+          "video_id": "l-WFxXyM66s",
+          "title": "Ep 11: Personal Portfolio AI (Mini Project) | Free AI Engineer Course | 8 Weeks",
+          "duration": 1873,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:28:46.092396+00:00"
+        },
+        "HA-VXeBwmgs": {
+          "video_id": "HA-VXeBwmgs",
+          "title": "Only These 12 Are Your Competition ! Week 2 AI Project Review",
+          "duration": 1095,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:28:48.463922+00:00"
+        },
+        "dU5Nz-sMTdk": {
+          "video_id": "dU5Nz-sMTdk",
+          "title": "12. What is RAG | Free AI Engineer Course | 8 Weeks",
+          "duration": 1738,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:28:50.938283+00:00"
+        },
+        "hSDo59FppOU": {
+          "video_id": "hSDo59FppOU",
+          "title": "How I Automated My Entire Job Search | SBKI JOB LGEGI",
+          "duration": 903,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:28:53.279073+00:00"
+        },
+        "fqf4pdGCev0": {
+          "video_id": "fqf4pdGCev0",
+          "title": "Ep 13. Embeddings Without MATH | Free AI Engineer Course | 8 Weeks",
+          "duration": 1581,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:28:56.018404+00:00"
+        },
+        "cCAu3dFtoQ8": {
+          "video_id": "cCAu3dFtoQ8",
+          "title": "Ep 14 | Build Your First RAG SYSTEM! | Free AI Engineer Course | 8 Weeks",
+          "duration": 1199,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:28:58.701975+00:00"
+        },
+        "7bxSYeNSWmQ": {
+          "video_id": "7bxSYeNSWmQ",
+          "title": "15 | Quadrant Vector Database | Free AI Engineer Course | 8 Weeks",
+          "duration": 1860,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:29:01.129276+00:00"
+        },
+        "ZCNayichcKE": {
+          "video_id": "ZCNayichcKE",
+          "title": "Multi-Tenant RAG with Qdrant | Free AI Engineer Course | 8 Weeks",
+          "duration": 2242,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:29:03.529024+00:00"
+        },
+        "Z9CI_OVhXNs": {
+          "video_id": "Z9CI_OVhXNs",
+          "title": "I converted my 60 Hour DSA Playlist to a RAG!",
+          "duration": 1047,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:29:06.041395+00:00"
+        },
+        "bm_0jH5ve8U": {
+          "video_id": "bm_0jH5ve8U",
+          "title": "Chunking Strategies for RAG | Free AI Engineer Course | 8 Weeks",
+          "duration": 1733,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:29:08.372232+00:00"
+        },
+        "KhHr4Y6v2TE": {
+          "video_id": "KhHr4Y6v2TE",
+          "title": "RAG Evaluation | The Most Imp AI Interview Question",
+          "duration": 2593,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:29:10.980911+00:00"
+        },
+        "2CJAXE2JrsI": {
+          "video_id": "2CJAXE2JrsI",
+          "title": "Why Can't LLMs Do Basic MATHS!",
+          "duration": 1287,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:29:13.766197+00:00"
+        },
+        "RNj0AY4VueA": {
+          "video_id": "RNj0AY4VueA",
+          "title": "Our First AI Agent | AI Engineer Course",
+          "duration": 2064,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:29:16.519473+00:00"
+        },
+        "shSIHIpFjZY": {
+          "video_id": "shSIHIpFjZY",
+          "title": "OpenAI Is Lying to US! Full Truth About ARC AGI 3 Test",
+          "duration": 376,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:29:18.859030+00:00"
+        },
+        "VlvVpDZuykA": {
+          "video_id": "VlvVpDZuykA",
+          "title": "The Easiest Video On LangGraph",
+          "duration": 1163,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:29:21.705815+00:00"
+        },
+        "ZvYU7OlLAAE": {
+          "video_id": "ZvYU7OlLAAE",
+          "title": "LangGraph Implementation | AI Engineer Course",
+          "duration": 2483,
+          "indexed": true,
+          "reused": true,
+          "updated_at": "2026-09-22T19:29:23.756595+00:00"
+        }
+      },
+      "kind": "playlist",
+      "videos": 31,
+      "duration_seconds": 53176,
+      "video_titles": {
+        "ahaLgJr3HcU": "I Will Make You An AI Engineer In 10 Weeks | No Maths No Theory",
+        "ruxb9RjAv4E": "Free AI Engineer Course | 8 Weeks | Episode 01: Intro + Setup",
+        "Vl2WcqdizZ0": "Episode 02: Understand Your First LLM Call | Free AI Engineer Course | 8 Weeks",
+        "aF0IK2sIQyY": "Ep 03: I Love You! System Role + Temperature | Free AI Engineer Course | 8 Weeks",
+        "e7oU6ZCvRrw": "Episode 04 : Tokens Explained | Free AI Engineer Course | 8 Weeks",
+        "j7Re_09T-co": "Ep:05-Pydantic+JSON | AI Engineer Course | 8 Weeks",
+        "9Ojj6tTYI9c": "Ep 06: Our First AI Mini Project | Free AI Engineer Course | 8 Weeks",
+        "hveoP-ioP9I": "Ep 07: Prompt Engineering in 30 mins | Free AI Engineer Course | 8 Weeks",
+        "solZdnrrtG4": "Episode 08: ReAct Intro to AI Agents | Free AI Engineer Course | 8 Weeks",
+        "-aOdRksvZSo": "Free AI Engineer Course | 8 Weeks | Episode 09: Prompt Chaining",
+        "U9za_updCsw": "Ep 10: Streaming (Like ChatGPT) | Free AI Engineer Course | 8 Weeks",
+        "8eACtzJnAoU": "Ep 11: You Have All The Tools Now | Here's Your Challenge | AI Enginner Series",
+        "l-WFxXyM66s": "Ep 11: Personal Portfolio AI (Mini Project) | Free AI Engineer Course | 8 Weeks",
+        "HA-VXeBwmgs": "Only These 12 Are Your Competition ! Week 2 AI Project Review",
+        "dU5Nz-sMTdk": "12. What is RAG | Free AI Engineer Course | 8 Weeks",
+        "hSDo59FppOU": "How I Automated My Entire Job Search | SBKI JOB LGEGI",
+        "fqf4pdGCev0": "Ep 13. Embeddings Without MATH | Free AI Engineer Course | 8 Weeks",
+        "cCAu3dFtoQ8": "Ep 14 | Build Your First RAG SYSTEM! | Free AI Engineer Course | 8 Weeks",
+        "7bxSYeNSWmQ": "15 | Quadrant Vector Database | Free AI Engineer Course | 8 Weeks",
+        "ZCNayichcKE": "Multi-Tenant RAG with Qdrant | Free AI Engineer Course | 8 Weeks",
+        "Z9CI_OVhXNs": "I converted my 60 Hour DSA Playlist to a RAG!",
+        "bm_0jH5ve8U": "Chunking Strategies for RAG | Free AI Engineer Course | 8 Weeks",
+        "KhHr4Y6v2TE": "RAG Evaluation | The Most Imp AI Interview Question",
+        "2CJAXE2JrsI": "Why Can't LLMs Do Basic MATHS!",
+        "RNj0AY4VueA": "Our First AI Agent | AI Engineer Course",
+        "shSIHIpFjZY": "OpenAI Is Lying to US! Full Truth About ARC AGI 3 Test",
+        "VlvVpDZuykA": "The Easiest Video On LangGraph",
+        "ZvYU7OlLAAE": "LangGraph Implementation | AI Engineer Course",
+        "Z3TGVruFSVI": "Week 4 Mini Project langgraph | Design Your Restaurant AI Agent",
+        "lv_jSHwnDeI": "Build Your First LangGraph Agent | AI Engineer Series Mini Project",
+        "F-Rz0EpBsfc": "Intro To Multi-Agent Systems | AI Engineer in 8 Weeks Series"
+      },
+      "updated_at": "2026-09-22T19:28:15.878394+00:00"
+    }
+  }
+}
