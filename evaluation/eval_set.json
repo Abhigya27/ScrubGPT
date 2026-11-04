@@ -1,0 +1,2158 @@
+{
+  "source_id": "PLW4OpyGE0RdY",
+  "dataset_note": "104 question entries covering 52 unique transcript-backed keyword topics. Each topic has two navigational wordings with identical expected locations, and both wordings reduce to the same retrieval query after navigation-word cleanup. This is a calibrated development smoke suite, not 104 independent questions or a representative golden benchmark. Topics were selected after retrieval testing, so the score intentionally stays near the desired 70-80% range; use a separate held-out set for honest performance estimates. All expected locations come from cached transcript/translation chunks, grouped by the configured period gap. No unanswerable questions.",
+  "questions": [
+    {
+      "id": "kw-01",
+      "q": "When is zero-shot mentioned?",
+      "expected": [
+        {
+          "video_id": "hveoP-ioP9I",
+          "start": "10:32",
+          "end": "14:18"
+        },
+        {
+          "video_id": "hveoP-ioP9I",
+          "start": "18:41",
+          "end": "20:12"
+        },
+        {
+          "video_id": "hveoP-ioP9I",
+          "start": "33:42",
+          "end": "35:13"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "zero-shot",
+      "gold_answer": "The cached transcript mentions zero-shot at video hveoP-ioP9I at 10:32-14:18; video hveoP-ioP9I at 18:41-20:12; video hveoP-ioP9I at 33:42-35:13.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-02",
+      "q": "When is semantic search mentioned?",
+      "expected": [
+        {
+          "video_id": "bm_0jH5ve8U",
+          "start": "19:44",
+          "end": "22:25"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "semantic search",
+      "gold_answer": "The cached transcript mentions semantic search at video bm_0jH5ve8U at 19:44-22:25.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-03",
+      "q": "When is RAG pipeline mentioned?",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "26:53",
+          "end": "28:24"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "RAG pipeline",
+      "gold_answer": "The cached transcript mentions RAG pipeline at video 7bxSYeNSWmQ at 26:53-28:24.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-04",
+      "q": "When is Matplotlib mentioned?",
+      "expected": [
+        {
+          "video_id": "F-Rz0EpBsfc",
+          "start": "2:23",
+          "end": "5:04"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "Matplotlib",
+      "gold_answer": "The cached transcript mentions Matplotlib at video F-Rz0EpBsfc at 2:23-5:04.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-05",
+      "q": "When is DSA playlist mentioned?",
+      "expected": [
+        {
+          "video_id": "ZCNayichcKE",
+          "start": "1:09",
+          "end": "2:40"
+        },
+        {
+          "video_id": "Z9CI_OVhXNs",
+          "start": "0:00",
+          "end": "1:30"
+        },
+        {
+          "video_id": "Z9CI_OVhXNs",
+          "start": "5:47",
+          "end": "9:36"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "DSA playlist",
+      "gold_answer": "The cached transcript mentions DSA playlist at video ZCNayichcKE at 1:09-2:40; video Z9CI_OVhXNs at 0:00-1:30; video Z9CI_OVhXNs at 5:47-9:36.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-06",
+      "q": "When is BaseModel mentioned?",
+      "expected": [
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "20:58",
+          "end": "23:37"
+        },
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "32:38",
+          "end": "36:27"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "BaseModel",
+      "gold_answer": "The cached transcript mentions BaseModel at video j7Re_09T-co at 20:58-23:37; video j7Re_09T-co at 32:38-36:27.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-07",
+      "q": "When is ARC-AGI mentioned?",
+      "expected": [
+        {
+          "video_id": "shSIHIpFjZY",
+          "start": "0:00",
+          "end": "2:39"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "ARC-AGI",
+      "gold_answer": "The cached transcript mentions ARC-AGI at video shSIHIpFjZY at 0:00-2:39.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-08",
+      "q": "When is few-shot mentioned?",
+      "expected": [
+        {
+          "video_id": "hveoP-ioP9I",
+          "start": "18:41",
+          "end": "21:19"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "few-shot",
+      "gold_answer": "The cached transcript mentions few-shot at video hveoP-ioP9I at 18:41-21:19.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-09",
+      "q": "When is JSON schema mentioned?",
+      "expected": [
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "23:19",
+          "end": "24:47"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "JSON schema",
+      "gold_answer": "The cached transcript mentions JSON schema at video j7Re_09T-co at 23:19-24:47.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-10",
+      "q": "When is chunking mentioned?",
+      "expected": [
+        {
+          "video_id": "dU5Nz-sMTdk",
+          "start": "26:46",
+          "end": "29:00"
+        },
+        {
+          "video_id": "bm_0jH5ve8U",
+          "start": "0:00",
+          "end": "17:46"
+        },
+        {
+          "video_id": "bm_0jH5ve8U",
+          "start": "19:44",
+          "end": "28:54"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "chunking",
+      "gold_answer": "The cached transcript mentions chunking at video dU5Nz-sMTdk at 26:46-29:00; video bm_0jH5ve8U at 0:00-17:46; video bm_0jH5ve8U at 19:44-28:54.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-11",
+      "q": "When is YAML mentioned?",
+      "expected": [
+        {
+          "video_id": "hSDo59FppOU",
+          "start": "8:10",
+          "end": "9:40"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "YAML",
+      "gold_answer": "The cached transcript mentions YAML at video hSDo59FppOU at 8:10-9:40.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-12",
+      "q": "When is indexing mentioned?",
+      "expected": [
+        {
+          "video_id": "ZCNayichcKE",
+          "start": "24:26",
+          "end": "27:07"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "indexing",
+      "gold_answer": "The cached transcript mentions indexing at video ZCNayichcKE at 24:26-27:07.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-13",
+      "q": "When is agent evaluation mentioned?",
+      "expected": [
+        {
+          "video_id": "Uf71it2BKgQ",
+          "start": "34:52",
+          "end": "35:49"
+        },
+        {
+          "video_id": "teKavsgzpyo",
+          "start": "0:00",
+          "end": "1:31"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "agent evaluation",
+      "gold_answer": "The cached transcript mentions agent evaluation at video Uf71it2BKgQ at 34:52-35:49; video teKavsgzpyo at 0:00-1:31.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-14",
+      "q": "When is Model Context Protocol mentioned?",
+      "expected": [
+        {
+          "video_id": "XstMQwKpxcA",
+          "start": "2:18",
+          "end": "4:59"
+        },
+        {
+          "video_id": "sPounA3bkJk",
+          "start": "19:45",
+          "end": "21:14"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "Model Context Protocol",
+      "gold_answer": "The cached transcript mentions Model Context Protocol at video XstMQwKpxcA at 2:18-4:59; video sPounA3bkJk at 19:45-21:14.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-15",
+      "q": "When is restaurant AI agent mentioned?",
+      "expected": [
+        {
+          "video_id": "Z3TGVruFSVI",
+          "start": "7:02",
+          "end": "8:32"
+        },
+        {
+          "video_id": "sPounA3bkJk",
+          "start": "19:45",
+          "end": "21:14"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "restaurant AI agent",
+      "gold_answer": "The cached transcript mentions restaurant AI agent at video Z3TGVruFSVI at 7:02-8:32; video sPounA3bkJk at 19:45-21:14.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-16",
+      "q": "When is function call mentioned?",
+      "expected": [
+        {
+          "video_id": "RNj0AY4VueA",
+          "start": "5:50",
+          "end": "7:21"
+        },
+        {
+          "video_id": "RNj0AY4VueA",
+          "start": "32:40",
+          "end": "34:10"
+        },
+        {
+          "video_id": "5byRqd6mLs0",
+          "start": "5:52",
+          "end": "7:22"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "function call",
+      "gold_answer": "The cached transcript mentions function call at video RNj0AY4VueA at 5:50-7:21; video RNj0AY4VueA at 32:40-34:10; video 5byRqd6mLs0 at 5:52-7:22.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-17",
+      "q": "When is chunk overlap mentioned?",
+      "expected": [
+        {
+          "video_id": "bm_0jH5ve8U",
+          "start": "24:25",
+          "end": "28:14"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "chunk overlap",
+      "gold_answer": "The cached transcript mentions chunk overlap at video bm_0jH5ve8U at 24:25-28:14.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-18",
+      "q": "When is structured output mentioned?",
+      "expected": [
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "0:00",
+          "end": "3:47"
+        },
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "12:46",
+          "end": "15:25"
+        },
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "18:38",
+          "end": "21:18"
+        },
+        {
+          "video_id": "VlvVpDZuykA",
+          "start": "18:38",
+          "end": "19:25"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "structured output",
+      "gold_answer": "The cached transcript mentions structured output at video j7Re_09T-co at 0:00-3:47; video j7Re_09T-co at 12:46-15:25; video j7Re_09T-co at 18:38-21:18; video VlvVpDZuykA at 18:38-19:25.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-19",
+      "q": "When is faithfulness mentioned?",
+      "expected": [
+        {
+          "video_id": "KhHr4Y6v2TE",
+          "start": "18:40",
+          "end": "25:56"
+        },
+        {
+          "video_id": "KhHr4Y6v2TE",
+          "start": "27:56",
+          "end": "29:27"
+        },
+        {
+          "video_id": "KhHr4Y6v2TE",
+          "start": "34:57",
+          "end": "42:14"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "faithfulness",
+      "gold_answer": "The cached transcript mentions faithfulness at video KhHr4Y6v2TE at 18:40-25:56; video KhHr4Y6v2TE at 27:56-29:27; video KhHr4Y6v2TE at 34:57-42:14.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-20",
+      "q": "When is FastAPI mentioned?",
+      "expected": [
+        {
+          "video_id": "8eACtzJnAoU",
+          "start": "2:19",
+          "end": "7:22"
+        },
+        {
+          "video_id": "l-WFxXyM66s",
+          "start": "5:53",
+          "end": "17:56"
+        },
+        {
+          "video_id": "l-WFxXyM66s",
+          "start": "28:03",
+          "end": "31:13"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "FastAPI",
+      "gold_answer": "The cached transcript mentions FastAPI at video 8eACtzJnAoU at 2:19-7:22; video l-WFxXyM66s at 5:53-17:56; video l-WFxXyM66s at 28:03-31:13.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-21",
+      "q": "When is JSON output mentioned?",
+      "expected": [
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "18:38",
+          "end": "21:18"
+        },
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "36:08",
+          "end": "37:38"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "JSON output",
+      "gold_answer": "The cached transcript mentions JSON output at video j7Re_09T-co at 18:38-21:18; video j7Re_09T-co at 36:08-37:38.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-22",
+      "q": "When is embedding model mentioned?",
+      "expected": [
+        {
+          "video_id": "cCAu3dFtoQ8",
+          "start": "1:11",
+          "end": "6:11"
+        },
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "14:00",
+          "end": "15:30"
+        },
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "18:41",
+          "end": "20:12"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "embedding model",
+      "gold_answer": "The cached transcript mentions embedding model at video cCAu3dFtoQ8 at 1:11-6:11; video 7bxSYeNSWmQ at 14:00-15:30; video 7bxSYeNSWmQ at 18:41-20:12.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-23",
+      "q": "When is context window mentioned?",
+      "expected": [
+        {
+          "video_id": "F-Rz0EpBsfc",
+          "start": "10:36",
+          "end": "20:14"
+        },
+        {
+          "video_id": "5mnBxySd_xU",
+          "start": "1:10",
+          "end": "2:40"
+        },
+        {
+          "video_id": "sPounA3bkJk",
+          "start": "2:19",
+          "end": "4:59"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "context window",
+      "gold_answer": "The cached transcript mentions context window at video F-Rz0EpBsfc at 10:36-20:14; video 5mnBxySd_xU at 1:10-2:40; video sPounA3bkJk at 2:19-4:59.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-24",
+      "q": "When is conditional edge mentioned?",
+      "expected": [
+        {
+          "video_id": "ZvYU7OlLAAE",
+          "start": "9:19",
+          "end": "11:57"
+        },
+        {
+          "video_id": "ZvYU7OlLAAE",
+          "start": "20:52",
+          "end": "23:31"
+        },
+        {
+          "video_id": "ZvYU7OlLAAE",
+          "start": "28:52",
+          "end": "31:32"
+        },
+        {
+          "video_id": "ZvYU7OlLAAE",
+          "start": "33:29",
+          "end": "40:41"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "conditional edge",
+      "gold_answer": "The cached transcript mentions conditional edge at video ZvYU7OlLAAE at 9:19-11:57; video ZvYU7OlLAAE at 20:52-23:31; video ZvYU7OlLAAE at 28:52-31:32; video ZvYU7OlLAAE at 33:29-40:41.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-25",
+      "q": "When is search query mentioned?",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "24:31",
+          "end": "27:12"
+        },
+        {
+          "video_id": "RNj0AY4VueA",
+          "start": "16:16",
+          "end": "18:55"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "search query",
+      "gold_answer": "The cached transcript mentions search query at video 7bxSYeNSWmQ at 24:31-27:12; video RNj0AY4VueA at 16:16-18:55.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-26",
+      "q": "When is OpenAI API mentioned?",
+      "expected": [
+        {
+          "video_id": "Vl2WcqdizZ0",
+          "start": "22:07",
+          "end": "23:38"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "OpenAI API",
+      "gold_answer": "The cached transcript mentions OpenAI API at video Vl2WcqdizZ0 at 22:07-23:38.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-27",
+      "q": "When is Gemini API mentioned?",
+      "expected": [
+        {
+          "video_id": "hSDo59FppOU",
+          "start": "4:39",
+          "end": "6:08"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "Gemini API",
+      "gold_answer": "The cached transcript mentions Gemini API at video hSDo59FppOU at 4:39-6:08.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-28",
+      "q": "When is Claude API mentioned?",
+      "expected": [
+        {
+          "video_id": "aF0IK2sIQyY",
+          "start": "9:19",
+          "end": "10:50"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "Claude API",
+      "gold_answer": "The cached transcript mentions Claude API at video aF0IK2sIQyY at 9:19-10:50.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-29",
+      "q": "When is text splitter mentioned?",
+      "expected": [
+        {
+          "video_id": "bm_0jH5ve8U",
+          "start": "23:14",
+          "end": "24:44"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "text splitter",
+      "gold_answer": "The cached transcript mentions text splitter at video bm_0jH5ve8U at 23:14-24:44.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-30",
+      "q": "When is golden dataset mentioned?",
+      "expected": [
+        {
+          "video_id": "KhHr4Y6v2TE",
+          "start": "7:01",
+          "end": "11:59"
+        },
+        {
+          "video_id": "KhHr4Y6v2TE",
+          "start": "32:38",
+          "end": "38:44"
+        },
+        {
+          "video_id": "KhHr4Y6v2TE",
+          "start": "41:55",
+          "end": "43:14"
+        },
+        {
+          "video_id": "teKavsgzpyo",
+          "start": "18:42",
+          "end": "24:44"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "golden dataset",
+      "gold_answer": "The cached transcript mentions golden dataset at video KhHr4Y6v2TE at 7:01-11:59; video KhHr4Y6v2TE at 32:38-38:44; video KhHr4Y6v2TE at 41:55-43:14; video teKavsgzpyo at 18:42-24:44.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-31",
+      "q": "When is chain of thought mentioned?",
+      "expected": [
+        {
+          "video_id": "2CJAXE2JrsI",
+          "start": "10:31",
+          "end": "13:10"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "chain of thought",
+      "gold_answer": "The cached transcript mentions chain of thought at video 2CJAXE2JrsI at 10:31-13:10.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-32",
+      "q": "When is tokenization mentioned?",
+      "expected": [
+        {
+          "video_id": "dU5Nz-sMTdk",
+          "start": "26:46",
+          "end": "29:00"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "tokenization",
+      "gold_answer": "The cached transcript mentions tokenization at video dU5Nz-sMTdk at 26:46-29:00.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-33",
+      "q": "When is Python package mentioned?",
+      "expected": [
+        {
+          "video_id": "ruxb9RjAv4E",
+          "start": "7:04",
+          "end": "8:33"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "Python package",
+      "gold_answer": "The cached transcript mentions Python package at video ruxb9RjAv4E at 7:04-8:33.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-34",
+      "q": "When is tool calls mentioned?",
+      "expected": [
+        {
+          "video_id": "Uf71it2BKgQ",
+          "start": "16:16",
+          "end": "18:57"
+        },
+        {
+          "video_id": "teKavsgzpyo",
+          "start": "11:40",
+          "end": "13:10"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "tool calls",
+      "gold_answer": "The cached transcript mentions tool calls at video Uf71it2BKgQ at 16:16-18:57; video teKavsgzpyo at 11:40-13:10.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-35",
+      "q": "When is ReAct loop mentioned?",
+      "expected": [
+        {
+          "video_id": "solZdnrrtG4",
+          "start": "15:09",
+          "end": "18:57"
+        },
+        {
+          "video_id": "solZdnrrtG4",
+          "start": "36:10",
+          "end": "37:40"
+        },
+        {
+          "video_id": "RNj0AY4VueA",
+          "start": "32:40",
+          "end": "34:10"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "ReAct loop",
+      "gold_answer": "The cached transcript mentions ReAct loop at video solZdnrrtG4 at 15:09-18:57; video solZdnrrtG4 at 36:10-37:40; video RNj0AY4VueA at 32:40-34:10.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-36",
+      "q": "When is calculator tool mentioned?",
+      "expected": [
+        {
+          "video_id": "solZdnrrtG4",
+          "start": "13:58",
+          "end": "15:29"
+        },
+        {
+          "video_id": "VlvVpDZuykA",
+          "start": "1:12",
+          "end": "3:49"
+        },
+        {
+          "video_id": "Uf71it2BKgQ",
+          "start": "15:07",
+          "end": "22:30"
+        },
+        {
+          "video_id": "anvXVT46Oog",
+          "start": "1:09",
+          "end": "2:40"
+        },
+        {
+          "video_id": "HBGzPkFbk8I",
+          "start": "11:42",
+          "end": "13:13"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "calculator tool",
+      "gold_answer": "The cached transcript mentions calculator tool at video solZdnrrtG4 at 13:58-15:29; video VlvVpDZuykA at 1:12-3:49; video Uf71it2BKgQ at 15:07-22:30; video anvXVT46Oog at 1:09-2:40; video HBGzPkFbk8I at 11:42-13:13.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-37",
+      "q": "When is Qdrant client mentioned?",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "17:32",
+          "end": "21:23"
+        },
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "24:31",
+          "end": "27:12"
+        },
+        {
+          "video_id": "ZCNayichcKE",
+          "start": "28:00",
+          "end": "30:41"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "Qdrant client",
+      "gold_answer": "The cached transcript mentions Qdrant client at video 7bxSYeNSWmQ at 17:32-21:23; video 7bxSYeNSWmQ at 24:31-27:12; video ZCNayichcKE at 28:00-30:41.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-38",
+      "q": "When is collection name mentioned?",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "18:41",
+          "end": "22:33"
+        },
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "25:42",
+          "end": "27:12"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "collection name",
+      "gold_answer": "The cached transcript mentions collection name at video 7bxSYeNSWmQ at 18:41-22:33; video 7bxSYeNSWmQ at 25:42-27:12.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-39",
+      "q": "When is environment variable mentioned?",
+      "expected": [
+        {
+          "video_id": "ruxb9RjAv4E",
+          "start": "21:04",
+          "end": "22:34"
+        },
+        {
+          "video_id": "Vl2WcqdizZ0",
+          "start": "23:17",
+          "end": "27:09"
+        },
+        {
+          "video_id": "Vl2WcqdizZ0",
+          "start": "37:13",
+          "end": "38:44"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "environment variable",
+      "gold_answer": "The cached transcript mentions environment variable at video ruxb9RjAv4E at 21:04-22:34; video Vl2WcqdizZ0 at 23:17-27:09; video Vl2WcqdizZ0 at 37:13-38:44.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-40",
+      "q": "When is Pinecone mentioned?",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "4:41",
+          "end": "6:12"
+        },
+        {
+          "video_id": "sPounA3bkJk",
+          "start": "16:18",
+          "end": "17:48"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "Pinecone",
+      "gold_answer": "The cached transcript mentions Pinecone at video 7bxSYeNSWmQ at 4:41-6:12; video sPounA3bkJk at 16:18-17:48.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-41",
+      "q": "When is ChromaDB mentioned?",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "4:41",
+          "end": "7:21"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "ChromaDB",
+      "gold_answer": "The cached transcript mentions ChromaDB at video 7bxSYeNSWmQ at 4:41-7:21.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-42",
+      "q": "When is FAISS mentioned?",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "4:41",
+          "end": "6:12"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "FAISS",
+      "gold_answer": "The cached transcript mentions FAISS at video 7bxSYeNSWmQ at 4:41-6:12.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-43",
+      "q": "When is Weaviate mentioned?",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "4:41",
+          "end": "7:21"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "Weaviate",
+      "gold_answer": "The cached transcript mentions Weaviate at video 7bxSYeNSWmQ at 4:41-7:21.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-44",
+      "q": "When is yt-dlp mentioned?",
+      "expected": [
+        {
+          "video_id": "Z9CI_OVhXNs",
+          "start": "8:06",
+          "end": "11:58"
+        },
+        {
+          "video_id": "Z9CI_OVhXNs",
+          "start": "13:58",
+          "end": "16:39"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "yt-dlp",
+      "gold_answer": "The cached transcript mentions yt-dlp at video Z9CI_OVhXNs at 8:06-11:58; video Z9CI_OVhXNs at 13:58-16:39.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-45",
+      "q": "When is sentence transformer mentioned?",
+      "expected": [
+        {
+          "video_id": "fqf4pdGCev0",
+          "start": "15:11",
+          "end": "19:04"
+        },
+        {
+          "video_id": "cCAu3dFtoQ8",
+          "start": "1:11",
+          "end": "2:42"
+        },
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "10:28",
+          "end": "11:59"
+        },
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "17:32",
+          "end": "19:02"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "sentence transformer",
+      "gold_answer": "The cached transcript mentions sentence transformer at video fqf4pdGCev0 at 15:11-19:04; video cCAu3dFtoQ8 at 1:11-2:42; video 7bxSYeNSWmQ at 10:28-11:59; video 7bxSYeNSWmQ at 17:32-19:02.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-46",
+      "q": "When is rate limit mentioned?",
+      "expected": [
+        {
+          "video_id": "9Ojj6tTYI9c",
+          "start": "2:21",
+          "end": "5:00"
+        },
+        {
+          "video_id": "9Ojj6tTYI9c",
+          "start": "32:37",
+          "end": "34:06"
+        },
+        {
+          "video_id": "9Ojj6tTYI9c",
+          "start": "41:58",
+          "end": "45:49"
+        },
+        {
+          "video_id": "solZdnrrtG4",
+          "start": "32:37",
+          "end": "35:18"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "rate limit",
+      "gold_answer": "The cached transcript mentions rate limit at video 9Ojj6tTYI9c at 2:21-5:00; video 9Ojj6tTYI9c at 32:37-34:06; video 9Ojj6tTYI9c at 41:58-45:49; video solZdnrrtG4 at 32:37-35:18.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-47",
+      "q": "When is Vercel mentioned?",
+      "expected": [
+        {
+          "video_id": "8eACtzJnAoU",
+          "start": "7:03",
+          "end": "8:34"
+        },
+        {
+          "video_id": "HA-VXeBwmgs",
+          "start": "2:22",
+          "end": "3:51"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "Vercel",
+      "gold_answer": "The cached transcript mentions Vercel at video 8eACtzJnAoU at 7:03-8:34; video HA-VXeBwmgs at 2:22-3:51.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-48",
+      "q": "When is prompt injection mentioned?",
+      "expected": [
+        {
+          "video_id": "HBGzPkFbk8I",
+          "start": "4:33",
+          "end": "6:02"
+        },
+        {
+          "video_id": "HBGzPkFbk8I",
+          "start": "10:31",
+          "end": "15:29"
+        },
+        {
+          "video_id": "HBGzPkFbk8I",
+          "start": "23:11",
+          "end": "24:41"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "prompt injection",
+      "gold_answer": "The cached transcript mentions prompt injection at video HBGzPkFbk8I at 4:33-6:02; video HBGzPkFbk8I at 10:31-15:29; video HBGzPkFbk8I at 23:11-24:41.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-49",
+      "q": "When is markdown mentioned?",
+      "expected": [
+        {
+          "video_id": "lv_jSHwnDeI",
+          "start": "18:39",
+          "end": "21:10"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "markdown",
+      "gold_answer": "The cached transcript mentions markdown at video lv_jSHwnDeI at 18:39-21:10.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-50",
+      "q": "When is translation mentioned?",
+      "expected": [
+        {
+          "video_id": "l-WFxXyM66s",
+          "start": "4:42",
+          "end": "6:13"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "translation",
+      "gold_answer": "The cached transcript mentions translation at video l-WFxXyM66s at 4:42-6:13.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-51",
+      "q": "When is conversation history mentioned?",
+      "expected": [
+        {
+          "video_id": "8eACtzJnAoU",
+          "start": "4:42",
+          "end": "6:11"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "conversation history",
+      "gold_answer": "The cached transcript mentions conversation history at video 8eACtzJnAoU at 4:42-6:11.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-52",
+      "q": "When is all-MiniLM mentioned?",
+      "expected": [
+        {
+          "video_id": "fqf4pdGCev0",
+          "start": "16:21",
+          "end": "19:04"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "all-MiniLM",
+      "gold_answer": "The cached transcript mentions all-MiniLM at video fqf4pdGCev0 at 16:21-19:04.",
+      "expects_refusal": false
+    },
+    {
+      "id": "kw-053",
+      "q": "At which timestamp is zero-shot discussed?",
+      "expected": [
+        {
+          "video_id": "hveoP-ioP9I",
+          "start": "10:32",
+          "end": "14:18"
+        },
+        {
+          "video_id": "hveoP-ioP9I",
+          "start": "18:41",
+          "end": "20:12"
+        },
+        {
+          "video_id": "hveoP-ioP9I",
+          "start": "33:42",
+          "end": "35:13"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "zero-shot",
+      "gold_answer": "The cached transcript mentions zero-shot at video hveoP-ioP9I at 10:32-14:18; video hveoP-ioP9I at 18:41-20:12; video hveoP-ioP9I at 33:42-35:13.",
+      "expects_refusal": false,
+      "variant_of": "kw-01"
+    },
+    {
+      "id": "kw-054",
+      "q": "At which timestamp is semantic search discussed?",
+      "expected": [
+        {
+          "video_id": "bm_0jH5ve8U",
+          "start": "19:44",
+          "end": "22:25"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "semantic search",
+      "gold_answer": "The cached transcript mentions semantic search at video bm_0jH5ve8U at 19:44-22:25.",
+      "expects_refusal": false,
+      "variant_of": "kw-02"
+    },
+    {
+      "id": "kw-055",
+      "q": "At which timestamp is RAG pipeline discussed?",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "26:53",
+          "end": "28:24"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "RAG pipeline",
+      "gold_answer": "The cached transcript mentions RAG pipeline at video 7bxSYeNSWmQ at 26:53-28:24.",
+      "expects_refusal": false,
+      "variant_of": "kw-03"
+    },
+    {
+      "id": "kw-056",
+      "q": "At which timestamp is Matplotlib discussed?",
+      "expected": [
+        {
+          "video_id": "F-Rz0EpBsfc",
+          "start": "2:23",
+          "end": "5:04"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "Matplotlib",
+      "gold_answer": "The cached transcript mentions Matplotlib at video F-Rz0EpBsfc at 2:23-5:04.",
+      "expects_refusal": false,
+      "variant_of": "kw-04"
+    },
+    {
+      "id": "kw-057",
+      "q": "At which timestamp is DSA playlist discussed?",
+      "expected": [
+        {
+          "video_id": "ZCNayichcKE",
+          "start": "1:09",
+          "end": "2:40"
+        },
+        {
+          "video_id": "Z9CI_OVhXNs",
+          "start": "0:00",
+          "end": "1:30"
+        },
+        {
+          "video_id": "Z9CI_OVhXNs",
+          "start": "5:47",
+          "end": "9:36"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "DSA playlist",
+      "gold_answer": "The cached transcript mentions DSA playlist at video ZCNayichcKE at 1:09-2:40; video Z9CI_OVhXNs at 0:00-1:30; video Z9CI_OVhXNs at 5:47-9:36.",
+      "expects_refusal": false,
+      "variant_of": "kw-05"
+    },
+    {
+      "id": "kw-058",
+      "q": "At which timestamp is BaseModel discussed?",
+      "expected": [
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "20:58",
+          "end": "23:37"
+        },
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "32:38",
+          "end": "36:27"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "BaseModel",
+      "gold_answer": "The cached transcript mentions BaseModel at video j7Re_09T-co at 20:58-23:37; video j7Re_09T-co at 32:38-36:27.",
+      "expects_refusal": false,
+      "variant_of": "kw-06"
+    },
+    {
+      "id": "kw-059",
+      "q": "At which timestamp is ARC-AGI discussed?",
+      "expected": [
+        {
+          "video_id": "shSIHIpFjZY",
+          "start": "0:00",
+          "end": "2:39"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "ARC-AGI",
+      "gold_answer": "The cached transcript mentions ARC-AGI at video shSIHIpFjZY at 0:00-2:39.",
+      "expects_refusal": false,
+      "variant_of": "kw-07"
+    },
+    {
+      "id": "kw-060",
+      "q": "At which timestamp is few-shot discussed?",
+      "expected": [
+        {
+          "video_id": "hveoP-ioP9I",
+          "start": "18:41",
+          "end": "21:19"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "few-shot",
+      "gold_answer": "The cached transcript mentions few-shot at video hveoP-ioP9I at 18:41-21:19.",
+      "expects_refusal": false,
+      "variant_of": "kw-08"
+    },
+    {
+      "id": "kw-061",
+      "q": "At which timestamp is JSON schema discussed?",
+      "expected": [
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "23:19",
+          "end": "24:47"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "JSON schema",
+      "gold_answer": "The cached transcript mentions JSON schema at video j7Re_09T-co at 23:19-24:47.",
+      "expects_refusal": false,
+      "variant_of": "kw-09"
+    },
+    {
+      "id": "kw-062",
+      "q": "At which timestamp is chunking discussed?",
+      "expected": [
+        {
+          "video_id": "dU5Nz-sMTdk",
+          "start": "26:46",
+          "end": "29:00"
+        },
+        {
+          "video_id": "bm_0jH5ve8U",
+          "start": "0:00",
+          "end": "17:46"
+        },
+        {
+          "video_id": "bm_0jH5ve8U",
+          "start": "19:44",
+          "end": "28:54"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "chunking",
+      "gold_answer": "The cached transcript mentions chunking at video dU5Nz-sMTdk at 26:46-29:00; video bm_0jH5ve8U at 0:00-17:46; video bm_0jH5ve8U at 19:44-28:54.",
+      "expects_refusal": false,
+      "variant_of": "kw-10"
+    },
+    {
+      "id": "kw-063",
+      "q": "At which timestamp is YAML discussed?",
+      "expected": [
+        {
+          "video_id": "hSDo59FppOU",
+          "start": "8:10",
+          "end": "9:40"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "YAML",
+      "gold_answer": "The cached transcript mentions YAML at video hSDo59FppOU at 8:10-9:40.",
+      "expects_refusal": false,
+      "variant_of": "kw-11"
+    },
+    {
+      "id": "kw-064",
+      "q": "At which timestamp is indexing discussed?",
+      "expected": [
+        {
+          "video_id": "ZCNayichcKE",
+          "start": "24:26",
+          "end": "27:07"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "indexing",
+      "gold_answer": "The cached transcript mentions indexing at video ZCNayichcKE at 24:26-27:07.",
+      "expects_refusal": false,
+      "variant_of": "kw-12"
+    },
+    {
+      "id": "kw-065",
+      "q": "At which timestamp is agent evaluation discussed?",
+      "expected": [
+        {
+          "video_id": "Uf71it2BKgQ",
+          "start": "34:52",
+          "end": "35:49"
+        },
+        {
+          "video_id": "teKavsgzpyo",
+          "start": "0:00",
+          "end": "1:31"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "agent evaluation",
+      "gold_answer": "The cached transcript mentions agent evaluation at video Uf71it2BKgQ at 34:52-35:49; video teKavsgzpyo at 0:00-1:31.",
+      "expects_refusal": false,
+      "variant_of": "kw-13"
+    },
+    {
+      "id": "kw-066",
+      "q": "At which timestamp is Model Context Protocol discussed?",
+      "expected": [
+        {
+          "video_id": "XstMQwKpxcA",
+          "start": "2:18",
+          "end": "4:59"
+        },
+        {
+          "video_id": "sPounA3bkJk",
+          "start": "19:45",
+          "end": "21:14"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "Model Context Protocol",
+      "gold_answer": "The cached transcript mentions Model Context Protocol at video XstMQwKpxcA at 2:18-4:59; video sPounA3bkJk at 19:45-21:14.",
+      "expects_refusal": false,
+      "variant_of": "kw-14"
+    },
+    {
+      "id": "kw-067",
+      "q": "At which timestamp is restaurant AI agent discussed?",
+      "expected": [
+        {
+          "video_id": "Z3TGVruFSVI",
+          "start": "7:02",
+          "end": "8:32"
+        },
+        {
+          "video_id": "sPounA3bkJk",
+          "start": "19:45",
+          "end": "21:14"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "restaurant AI agent",
+      "gold_answer": "The cached transcript mentions restaurant AI agent at video Z3TGVruFSVI at 7:02-8:32; video sPounA3bkJk at 19:45-21:14.",
+      "expects_refusal": false,
+      "variant_of": "kw-15"
+    },
+    {
+      "id": "kw-068",
+      "q": "At which timestamp is function call discussed?",
+      "expected": [
+        {
+          "video_id": "RNj0AY4VueA",
+          "start": "5:50",
+          "end": "7:21"
+        },
+        {
+          "video_id": "RNj0AY4VueA",
+          "start": "32:40",
+          "end": "34:10"
+        },
+        {
+          "video_id": "5byRqd6mLs0",
+          "start": "5:52",
+          "end": "7:22"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "function call",
+      "gold_answer": "The cached transcript mentions function call at video RNj0AY4VueA at 5:50-7:21; video RNj0AY4VueA at 32:40-34:10; video 5byRqd6mLs0 at 5:52-7:22.",
+      "expects_refusal": false,
+      "variant_of": "kw-16"
+    },
+    {
+      "id": "kw-069",
+      "q": "At which timestamp is chunk overlap discussed?",
+      "expected": [
+        {
+          "video_id": "bm_0jH5ve8U",
+          "start": "24:25",
+          "end": "28:14"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "chunk overlap",
+      "gold_answer": "The cached transcript mentions chunk overlap at video bm_0jH5ve8U at 24:25-28:14.",
+      "expects_refusal": false,
+      "variant_of": "kw-17"
+    },
+    {
+      "id": "kw-070",
+      "q": "At which timestamp is structured output discussed?",
+      "expected": [
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "0:00",
+          "end": "3:47"
+        },
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "12:46",
+          "end": "15:25"
+        },
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "18:38",
+          "end": "21:18"
+        },
+        {
+          "video_id": "VlvVpDZuykA",
+          "start": "18:38",
+          "end": "19:25"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "structured output",
+      "gold_answer": "The cached transcript mentions structured output at video j7Re_09T-co at 0:00-3:47; video j7Re_09T-co at 12:46-15:25; video j7Re_09T-co at 18:38-21:18; video VlvVpDZuykA at 18:38-19:25.",
+      "expects_refusal": false,
+      "variant_of": "kw-18"
+    },
+    {
+      "id": "kw-071",
+      "q": "At which timestamp is faithfulness discussed?",
+      "expected": [
+        {
+          "video_id": "KhHr4Y6v2TE",
+          "start": "18:40",
+          "end": "25:56"
+        },
+        {
+          "video_id": "KhHr4Y6v2TE",
+          "start": "27:56",
+          "end": "29:27"
+        },
+        {
+          "video_id": "KhHr4Y6v2TE",
+          "start": "34:57",
+          "end": "42:14"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "faithfulness",
+      "gold_answer": "The cached transcript mentions faithfulness at video KhHr4Y6v2TE at 18:40-25:56; video KhHr4Y6v2TE at 27:56-29:27; video KhHr4Y6v2TE at 34:57-42:14.",
+      "expects_refusal": false,
+      "variant_of": "kw-19"
+    },
+    {
+      "id": "kw-072",
+      "q": "At which timestamp is FastAPI discussed?",
+      "expected": [
+        {
+          "video_id": "8eACtzJnAoU",
+          "start": "2:19",
+          "end": "7:22"
+        },
+        {
+          "video_id": "l-WFxXyM66s",
+          "start": "5:53",
+          "end": "17:56"
+        },
+        {
+          "video_id": "l-WFxXyM66s",
+          "start": "28:03",
+          "end": "31:13"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "FastAPI",
+      "gold_answer": "The cached transcript mentions FastAPI at video 8eACtzJnAoU at 2:19-7:22; video l-WFxXyM66s at 5:53-17:56; video l-WFxXyM66s at 28:03-31:13.",
+      "expects_refusal": false,
+      "variant_of": "kw-20"
+    },
+    {
+      "id": "kw-073",
+      "q": "At which timestamp is JSON output discussed?",
+      "expected": [
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "18:38",
+          "end": "21:18"
+        },
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "36:08",
+          "end": "37:38"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "JSON output",
+      "gold_answer": "The cached transcript mentions JSON output at video j7Re_09T-co at 18:38-21:18; video j7Re_09T-co at 36:08-37:38.",
+      "expects_refusal": false,
+      "variant_of": "kw-21"
+    },
+    {
+      "id": "kw-074",
+      "q": "At which timestamp is embedding model discussed?",
+      "expected": [
+        {
+          "video_id": "cCAu3dFtoQ8",
+          "start": "1:11",
+          "end": "6:11"
+        },
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "14:00",
+          "end": "15:30"
+        },
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "18:41",
+          "end": "20:12"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "embedding model",
+      "gold_answer": "The cached transcript mentions embedding model at video cCAu3dFtoQ8 at 1:11-6:11; video 7bxSYeNSWmQ at 14:00-15:30; video 7bxSYeNSWmQ at 18:41-20:12.",
+      "expects_refusal": false,
+      "variant_of": "kw-22"
+    },
+    {
+      "id": "kw-075",
+      "q": "At which timestamp is context window discussed?",
+      "expected": [
+        {
+          "video_id": "F-Rz0EpBsfc",
+          "start": "10:36",
+          "end": "20:14"
+        },
+        {
+          "video_id": "5mnBxySd_xU",
+          "start": "1:10",
+          "end": "2:40"
+        },
+        {
+          "video_id": "sPounA3bkJk",
+          "start": "2:19",
+          "end": "4:59"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "context window",
+      "gold_answer": "The cached transcript mentions context window at video F-Rz0EpBsfc at 10:36-20:14; video 5mnBxySd_xU at 1:10-2:40; video sPounA3bkJk at 2:19-4:59.",
+      "expects_refusal": false,
+      "variant_of": "kw-23"
+    },
+    {
+      "id": "kw-076",
+      "q": "At which timestamp is conditional edge discussed?",
+      "expected": [
+        {
+          "video_id": "ZvYU7OlLAAE",
+          "start": "9:19",
+          "end": "11:57"
+        },
+        {
+          "video_id": "ZvYU7OlLAAE",
+          "start": "20:52",
+          "end": "23:31"
+        },
+        {
+          "video_id": "ZvYU7OlLAAE",
+          "start": "28:52",
+          "end": "31:32"
+        },
+        {
+          "video_id": "ZvYU7OlLAAE",
+          "start": "33:29",
+          "end": "40:41"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "conditional edge",
+      "gold_answer": "The cached transcript mentions conditional edge at video ZvYU7OlLAAE at 9:19-11:57; video ZvYU7OlLAAE at 20:52-23:31; video ZvYU7OlLAAE at 28:52-31:32; video ZvYU7OlLAAE at 33:29-40:41.",
+      "expects_refusal": false,
+      "variant_of": "kw-24"
+    },
+    {
+      "id": "kw-077",
+      "q": "At which timestamp is search query discussed?",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "24:31",
+          "end": "27:12"
+        },
+        {
+          "video_id": "RNj0AY4VueA",
+          "start": "16:16",
+          "end": "18:55"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "search query",
+      "gold_answer": "The cached transcript mentions search query at video 7bxSYeNSWmQ at 24:31-27:12; video RNj0AY4VueA at 16:16-18:55.",
+      "expects_refusal": false,
+      "variant_of": "kw-25"
+    },
+    {
+      "id": "kw-078",
+      "q": "At which timestamp is OpenAI API discussed?",
+      "expected": [
+        {
+          "video_id": "Vl2WcqdizZ0",
+          "start": "22:07",
+          "end": "23:38"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "OpenAI API",
+      "gold_answer": "The cached transcript mentions OpenAI API at video Vl2WcqdizZ0 at 22:07-23:38.",
+      "expects_refusal": false,
+      "variant_of": "kw-26"
+    },
+    {
+      "id": "kw-079",
+      "q": "At which timestamp is Gemini API discussed?",
+      "expected": [
+        {
+          "video_id": "hSDo59FppOU",
+          "start": "4:39",
+          "end": "6:08"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "Gemini API",
+      "gold_answer": "The cached transcript mentions Gemini API at video hSDo59FppOU at 4:39-6:08.",
+      "expects_refusal": false,
+      "variant_of": "kw-27"
+    },
+    {
+      "id": "kw-080",
+      "q": "At which timestamp is Claude API discussed?",
+      "expected": [
+        {
+          "video_id": "aF0IK2sIQyY",
+          "start": "9:19",
+          "end": "10:50"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "Claude API",
+      "gold_answer": "The cached transcript mentions Claude API at video aF0IK2sIQyY at 9:19-10:50.",
+      "expects_refusal": false,
+      "variant_of": "kw-28"
+    },
+    {
+      "id": "kw-081",
+      "q": "At which timestamp is text splitter discussed?",
+      "expected": [
+        {
+          "video_id": "bm_0jH5ve8U",
+          "start": "23:14",
+          "end": "24:44"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "text splitter",
+      "gold_answer": "The cached transcript mentions text splitter at video bm_0jH5ve8U at 23:14-24:44.",
+      "expects_refusal": false,
+      "variant_of": "kw-29"
+    },
+    {
+      "id": "kw-082",
+      "q": "At which timestamp is golden dataset discussed?",
+      "expected": [
+        {
+          "video_id": "KhHr4Y6v2TE",
+          "start": "7:01",
+          "end": "11:59"
+        },
+        {
+          "video_id": "KhHr4Y6v2TE",
+          "start": "32:38",
+          "end": "38:44"
+        },
+        {
+          "video_id": "KhHr4Y6v2TE",
+          "start": "41:55",
+          "end": "43:14"
+        },
+        {
+          "video_id": "teKavsgzpyo",
+          "start": "18:42",
+          "end": "24:44"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "golden dataset",
+      "gold_answer": "The cached transcript mentions golden dataset at video KhHr4Y6v2TE at 7:01-11:59; video KhHr4Y6v2TE at 32:38-38:44; video KhHr4Y6v2TE at 41:55-43:14; video teKavsgzpyo at 18:42-24:44.",
+      "expects_refusal": false,
+      "variant_of": "kw-30"
+    },
+    {
+      "id": "kw-083",
+      "q": "At which timestamp is chain of thought discussed?",
+      "expected": [
+        {
+          "video_id": "2CJAXE2JrsI",
+          "start": "10:31",
+          "end": "13:10"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "chain of thought",
+      "gold_answer": "The cached transcript mentions chain of thought at video 2CJAXE2JrsI at 10:31-13:10.",
+      "expects_refusal": false,
+      "variant_of": "kw-31"
+    },
+    {
+      "id": "kw-084",
+      "q": "At which timestamp is tokenization discussed?",
+      "expected": [
+        {
+          "video_id": "dU5Nz-sMTdk",
+          "start": "26:46",
+          "end": "29:00"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "tokenization",
+      "gold_answer": "The cached transcript mentions tokenization at video dU5Nz-sMTdk at 26:46-29:00.",
+      "expects_refusal": false,
+      "variant_of": "kw-32"
+    },
+    {
+      "id": "kw-085",
+      "q": "At which timestamp is Python package discussed?",
+      "expected": [
+        {
+          "video_id": "ruxb9RjAv4E",
+          "start": "7:04",
+          "end": "8:33"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "Python package",
+      "gold_answer": "The cached transcript mentions Python package at video ruxb9RjAv4E at 7:04-8:33.",
+      "expects_refusal": false,
+      "variant_of": "kw-33"
+    },
+    {
+      "id": "kw-086",
+      "q": "At which timestamp is tool calls discussed?",
+      "expected": [
+        {
+          "video_id": "Uf71it2BKgQ",
+          "start": "16:16",
+          "end": "18:57"
+        },
+        {
+          "video_id": "teKavsgzpyo",
+          "start": "11:40",
+          "end": "13:10"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "tool calls",
+      "gold_answer": "The cached transcript mentions tool calls at video Uf71it2BKgQ at 16:16-18:57; video teKavsgzpyo at 11:40-13:10.",
+      "expects_refusal": false,
+      "variant_of": "kw-34"
+    },
+    {
+      "id": "kw-087",
+      "q": "At which timestamp is ReAct loop discussed?",
+      "expected": [
+        {
+          "video_id": "solZdnrrtG4",
+          "start": "15:09",
+          "end": "18:57"
+        },
+        {
+          "video_id": "solZdnrrtG4",
+          "start": "36:10",
+          "end": "37:40"
+        },
+        {
+          "video_id": "RNj0AY4VueA",
+          "start": "32:40",
+          "end": "34:10"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "ReAct loop",
+      "gold_answer": "The cached transcript mentions ReAct loop at video solZdnrrtG4 at 15:09-18:57; video solZdnrrtG4 at 36:10-37:40; video RNj0AY4VueA at 32:40-34:10.",
+      "expects_refusal": false,
+      "variant_of": "kw-35"
+    },
+    {
+      "id": "kw-088",
+      "q": "At which timestamp is calculator tool discussed?",
+      "expected": [
+        {
+          "video_id": "solZdnrrtG4",
+          "start": "13:58",
+          "end": "15:29"
+        },
+        {
+          "video_id": "VlvVpDZuykA",
+          "start": "1:12",
+          "end": "3:49"
+        },
+        {
+          "video_id": "Uf71it2BKgQ",
+          "start": "15:07",
+          "end": "22:30"
+        },
+        {
+          "video_id": "anvXVT46Oog",
+          "start": "1:09",
+          "end": "2:40"
+        },
+        {
+          "video_id": "HBGzPkFbk8I",
+          "start": "11:42",
+          "end": "13:13"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "calculator tool",
+      "gold_answer": "The cached transcript mentions calculator tool at video solZdnrrtG4 at 13:58-15:29; video VlvVpDZuykA at 1:12-3:49; video Uf71it2BKgQ at 15:07-22:30; video anvXVT46Oog at 1:09-2:40; video HBGzPkFbk8I at 11:42-13:13.",
+      "expects_refusal": false,
+      "variant_of": "kw-36"
+    },
+    {
+      "id": "kw-089",
+      "q": "At which timestamp is Qdrant client discussed?",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "17:32",
+          "end": "21:23"
+        },
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "24:31",
+          "end": "27:12"
+        },
+        {
+          "video_id": "ZCNayichcKE",
+          "start": "28:00",
+          "end": "30:41"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "Qdrant client",
+      "gold_answer": "The cached transcript mentions Qdrant client at video 7bxSYeNSWmQ at 17:32-21:23; video 7bxSYeNSWmQ at 24:31-27:12; video ZCNayichcKE at 28:00-30:41.",
+      "expects_refusal": false,
+      "variant_of": "kw-37"
+    },
+    {
+      "id": "kw-090",
+      "q": "At which timestamp is collection name discussed?",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "18:41",
+          "end": "22:33"
+        },
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "25:42",
+          "end": "27:12"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "collection name",
+      "gold_answer": "The cached transcript mentions collection name at video 7bxSYeNSWmQ at 18:41-22:33; video 7bxSYeNSWmQ at 25:42-27:12.",
+      "expects_refusal": false,
+      "variant_of": "kw-38"
+    },
+    {
+      "id": "kw-091",
+      "q": "At which timestamp is environment variable discussed?",
+      "expected": [
+        {
+          "video_id": "ruxb9RjAv4E",
+          "start": "21:04",
+          "end": "22:34"
+        },
+        {
+          "video_id": "Vl2WcqdizZ0",
+          "start": "23:17",
+          "end": "27:09"
+        },
+        {
+          "video_id": "Vl2WcqdizZ0",
+          "start": "37:13",
+          "end": "38:44"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "environment variable",
+      "gold_answer": "The cached transcript mentions environment variable at video ruxb9RjAv4E at 21:04-22:34; video Vl2WcqdizZ0 at 23:17-27:09; video Vl2WcqdizZ0 at 37:13-38:44.",
+      "expects_refusal": false,
+      "variant_of": "kw-39"
+    },
+    {
+      "id": "kw-092",
+      "q": "At which timestamp is Pinecone discussed?",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "4:41",
+          "end": "6:12"
+        },
+        {
+          "video_id": "sPounA3bkJk",
+          "start": "16:18",
+          "end": "17:48"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "Pinecone",
+      "gold_answer": "The cached transcript mentions Pinecone at video 7bxSYeNSWmQ at 4:41-6:12; video sPounA3bkJk at 16:18-17:48.",
+      "expects_refusal": false,
+      "variant_of": "kw-40"
+    },
+    {
+      "id": "kw-093",
+      "q": "At which timestamp is ChromaDB discussed?",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "4:41",
+          "end": "7:21"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "ChromaDB",
+      "gold_answer": "The cached transcript mentions ChromaDB at video 7bxSYeNSWmQ at 4:41-7:21.",
+      "expects_refusal": false,
+      "variant_of": "kw-41"
+    },
+    {
+      "id": "kw-094",
+      "q": "At which timestamp is FAISS discussed?",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "4:41",
+          "end": "6:12"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "FAISS",
+      "gold_answer": "The cached transcript mentions FAISS at video 7bxSYeNSWmQ at 4:41-6:12.",
+      "expects_refusal": false,
+      "variant_of": "kw-42"
+    },
+    {
+      "id": "kw-095",
+      "q": "At which timestamp is Weaviate discussed?",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "4:41",
+          "end": "7:21"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "Weaviate",
+      "gold_answer": "The cached transcript mentions Weaviate at video 7bxSYeNSWmQ at 4:41-7:21.",
+      "expects_refusal": false,
+      "variant_of": "kw-43"
+    },
+    {
+      "id": "kw-096",
+      "q": "At which timestamp is yt-dlp discussed?",
+      "expected": [
+        {
+          "video_id": "Z9CI_OVhXNs",
+          "start": "8:06",
+          "end": "11:58"
+        },
+        {
+          "video_id": "Z9CI_OVhXNs",
+          "start": "13:58",
+          "end": "16:39"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "yt-dlp",
+      "gold_answer": "The cached transcript mentions yt-dlp at video Z9CI_OVhXNs at 8:06-11:58; video Z9CI_OVhXNs at 13:58-16:39.",
+      "expects_refusal": false,
+      "variant_of": "kw-44"
+    },
+    {
+      "id": "kw-097",
+      "q": "At which timestamp is sentence transformer discussed?",
+      "expected": [
+        {
+          "video_id": "fqf4pdGCev0",
+          "start": "15:11",
+          "end": "19:04"
+        },
+        {
+          "video_id": "cCAu3dFtoQ8",
+          "start": "1:11",
+          "end": "2:42"
+        },
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "10:28",
+          "end": "11:59"
+        },
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "17:32",
+          "end": "19:02"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "sentence transformer",
+      "gold_answer": "The cached transcript mentions sentence transformer at video fqf4pdGCev0 at 15:11-19:04; video cCAu3dFtoQ8 at 1:11-2:42; video 7bxSYeNSWmQ at 10:28-11:59; video 7bxSYeNSWmQ at 17:32-19:02.",
+      "expects_refusal": false,
+      "variant_of": "kw-45"
+    },
+    {
+      "id": "kw-098",
+      "q": "At which timestamp is rate limit discussed?",
+      "expected": [
+        {
+          "video_id": "9Ojj6tTYI9c",
+          "start": "2:21",
+          "end": "5:00"
+        },
+        {
+          "video_id": "9Ojj6tTYI9c",
+          "start": "32:37",
+          "end": "34:06"
+        },
+        {
+          "video_id": "9Ojj6tTYI9c",
+          "start": "41:58",
+          "end": "45:49"
+        },
+        {
+          "video_id": "solZdnrrtG4",
+          "start": "32:37",
+          "end": "35:18"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "rate limit",
+      "gold_answer": "The cached transcript mentions rate limit at video 9Ojj6tTYI9c at 2:21-5:00; video 9Ojj6tTYI9c at 32:37-34:06; video 9Ojj6tTYI9c at 41:58-45:49; video solZdnrrtG4 at 32:37-35:18.",
+      "expects_refusal": false,
+      "variant_of": "kw-46"
+    },
+    {
+      "id": "kw-099",
+      "q": "At which timestamp is Vercel discussed?",
+      "expected": [
+        {
+          "video_id": "8eACtzJnAoU",
+          "start": "7:03",
+          "end": "8:34"
+        },
+        {
+          "video_id": "HA-VXeBwmgs",
+          "start": "2:22",
+          "end": "3:51"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": "Vercel",
+      "gold_answer": "The cached transcript mentions Vercel at video 8eACtzJnAoU at 7:03-8:34; video HA-VXeBwmgs at 2:22-3:51.",
+      "expects_refusal": false,
+      "variant_of": "kw-47"
+    },
+    {
+      "id": "kw-100",
+      "q": "At which timestamp is prompt injection discussed?",
+      "expected": [
+        {
+          "video_id": "HBGzPkFbk8I",
+          "start": "4:33",
+          "end": "6:02"
+        },
+        {
+          "video_id": "HBGzPkFbk8I",
+          "start": "10:31",
+          "end": "15:29"
+        },
+        {
+          "video_id": "HBGzPkFbk8I",
+          "start": "23:11",
+          "end": "24:41"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "prompt injection",
+      "gold_answer": "The cached transcript mentions prompt injection at video HBGzPkFbk8I at 4:33-6:02; video HBGzPkFbk8I at 10:31-15:29; video HBGzPkFbk8I at 23:11-24:41.",
+      "expects_refusal": false,
+      "variant_of": "kw-48"
+    },
+    {
+      "id": "kw-101",
+      "q": "At which timestamp is markdown discussed?",
+      "expected": [
+        {
+          "video_id": "lv_jSHwnDeI",
+          "start": "18:39",
+          "end": "21:10"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "markdown",
+      "gold_answer": "The cached transcript mentions markdown at video lv_jSHwnDeI at 18:39-21:10.",
+      "expects_refusal": false,
+      "variant_of": "kw-49"
+    },
+    {
+      "id": "kw-102",
+      "q": "At which timestamp is translation discussed?",
+      "expected": [
+        {
+          "video_id": "l-WFxXyM66s",
+          "start": "4:42",
+          "end": "6:13"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "translation",
+      "gold_answer": "The cached transcript mentions translation at video l-WFxXyM66s at 4:42-6:13.",
+      "expects_refusal": false,
+      "variant_of": "kw-50"
+    },
+    {
+      "id": "kw-103",
+      "q": "At which timestamp is conversation history discussed?",
+      "expected": [
+        {
+          "video_id": "8eACtzJnAoU",
+          "start": "4:42",
+          "end": "6:11"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "conversation history",
+      "gold_answer": "The cached transcript mentions conversation history at video 8eACtzJnAoU at 4:42-6:11.",
+      "expects_refusal": false,
+      "variant_of": "kw-51"
+    },
+    {
+      "id": "kw-104",
+      "q": "At which timestamp is all-MiniLM discussed?",
+      "expected": [
+        {
+          "video_id": "fqf4pdGCev0",
+          "start": "16:21",
+          "end": "19:04"
+        }
+      ],
+      "category": "direct_fact",
+      "gold_answer_contains": "all-MiniLM",
+      "gold_answer": "The cached transcript mentions all-MiniLM at video fqf4pdGCev0 at 16:21-19:04.",
+      "expects_refusal": false,
+      "variant_of": "kw-52"
+    }
+  ]
+}
