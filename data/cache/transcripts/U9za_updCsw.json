@@ -1,0 +1,2831 @@
+{
+  "video_id": "U9za_updCsw",
+  "lines": [
+    {
+      "start": 0.646,
+      "end": 3.433,
+      "text": "Hello, kids. So, today's lecture is on"
+    },
+    {
+      "start": 2.471,
+      "end": 4.928,
+      "text": "streaming. You guys can check which"
+    },
+    {
+      "start": 3.969,
+      "end": 6.72,
+      "text": "video episode this is. Short and sweet."
+    },
+    {
+      "start": 5.82,
+      "end": 8.682,
+      "text": "Of everything we have studied so far,"
+    },
+    {
+      "start": 7.732,
+      "end": 10.695,
+      "text": "this is the shortest and easiest topic."
+    },
+    {
+      "start": 9.795,
+      "end": 12.018,
+      "text": "Before this, you see, no video had been"
+    },
+    {
+      "start": 11.049,
+      "end": 13.294,
+      "text": "coming out for three days. People were"
+    },
+    {
+      "start": 12.324,
+      "end": 14.313,
+      "text": "making noise that the video isn't"
+    },
+    {
+      "start": 13.343,
+      "end": 15.542,
+      "text": "coming, it isn't coming. There is a"
+    },
+    {
+      "start": 14.58,
+      "end": 17.159,
+      "text": "reason for that. Let me tell you very"
+    },
+    {
+      "start": 16.202,
+      "end": 18.814,
+      "text": "honestly that I have another job too."
+    },
+    {
+      "start": 17.914,
+      "end": 20.547,
+      "text": "Okay? Now, it's not like I have to do"
+    },
+    {
+      "start": 19.585,
+      "end": 22.054000000000002,
+      "text": "that job 24 hours a day. That's not why"
+    },
+    {
+      "start": 21.086,
+      "end": 24.025,
+      "text": "I don't make videos. But the job I have"
+    },
+    {
+      "start": 23.086,
+      "end": 26.529999999999998,
+      "text": "for a living is not that kind of job. I"
+    },
+    {
+      "start": 25.572,
+      "end": 28.137999999999998,
+      "text": "mean, it's not a data entry job where"
+    },
+    {
+      "start": 27.18,
+      "end": 29.811,
+      "text": "you have to work from 9 to 5. You have"
+    },
+    {
+      "start": 28.849,
+      "end": 31.177,
+      "text": "to do data entry. You get off at 5"
+    },
+    {
+      "start": 30.213,
+      "end": 32.836,
+      "text": "o'clock. It's not that kind of job."
+    },
+    {
+      "start": 31.936,
+      "end": 34.238,
+      "text": "Generally, what happens is, when you"
+    },
+    {
+      "start": 33.274,
+      "end": 35.577,
+      "text": "work a software engineering job in a"
+    },
+    {
+      "start": 34.613,
+      "end": 36.916,
+      "text": "product company—you all will do it"
+    },
+    {
+      "start": 35.952,
+      "end": 38.55,
+      "text": "someday too. That's why I'm telling you"
+    },
+    {
+      "start": 37.55,
+      "end": 40.209999999999994,
+      "text": ". So, what happens is that you have"
+    },
+    {
+      "start": 39.257,
+      "end": 41.995,
+      "text": "some problem or another to solve. What"
+    },
+    {
+      "start": 41.024,
+      "end": 43.529,
+      "text": "do you have to do that day? You have to"
+    },
+    {
+      "start": 42.585,
+      "end": 45.463,
+      "text": "solve a problem. That problem has never"
+    },
+    {
+      "start": 44.504,
+      "end": 47.085,
+      "text": "been seen by anyone before today. That"
+    },
+    {
+      "start": 46.119,
+      "end": 48.432,
+      "text": "kind of problem is solved in a product"
+    },
+    {
+      "start": 47.466,
+      "end": 49.72,
+      "text": "company. What happens in a service"
+    },
+    {
+      "start": 48.756,
+      "end": 51.297,
+      "text": "company? You get normal work, like, \""
+    },
+    {
+      "start": 50.297,
+      "end": 52.939,
+      "text": "Hey, this is already built.\"\"Just do"
+    },
+    {
+      "start": 51.979,
+      "end": 54.967,
+      "text": "this in it.\" In a product company, the"
+    },
+    {
+      "start": 54.013,
+      "end": 56.53,
+      "text": "bug or feature you've been given,"
+    },
+    {
+      "start": 55.576,
+      "end": 58.184,
+      "text": "whatever it is, that problem hasn't"
+    },
+    {
+      "start": 57.23,
+      "end": 60.367999999999995,
+      "text": "been solved before today. So you have"
+    },
+    {
+      "start": 59.426,
+      "end": 62.269000000000005,
+      "text": "to sit and solve it. It's not like you"
+    },
+    {
+      "start": 61.304,
+      "end": 63.525000000000006,
+      "text": "can go to Claude and say, \"Yeah, go"
+    },
+    {
+      "start": 62.56,
+      "end": 64.921,
+      "text": "ahead and write this,\" and it's done—"
+    },
+    {
+      "start": 63.921,
+      "end": 66.354,
+      "text": "it doesn't work like that. It's much"
+    },
+    {
+      "start": 65.401,
+      "end": 68.689,
+      "text": "more complex than that. So, sometimes"
+    },
+    {
+      "start": 67.744,
+      "end": 70.875,
+      "text": "what happens is that, like on Monday or"
+    },
+    {
+      "start": 69.929,
+      "end": 72.842,
+      "text": "Tuesday, the work I get doesn't get"
+    },
+    {
+      "start": 71.896,
+      "end": 75.099,
+      "text": "finished by 5 o'clock. After that, if I"
+    },
+    {
+      "start": 74.154,
+      "end": 77.29899999999999,
+      "text": "make this AI video, the problem is that"
+    },
+    {
+      "start": 76.354,
+      "end": 79.334,
+      "text": "to make the AI video, I also have to"
+    },
+    {
+      "start": 78.389,
+      "end": 81.14,
+      "text": "study a bit first. Then I have to"
+    },
+    {
+      "start": 80.188,
+      "end": 82.924,
+      "text": "explain it to you. During this, the"
+    },
+    {
+      "start": 81.969,
+      "end": 84.643,
+      "text": "company work keeps running through my"
+    },
+    {
+      "start": 83.688,
+      "end": 86.453,
+      "text": "mind—like if it were this way or that"
+    },
+    {
+      "start": 85.498,
+      "end": 89.51100000000001,
+      "text": "way. So I can't do that work here. Okay"
+    },
+    {
+      "start": 88.511,
+      "end": 92.441,
+      "text": "? So, I can't multitask that much, or"
+    },
+    {
+      "start": 91.492,
+      "end": 94.293,
+      "text": "what they call context switching; I"
+    },
+    {
+      "start": 93.345,
+      "end": 96.248,
+      "text": "don't know how to do that, like doing"
+    },
+    {
+      "start": 95.3,
+      "end": 98.204,
+      "text": "that until 5, then making this from 5"
+    },
+    {
+      "start": 97.255,
+      "end": 100.835,
+      "text": "to 7, no. So, I have been working on"
+    },
+    {
+      "start": 99.875,
+      "end": 102.624,
+      "text": "that for the last three or four days. I"
+    },
+    {
+      "start": 101.67,
+      "end": 104.32300000000001,
+      "text": "have just finished the company work,"
+    },
+    {
+      "start": 103.369,
+      "end": 106.068,
+      "text": "and now I am making this video with a"
+    },
+    {
+      "start": 105.114,
+      "end": 107.77000000000001,
+      "text": "light mind. Now that tension is off my"
+    },
+    {
+      "start": 106.81,
+      "end": 109.387,
+      "text": "mind that the work wasn't done; it's no"
+    },
+    {
+      "start": 108.427,
+      "end": 111.02900000000001,
+      "text": "longer running in my head. That is why"
+    },
+    {
+      "start": 110.07,
+      "end": 113.012,
+      "text": "sometimes it doesn't come out. I will"
+    },
+    {
+      "start": 112.053,
+      "end": 114.63,
+      "text": "finish it, have some faith, but making"
+    },
+    {
+      "start": 113.672,
+      "end": 116.166,
+      "text": "a fuss in the comments won't achieve"
+    },
+    {
+      "start": 115.207,
+      "end": 118.20299999999999,
+      "text": "anything. Let me tell you, you guys can"
+    },
+    {
+      "start": 117.256,
+      "end": 120.146,
+      "text": "keep making noise, but it just won't"
+    },
+    {
+      "start": 119.198,
+      "end": 122.41399999999999,
+      "text": "happen. Okay? I don't want that context"
+    },
+    {
+      "start": 121.458,
+      "end": 124.175,
+      "text": "switching where I come here and blabber"
+    },
+    {
+      "start": 123.219,
+      "end": 125.92599999999999,
+      "text": "anything or teach anything. If I copy"
+    },
+    {
+      "start": 124.971,
+      "end": 127.69200000000001,
+      "text": "from ChatGPT and teach it here, it’s"
+    },
+    {
+      "start": 126.737,
+      "end": 129.543,
+      "text": "not going to be of any use. So, for"
+    },
+    {
+      "start": 128.584,
+      "end": 131.00300000000001,
+      "text": "this teaching, it is very important"
+    },
+    {
+      "start": 130.043,
+      "end": 132.63,
+      "text": "that my mind stays a bit calm. Okay?"
+    },
+    {
+      "start": 131.73,
+      "end": 134.584,
+      "text": "You know, when a car is driven too much"
+    },
+    {
+      "start": 133.584,
+      "end": 136.343,
+      "text": ", the engine gradually starts getting"
+    },
+    {
+      "start": 135.39,
+      "end": 138.004,
+      "text": "hot. Do you understand? So, you have to"
+    },
+    {
+      "start": 137.046,
+      "end": 139.678,
+      "text": "give it some time to cool down. Okay?"
+    },
+    {
+      "start": 138.778,
+      "end": 142.143,
+      "text": "Anyway, streaming, as I was saying, is"
+    },
+    {
+      "start": 141.206,
+      "end": 144.315,
+      "text": "a very small topic. It’s a very calm"
+    },
+    {
+      "start": 143.361,
+      "end": 146.457,
+      "text": "topic. Basically, what is streaming?"
+    },
+    {
+      "start": 145.557,
+      "end": 148.798,
+      "text": "When you use ChatGPT. What do you use?"
+    },
+    {
+      "start": 147.898,
+      "end": 151.713,
+      "text": "You use ChatGPT. You ask it to explain"
+    },
+    {
+      "start": 150.77,
+      "end": 153.37400000000002,
+      "text": "something. For example, you say, \""
+    },
+    {
+      "start": 152.374,
+      "end": 155.108,
+      "text": "Explain the internet.\" Explain anything"
+    },
+    {
+      "start": 154.108,
+      "end": 156.947,
+      "text": ", you say, \"Explain the internet.\" Or"
+    },
+    {
+      "start": 156.002,
+      "end": 159.281,
+      "text": "answer a DSA question. You must have"
+    },
+    {
+      "start": 158.327,
+      "end": 160.901,
+      "text": "noticed that as soon as you type \""
+    },
+    {
+      "start": 159.901,
+      "end": 162.65900000000002,
+      "text": "explain the internet\" or type \"explain"
+    },
+    {
+      "start": 161.705,
+      "end": 165.30900000000003,
+      "text": "a DSA problem.\" It’s not like ChatGPT"
+    },
+    {
+      "start": 164.374,
+      "end": 167.909,
+      "text": "gives you the entire answer all at once"
+    },
+    {
+      "start": 166.909,
+      "end": 169.159,
+      "text": ". It doesn’t happen like that. Try to"
+    },
+    {
+      "start": 168.211,
+      "end": 171.32600000000002,
+      "text": "remember. Whenever you have used any"
+    },
+    {
+      "start": 170.385,
+      "end": 173.73499999999999,
+      "text": "ChatGPT, right? What happens? The"
+    },
+    {
+      "start": 172.784,
+      "end": 175.54399999999998,
+      "text": "answer starts printing on the screen"
+    },
+    {
+      "start": 174.593,
+      "end": 177.084,
+      "text": "line by line. Does it happen or not?"
+    },
+    {
+      "start": 176.184,
+      "end": 178.831,
+      "text": "Remember. Whenever you use it, whenever"
+    },
+    {
+      "start": 177.876,
+      "end": 180.411,
+      "text": "you ask for a long answer from it."
+    },
+    {
+      "start": 179.511,
+      "end": 182.271,
+      "text": "Short answers are fine. A short answer,"
+    },
+    {
+      "start": 181.322,
+      "end": 184.073,
+      "text": "like asking, \"What is my name?\" It"
+    },
+    {
+      "start": 183.109,
+      "end": 185.8,
+      "text": "tells you immediately. When it comes to"
+    },
+    {
+      "start": 184.85,
+      "end": 187.582,
+      "text": "a long answer, let’s say 10 or 20"
+    },
+    {
+      "start": 186.632,
+      "end": 189.739,
+      "text": "lines. You ask for some DSA code, ask"
+    },
+    {
+      "start": 188.795,
+      "end": 191.923,
+      "text": "for LeetCode DSA code that is 50 lines"
+    },
+    {
+      "start": 190.979,
+      "end": 194.14000000000001,
+      "text": "long. Then, slowly, it starts printing"
+    },
+    {
+      "start": 193.192,
+      "end": 196.23000000000002,
+      "text": "the answer line by line. It feels like"
+    },
+    {
+      "start": 195.278,
+      "end": 198.04899999999998,
+      "text": "the answer is being generated slowly."
+    },
+    {
+      "start": 197.149,
+      "end": 199.482,
+      "text": "It doesn't happen that you tell it, \""
+    },
+    {
+      "start": 198.482,
+      "end": 200.816,
+      "text": "Okay, give me this DP code,\" and it's"
+    },
+    {
+      "start": 199.852,
+      "end": 202.678,
+      "text": "there. So it didn't think for a minute"
+    },
+    {
+      "start": 201.723,
+      "end": 204.354,
+      "text": "and then suddenly give you the code."
+    },
+    {
+      "start": 203.454,
+      "end": 205.805,
+      "text": "That is not how it happens. It happens"
+    },
+    {
+      "start": 204.839,
+      "end": 207.038,
+      "text": "gradually, little by little. That is"
+    },
+    {
+      "start": 206.058,
+      "end": 208.309,
+      "text": "what happens. As soon as you ask"
+    },
+    {
+      "start": 207.359,
+      "end": 210.174,
+      "text": "ChatGPT something, it says \"Working.\""
+    },
+    {
+      "start": 209.274,
+      "end": 212.08,
+      "text": "What does it say? Working. Something"
+    },
+    {
+      "start": 211.123,
+      "end": 214.05599999999998,
+      "text": "like that appears. After that, it"
+    },
+    {
+      "start": 213.131,
+      "end": 217.063,
+      "text": "slowly generates the answer, bit by bit"
+    },
+    {
+      "start": 216.063,
+      "end": 219.039,
+      "text": ". This is what is called streaming."
+    },
+    {
+      "start": 218.159,
+      "end": 221.02599999999998,
+      "text": "What is this called? It is called"
+    },
+    {
+      "start": 220.08,
+      "end": 223.119,
+      "text": "streaming. What does streaming mean?"
+    },
+    {
+      "start": 222.219,
+      "end": 225.499,
+      "text": "When you say, \"Let's stream Netflix.\""
+    },
+    {
+      "start": 224.639,
+      "end": 227.71900000000002,
+      "text": "So, what does streaming Netflix mean?"
+    },
+    {
+      "start": 227.499,
+      "end": 230.213,
+      "text": "When Netflix sends you a movie, let's"
+    },
+    {
+      "start": 229.259,
+      "end": 231.927,
+      "text": "say you watch a movie and you say, \""
+    },
+    {
+      "start": 230.927,
+      "end": 234.62099999999998,
+      "text": "I'll stream Netflix today.\" Or live"
+    },
+    {
+      "start": 233.694,
+      "end": 237.44899999999998,
+      "text": "stream anything, it's not like Netflix"
+    },
+    {
+      "start": 236.522,
+      "end": 240.20499999999998,
+      "text": "takes a 3-hour movie and sends it all"
+    },
+    {
+      "start": 239.278,
+      "end": 243.034,
+      "text": "at once to your TV, laptop, or mobile."
+    },
+    {
+      "start": 242.134,
+      "end": 245.254,
+      "text": "No, Netflix shows it to you gradually,"
+    },
+    {
+      "start": 244.31,
+      "end": 246.815,
+      "text": "bit by bit. First, it sends you 5"
+    },
+    {
+      "start": 245.852,
+      "end": 248.288,
+      "text": "minutes of the movie. By the time you"
+    },
+    {
+      "start": 247.324,
+      "end": 249.798,
+      "text": "watch that, the next part arrives. You"
+    },
+    {
+      "start": 248.845,
+      "end": 251.676,
+      "text": "don't even notice because it happens so"
+    },
+    {
+      "start": 250.723,
+      "end": 252.924,
+      "text": "fast. When you are watching this"
+    },
+    {
+      "start": 251.958,
+      "end": 254.258,
+      "text": "YouTube video, how are you watching it?"
+    },
+    {
+      "start": 253.42,
+      "end": 256.46,
+      "text": "Do you know how the network is working?"
+    },
+    {
+      "start": 256.019,
+      "end": 259.01800000000003,
+      "text": "This entire YouTube video that we made,"
+    },
+    {
+      "start": 258.069,
+      "end": 261.244,
+      "text": "let's assume it's a 1 GB video. That 1"
+    },
+    {
+      "start": 260.301,
+      "end": 263.56399999999996,
+      "text": "GB is not on your phone right now. Only"
+    },
+    {
+      "start": 262.6,
+      "end": 264.94300000000004,
+      "text": "what you are watching currently is on"
+    },
+    {
+      "start": 263.979,
+      "end": 267.11199999999997,
+      "text": "your phone. The rest of the video is"
+    },
+    {
+      "start": 266.156,
+      "end": 268.78000000000003,
+      "text": "arriving gradually, and it feels like"
+    },
+    {
+      "start": 267.823,
+      "end": 270.227,
+      "text": "you are watching it continuously"
+    },
+    {
+      "start": 269.271,
+      "end": 271.938,
+      "text": "because it comes so fast that it feels"
+    },
+    {
+      "start": 270.982,
+      "end": 274.14200000000005,
+      "text": "like you are watching it live. You are"
+    },
+    {
+      "start": 273.174,
+      "end": 276.02799999999996,
+      "text": "not watching it live. Slowly, this 1 GB"
+    },
+    {
+      "start": 275.092,
+      "end": 278.59299999999996,
+      "text": "video is being sent to your mobile byte"
+    },
+    {
+      "start": 277.657,
+      "end": 280.965,
+      "text": "by byte, chunk by chunk, and you are"
+    },
+    {
+      "start": 280.029,
+      "end": 283.019,
+      "text": "able to watch it. This is what is"
+    },
+    {
+      "start": 282.072,
+      "end": 284.864,
+      "text": "called streaming. When you send a"
+    },
+    {
+      "start": 283.917,
+      "end": 286.80699999999996,
+      "text": "stream of objects. What do you send? A"
+    },
+    {
+      "start": 285.856,
+      "end": 288.908,
+      "text": "stream of objects. Like, you have 10"
+    },
+    {
+      "start": 287.971,
+      "end": 291.124,
+      "text": "balls. You are playing catch. You throw"
+    },
+    {
+      "start": 290.162,
+      "end": 292.80499999999995,
+      "text": "one ball, it's caught. Then the second,"
+    },
+    {
+      "start": 291.848,
+      "end": 294.456,
+      "text": "third, fourth, and fifth ball. You"
+    },
+    {
+      "start": 293.499,
+      "end": 295.949,
+      "text": "didn't throw all 10 balls at once,"
+    },
+    {
+      "start": 294.991,
+      "end": 297.56899999999996,
+      "text": "otherwise, how would they catch them?"
+    },
+    {
+      "start": 296.669,
+      "end": 299.30899999999997,
+      "text": "This is what is called streaming."
+    },
+    {
+      "start": 299.1,
+      "end": 302.531,
+      "text": "Basically, it's a mode. Generally,"
+    },
+    {
+      "start": 301.577,
+      "end": 304.614,
+      "text": "there is a mode in LLMs. It is called"
+    },
+    {
+      "start": 303.682,
+      "end": 306.69300000000004,
+      "text": "stream. By default, what happens is"
+    },
+    {
+      "start": 305.746,
+      "end": 308.52099999999996,
+      "text": "that stream is equal to false. By"
+    },
+    {
+      "start": 307.558,
+      "end": 310.01099999999997,
+      "text": "default, what happens is that stream is"
+    },
+    {
+      "start": 309.048,
+      "end": 311.429,
+      "text": "equal to false. Meaning, no streaming"
+    },
+    {
+      "start": 310.463,
+      "end": 314.177,
+      "text": "is to be done. Okay. Now, when"
+    },
+    {
+      "start": 313.233,
+      "end": 316.062,
+      "text": "streaming is not to be done, your"
+    },
+    {
+      "start": 315.117,
+      "end": 318.058,
+      "text": "answer is such that when the entire"
+    },
+    {
+      "start": 317.113,
+      "end": 320.275,
+      "text": "answer is generated, suppose you say, \""
+    },
+    {
+      "start": 319.275,
+      "end": 322.43699999999995,
+      "text": "Explain the internet in 50 lines,\" then"
+    },
+    {
+      "start": 321.492,
+      "end": 324.487,
+      "text": "when the LLM thinks of these full 50"
+    },
+    {
+      "start": 323.543,
+      "end": 326.705,
+      "text": "lines, it will quickly send them to you"
+    },
+    {
+      "start": 325.76,
+      "end": 329.774,
+      "text": "at once and you can print them. When"
+    },
+    {
+      "start": 328.828,
+      "end": 331.81899999999996,
+      "text": "you set stream is equal to true, when"
+    },
+    {
+      "start": 330.873,
+      "end": 333.78999999999996,
+      "text": "you do what? When you set stream is"
+    },
+    {
+      "start": 332.831,
+      "end": 335.754,
+      "text": "equal to true, then what happens? Now,"
+    },
+    {
+      "start": 334.807,
+      "end": 337.52000000000004,
+      "text": "you ask ChatGPT or your graph to"
+    },
+    {
+      "start": 336.573,
+      "end": 339.983,
+      "text": "explain it to you in 50 lines. It might"
+    },
+    {
+      "start": 339.059,
+      "end": 342.507,
+      "text": "generate one line. As soon as it"
+    },
+    {
+      "start": 341.571,
+      "end": 344.92900000000003,
+      "text": "generates one line, or two, or three,"
+    },
+    {
+      "start": 343.993,
+      "end": 347.224,
+      "text": "or four—any small chunk—it will"
+    },
+    {
+      "start": 346.288,
+      "end": 349.519,
+      "text": "send it to you and you can read it."
+    },
+    {
+      "start": 348.859,
+      "end": 351.38899999999995,
+      "text": "This is exactly what happens when you"
+    },
+    {
+      "start": 350.43,
+      "end": 352.961,
+      "text": "use ChatGPT; in ChatGPT, streaming is"
+    },
+    {
+      "start": 352.002,
+      "end": 355.341,
+      "text": "set to true. That is why you feel, \"Oh,"
+    },
+    {
+      "start": 354.385,
+      "end": 357.097,
+      "text": "it's generating like this, word by word"
+    },
+    {
+      "start": 356.097,
+      "end": 359.519,
+      "text": ", what is this?\" This is streaming."
+    },
+    {
+      "start": 358.64,
+      "end": 361.655,
+      "text": "Gradually, you get small parts—these"
+    },
+    {
+      "start": 360.708,
+      "end": 363.459,
+      "text": "one line or five lines—that are"
+    },
+    {
+      "start": 362.512,
+      "end": 365.747,
+      "text": "called small parts. Each of these parts"
+    },
+    {
+      "start": 364.804,
+      "end": 367.626,
+      "text": "is called a chunk. What is this one"
+    },
+    {
+      "start": 366.668,
+      "end": 370.28700000000003,
+      "text": "part called? Chunk. Chunk means a piece"
+    },
+    {
+      "start": 369.287,
+      "end": 372.484,
+      "text": ". It is just like that. It is just like"
+    },
+    {
+      "start": 371.537,
+      "end": 374.578,
+      "text": "if you went to a hotel, if you went to"
+    },
+    {
+      "start": 373.631,
+      "end": 376.40299999999996,
+      "text": "a hotel and ordered, like what do"
+    },
+    {
+      "start": 375.457,
+      "end": 378.969,
+      "text": "people order? Ordered a starter and a"
+    },
+    {
+      "start": 378.025,
+      "end": 380.876,
+      "text": "cold drink, then ordered the main"
+    },
+    {
+      "start": 379.932,
+      "end": 383.92400000000004,
+      "text": "course, then ordered dessert. The hotel"
+    },
+    {
+      "start": 382.967,
+      "end": 385.591,
+      "text": "doesn't wait until everything is made,"
+    },
+    {
+      "start": 384.634,
+      "end": 387.129,
+      "text": "until all four things are ready, to"
+    },
+    {
+      "start": 386.172,
+      "end": 388.985,
+      "text": "dump them on your table at once. That"
+    },
+    {
+      "start": 388.023,
+      "end": 390.48100000000005,
+      "text": "doesn't happen. First the cold drink"
+    },
+    {
+      "start": 389.521,
+      "end": 391.90500000000003,
+      "text": "arrives, then the starter, then the"
+    },
+    {
+      "start": 390.944,
+      "end": 393.387,
+      "text": "main course, then the dessert. That's"
+    },
+    {
+      "start": 392.413,
+      "end": 394.767,
+      "text": "how it happens, right? So what is the"
+    },
+    {
+      "start": 393.816,
+      "end": 397.104,
+      "text": "hotel doing? Streaming your food. And"
+    },
+    {
+      "start": 396.146,
+      "end": 399.696,
+      "text": "what is the chunk? This starter is a"
+    },
+    {
+      "start": 398.78,
+      "end": 401.842,
+      "text": "chunk. The cold drink is a chunk. The"
+    },
+    {
+      "start": 400.9,
+      "end": 404.03799999999995,
+      "text": "main course is a chunk. The dessert is"
+    },
+    {
+      "start": 403.082,
+      "end": 405.389,
+      "text": "a chunk. Okay, so this is what"
+    },
+    {
+      "start": 404.43,
+      "end": 406.835,
+      "text": "streaming is. But now the question"
+    },
+    {
+      "start": 405.873,
+      "end": 408.505,
+      "text": "arises, why is this done? I mean, why"
+    },
+    {
+      "start": 407.556,
+      "end": 410.166,
+      "text": "does ChatGPT do this? It wouldn't"
+    },
+    {
+      "start": 409.204,
+      "end": 411.75600000000003,
+      "text": "really make a difference, would it? You"
+    },
+    {
+      "start": 410.785,
+      "end": 412.824,
+      "text": "might be wondering, what difference"
+    },
+    {
+      "start": 411.854,
+      "end": 414.549,
+      "text": "does it make, brother? If I have asked"
+    },
+    {
+      "start": 413.609,
+      "end": 416.59,
+      "text": "you for 50 lines. Now, with streaming"
+    },
+    {
+      "start": 415.629,
+      "end": 417.86,
+      "text": "set to true, you are showing me,"
+    },
+    {
+      "start": 416.898,
+      "end": 419.43600000000004,
+      "text": "let’s say, three lines. Then the next"
+    },
+    {
+      "start": 418.471,
+      "end": 420.795,
+      "text": "three lines, and the next three lines,"
+    },
+    {
+      "start": 419.83,
+      "end": 422.21099999999996,
+      "text": "showing me all 50 that way. Why not"
+    },
+    {
+      "start": 421.26,
+      "end": 424.031,
+      "text": "just send all 50 at once? I would read"
+    },
+    {
+      "start": 423.069,
+      "end": 425.493,
+      "text": "them all in one go. That is absolutely"
+    },
+    {
+      "start": 424.527,
+      "end": 429.01,
+      "text": "possible. Why is this needed? Okay. It"
+    },
+    {
+      "start": 428.095,
+      "end": 432.345,
+      "text": "is needed because whenever a user, and"
+    },
+    {
+      "start": 431.431,
+      "end": 435.425,
+      "text": "especially a human user, whenever a"
+    },
+    {
+      "start": 434.51,
+      "end": 438.76099999999997,
+      "text": "human user uses a service and tries to"
+    },
+    {
+      "start": 437.846,
+      "end": 442.097,
+      "text": "rate how fast or slow that service is,"
+    },
+    {
+      "start": 441.182,
+      "end": 445.261,
+      "text": "whenever a human user uses a service"
+    },
+    {
+      "start": 444.347,
+      "end": 448.512,
+      "text": "and wants to determine if it’s fast"
+    },
+    {
+      "start": 447.597,
+      "end": 451.933,
+      "text": "or slow, it’s not decided by when the"
+    },
+    {
+      "start": 451.019,
+      "end": 455.571,
+      "text": "last item arrived. It’s not decided"
+    },
+    {
+      "start": 454.618,
+      "end": 458.094,
+      "text": "by when the last item arrives? Usually,"
+    },
+    {
+      "start": 457.151,
+      "end": 460.086,
+      "text": "what we humans do is decide if the"
+    },
+    {
+      "start": 459.143,
+      "end": 462.19199999999995,
+      "text": "service is slow or not based on when"
+    },
+    {
+      "start": 461.249,
+      "end": 464.28000000000003,
+      "text": "the first item arrives. Just think"
+    },
+    {
+      "start": 463.32,
+      "end": 465.909,
+      "text": "about it yourself, you went to a hotel."
+    },
+    {
+      "start": 465.009,
+      "end": 468.433,
+      "text": "You went to a hotel. Right? You ordered"
+    },
+    {
+      "start": 467.477,
+      "end": 470.289,
+      "text": "these three things. What things? You"
+    },
+    {
+      "start": 469.367,
+      "end": 473.401,
+      "text": "ordered a starter, a main course, and a"
+    },
+    {
+      "start": 472.479,
+      "end": 475.413,
+      "text": "dessert. What did you order? Dessert."
+    },
+    {
+      "start": 474.559,
+      "end": 477.081,
+      "text": "Let’s assume for a moment that the"
+    },
+    {
+      "start": 476.123,
+      "end": 478.893,
+      "text": "starter takes 10 minutes to make. The"
+    },
+    {
+      "start": 477.931,
+      "end": 480.142,
+      "text": "starter, paneer chilli, takes 10"
+    },
+    {
+      "start": 479.18,
+      "end": 481.777,
+      "text": "minutes to prepare. The main course,"
+    },
+    {
+      "start": 480.821,
+      "end": 483.48100000000005,
+      "text": "paneer butter masala, takes 30 minutes"
+    },
+    {
+      "start": 482.525,
+      "end": 485.229,
+      "text": "to make because it’s a vegetable dish"
+    },
+    {
+      "start": 484.229,
+      "end": 486.84499999999997,
+      "text": ", and the dessert is already made, so"
+    },
+    {
+      "start": 485.889,
+      "end": 489.52,
+      "text": "it takes 5 minutes. Now, if the hotel"
+    },
+    {
+      "start": 488.57,
+      "end": 491.343,
+      "text": "waits for all three to be ready and"
+    },
+    {
+      "start": 490.394,
+      "end": 493.369,
+      "text": "tries to bring them all at once without"
+    },
+    {
+      "start": 492.42,
+      "end": 495.39500000000004,
+      "text": "streaming, in streaming-false, how long"
+    },
+    {
+      "start": 494.446,
+      "end": 498.03900000000004,
+      "text": "will your food take? Your food will"
+    },
+    {
+      "start": 497.097,
+      "end": 500.262,
+      "text": "come after 30 minutes. Why? Because"
+    },
+    {
+      "start": 499.296,
+      "end": 501.602,
+      "text": "it’s trying to bring all three, right"
+    },
+    {
+      "start": 500.602,
+      "end": 502.98999999999995,
+      "text": "? So, it will take 30 minutes to make"
+    },
+    {
+      "start": 502.026,
+      "end": 504.46500000000003,
+      "text": "the paneer butter masala. Without the"
+    },
+    {
+      "start": 503.505,
+      "end": 505.945,
+      "text": "paneer butter masala being ready, it"
+    },
+    {
+      "start": 504.985,
+      "end": 507.425,
+      "text": "won’t bring the other two, so when"
+    },
+    {
+      "start": 506.465,
+      "end": 509.16299999999995,
+      "text": "will your food come? It will come in 30"
+    },
+    {
+      "start": 508.208,
+      "end": 510.65400000000005,
+      "text": "minutes. Now, you will just be sitting"
+    },
+    {
+      "start": 509.688,
+      "end": 511.85699999999997,
+      "text": "there for those 30 minutes. Just"
+    },
+    {
+      "start": 510.893,
+      "end": 513.954,
+      "text": "picking your teeth like this. Itching"
+    },
+    {
+      "start": 513.004,
+      "end": 515.775,
+      "text": "your teeth and you will say, \"Damn,"
+    },
+    {
+      "start": 514.825,
+      "end": 518.152,
+      "text": "this hotel is terrible.\"\"Very slow"
+    },
+    {
+      "start": 517.2,
+      "end": 519.7320000000001,
+      "text": "service.\" That’s what you say, right,"
+    },
+    {
+      "start": 518.767,
+      "end": 521.0440000000001,
+      "text": "because it took 30 minutes to arrive?"
+    },
+    {
+      "start": 520.82,
+      "end": 524.047,
+      "text": "But what if the hotel brings you the"
+    },
+    {
+      "start": 523.109,
+      "end": 526.5740000000001,
+      "text": "starter in just 10 minutes? They"
+    },
+    {
+      "start": 525.613,
+      "end": 527.912,
+      "text": "brought you the starter in just 10"
+    },
+    {
+      "start": 526.951,
+      "end": 529.2860000000001,
+      "text": "minutes. So you got happy that, \"Wow,"
+    },
+    {
+      "start": 528.32,
+      "end": 530.618,
+      "text": "the starter arrived immediately.\" Now"
+    },
+    {
+      "start": 529.652,
+      "end": 532.086,
+      "text": "you started eating the starter. By the"
+    },
+    {
+      "start": 531.131,
+      "end": 533.871,
+      "text": "time you eat your starter, let's assume"
+    },
+    {
+      "start": 532.915,
+      "end": 535.683,
+      "text": "your main course is also ready. They"
+    },
+    {
+      "start": 534.729,
+      "end": 537.2040000000001,
+      "text": "brought the main course after 30"
+    },
+    {
+      "start": 536.25,
+      "end": 538.899,
+      "text": "minutes. After that, as soon as you"
+    },
+    {
+      "start": 537.943,
+      "end": 540.5989999999999,
+      "text": "finished the main course, they brought"
+    },
+    {
+      "start": 539.643,
+      "end": 542.413,
+      "text": "the dessert right away. So, what would"
+    },
+    {
+      "start": 541.461,
+      "end": 544.3870000000001,
+      "text": "your experience be? Yes, it's a great"
+    },
+    {
+      "start": 543.441,
+      "end": 545.865,
+      "text": "hotel. We went, ordered, and the food"
+    },
+    {
+      "start": 544.898,
+      "end": 547.1360000000001,
+      "text": "arrived in just 10 minutes. No, the"
+    },
+    {
+      "start": 546.17,
+      "end": 548.5279999999999,
+      "text": "food didn't arrive in 10 minutes. The"
+    },
+    {
+      "start": 547.572,
+      "end": 550.227,
+      "text": "main course arrived after 30 minutes."
+    },
+    {
+      "start": 549.327,
+      "end": 552.008,
+      "text": "What arrived in 10 minutes? One chunk"
+    },
+    {
+      "start": 551.047,
+      "end": 553.693,
+      "text": "arrived for you. You got your starter"
+    },
+    {
+      "start": 552.739,
+      "end": 555.128,
+      "text": "in 10 minutes. That was just a small"
+    },
+    {
+      "start": 554.159,
+      "end": 556.851,
+      "text": "chunk. That wasn't your entire order."
+    },
+    {
+      "start": 555.951,
+      "end": 558.711,
+      "text": "So the hotel took its usual time, right"
+    },
+    {
+      "start": 557.711,
+      "end": 560.503,
+      "text": "? It took its own time. It brought you"
+    },
+    {
+      "start": 559.548,
+      "end": 562.258,
+      "text": "the starter in 10 minutes. You ate the"
+    },
+    {
+      "start": 561.298,
+      "end": 563.67,
+      "text": "starter, 30 minutes later the main"
+    },
+    {
+      "start": 562.71,
+      "end": 565.243,
+      "text": "course came, and 5 minutes after that,"
+    },
+    {
+      "start": 564.283,
+      "end": 566.729,
+      "text": "the dessert arrived. So if you look at"
+    },
+    {
+      "start": 565.76,
+      "end": 567.966,
+      "text": "the effective time for the restaurant,"
+    },
+    {
+      "start": 566.997,
+      "end": 569.293,
+      "text": "it took the same amount. They didn't"
+    },
+    {
+      "start": 568.333,
+      "end": 570.8439999999999,
+      "text": "really make it faster. What perception"
+    },
+    {
+      "start": 569.88,
+      "end": 572.302,
+      "text": "formed in your mind? That the hotel is"
+    },
+    {
+      "start": 571.337,
+      "end": 574.025,
+      "text": "very fast. It felt great. We will go"
+    },
+    {
+      "start": 573.063,
+      "end": 576.085,
+      "text": "again and again. But if the hotel tries"
+    },
+    {
+      "start": 575.14,
+      "end": 578.2379999999999,
+      "text": "to give everything all at once. Then"
+    },
+    {
+      "start": 577.283,
+      "end": 579.942,
+      "text": "you would think in your mind, oh man,"
+    },
+    {
+      "start": 578.987,
+      "end": 581.4789999999999,
+      "text": "this hotel is terrible. Why did that"
+    },
+    {
+      "start": 580.509,
+      "end": 583.991,
+      "text": "happen? Because human psychology is"
+    },
+    {
+      "start": 583.049,
+      "end": 586.261,
+      "text": "such that we rate things based on when"
+    },
+    {
+      "start": 585.319,
+      "end": 588.9639999999999,
+      "text": "the first item arrives. Okay, the first"
+    },
+    {
+      "start": 588.0,
+      "end": 590.344,
+      "text": "item arrived, we think, well okay, at"
+    },
+    {
+      "start": 589.38,
+      "end": 591.842,
+      "text": "least something is happening now. Now"
+    },
+    {
+      "start": 590.896,
+      "end": 594.236,
+      "text": "we will watch, now we wait. But when"
+    },
+    {
+      "start": 593.284,
+      "end": 595.842,
+      "text": "the last item arrives, it doesn't"
+    },
+    {
+      "start": 594.889,
+      "end": 598.165,
+      "text": "really matter to anyone much. So if"
+    },
+    {
+      "start": 597.222,
+      "end": 600.342,
+      "text": "your first item comes very late, your"
+    },
+    {
+      "start": 599.399,
+      "end": 602.576,
+      "text": "perception will be that the service is"
+    },
+    {
+      "start": 601.633,
+      "end": 604.672,
+      "text": "slow. No matter if both take the same"
+    },
+    {
+      "start": 603.714,
+      "end": 606.542,
+      "text": "amount of time. That is why companies"
+    },
+    {
+      "start": 605.593,
+      "end": 608.9989999999999,
+      "text": "use streaming. That is why ChatGPT uses"
+    },
+    {
+      "start": 608.066,
+      "end": 611.4390000000001,
+      "text": "streaming. Because suppose you ask it"
+    },
+    {
+      "start": 610.499,
+      "end": 613.719,
+      "text": "for 1000 lines of DSA code from whom?"
+    },
+    {
+      "start": 612.9,
+      "end": 616.2529999999999,
+      "text": "From ChatGPT. Now suppose it takes 5"
+    },
+    {
+      "start": 615.313,
+      "end": 618.495,
+      "text": "minutes for ChatGPT to generate 1000"
+    },
+    {
+      "start": 617.556,
+      "end": 620.816,
+      "text": "lines. Now if it tries to give you"
+    },
+    {
+      "start": 619.87,
+      "end": 622.838,
+      "text": "everything at once, you will have to"
+    },
+    {
+      "start": 621.893,
+      "end": 625.081,
+      "text": "wait for those 5 minutes. Now what will"
+    },
+    {
+      "start": 624.122,
+      "end": 626.848,
+      "text": "you do in those 5 minutes? Sitting idle"
+    },
+    {
+      "start": 625.848,
+      "end": 628.491,
+      "text": ", you will curse ChatGPT saying the"
+    },
+    {
+      "start": 627.538,
+      "end": 630.2330000000001,
+      "text": "service is very slow. They took money"
+    },
+    {
+      "start": 629.273,
+      "end": 631.7330000000001,
+      "text": "for the Pro plan from me and made me"
+    },
+    {
+      "start": 630.774,
+      "end": 634.115,
+      "text": "wait for 5 minutes. But now suppose"
+    },
+    {
+      "start": 633.171,
+      "end": 636.344,
+      "text": "generating one line won't take anything"
+    },
+    {
+      "start": 635.344,
+      "end": 638.1990000000001,
+      "text": ". A single line will take 10 seconds."
+    },
+    {
+      "start": 637.32,
+      "end": 640.355,
+      "text": "As soon as 10 seconds pass, it sends"
+    },
+    {
+      "start": 639.412,
+      "end": 642.557,
+      "text": "one line to you here. The next line is"
+    },
+    {
+      "start": 641.604,
+      "end": 644.404,
+      "text": "generated and it sends that too. Now"
+    },
+    {
+      "start": 643.455,
+      "end": 646.3090000000001,
+      "text": "you are not waiting. What are you doing"
+    },
+    {
+      "start": 645.349,
+      "end": 648.259,
+      "text": "now? You are now watching the line"
+    },
+    {
+      "start": 647.315,
+      "end": 650.5640000000001,
+      "text": "being generated. It might still take 5"
+    },
+    {
+      "start": 649.615,
+      "end": 652.541,
+      "text": "minutes to fully generate because that"
+    },
+    {
+      "start": 651.592,
+      "end": 654.927,
+      "text": "is how long it will take. But now your"
+    },
+    {
+      "start": 653.989,
+      "end": 657.101,
+      "text": "waiting time is over. Now you have"
+    },
+    {
+      "start": 656.151,
+      "end": 659.381,
+      "text": "something to do, something to see. This"
+    },
+    {
+      "start": 658.431,
+      "end": 661.705,
+      "text": "first item that came, what was it? The"
+    },
+    {
+      "start": 660.754,
+      "end": 663.5120000000001,
+      "text": "first item came very quickly, so you"
+    },
+    {
+      "start": 662.561,
+      "end": 665.615,
+      "text": "feel like, oh, ChatGPT is very fast. We"
+    },
+    {
+      "start": 664.653,
+      "end": 667.14,
+      "text": "ask LLM, and the answer comes instantly"
+    },
+    {
+      "start": 666.14,
+      "end": 668.585,
+      "text": ". It doesn't come instantly. It still"
+    },
+    {
+      "start": 667.629,
+      "end": 670.2620000000001,
+      "text": "comes after 5 minutes. You just have"
+    },
+    {
+      "start": 669.305,
+      "end": 672.0409999999999,
+      "text": "something to occupy your time. That is"
+    },
+    {
+      "start": 671.088,
+      "end": 673.627,
+      "text": "why companies use this streaming."
+    },
+    {
+      "start": 673.119,
+      "end": 675.985,
+      "text": "Because if we rate any service, and we"
+    },
+    {
+      "start": 675.034,
+      "end": 677.852,
+      "text": "try to send everything at once, we'll"
+    },
+    {
+      "start": 676.901,
+      "end": 679.7189999999999,
+      "text": "say, leave it, this is a bad service."
+    },
+    {
+      "start": 679.439,
+      "end": 682.208,
+      "text": "But if it keeps coming slowly and you"
+    },
+    {
+      "start": 681.256,
+      "end": 684.12,
+      "text": "keep reading it slowly, your mind stays"
+    },
+    {
+      "start": 683.168,
+      "end": 685.891,
+      "text": "occupied. This is the same as the hotel"
+    },
+    {
+      "start": 684.929,
+      "end": 687.698,
+      "text": "example. There is no other reason for"
+    },
+    {
+      "start": 686.746,
+      "end": 689.783,
+      "text": "it. It is done only for the human"
+    },
+    {
+      "start": 688.844,
+      "end": 691.634,
+      "text": "experience, to make the human"
+    },
+    {
+      "start": 690.696,
+      "end": 694.513,
+      "text": "experience like this. Well, if it's"
+    },
+    {
+      "start": 693.561,
+      "end": 696.363,
+      "text": "like this, some people will think, if"
+    },
+    {
+      "start": 695.412,
+      "end": 698.2620000000001,
+      "text": "streaming is such a good thing, why is"
+    },
+    {
+      "start": 697.311,
+      "end": 700.851,
+      "text": "stream false by default? Up until now,"
+    },
+    {
+      "start": 699.893,
+      "end": 702.424,
+      "text": "what we were doing, we weren't really"
+    },
+    {
+      "start": 701.465,
+      "end": 704.1790000000001,
+      "text": "doing any streaming. So it was false by"
+    },
+    {
+      "start": 703.223,
+      "end": 706.0459999999999,
+      "text": "default. Why is that? Why? Because"
+    },
+    {
+      "start": 705.079,
+      "end": 707.5609999999999,
+      "text": "there is a difference. Whenever you"
+    },
+    {
+      "start": 706.617,
+      "end": 709.774,
+      "text": "build any AI product, you shouldn't use"
+    },
+    {
+      "start": 708.829,
+      "end": 711.968,
+      "text": "streaming everywhere. When should you"
+    },
+    {
+      "start": 711.027,
+      "end": 715.5300000000001,
+      "text": "use streaming? When your end user is a"
+    },
+    {
+      "start": 714.595,
+      "end": 717.5400000000001,
+      "text": "human; for example, if you are"
+    },
+    {
+      "start": 716.605,
+      "end": 719.875,
+      "text": "designing a chatbot, you should use"
+    },
+    {
+      "start": 718.94,
+      "end": 722.339,
+      "text": "streaming because a person is reading"
+    },
+    {
+      "start": 721.404,
+      "end": 725.741,
+      "text": "it. Who reads the chatbot's response? A"
+    },
+    {
+      "start": 724.803,
+      "end": 728.666,
+      "text": "person will read it. But suppose you"
+    },
+    {
+      "start": 727.754,
+      "end": 732.005,
+      "text": "have a code user. For example, if your"
+    },
+    {
+      "start": 731.063,
+      "end": 734.013,
+      "text": "LLM is generating a JSON and it is"
+    },
+    {
+      "start": 733.07,
+      "end": 736.7650000000001,
+      "text": "going into some other code. Some other"
+    },
+    {
+      "start": 735.817,
+      "end": 738.953,
+      "text": "code file is reading it. Do not use"
+    },
+    {
+      "start": 738.018,
+      "end": 741.4010000000001,
+      "text": "streaming for this. Why shouldn't you"
+    },
+    {
+      "start": 740.446,
+      "end": 743.72,
+      "text": "use streaming for this? Because this"
+    },
+    {
+      "start": 742.806,
+      "end": 746.4830000000001,
+      "text": "will mess up your JSON. When I taught"
+    },
+    {
+      "start": 745.528,
+      "end": 749.191,
+      "text": "JSON, I told you what it is, right? It"
+    },
+    {
+      "start": 748.26,
+      "end": 751.7379999999999,
+      "text": "looks something like this, and here,"
+    },
+    {
+      "start": 750.807,
+      "end": 754.009,
+      "text": "for example, it says the name is"
+    },
+    {
+      "start": 753.078,
+      "end": 756.694,
+      "text": "Pratyush and the email is abcmail.com."
+    },
+    {
+      "start": 756.898,
+      "end": 760.6460000000001,
+      "text": "Now assume this is your JSON. So this"
+    },
+    {
+      "start": 759.698,
+      "end": 762.509,
+      "text": "is the whole JSON. This whole JSON"
+    },
+    {
+      "start": 761.556,
+      "end": 764.3050000000001,
+      "text": "needs to go into the code so the code"
+    },
+    {
+      "start": 763.352,
+      "end": 766.389,
+      "text": "can read it. Now, if you used streaming"
+    },
+    {
+      "start": 765.438,
+      "end": 768.245,
+      "text": "here, it is possible your JSON breaks"
+    },
+    {
+      "start": 767.294,
+      "end": 770.162,
+      "text": "right there. It just sent the name to"
+    },
+    {
+      "start": 769.207,
+      "end": 772.172,
+      "text": "it. Now, this is an incomplete JSON."
+    },
+    {
+      "start": 771.272,
+      "end": 774.3520000000001,
+      "text": "Neither is this curly brace closed, nor"
+    },
+    {
+      "start": 773.405,
+      "end": 776.411,
+      "text": "does it have full details. What did you"
+    },
+    {
+      "start": 775.454,
+      "end": 778.2479999999999,
+      "text": "send in the next chunk? You just sent"
+    },
+    {
+      "start": 777.301,
+      "end": 780.3570000000001,
+      "text": "the email and this curly bracket. Your"
+    },
+    {
+      "start": 779.403,
+      "end": 782.172,
+      "text": "JSON is broken; the code won't be able"
+    },
+    {
+      "start": 781.219,
+      "end": 785.831,
+      "text": "to read it. So whenever your code is"
+    },
+    {
+      "start": 784.916,
+      "end": 789.0790000000001,
+      "text": "generating JSON or anything else that"
+    },
+    {
+      "start": 788.164,
+      "end": 792.156,
+      "text": "is being read by another code file,"
+    },
+    {
+      "start": 791.242,
+      "end": 796.497,
+      "text": "never ever use streaming. When your end"
+    },
+    {
+      "start": 795.554,
+      "end": 798.372,
+      "text": "user is a human, when a human is"
+    },
+    {
+      "start": 797.429,
+      "end": 800.562,
+      "text": "reading your response. For example,"
+    },
+    {
+      "start": 799.627,
+      "end": 802.7009999999999,
+      "text": "chatgpt.com is built for humans."
+    },
+    {
+      "start": 801.801,
+      "end": 804.7940000000001,
+      "text": "ChatGPT is not built for machines. It"
+    },
+    {
+      "start": 803.842,
+      "end": 806.691,
+      "text": "is designed so that a human will go to"
+    },
+    {
+      "start": 805.74,
+      "end": 808.726,
+      "text": "the website and read its answer. Then"
+    },
+    {
+      "start": 807.784,
+      "end": 810.877,
+      "text": "you should use streaming because the"
+    },
+    {
+      "start": 809.935,
+      "end": 813.0899999999999,
+      "text": "user experience becomes pleasant. That"
+    },
+    {
+      "start": 812.124,
+      "end": 814.5600000000001,
+      "text": "is all there is to it. If someone asks"
+    },
+    {
+      "start": 813.599,
+      "end": 816.129,
+      "text": "you in an interview, just say this much"
+    },
+    {
+      "start": 815.129,
+      "end": 817.423,
+      "text": ", and there is no other technical"
+    },
+    {
+      "start": 816.462,
+      "end": 819.556,
+      "text": "reason for it. Okay? Let's move to the"
+    },
+    {
+      "start": 818.6,
+      "end": 821.313,
+      "text": "code, and I will explain to you how; it"
+    },
+    {
+      "start": 820.357,
+      "end": 822.889,
+      "text": "is a very small piece of code. I'm"
+    },
+    {
+      "start": 821.927,
+      "end": 824.373,
+      "text": "saying just one line needs to be added"
+    },
+    {
+      "start": 823.411,
+      "end": 825.895,
+      "text": "here and two or three print statements."
+    },
+    {
+      "start": 825.079,
+      "end": 827.636,
+      "text": "You will see for yourself how it"
+    },
+    {
+      "start": 826.685,
+      "end": 829.4849999999999,
+      "text": "appears all at once when streaming is"
+    },
+    {
+      "start": 828.534,
+      "end": 830.994,
+      "text": "false and comes gradually when"
+    },
+    {
+      "start": 830.043,
+      "end": 833.044,
+      "text": "streaming is true. Let's quickly show"
+    },
+    {
+      "start": 832.09,
+      "end": 835.284,
+      "text": "it in the code. Come into the code, as"
+    },
+    {
+      "start": 834.333,
+      "end": 837.159,
+      "text": "I am saying, it is a very small code."
+    },
+    {
+      "start": 836.259,
+      "end": 839.321,
+      "text": "So look here, create this one. Create"
+    },
+    {
+      "start": 838.385,
+      "end": 841.875,
+      "text": "week two, day nine, and set all that up"
+    },
+    {
+      "start": 840.875,
+      "end": 844.49,
+      "text": ". Set up uv and venv, and add goc and"
+    },
+    {
+      "start": 843.556,
+      "end": 847.4920000000001,
+      "text": "python. Okay? I copied hello_llm as it"
+    },
+    {
+      "start": 846.553,
+      "end": 849.531,
+      "text": "is from week one, day one. Everything"
+    },
+    {
+      "start": 848.56,
+      "end": 850.9209999999999,
+      "text": "up to here is the same. Okay? In the"
+    },
+    {
+      "start": 849.963,
+      "end": 852.5219999999999,
+      "text": "model, I have written. In the prompt, I"
+    },
+    {
+      "start": 851.556,
+      "end": 853.873,
+      "text": "wrote \"explain how the internet works.\""
+    },
+    {
+      "start": 852.973,
+      "end": 855.707,
+      "text": "Okay? Because I want a long answer. If"
+    },
+    {
+      "start": 854.736,
+      "end": 856.843,
+      "text": "you write a short prompt, you will get"
+    },
+    {
+      "start": 855.872,
+      "end": 858.14,
+      "text": "a short answer. You won't be able to"
+    },
+    {
+      "start": 857.177,
+      "end": 859.8910000000001,
+      "text": "tell how it is working. Okay? Created"
+    },
+    {
+      "start": 858.953,
+      "end": 861.917,
+      "text": "the message. Now let's do one thing, I"
+    },
+    {
+      "start": 860.962,
+      "end": 863.442,
+      "text": "will show you the traditional way"
+    },
+    {
+      "start": 862.487,
+      "end": 865.026,
+      "text": "without streaming. Look, this is the"
+    },
+    {
+      "start": 864.063,
+      "end": 866.794,
+      "text": "answer without streaming. What is this?"
+    },
+    {
+      "start": 865.894,
+      "end": 868.303,
+      "text": "This is the non-streamed answer. Like"
+    },
+    {
+      "start": 867.341,
+      "end": 869.638,
+      "text": "what we were printing before? We"
+    },
+    {
+      "start": 868.686,
+      "end": 871.437,
+      "text": "extract the response and don't print"
+    },
+    {
+      "start": 870.485,
+      "end": 873.767,
+      "text": "the response. And we print our answer."
+    },
+    {
+      "start": 872.867,
+      "end": 875.764,
+      "text": "Now look, I will execute this. You will"
+    },
+    {
+      "start": 874.807,
+      "end": 877.36,
+      "text": "see that the answer will come all at"
+    },
+    {
+      "start": 876.403,
+      "end": 878.9440000000001,
+      "text": "once. It will take some time, but the"
+    },
+    {
+      "start": 877.98,
+      "end": 881.508,
+      "text": "full answer will come. So let's execute"
+    },
+    {
+      "start": 880.569,
+      "end": 885.0279999999999,
+      "text": "this. See, it waited. It waited, it"
+    },
+    {
+      "start": 884.074,
+      "end": 886.5709999999999,
+      "text": "waited. It waited, it waited. It is"
+    },
+    {
+      "start": 885.615,
+      "end": 888.229,
+      "text": "still waiting. It's waiting. It"
+    },
+    {
+      "start": 887.269,
+      "end": 890.19,
+      "text": "appeared instantly. So look, that wait,"
+    },
+    {
+      "start": 889.245,
+      "end": 892.131,
+      "text": "that two-three second wait, humans"
+    },
+    {
+      "start": 891.187,
+      "end": 893.939,
+      "text": "don't like that. Your attention spans"
+    },
+    {
+      "start": 892.977,
+      "end": 895.538,
+      "text": "have been ruined by watching reels. So"
+    },
+    {
+      "start": 894.6,
+      "end": 897.881,
+      "text": "this one or two-second wait will feel"
+    },
+    {
+      "start": 896.943,
+      "end": 899.8299999999999,
+      "text": "very slow to you. Feels very slow,"
+    },
+    {
+      "start": 898.876,
+      "end": 901.341,
+      "text": "right? Let me show you again. Look,"
+    },
+    {
+      "start": 900.388,
+      "end": 903.597,
+      "text": "I'll show you again. Wait. Now watch,"
+    },
+    {
+      "start": 902.661,
+      "end": 906.218,
+      "text": "wait! Wait! Wait! Wait! Now it appeared"
+    },
+    {
+      "start": 905.257,
+      "end": 907.7779999999999,
+      "text": "instantly. So a little wait, and this"
+    },
+    {
+      "start": 906.817,
+      "end": 909.244,
+      "text": "is a very small prompt, \"explain the"
+    },
+    {
+      "start": 908.283,
+      "end": 910.551,
+      "text": "internet,\" this is a very simple"
+    },
+    {
+      "start": 909.591,
+      "end": 913.464,
+      "text": "question. Suppose it's a very complex"
+    },
+    {
+      "start": 912.515,
+      "end": 915.134,
+      "text": "question, you ask it to design a"
+    },
+    {
+      "start": 914.184,
+      "end": 917.0559999999999,
+      "text": "complex architecture, it might take a"
+    },
+    {
+      "start": 916.107,
+      "end": 919.0799999999999,
+      "text": "30-second wait, which looks bad to you,"
+    },
+    {
+      "start": 918.13,
+      "end": 922.296,
+      "text": "it feels bad to you as a human. Now, we"
+    },
+    {
+      "start": 921.376,
+      "end": 925.496,
+      "text": "will set streaming to true for this and"
+    },
+    {
+      "start": 924.576,
+      "end": 928.36,
+      "text": "see what response we get. So, look, the"
+    },
+    {
+      "start": 927.413,
+      "end": 930.418,
+      "text": "code for streaming is nothing. Create a"
+    },
+    {
+      "start": 929.459,
+      "end": 931.882,
+      "text": "variable for this response called \""
+    },
+    {
+      "start": 930.882,
+      "end": 933.478,
+      "text": "stream.\" Or you can make it \"response"
+    },
+    {
+      "start": 932.52,
+      "end": 935.336,
+      "text": "two.\" It's your choice. Write the same"
+    },
+    {
+      "start": 934.383,
+      "end": 936.8770000000001,
+      "text": "code. You just have to change one"
+    },
+    {
+      "start": 935.92,
+      "end": 938.9309999999999,
+      "text": "variable. stream equals true. What did"
+    },
+    {
+      "start": 937.968,
+      "end": 940.5849999999999,
+      "text": "I say was the default? Stream is false."
+    },
+    {
+      "start": 939.685,
+      "end": 942.2729999999999,
+      "text": "So you don't need to write it. Well,"
+    },
+    {
+      "start": 941.341,
+      "end": 944.697,
+      "text": "once this stream arrives, you don't"
+    },
+    {
+      "start": 943.765,
+      "end": 947.227,
+      "text": "print it that way. I said that when you"
+    },
+    {
+      "start": 946.279,
+      "end": 949.216,
+      "text": "switch to streaming, data comes chunk"
+    },
+    {
+      "start": 948.268,
+      "end": 951.499,
+      "text": "by chunk. Chunk means in small parts."
+    },
+    {
+      "start": 950.639,
+      "end": 953.159,
+      "text": "So now, many chunks will be created in"
+    },
+    {
+      "start": 952.199,
+      "end": 955.3589999999999,
+      "text": "the stream. So we will do \"for chunk in"
+    },
+    {
+      "start": 954.416,
+      "end": 957.119,
+      "text": "stream.\" Suppose five chunks are"
+    },
+    {
+      "start": 956.165,
+      "end": 958.858,
+      "text": "created in the stream. Chunk means a"
+    },
+    {
+      "start": 957.897,
+      "end": 960.2810000000001,
+      "text": "starter is a chunk, main course is a"
+    },
+    {
+      "start": 959.319,
+      "end": 962.449,
+      "text": "chunk, dessert is a chunk. So we said,"
+    },
+    {
+      "start": 961.523,
+      "end": 965.289,
+      "text": "let's look at every chunk. After that,"
+    },
+    {
+      "start": 964.339,
+      "end": 967.2890000000001,
+      "text": "you extract the content from this chunk"
+    },
+    {
+      "start": 966.289,
+      "end": 969.602,
+      "text": ". Extract what? Content equals chunk"
+    },
+    {
+      "start": 968.667,
+      "end": 972.1890000000001,
+      "text": "dot choices zero dot delta dot content."
+    },
+    {
+      "start": 971.339,
+      "end": 973.916,
+      "text": "Just like we used to extract the answer"
+    },
+    {
+      "start": 972.956,
+      "end": 975.412,
+      "text": "from the response, like response dot"
+    },
+    {
+      "start": 974.453,
+      "end": 977.207,
+      "text": "choices zero. That part is fine. After"
+    },
+    {
+      "start": 976.245,
+      "end": 978.603,
+      "text": "that, message dot content used to be"
+    },
+    {
+      "start": 977.641,
+      "end": 980.5229999999999,
+      "text": "extracted. Now we will extract delta"
+    },
+    {
+      "start": 979.579,
+      "end": 982.8879999999999,
+      "text": "dot content. That's good. And if there"
+    },
+    {
+      "start": 981.939,
+      "end": 984.7669999999999,
+      "text": "is anything in this content, we will"
+    },
+    {
+      "start": 983.818,
+      "end": 986.595,
+      "text": "print the content with end equal to"
+    },
+    {
+      "start": 985.646,
+      "end": 988.716,
+      "text": "this and flush equal to true. What does"
+    },
+    {
+      "start": 987.763,
+      "end": 990.472,
+      "text": "flush equal to true do? It means print"
+    },
+    {
+      "start": 989.509,
+      "end": 991.839,
+      "text": "immediately now. Now there will be no"
+    },
+    {
+      "start": 990.871,
+      "end": 994.215,
+      "text": "waiting. I want it to print immediately"
+    },
+    {
+      "start": 993.281,
+      "end": 996.669,
+      "text": "as it arrives, as the details of the"
+    },
+    {
+      "start": 995.736,
+      "end": 999.009,
+      "text": "chunk come in. So, this is its small"
+    },
+    {
+      "start": 998.069,
+      "end": 1001.6189999999999,
+      "text": "syntax. Okay? Now, watch what happens."
+    },
+    {
+      "start": 1000.731,
+      "end": 1003.333,
+      "text": "Now you won't have to wait those three"
+    },
+    {
+      "start": 1002.376,
+      "end": 1004.887,
+      "text": "or four seconds. Why won't you have to"
+    },
+    {
+      "start": 1003.922,
+      "end": 1006.739,
+      "text": "wait? Because we are streaming now. Now"
+    },
+    {
+      "start": 1005.739,
+      "end": 1009.37,
+      "text": ", look at this, see this. Look at this."
+    },
+    {
+      "start": 1008.47,
+      "end": 1011.0830000000001,
+      "text": "This is exactly what it's showing. This"
+    },
+    {
+      "start": 1010.135,
+      "end": 1013.156,
+      "text": "is how ChatGPT works. Exactly like this"
+    },
+    {
+      "start": 1012.156,
+      "end": 1015.356,
+      "text": ", ChatGPT works. Watch it again. Look"
+    },
+    {
+      "start": 1014.396,
+      "end": 1017.108,
+      "text": "at this. Snap, snap, snap, it kept"
+    },
+    {
+      "start": 1016.16,
+      "end": 1018.933,
+      "text": "generating. So as the answer was being"
+    },
+    {
+      "start": 1017.971,
+      "end": 1020.233,
+      "text": "formed, you were seeing it on the"
+    },
+    {
+      "start": 1019.271,
+      "end": 1022.193,
+      "text": "screen. As a human, you don't need to"
+    },
+    {
+      "start": 1021.244,
+      "end": 1024.113,
+      "text": "wait now. As it generates, you keep"
+    },
+    {
+      "start": 1023.165,
+      "end": 1025.731,
+      "text": "reading it. By the time you finish"
+    },
+    {
+      "start": 1024.771,
+      "end": 1027.413,
+      "text": "reading, more will be generated. So, by"
+    },
+    {
+      "start": 1026.454,
+      "end": 1029.022,
+      "text": "the time the starter arrives, the main"
+    },
+    {
+      "start": 1028.063,
+      "end": 1030.673,
+      "text": "course will arrive, and you can eat it."
+    },
+    {
+      "start": 1029.773,
+      "end": 1033.2289999999998,
+      "text": "Now you will say that Groq is a really"
+    },
+    {
+      "start": 1032.293,
+      "end": 1035.2859999999998,
+      "text": "good model. But neither Groq's model"
+    },
+    {
+      "start": 1034.335,
+      "end": 1037.179,
+      "text": "changed nor the prompt. The model is"
+    },
+    {
+      "start": 1036.23,
+      "end": 1038.946,
+      "text": "the same, bro. What changed? We"
+    },
+    {
+      "start": 1037.993,
+      "end": 1040.673,
+      "text": "switched to streaming. So, this is very"
+    },
+    {
+      "start": 1039.707,
+      "end": 1042.356,
+      "text": "important. When you build a chatbot,"
+    },
+    {
+      "start": 1041.404,
+      "end": 1044.003,
+      "text": "sending messages this way is very"
+    },
+    {
+      "start": 1043.051,
+      "end": 1046.269,
+      "text": "important. Why? Because we, as humans,"
+    },
+    {
+      "start": 1045.324,
+      "end": 1049.009,
+      "text": "are consuming it. If there is something"
+    },
+    {
+      "start": 1048.056,
+      "end": 1050.8,
+      "text": "like the Pydantic we studied, or JSON"
+    },
+    {
+      "start": 1049.847,
+      "end": 1052.59,
+      "text": "where we built a resume parser, don't"
+    },
+    {
+      "start": 1051.637,
+      "end": 1054.8709999999999,
+      "text": "use streaming there. Don't use"
+    },
+    {
+      "start": 1053.917,
+      "end": 1056.4769999999999,
+      "text": "streaming there because some other"
+    },
+    {
+      "start": 1055.523,
+      "end": 1058.312,
+      "text": "function or code is reading your output"
+    },
+    {
+      "start": 1057.312,
+      "end": 1060.299,
+      "text": ", so don't do this there. Streaming is"
+    },
+    {
+      "start": 1059.344,
+      "end": 1062.327,
+      "text": "built for humans. Is that clear? So, I"
+    },
+    {
+      "start": 1061.387,
+      "end": 1064.783,
+      "text": "hope you understood this. Now, I think"
+    },
+    {
+      "start": 1063.843,
+      "end": 1067.1950000000002,
+      "text": "you are ready in week two to build your"
+    },
+    {
+      "start": 1066.255,
+      "end": 1069.412,
+      "text": "major project. Tomorrow, or whenever"
+    },
+    {
+      "start": 1068.458,
+      "end": 1071.442,
+      "text": "the next lecture of week two comes. Now"
+    },
+    {
+      "start": 1070.483,
+      "end": 1073.403,
+      "text": "we will build a mini-project. In that,"
+    },
+    {
+      "start": 1072.462,
+      "end": 1075.571,
+      "text": "I will have you build a real chatbot"
+    },
+    {
+      "start": 1074.63,
+      "end": 1078.046,
+      "text": "and see how to deploy it. So, that's it"
+    },
+    {
+      "start": 1077.111,
+      "end": 1079.9180000000001,
+      "text": "for streaming. I am thinking about the"
+    },
+    {
+      "start": 1078.953,
+      "end": 1081.466,
+      "text": "project. In week one, the project was"
+    },
+    {
+      "start": 1080.507,
+      "end": 1083.04,
+      "text": "the resume one. The week two project"
+    },
+    {
+      "start": 1082.081,
+      "end": 1084.6989999999998,
+      "text": "will be a chatbot. Because everything"
+    },
+    {
+      "start": 1083.742,
+      "end": 1086.298,
+      "text": "we studied in week two, combining it"
+    },
+    {
+      "start": 1085.341,
+      "end": 1087.724,
+      "text": "all into a chatbot will be best."
+    },
+    {
+      "start": 1086.824,
+      "end": 1089.271,
+      "text": "Because what did we study in week two?"
+    },
+    {
+      "start": 1088.371,
+      "end": 1091.3680000000002,
+      "text": "We studied JSON. We studied Pydantic,"
+    },
+    {
+      "start": 1090.426,
+      "end": 1093.703,
+      "text": "and what else did we study? We studied"
+    },
+    {
+      "start": 1092.766,
+      "end": 1095.4750000000001,
+      "text": "this streaming. And what else did we"
+    },
+    {
+      "start": 1094.509,
+      "end": 1098.189,
+      "text": "study? Yeah, in week two, after JSON,"
+    },
+    {
+      "start": 1097.268,
+      "end": 1101.476,
+      "text": "what else did I teach? I forgot. Okay?"
+    },
+    {
+      "start": 1100.576,
+      "end": 1103.077,
+      "text": "I mean, whatever we have studied is"
+    },
+    {
+      "start": 1102.12,
+      "end": 1104.857,
+      "text": "sufficient for the chatbot. All right?"
+    },
+    {
+      "start": 1104.32,
+      "end": 1106.835,
+      "text": "So with everything we have learned so"
+    },
+    {
+      "start": 1105.876,
+      "end": 1108.432,
+      "text": "far, you can easily build all of these"
+    },
+    {
+      "start": 1107.473,
+      "end": 1110.82,
+      "text": "things. I will explain the project to"
+    },
+    {
+      "start": 1109.866,
+      "end": 1112.623,
+      "text": "you tomorrow and show you how to build"
+    },
+    {
+      "start": 1111.669,
+      "end": 1114.3790000000001,
+      "text": "it, so let's meet in the next lecture"
+    },
+    {
+      "start": 1113.425,
+      "end": 1115.72,
+      "text": "and please go and code this."
+    }
+  ],
+  "language": "en-US",
+  "language_name": "English (United States) (auto-generated)",
+  "is_generated": true,
+  "provider": "youtube",
+  "source_type": "youtube_generated",
+  "retrieved_at": "2026-09-22T18:07:50.196728+00:00"
+}

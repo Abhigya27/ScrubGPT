@@ -1,0 +1,6161 @@
+{
+  "video_id": "KhHr4Y6v2TE",
+  "lines": [
+    {
+      "start": 0.434,
+      "end": 3.3240000000000003,
+      "text": "Hello everyone. So, what we will talk"
+    },
+    {
+      "start": 2.371,
+      "end": 5.115,
+      "text": "about today is very important from an"
+    },
+    {
+      "start": 4.163,
+      "end": 6.79,
+      "text": "interview perspective. Because in"
+    },
+    {
+      "start": 5.839,
+      "end": 8.605,
+      "text": "interviews, you have already studied"
+    },
+    {
+      "start": 7.654,
+      "end": 10.376999999999999,
+      "text": "RAG. But in an interview, you won't"
+    },
+    {
+      "start": 9.423,
+      "end": 12.159,
+      "text": "just be asked about RAG. You won't be"
+    },
+    {
+      "start": 11.203,
+      "end": 13.986999999999998,
+      "text": "told to just build a RAG. You are asked"
+    },
+    {
+      "start": 13.031,
+      "end": 15.703000000000001,
+      "text": "about the things inside RAG, like what"
+    },
+    {
+      "start": 14.747,
+      "end": 17.355,
+      "text": "RAG actually is. What components are"
+    },
+    {
+      "start": 16.397,
+      "end": 19.163999999999998,
+      "text": "involved in RAG? That is asked in great"
+    },
+    {
+      "start": 18.209,
+      "end": 21.469,
+      "text": "depth. No one says, \"Come on, write the"
+    },
+    {
+      "start": 20.528,
+      "end": 23.320999999999998,
+      "text": "code for RAG.\" But this part,"
+    },
+    {
+      "start": 22.383,
+      "end": 27.354,
+      "text": "evaluation. RAG evaluation is a very"
+    },
+    {
+      "start": 26.408,
+      "end": 29.208000000000002,
+      "text": "important topic, and it is not as"
+    },
+    {
+      "start": 28.262,
+      "end": 32.104,
+      "text": "simple as it sounds. I mean, it sounds"
+    },
+    {
+      "start": 31.149,
+      "end": 33.675,
+      "text": "simple in the sense that one might"
+    },
+    {
+      "start": 32.72,
+      "end": 35.425,
+      "text": "think, \"Okay, we'll just check if it's"
+    },
+    {
+      "start": 34.47,
+      "end": 37.221,
+      "text": "giving the right answer,\" but it is not"
+    },
+    {
+      "start": 36.266,
+      "end": 39.177,
+      "text": "that simple. I will explain why it is"
+    },
+    {
+      "start": 38.23,
+      "end": 41.138999999999996,
+      "text": "not simple; it has many layers. So,"
+    },
+    {
+      "start": 40.194,
+      "end": 43.068000000000005,
+      "text": "listen to the evaluation part very"
+    },
+    {
+      "start": 42.123,
+      "end": 47.671,
+      "text": "carefully and keep it in mind. Now look"
+    },
+    {
+      "start": 46.671,
+      "end": 49.679,
+      "text": ", we have already built how RAG is made"
+    },
+    {
+      "start": 48.679,
+      "end": 51.43,
+      "text": ", we have done many things in RAG,"
+    },
+    {
+      "start": 50.482,
+      "end": 53.336,
+      "text": "tried this and that, but is your RAG"
+    },
+    {
+      "start": 52.387,
+      "end": 58.927,
+      "text": "actually working correctly or not? Is"
+    },
+    {
+      "start": 57.976,
+      "end": 60.61,
+      "text": "your RAG working properly or not?"
+    },
+    {
+      "start": 61.37,
+      "end": 64.222,
+      "text": "Finding the answer to this question is"
+    },
+    {
+      "start": 63.27,
+      "end": 66.309,
+      "text": "called evaluation. What is it called?"
+    },
+    {
+      "start": 65.634,
+      "end": 69.56400000000001,
+      "text": "Evaluation. For example, when we do"
+    },
+    {
+      "start": 68.625,
+      "end": 72.011,
+      "text": "LeetCode, when we solve DSA on LeetCode"
+    },
+    {
+      "start": 71.011,
+      "end": 74.954,
+      "text": ", you write a DSA program. You write a"
+    },
+    {
+      "start": 74.004,
+      "end": 76.882,
+      "text": "program for any given problem, right?"
+    },
+    {
+      "start": 76.552,
+      "end": 79.744,
+      "text": "Is that program correct or not? How is"
+    },
+    {
+      "start": 78.787,
+      "end": 82.283,
+      "text": "that checked? By test cases. LeetCode"
+    },
+    {
+      "start": 81.339,
+      "end": 84.601,
+      "text": "gives you test cases. If you pass all"
+    },
+    {
+      "start": 83.649,
+      "end": 86.375,
+      "text": "the test cases on LeetCode, LeetCode"
+    },
+    {
+      "start": 85.423,
+      "end": 88.149,
+      "text": "says it's correct and the problem is"
+    },
+    {
+      "start": 87.197,
+      "end": 90.13900000000001,
+      "text": "submitted. If you don't pass all the"
+    },
+    {
+      "start": 89.193,
+      "end": 92.149,
+      "text": "test cases, LeetCode says \"incorrect"
+    },
+    {
+      "start": 91.203,
+      "end": 94.322,
+      "text": "answer\" or \"time limit exceeded\"—what"
+    },
+    {
+      "start": 93.376,
+      "end": 95.964,
+      "text": "is that? That is the evaluation of"
+    },
+    {
+      "start": 95.006,
+      "end": 97.524,
+      "text": "whether what you built is correct or"
+    },
+    {
+      "start": 96.566,
+      "end": 99.946,
+      "text": "not. So, in the same way, when you"
+    },
+    {
+      "start": 98.999,
+      "end": 101.741,
+      "text": "build a RAG in a company or for a"
+    },
+    {
+      "start": 100.794,
+      "end": 103.8,
+      "text": "project, is your RAG working correctly"
+    },
+    {
+      "start": 102.853,
+      "end": 106.649,
+      "text": "or not? How will you know this? What"
+    },
+    {
+      "start": 105.693,
+      "end": 108.931,
+      "text": "will you do for this? I mean, what is"
+    },
+    {
+      "start": 107.986,
+      "end": 112.327,
+      "text": "the job of RAG? The job of RAG is to"
+    },
+    {
+      "start": 111.375,
+      "end": 114.053,
+      "text": "provide answers to the questions or"
+    },
+    {
+      "start": 113.101,
+      "end": 116.896,
+      "text": "queries you ask. Now, who will tell if"
+    },
+    {
+      "start": 115.946,
+      "end": 118.722,
+      "text": "this answer is right or wrong? This"
+    },
+    {
+      "start": 117.766,
+      "end": 120.405,
+      "text": "will be known through evaluation. So"
+    },
+    {
+      "start": 119.45,
+      "end": 122.049,
+      "text": "now, there are two or three types of"
+    },
+    {
+      "start": 121.093,
+      "end": 123.976,
+      "text": "things here. Now, for example, look,"
+    },
+    {
+      "start": 123.03,
+      "end": 125.869,
+      "text": "what is the job of RAG? Answering a"
+    },
+    {
+      "start": 124.913,
+      "end": 127.777,
+      "text": "question. So, let's assume you are a"
+    },
+    {
+      "start": 126.829,
+      "end": 130.798,
+      "text": "student. You fail an exam. You fail an"
+    },
+    {
+      "start": 129.862,
+      "end": 133.801,
+      "text": "exam. So, failing makes people assume"
+    },
+    {
+      "start": 132.858,
+      "end": 135.766,
+      "text": "that, yes, this child didn't have"
+    },
+    {
+      "start": 134.824,
+      "end": 138.24,
+      "text": "brains. This child didn't have brains."
+    },
+    {
+      "start": 137.34,
+      "end": 140.096,
+      "text": "It is possible the child didn't have"
+    },
+    {
+      "start": 139.145,
+      "end": 142.39000000000001,
+      "text": "brains. But it is also possible that"
+    },
+    {
+      "start": 141.433,
+      "end": 144.069,
+      "text": "the teacher who taught him didn't have"
+    },
+    {
+      "start": 143.112,
+      "end": 146.137,
+      "text": "brains. That is also possible, right?"
+    },
+    {
+      "start": 145.237,
+      "end": 147.72,
+      "text": "People don't think that if a child"
+    },
+    {
+      "start": 146.764,
+      "end": 149.466,
+      "text": "fails an exam, there is one possibility"
+    },
+    {
+      "start": 148.51,
+      "end": 151.29999999999998,
+      "text": "that the child lacked intelligence. The"
+    },
+    {
+      "start": 150.354,
+      "end": 154.04500000000002,
+      "text": "child failed. Okay, very good. But it"
+    },
+    {
+      "start": 153.089,
+      "end": 155.749,
+      "text": "could also be that the child was very"
+    },
+    {
+      "start": 154.793,
+      "end": 157.847,
+      "text": "smart. The child was very smart. But"
+    },
+    {
+      "start": 156.889,
+      "end": 159.472,
+      "text": "the teacher who taught him was a fool."
+    },
+    {
+      "start": 158.572,
+      "end": 160.994,
+      "text": "The teacher made the students write"
+    },
+    {
+      "start": 160.034,
+      "end": 162.582,
+      "text": "down the wrong notes. This is also"
+    },
+    {
+      "start": 161.631,
+      "end": 164.356,
+      "text": "possible. So, that is why it is not"
+    },
+    {
+      "start": 163.403,
+      "end": 166.149,
+      "text": "that simple for you to just say, yes,"
+    },
+    {
+      "start": 165.197,
+      "end": 167.963,
+      "text": "okay, the answer is wrong. The answer"
+    },
+    {
+      "start": 167.007,
+      "end": 169.626,
+      "text": "is correct. Why is the answer coming"
+    },
+    {
+      "start": 168.669,
+      "end": 171.382,
+      "text": "out wrong? Why did the child fail?"
+    },
+    {
+      "start": 170.482,
+      "end": 172.923,
+      "text": "Whose fault was it that the child"
+    },
+    {
+      "start": 171.967,
+      "end": 174.949,
+      "text": "failed? This entire process is called"
+    },
+    {
+      "start": 174.003,
+      "end": 177.392,
+      "text": "evaluation. So, look, what does RAG do"
+    },
+    {
+      "start": 176.457,
+      "end": 179.792,
+      "text": "in simple terms? First of all, in RAG,"
+    },
+    {
+      "start": 178.848,
+      "end": 182.324,
+      "text": "you have a knowledge base. First of all"
+    },
+    {
+      "start": 181.324,
+      "end": 184.399,
+      "text": ", you have a knowledge base. That's"
+    },
+    {
+      "start": 183.446,
+      "end": 186.85999999999999,
+      "text": "good. We convert that knowledge base"
+    },
+    {
+      "start": 185.906,
+      "end": 188.28300000000002,
+      "text": "into vectors, which are called"
+    },
+    {
+      "start": 187.329,
+      "end": 190.846,
+      "text": "embeddings. I keep repeating these"
+    },
+    {
+      "start": 189.89,
+      "end": 192.43699999999998,
+      "text": "things so that they sit deep inside"
+    },
+    {
+      "start": 191.481,
+      "end": 194.653,
+      "text": "your mind. That is why I tell you"
+    },
+    {
+      "start": 193.702,
+      "end": 196.612,
+      "text": "repeatedly in every lecture what RAG is"
+    },
+    {
+      "start": 195.612,
+      "end": 198.263,
+      "text": ". What do we convert knowledge into?"
+    },
+    {
+      "start": 197.363,
+      "end": 200.358,
+      "text": "Into vectors. Using what? Using"
+    },
+    {
+      "start": 199.416,
+      "end": 202.283,
+      "text": "embeddings. Alright. Where do these"
+    },
+    {
+      "start": 201.327,
+      "end": 204.426,
+      "text": "vectors go? These vectors reach some"
+    },
+    {
+      "start": 203.479,
+      "end": 206.615,
+      "text": "vector DB. Like, they reach Qdrant."
+    },
+    {
+      "start": 205.715,
+      "end": 209.941,
+      "text": "Okay. Now, what happens? Whenever you"
+    },
+    {
+      "start": 208.994,
+      "end": 211.982,
+      "text": "ask a query, whenever you ask a query,"
+    },
+    {
+      "start": 211.034,
+      "end": 213.86499999999998,
+      "text": "that query is also converted into a"
+    },
+    {
+      "start": 212.917,
+      "end": 217.589,
+      "text": "vector. How? Using embeddings. This"
+    },
+    {
+      "start": 216.636,
+      "end": 219.459,
+      "text": "query vector and the relevant chunks in"
+    },
+    {
+      "start": 218.505,
+      "end": 221.23499999999999,
+      "text": "the vector DB that have a high match."
+    },
+    {
+      "start": 220.931,
+      "end": 223.907,
+      "text": "The cosine similarity is very high."
+    },
+    {
+      "start": 223.146,
+      "end": 226.22099999999998,
+      "text": "What do those vectors become? Those"
+    },
+    {
+      "start": 225.274,
+      "end": 228.311,
+      "text": "vectors become your context. Like, you"
+    },
+    {
+      "start": 227.362,
+      "end": 230.012,
+      "text": "asked a query, which vectors are"
+    },
+    {
+      "start": 229.064,
+      "end": 231.91,
+      "text": "similar to that query? Suppose these"
+    },
+    {
+      "start": 230.957,
+      "end": 234.225,
+      "text": "are three vectors. Yes. So that becomes"
+    },
+    {
+      "start": 233.276,
+      "end": 236.12400000000002,
+      "text": "your context. Where does this context"
+    },
+    {
+      "start": 235.171,
+      "end": 238.971,
+      "text": "go? It goes to your LLM. What final"
+    },
+    {
+      "start": 238.022,
+      "end": 240.81199999999998,
+      "text": "answer does your LLM give you after"
+    },
+    {
+      "start": 239.863,
+      "end": 243.554,
+      "text": "reading this context? So, what is this?"
+    },
+    {
+      "start": 242.697,
+      "end": 245.707,
+      "text": "This is your basic RAG. This is your"
+    },
+    {
+      "start": 244.761,
+      "end": 248.44899999999998,
+      "text": "basic RAG. Now, suppose someone finds"
+    },
+    {
+      "start": 247.499,
+      "end": 250.45,
+      "text": "out that my answer is coming out wrong."
+    },
+    {
+      "start": 250.303,
+      "end": 253.57399999999998,
+      "text": "My answer is coming out wrong. Someone"
+    },
+    {
+      "start": 252.616,
+      "end": 255.043,
+      "text": "read your answer and they know the"
+    },
+    {
+      "start": 254.085,
+      "end": 257.252,
+      "text": "answer is wrong. Suppose someone asks"
+    },
+    {
+      "start": 256.301,
+      "end": 258.913,
+      "text": "how many days of leave you get at"
+    },
+    {
+      "start": 257.962,
+      "end": 260.853,
+      "text": "Akamai. Your answer comes out that you"
+    },
+    {
+      "start": 259.902,
+      "end": 262.89099999999996,
+      "text": "get 15 days of leave at Akamai. But the"
+    },
+    {
+      "start": 261.947,
+      "end": 265.01800000000003,
+      "text": "HR reading it knows that, no, you get"
+    },
+    {
+      "start": 264.074,
+      "end": 267.652,
+      "text": "12 days of leave at Akamai. 15 is wrong"
+    },
+    {
+      "start": 266.652,
+      "end": 269.578,
+      "text": ". So now this answer has come out wrong"
+    },
+    {
+      "start": 268.578,
+      "end": 271.214,
+      "text": ". It is known that the answer has come"
+    },
+    {
+      "start": 270.255,
+      "end": 273.786,
+      "text": "out wrong. But in this entire system,"
+    },
+    {
+      "start": 272.84,
+      "end": 275.609,
+      "text": "whose fault is it? There are many"
+    },
+    {
+      "start": 274.657,
+      "end": 277.529,
+      "text": "failure cases, right? See, first of all"
+    },
+    {
+      "start": 276.529,
+      "end": 279.13,
+      "text": ", it is possible that your knowledge"
+    },
+    {
+      "start": 278.175,
+      "end": 280.744,
+      "text": "itself is wrong. It is written in your"
+    },
+    {
+      "start": 279.78,
+      "end": 282.188,
+      "text": "knowledge that you get 15 days of leave"
+    },
+    {
+      "start": 281.224,
+      "end": 283.736,
+      "text": "in a month. Whereas this should not be"
+    },
+    {
+      "start": 282.775,
+      "end": 285.08299999999997,
+      "text": "the case. The correct things should be"
+    },
+    {
+      "start": 284.113,
+      "end": 286.166,
+      "text": "written in the knowledge. It is"
+    },
+    {
+      "start": 285.203,
+      "end": 287.597,
+      "text": "possible that the knowledge itself is"
+    },
+    {
+      "start": 286.635,
+      "end": 289.12399999999997,
+      "text": "wrong. So if the knowledge is wrong,"
+    },
+    {
+      "start": 288.164,
+      "end": 290.568,
+      "text": "obviously the answer will be wrong."
+    },
+    {
+      "start": 289.668,
+      "end": 292.299,
+      "text": "This is like the exam syllabus being"
+    },
+    {
+      "start": 291.345,
+      "end": 293.942,
+      "text": "wrong. You are reading the wrong book"
+    },
+    {
+      "start": 292.983,
+      "end": 295.583,
+      "text": "for the exam. No matter how well you"
+    },
+    {
+      "start": 294.627,
+      "end": 297.383,
+      "text": "study that book. You are going to fail"
+    },
+    {
+      "start": 296.428,
+      "end": 299.11899999999997,
+      "text": "the exam. Because the exam was for"
+    },
+    {
+      "start": 298.168,
+      "end": 300.87,
+      "text": "Physics. You are reading a Math book."
+    },
+    {
+      "start": 299.97,
+      "end": 302.862,
+      "text": "You will obviously fail. So one thing"
+    },
+    {
+      "start": 301.907,
+      "end": 304.479,
+      "text": "is that the knowledge itself can be"
+    },
+    {
+      "start": 303.524,
+      "end": 306.161,
+      "text": "wrong. The knowledge itself can be"
+    },
+    {
+      "start": 305.208,
+      "end": 309.925,
+      "text": "wrong. Okay, what else could it be? The"
+    },
+    {
+      "start": 308.967,
+      "end": 311.591,
+      "text": "second could be that your vector, your"
+    },
+    {
+      "start": 310.634,
+      "end": 313.21500000000003,
+      "text": "knowledge being converted to a vector"
+    },
+    {
+      "start": 312.258,
+      "end": 314.92499999999995,
+      "text": "and the similarity being retrieved from"
+    },
+    {
+      "start": 313.968,
+      "end": 317.802,
+      "text": "your vector. There might be an issue"
+    },
+    {
+      "start": 316.844,
+      "end": 319.454,
+      "text": "with the similarity retrieved from your"
+    },
+    {
+      "start": 318.495,
+      "end": 323.262,
+      "text": "vector. Now because of this, your"
+    },
+    {
+      "start": 322.31,
+      "end": 326.383,
+      "text": "context will come out wrong. Your"
+    },
+    {
+      "start": 325.434,
+      "end": 328.47400000000005,
+      "text": "context itself is coming out wrong. For"
+    },
+    {
+      "start": 327.524,
+      "end": 330.26800000000003,
+      "text": "example, your question was how many"
+    },
+    {
+      "start": 329.318,
+      "end": 332.063,
+      "text": "days of leave do you get at Akamai?"
+    },
+    {
+      "start": 331.163,
+      "end": 334.119,
+      "text": "Your context is retrieving that you get"
+    },
+    {
+      "start": 333.169,
+      "end": 336.075,
+      "text": "a salary of 500 every month at Akamai."
+    },
+    {
+      "start": 335.175,
+      "end": 337.978,
+      "text": "What kind of context is this? This is"
+    },
+    {
+      "start": 337.031,
+      "end": 339.77500000000003,
+      "text": "not a context. The context should be"
+    },
+    {
+      "start": 338.819,
+      "end": 341.574,
+      "text": "about leave, brother. Your question is"
+    },
+    {
+      "start": 340.62,
+      "end": 343.295,
+      "text": "about leave and the context is about"
+    },
+    {
+      "start": 342.342,
+      "end": 345.269,
+      "text": "salary. So it is possible that this"
+    },
+    {
+      "start": 344.32,
+      "end": 347.59499999999997,
+      "text": "context is wrong. So this can be the"
+    },
+    {
+      "start": 346.642,
+      "end": 349.506,
+      "text": "second point of failure. Third, if"
+    },
+    {
+      "start": 348.558,
+      "end": 351.51099999999997,
+      "text": "everything is correct, and the LLM is"
+    },
+    {
+      "start": 350.564,
+      "end": 353.533,
+      "text": "getting the right context. If the LLM"
+    },
+    {
+      "start": 352.583,
+      "end": 355.41900000000004,
+      "text": "is getting the right context, then it"
+    },
+    {
+      "start": 354.469,
+      "end": 357.10699999999997,
+      "text": "could be the LLM's own mistake in"
+    },
+    {
+      "start": 356.157,
+      "end": 359.044,
+      "text": "reading and understanding the context."
+    },
+    {
+      "start": 358.144,
+      "end": 360.942,
+      "text": "That could also happen. It might be the"
+    },
+    {
+      "start": 359.992,
+      "end": 362.581,
+      "text": "LLM's fault. So that makes the third"
+    },
+    {
+      "start": 361.62,
+      "end": 364.274,
+      "text": "failure mode here. So how many failure"
+    },
+    {
+      "start": 363.319,
+      "end": 366.08500000000004,
+      "text": "modes? Three failure modes, right? The"
+    },
+    {
+      "start": 365.114,
+      "end": 367.185,
+      "text": "first one is that your knowledge base"
+    },
+    {
+      "start": 366.214,
+      "end": 368.413,
+      "text": "is completely wrong. Your knowledge"
+    },
+    {
+      "start": 367.45,
+      "end": 369.961,
+      "text": "itself is useless. The book itself is"
+    },
+    {
+      "start": 369.002,
+      "end": 371.821,
+      "text": "backward. The book is wrong. Okay?"
+    },
+    {
+      "start": 370.921,
+      "end": 373.417,
+      "text": "After that, the context you are"
+    },
+    {
+      "start": 372.465,
+      "end": 375.106,
+      "text": "extracting from the query might be"
+    },
+    {
+      "start": 374.154,
+      "end": 377.339,
+      "text": "wrong. If the context is wrong, what"
+    },
+    {
+      "start": 376.395,
+      "end": 379.466,
+      "text": "will the LLM do? If, as a teacher, I"
+    },
+    {
+      "start": 378.519,
+      "end": 381.557,
+      "text": "teach you something wrong and you learn"
+    },
+    {
+      "start": 380.609,
+      "end": 383.518,
+      "text": "it well, what is the use? You will go"
+    },
+    {
+      "start": 382.564,
+      "end": 385.529,
+      "text": "and fail the interview. Right? I taught"
+    },
+    {
+      "start": 384.576,
+      "end": 387.333,
+      "text": "you incorrectly. I told you that RAG"
+    },
+    {
+      "start": 386.381,
+      "end": 389.23699999999997,
+      "text": "doesn't exist. RAG is something else."
+    },
+    {
+      "start": 388.337,
+      "end": 391.155,
+      "text": "You learned it well, too. No matter how"
+    },
+    {
+      "start": 390.201,
+      "end": 392.951,
+      "text": "well you learned it, just imagine that"
+    },
+    {
+      "start": 391.997,
+      "end": 394.74600000000004,
+      "text": "the LLM is the student taking the exam"
+    },
+    {
+      "start": 393.792,
+      "end": 396.45,
+      "text": "and writing the actual answer in the"
+    },
+    {
+      "start": 395.496,
+      "end": 398.301,
+      "text": "exam paper. What is the context? The"
+    },
+    {
+      "start": 397.343,
+      "end": 399.94,
+      "text": "context is the notes your teacher gave"
+    },
+    {
+      "start": 398.982,
+      "end": 401.538,
+      "text": "you to study, saying, \"Read this PDF,"
+    },
+    {
+      "start": 400.58,
+      "end": 403.219,
+      "text": "the questions will come from here,\" and"
+    },
+    {
+      "start": 402.261,
+      "end": 404.92600000000004,
+      "text": "what is the knowledge base? The entire"
+    },
+    {
+      "start": 403.969,
+      "end": 406.514,
+      "text": "knowledge base being wrong means the"
+    },
+    {
+      "start": 405.557,
+      "end": 408.362,
+      "text": "whole subject is flawed. So the teacher"
+    },
+    {
+      "start": 407.411,
+      "end": 410.194,
+      "text": "is good, the student is good, but the"
+    },
+    {
+      "start": 409.242,
+      "end": 412.21700000000004,
+      "text": "subject is wrong, man. The math teacher"
+    },
+    {
+      "start": 411.268,
+      "end": 414.102,
+      "text": "is very good, the student is a great"
+    },
+    {
+      "start": 413.153,
+      "end": 416.139,
+      "text": "learner, but the exam is social studies"
+    },
+    {
+      "start": 415.139,
+      "end": 418.196,
+      "text": "; you'll fail. Okay, so there are three"
+    },
+    {
+      "start": 417.248,
+      "end": 420.517,
+      "text": "points of failure. Now, how will we"
+    },
+    {
+      "start": 419.567,
+      "end": 422.402,
+      "text": "know if these three points of failure"
+    },
+    {
+      "start": 421.452,
+      "end": 424.782,
+      "text": "are right or wrong? And if it's wrong,"
+    },
+    {
+      "start": 423.831,
+      "end": 426.71700000000004,
+      "text": "whose fault is it—which one of these"
+    },
+    {
+      "start": 425.767,
+      "end": 428.83299999999997,
+      "text": "three? This whole process is evaluation"
+    },
+    {
+      "start": 427.833,
+      "end": 430.54400000000004,
+      "text": ". So you see that this is a bit of a"
+    },
+    {
+      "start": 429.589,
+      "end": 432.419,
+      "text": "complex process. It's not that simple."
+    },
+    {
+      "start": 431.519,
+      "end": 434.61,
+      "text": "When you do LeetCode, it's simple. Test"
+    },
+    {
+      "start": 433.664,
+      "end": 436.675,
+      "text": "case passed or failed. But here, it's"
+    },
+    {
+      "start": 435.726,
+      "end": 438.492,
+      "text": "not that simple. If the answer comes"
+    },
+    {
+      "start": 437.536,
+      "end": 440.192,
+      "text": "out correct, then it's a great thing."
+    },
+    {
+      "start": 439.292,
+      "end": 442.114,
+      "text": "If the answer comes out wrong. Whose"
+    },
+    {
+      "start": 441.166,
+      "end": 444.355,
+      "text": "fault is it? Who do you fix? It could"
+    },
+    {
+      "start": 443.406,
+      "end": 446.08,
+      "text": "be that your context retriever is"
+    },
+    {
+      "start": 445.13,
+      "end": 447.703,
+      "text": "broken, and you are focusing on"
+    },
+    {
+      "start": 446.753,
+      "end": 449.73199999999997,
+      "text": "strengthening your LLM, thinking, \"Hey,"
+    },
+    {
+      "start": 448.782,
+      "end": 451.608,
+      "text": "let's just buy the paid model of the"
+    },
+    {
+      "start": 450.659,
+      "end": 453.771,
+      "text": "LLM.\" Make the LLM even better. No, the"
+    },
+    {
+      "start": 452.819,
+      "end": 455.637,
+      "text": "LLM won't be able to do anything. The"
+    },
+    {
+      "start": 454.678,
+      "end": 457.113,
+      "text": "LLM is just reading the context and"
+    },
+    {
+      "start": 456.154,
+      "end": 458.716,
+      "text": "giving the answer. If the context is"
+    },
+    {
+      "start": 457.759,
+      "end": 460.33500000000004,
+      "text": "trash, no matter how good the LLM is,"
+    },
+    {
+      "start": 459.378,
+      "end": 461.928,
+      "text": "it won't be able to do anything. If"
+    },
+    {
+      "start": 460.971,
+      "end": 463.614,
+      "text": "your teacher is useless, no matter how"
+    },
+    {
+      "start": 462.658,
+      "end": 465.214,
+      "text": "smart you are, you are going to fail"
+    },
+    {
+      "start": 464.257,
+      "end": 466.915,
+      "text": "the exam. Does everyone understand this"
+    },
+    {
+      "start": 465.956,
+      "end": 469.74600000000004,
+      "text": "point or not? Okay? Now, for this,"
+    },
+    {
+      "start": 468.798,
+      "end": 471.534,
+      "text": "let's look at what the evaluation"
+    },
+    {
+      "start": 470.586,
+      "end": 473.772,
+      "text": "process is like. It is a very"
+    },
+    {
+      "start": 472.824,
+      "end": 475.894,
+      "text": "interesting process. First of all, we"
+    },
+    {
+      "start": 474.951,
+      "end": 477.97,
+      "text": "build our RAG. First, anyone builds"
+    },
+    {
+      "start": 477.026,
+      "end": 479.937,
+      "text": "their own RAG. Building RAG means doing"
+    },
+    {
+      "start": 478.98,
+      "end": 481.707,
+      "text": "all the work. Vectorizing the knowledge"
+    },
+    {
+      "start": 480.707,
+      "end": 483.525,
+      "text": ". It goes into the vector DB. Writing"
+    },
+    {
+      "start": 482.571,
+      "end": 485.31,
+      "text": "the full function, asking the LLM, and"
+    },
+    {
+      "start": 484.356,
+      "end": 487.639,
+      "text": "doing it all. Okay, that is great. Now,"
+    },
+    {
+      "start": 486.703,
+      "end": 489.89799999999997,
+      "text": "for evaluation, we create a golden"
+    },
+    {
+      "start": 488.963,
+      "end": 492.76800000000003,
+      "text": "dataset. What do we do? A golden"
+    },
+    {
+      "start": 491.829,
+      "end": 495.8,
+      "text": "dataset. A golden dataset. You can"
+    },
+    {
+      "start": 494.848,
+      "end": 497.706,
+      "text": "think of a golden dataset like the test"
+    },
+    {
+      "start": 496.754,
+      "end": 500.762,
+      "text": "cases in LeetCode. What is written in"
+    },
+    {
+      "start": 499.813,
+      "end": 503.421,
+      "text": "LeetCode test cases? For a certain"
+    },
+    {
+      "start": 502.471,
+      "end": 505.116,
+      "text": "input, a certain output should be"
+    },
+    {
+      "start": 504.166,
+      "end": 507.038,
+      "text": "expected. What? For a certain input, a"
+    },
+    {
+      "start": 506.079,
+      "end": 508.725,
+      "text": "certain output should be expected. That"
+    },
+    {
+      "start": 507.765,
+      "end": 510.17199999999997,
+      "text": "is what a test case is in LeetCode,"
+    },
+    {
+      "start": 509.212,
+      "end": 511.84,
+      "text": "right? Suppose there is an array. For"
+    },
+    {
+      "start": 510.885,
+      "end": 513.567,
+      "text": "this array, the answer should be four."
+    },
+    {
+      "start": 512.667,
+      "end": 515.3580000000001,
+      "text": "That is exactly what a test case is."
+    },
+    {
+      "start": 514.458,
+      "end": 517.343,
+      "text": "Input for an output. A golden dataset"
+    },
+    {
+      "start": 516.393,
+      "end": 519.1890000000001,
+      "text": "is the same thing. What is a golden"
+    },
+    {
+      "start": 518.239,
+      "end": 521.115,
+      "text": "dataset? You write two things in it."
+    },
+    {
+      "start": 520.567,
+      "end": 523.501,
+      "text": "You write in it. First, you write a"
+    },
+    {
+      "start": 522.556,
+      "end": 525.616,
+      "text": "question. You create this question"
+    },
+    {
+      "start": 524.664,
+      "end": 528.0699999999999,
+      "text": "yourself. After reading the knowledge"
+    },
+    {
+      "start": 527.118,
+      "end": 529.825,
+      "text": "base, you think, let's select these"
+    },
+    {
+      "start": 528.873,
+      "end": 535.168,
+      "text": "five questions. So, one is the question"
+    },
+    {
+      "start": 534.168,
+      "end": 536.841,
+      "text": "—what should be asked—and its"
+    },
+    {
+      "start": 535.892,
+      "end": 538.7170000000001,
+      "text": "ground truth, meaning the answer you"
+    },
+    {
+      "start": 537.768,
+      "end": 540.745,
+      "text": "expect as the human writing the program"
+    },
+    {
+      "start": 539.745,
+      "end": 545.597,
+      "text": ". According to you, what should the"
+    },
+    {
+      "start": 544.644,
+      "end": 547.613,
+      "text": "answer be? And what is this based on?"
+    },
+    {
+      "start": 547.314,
+      "end": 551.427,
+      "text": "It is based on your knowledge. The"
+    },
+    {
+      "start": 550.48,
+      "end": 553.5310000000001,
+      "text": "golden dataset is created by a human or"
+    },
+    {
+      "start": 552.584,
+      "end": 555.635,
+      "text": "an LLM after reading the knowledge text"
+    },
+    {
+      "start": 554.635,
+      "end": 559.5459999999999,
+      "text": ". But its main purpose is: hey, what is"
+    },
+    {
+      "start": 558.6,
+      "end": 561.491,
+      "text": "the ground truth for this question?"
+    },
+    {
+      "start": 561.402,
+      "end": 564.154,
+      "text": "Meaning, if someone asks, \"How many"
+    },
+    {
+      "start": 563.204,
+      "end": 567.1179999999999,
+      "text": "paid leaves are there?\" Then the ground"
+    },
+    {
+      "start": 566.167,
+      "end": 568.8430000000001,
+      "text": "truth answer should be that Akamai"
+    },
+    {
+      "start": 567.892,
+      "end": 571.404,
+      "text": "provides 12 days of paid leave. That is"
+    },
+    {
+      "start": 570.45,
+      "end": 573.5060000000001,
+      "text": "the answer. This is the absolute truth."
+    },
+    {
+      "start": 572.697,
+      "end": 575.583,
+      "text": "Right? This truth is called ground"
+    },
+    {
+      "start": 574.636,
+      "end": 577.543,
+      "text": "truth. Ground truth means this is what"
+    },
+    {
+      "start": 576.589,
+      "end": 579.589,
+      "text": "it should be. How many days of paid"
+    },
+    {
+      "start": 578.641,
+      "end": 581.98,
+      "text": "leave in Akamai? The answer should be"
+    },
+    {
+      "start": 581.035,
+      "end": 584.012,
+      "text": "12 days. What is this called? It is"
+    },
+    {
+      "start": 583.063,
+      "end": 586.083,
+      "text": "called a golden dataset. So, first of"
+    },
+    {
+      "start": 585.142,
+      "end": 588.0970000000001,
+      "text": "all, this is created. There can be any"
+    },
+    {
+      "start": 587.136,
+      "end": 589.784,
+      "text": "number of questions in it. As per your"
+    },
+    {
+      "start": 588.834,
+      "end": 592.0859999999999,
+      "text": "choice. Five questions, 10 questions,"
+    },
+    {
+      "start": 591.143,
+      "end": 594.269,
+      "text": "15 questions, 20 questions—like the"
+    },
+    {
+      "start": 593.326,
+      "end": 596.508,
+      "text": "one we made for YouTube, I think there"
+    },
+    {
+      "start": 595.566,
+      "end": 598.57,
+      "text": "were 30 questions in total. According"
+    },
+    {
+      "start": 597.609,
+      "end": 599.98,
+      "text": "to your preference. Now, if your"
+    },
+    {
+      "start": 599.024,
+      "end": 601.685,
+      "text": "knowledge base is very large, you will"
+    },
+    {
+      "start": 600.728,
+      "end": 603.409,
+      "text": "need to create more questions. If your"
+    },
+    {
+      "start": 602.448,
+      "end": 604.912,
+      "text": "knowledge base is just five lines, you"
+    },
+    {
+      "start": 603.95,
+      "end": 606.4150000000001,
+      "text": "can even do it by making one question."
+    },
+    {
+      "start": 605.515,
+      "end": 608.0509999999999,
+      "text": "So that happens in your LeetCode too,"
+    },
+    {
+      "start": 607.092,
+      "end": 609.908,
+      "text": "right? How many test cases? For easy"
+    },
+    {
+      "start": 608.953,
+      "end": 611.607,
+      "text": "programs, there are fewer test cases."
+    },
+    {
+      "start": 610.707,
+      "end": 613.348,
+      "text": "20 test cases, and for big dynamic"
+    },
+    {
+      "start": 612.397,
+      "end": 615.0870000000001,
+      "text": "programming problems, there are 142"
+    },
+    {
+      "start": 614.135,
+      "end": 616.801,
+      "text": "test cases, 200 test cases. So the"
+    },
+    {
+      "start": 615.845,
+      "end": 618.556,
+      "text": "point is how much to cover? We should"
+    },
+    {
+      "start": 617.604,
+      "end": 620.7090000000001,
+      "text": "cover all the cases. That is up to you."
+    },
+    {
+      "start": 619.98,
+      "end": 623.369,
+      "text": "I see. Now, once the golden dataset is"
+    },
+    {
+      "start": 622.425,
+      "end": 625.146,
+      "text": "created. Then the task is not what"
+    },
+    {
+      "start": 624.193,
+      "end": 626.8009999999999,
+      "text": "LeetCode does. In LeetCode, it checks"
+    },
+    {
+      "start": 625.839,
+      "end": 628.197,
+      "text": "if the output matches for the given"
+    },
+    {
+      "start": 627.235,
+      "end": 629.924,
+      "text": "input, right? Not yet. Right now, you"
+    },
+    {
+      "start": 628.96,
+      "end": 631.245,
+      "text": "don't have to check if this specific"
+    },
+    {
+      "start": 630.281,
+      "end": 632.8149999999999,
+      "text": "answer came for this question. No. You"
+    },
+    {
+      "start": 631.867,
+      "end": 635.0519999999999,
+      "text": "have created the golden dataset. Okay."
+    },
+    {
+      "start": 634.221,
+      "end": 637.097,
+      "text": "Now we start checking layer by layer."
+    },
+    {
+      "start": 636.414,
+      "end": 639.557,
+      "text": "What? Layer-by-layer checking. The"
+    },
+    {
+      "start": 638.605,
+      "end": 642.7180000000001,
+      "text": "first check is of the context. Context"
+    },
+    {
+      "start": 641.763,
+      "end": 644.346,
+      "text": "checking means checking the context"
+    },
+    {
+      "start": 643.392,
+      "end": 646.1560000000001,
+      "text": "that is being retrieved for your query."
+    },
+    {
+      "start": 646.422,
+      "end": 649.3770000000001,
+      "text": "You wrote a query, you wrote a query."
+    },
+    {
+      "start": 649.641,
+      "end": 652.485,
+      "text": "Suppose Quadrant gave you the top three"
+    },
+    {
+      "start": 651.532,
+      "end": 655.712,
+      "text": "for that. Gave you top three vectors."
+    },
+    {
+      "start": 655.184,
+      "end": 658.093,
+      "text": "For the query you wrote, Quadrant gives"
+    },
+    {
+      "start": 657.142,
+      "end": 660.3430000000001,
+      "text": "you the top three vectors. That is the"
+    },
+    {
+      "start": 659.398,
+      "end": 662.898,
+      "text": "context, right? So, the first check is"
+    },
+    {
+      "start": 661.946,
+      "end": 664.767,
+      "text": "performed on the context to see if the"
+    },
+    {
+      "start": 663.815,
+      "end": 666.6360000000001,
+      "text": "correct context is coming according to"
+    },
+    {
+      "start": 665.684,
+      "end": 669.7629999999999,
+      "text": "my question or not. So, the first thing"
+    },
+    {
+      "start": 668.809,
+      "end": 671.322,
+      "text": "that is checked in this is called"
+    },
+    {
+      "start": 670.368,
+      "end": 674.888,
+      "text": "precision. What? Precision. I see. What"
+    },
+    {
+      "start": 673.934,
+      "end": 677.347,
+      "text": "does precision mean? Precision means"
+    },
+    {
+      "start": 676.406,
+      "end": 680.419,
+      "text": "accuracy. Precision means accuracy."
+    },
+    {
+      "start": 679.982,
+      "end": 683.946,
+      "text": "Okay. So, suppose your query was"
+    },
+    {
+      "start": 682.999,
+      "end": 687.583,
+      "text": "something about paid leave. You got a"
+    },
+    {
+      "start": 686.634,
+      "end": 689.524,
+      "text": "total of three vectors from Quadrant,"
+    },
+    {
+      "start": 688.575,
+      "end": 691.5160000000001,
+      "text": "or rather, three lines of information."
+    },
+    {
+      "start": 691.107,
+      "end": 694.084,
+      "text": "Right? What was your first piece of"
+    },
+    {
+      "start": 693.125,
+      "end": 696.458,
+      "text": "information? That you get 12 days of"
+    },
+    {
+      "start": 695.511,
+      "end": 698.9359999999999,
+      "text": "paid leave. You get 12 days of paid"
+    },
+    {
+      "start": 697.993,
+      "end": 701.3340000000001,
+      "text": "leave. Okay. What was the second"
+    },
+    {
+      "start": 700.382,
+      "end": 704.1899999999999,
+      "text": "information, the second line? That you"
+    },
+    {
+      "start": 703.236,
+      "end": 706.043,
+      "text": "might also get additional three days in"
+    },
+    {
+      "start": 705.089,
+      "end": 709.6550000000001,
+      "text": "certain cases. And the third line of"
+    },
+    {
+      "start": 708.703,
+      "end": 711.511,
+      "text": "information was that you get a salary"
+    },
+    {
+      "start": 710.56,
+      "end": 714.329,
+      "text": "of 500 every month. Suppose your"
+    },
+    {
+      "start": 713.379,
+      "end": 716.217,
+      "text": "question was, how many paid leaves do"
+    },
+    {
+      "start": 715.266,
+      "end": 718.7339999999999,
+      "text": "you get? How many paid leaves do you"
+    },
+    {
+      "start": 717.779,
+      "end": 721.734,
+      "text": "get? This was your question. For this,"
+    },
+    {
+      "start": 720.787,
+      "end": 723.4920000000001,
+      "text": "Quadrant gave you three lines as"
+    },
+    {
+      "start": 722.545,
+      "end": 725.6229999999999,
+      "text": "vectors, saying these three match well."
+    },
+    {
+      "start": 724.793,
+      "end": 728.0840000000001,
+      "text": "Yes. What was the first one? 12 days of"
+    },
+    {
+      "start": 727.147,
+      "end": 730.253,
+      "text": "paid leaves. That's good. Second, you"
+    },
+    {
+      "start": 729.306,
+      "end": 732.3280000000001,
+      "text": "can get three additional days. That's"
+    },
+    {
+      "start": 731.38,
+      "end": 734.121,
+      "text": "very good. And what was the third line"
+    },
+    {
+      "start": 733.163,
+      "end": 737.135,
+      "text": "given? ₹ 00 salary is received. Now,"
+    },
+    {
+      "start": 736.197,
+      "end": 739.948,
+      "text": "what is precision? How many total did"
+    },
+    {
+      "start": 738.994,
+      "end": 741.8000000000001,
+      "text": "you get? How many total vectors did you"
+    },
+    {
+      "start": 740.845,
+      "end": 743.625,
+      "text": "get from Quadrant? Three. How many"
+    },
+    {
+      "start": 742.668,
+      "end": 745.868,
+      "text": "total vectors did you get? Three. Okay."
+    },
+    {
+      "start": 745.174,
+      "end": 747.904,
+      "text": "Out of those, how many are relevant?"
+    },
+    {
+      "start": 748.143,
+      "end": 750.695,
+      "text": "How many are relevant to your question?"
+    },
+    {
+      "start": 750.577,
+      "end": 754.741,
+      "text": "Two. Why? This one is relevant. 12 days"
+    },
+    {
+      "start": 753.796,
+      "end": 756.676,
+      "text": "paid leave is received. This one is"
+    },
+    {
+      "start": 755.722,
+      "end": 758.043,
+      "text": "also relevant to some extent."
+    },
+    {
+      "start": 757.143,
+      "end": 759.6850000000001,
+      "text": "Additional three days are received."
+    },
+    {
+      "start": 758.785,
+      "end": 762.391,
+      "text": "Okay? But why did this 500 salary line"
+    },
+    {
+      "start": 761.449,
+      "end": 764.438,
+      "text": "come up? I didn't ask for that. I"
+    },
+    {
+      "start": 763.487,
+      "end": 766.382,
+      "text": "wanted to ask about paid leaves, right?"
+    },
+    {
+      "start": 765.482,
+      "end": 768.345,
+      "text": "I didn't ask if 50,000 salary is"
+    },
+    {
+      "start": 767.403,
+      "end": 770.6170000000001,
+      "text": "received or 35,000 salary is received."
+    },
+    {
+      "start": 769.717,
+      "end": 772.726,
+      "text": "So, out of these three lines, how many"
+    },
+    {
+      "start": 771.779,
+      "end": 774.905,
+      "text": "are relevant to yours? Two. How many"
+    },
+    {
+      "start": 773.944,
+      "end": 777.367,
+      "text": "are yours that are relevant? Two. What"
+    },
+    {
+      "start": 776.41,
+      "end": 780.523,
+      "text": "will your precision be? Your precision"
+    },
+    {
+      "start": 779.592,
+      "end": 783.8919999999999,
+      "text": "will be 66%precision. Why? Because how"
+    },
+    {
+      "start": 782.942,
+      "end": 785.768,
+      "text": "many total context lines did you get?"
+    },
+    {
+      "start": 784.939,
+      "end": 788.06,
+      "text": "Three context lines. Out of those, how"
+    },
+    {
+      "start": 787.105,
+      "end": 789.712,
+      "text": "many were relevant to your question?"
+    },
+    {
+      "start": 788.83,
+      "end": 792.363,
+      "text": "Only two. What was the precision? 2/3,"
+    },
+    {
+      "start": 791.49,
+      "end": 796.466,
+      "text": "66%precision. So, precision means how"
+    },
+    {
+      "start": 795.517,
+      "end": 798.498,
+      "text": "many came in total and how many of them"
+    },
+    {
+      "start": 797.549,
+      "end": 800.7909999999999,
+      "text": "were relevant? That's all it is. It's"
+    },
+    {
+      "start": 799.841,
+      "end": 802.615,
+      "text": "simple math. How many relevant, brother"
+    },
+    {
+      "start": 801.615,
+      "end": 804.016,
+      "text": "? How many did you get in total? You"
+    },
+    {
+      "start": 803.059,
+      "end": 805.558,
+      "text": "understood precision. What is the"
+    },
+    {
+      "start": 804.603,
+      "end": 807.75,
+      "text": "accuracy of your Quadrant DB? It has 66"
+    },
+    {
+      "start": 806.75,
+      "end": 810.139,
+      "text": "%accuracy. Yes. Okay. Now once"
+    },
+    {
+      "start": 809.187,
+      "end": 811.904,
+      "text": "precision is calculated. What is the"
+    },
+    {
+      "start": 810.944,
+      "end": 813.434,
+      "text": "second one? What is the second one?"
+    },
+    {
+      "start": 812.534,
+      "end": 816.097,
+      "text": "Recall. What is the second one? Recall."
+    },
+    {
+      "start": 815.257,
+      "end": 818.1619999999999,
+      "text": "Recall is just the opposite. There is a"
+    },
+    {
+      "start": 817.206,
+      "end": 819.643,
+      "text": "very small but minute difference"
+    },
+    {
+      "start": 818.688,
+      "end": 821.525,
+      "text": "between recall and precision. What does"
+    },
+    {
+      "start": 820.573,
+      "end": 823.547,
+      "text": "precision say? Of all the context that"
+    },
+    {
+      "start": 822.596,
+      "end": 825.94,
+      "text": "came, how many were relevant? Now"
+    },
+    {
+      "start": 824.981,
+      "end": 827.322,
+      "text": "suppose that there were two lines"
+    },
+    {
+      "start": 826.363,
+      "end": 829.0530000000001,
+      "text": "written in your knowledge. In your"
+    },
+    {
+      "start": 828.105,
+      "end": 830.908,
+      "text": "knowledge, there were two lines, 12"
+    },
+    {
+      "start": 829.96,
+      "end": 832.917,
+      "text": "days of paid leave. This was one line"
+    },
+    {
+      "start": 831.968,
+      "end": 834.7249999999999,
+      "text": "in your knowledge base, 12 days of"
+    },
+    {
+      "start": 833.777,
+      "end": 836.8570000000001,
+      "text": "leave. And you had written three"
+    },
+    {
+      "start": 835.9,
+      "end": 839.28,
+      "text": "additional days of leave. Three"
+    },
+    {
+      "start": 838.326,
+      "end": 842.009,
+      "text": "additional days of leave. Days of leave"
+    },
+    {
+      "start": 841.009,
+      "end": 844.501,
+      "text": ". Okay? Now look, both of these are"
+    },
+    {
+      "start": 843.552,
+      "end": 846.3100000000001,
+      "text": "relevant. And what was your question?"
+    },
+    {
+      "start": 845.712,
+      "end": 849.186,
+      "text": "How many leaves? How many total leaves?"
+    },
+    {
+      "start": 848.813,
+      "end": 852.759,
+      "text": "How many total leaves? Okay? How many"
+    },
+    {
+      "start": 851.812,
+      "end": 854.359,
+      "text": "total leaves? Don't call this"
+    },
+    {
+      "start": 853.402,
+      "end": 856.398,
+      "text": "additional. Make this three sick days."
+    },
+    {
+      "start": 855.498,
+      "end": 858.5150000000001,
+      "text": "Three days of sick leave. Three days of"
+    },
+    {
+      "start": 857.566,
+      "end": 861.0260000000001,
+      "text": "sick leave. Three sick leaves. Okay."
+    },
+    {
+      "start": 860.126,
+      "end": 862.61,
+      "text": "Meaning, what was written in your"
+    },
+    {
+      "start": 861.655,
+      "end": 864.8779999999999,
+      "text": "knowledge base? That a person gets 12"
+    },
+    {
+      "start": 863.929,
+      "end": 866.855,
+      "text": "days of normal leave and three days of"
+    },
+    {
+      "start": 865.906,
+      "end": 868.9649999999999,
+      "text": "sick leave. So how much total leave was"
+    },
+    {
+      "start": 868.013,
+      "end": 871.125,
+      "text": "received? Total leave should logically"
+    },
+    {
+      "start": 870.181,
+      "end": 873.399,
+      "text": "be 15 days. Okay. Your question was the"
+    },
+    {
+      "start": 872.445,
+      "end": 875.2370000000001,
+      "text": "same. How many total leaves does an"
+    },
+    {
+      "start": 874.285,
+      "end": 877.793,
+      "text": "employee get? Now tell me, how many"
+    },
+    {
+      "start": 876.841,
+      "end": 879.607,
+      "text": "lines are relevant for this question?"
+    },
+    {
+      "start": 878.88,
+      "end": 881.561,
+      "text": "How many lines are actually relevant?"
+    },
+    {
+      "start": 880.661,
+      "end": 883.4709999999999,
+      "text": "Two lines. There are two actually"
+    },
+    {
+      "start": 882.516,
+      "end": 886.483,
+      "text": "relevant lines. Both are relevant. But"
+    },
+    {
+      "start": 885.538,
+      "end": 888.59,
+      "text": "by mistake, the context you generated"
+    },
+    {
+      "start": 887.645,
+      "end": 892.769,
+      "text": "only contains one line. The context you"
+    },
+    {
+      "start": 891.83,
+      "end": 895.1990000000001,
+      "text": "had only had one line: 12 days of leave"
+    },
+    {
+      "start": 894.199,
+      "end": 898.1949999999999,
+      "text": ". 12 days of leave. The Quadrant DB"
+    },
+    {
+      "start": 897.244,
+      "end": 899.8580000000001,
+      "text": "that provided it to you. It only"
+    },
+    {
+      "start": 898.908,
+      "end": 901.71,
+      "text": "provided one line, that there are 12"
+    },
+    {
+      "start": 900.761,
+      "end": 903.582,
+      "text": "days of leave. Quadrant DB could have"
+    },
+    {
+      "start": 902.629,
+      "end": 906.315,
+      "text": "retrieved both if it wanted to. But due"
+    },
+    {
+      "start": 905.368,
+      "end": 908.0780000000001,
+      "text": "to some error or for any reason,"
+    },
+    {
+      "start": 907.132,
+      "end": 910.0559999999999,
+      "text": "Quadrant DB only gave you a one-line"
+    },
+    {
+      "start": 909.109,
+      "end": 913.681,
+      "text": "context. The sick leave line was not"
+    },
+    {
+      "start": 912.732,
+      "end": 915.67,
+      "text": "provided by Quadrant DB when you asked"
+    },
+    {
+      "start": 914.721,
+      "end": 918.35,
+      "text": "for context. Now in this case, look,"
+    },
+    {
+      "start": 917.422,
+      "end": 920.674,
+      "text": "precision is 100%. What is precision?"
+    },
+    {
+      "start": 919.774,
+      "end": 922.515,
+      "text": "How much total was retrieved? Doesn't"
+    },
+    {
+      "start": 921.557,
+      "end": 924.339,
+      "text": "precision mean that? How much total was"
+    },
+    {
+      "start": 923.385,
+      "end": 925.889,
+      "text": "retrieved? And how much of that was"
+    },
+    {
+      "start": 924.928,
+      "end": 927.791,
+      "text": "relevant? So, how many total lines did"
+    },
+    {
+      "start": 926.841,
+      "end": 930.199,
+      "text": "Quadrant give you? One line, one line."
+    },
+    {
+      "start": 929.299,
+      "end": 931.872,
+      "text": "And how many of those were relevant? Is"
+    },
+    {
+      "start": 930.924,
+      "end": 933.75,
+      "text": "this \"12 days of leave\" relevant to"
+    },
+    {
+      "start": 932.802,
+      "end": 935.736,
+      "text": "your query? It is absolutely relevant."
+    },
+    {
+      "start": 934.836,
+      "end": 938.676,
+      "text": "So, one by one, your precision came to"
+    },
+    {
+      "start": 937.751,
+      "end": 940.387,
+      "text": "100%. But your answer will not be"
+    },
+    {
+      "start": 939.43,
+      "end": 942.0089999999999,
+      "text": "correct. What should your answer have"
+    },
+    {
+      "start": 941.045,
+      "end": 943.919,
+      "text": "been? You needed the 15-day total sick"
+    },
+    {
+      "start": 942.969,
+      "end": 945.8140000000001,
+      "text": "leave context, but you didn't get it,"
+    },
+    {
+      "start": 944.864,
+      "end": 948.52,
+      "text": "right? So precision is 100%. Does that"
+    },
+    {
+      "start": 947.561,
+      "end": 950.032,
+      "text": "mean there is nothing wrong with the"
+    },
+    {
+      "start": 949.073,
+      "end": 951.675,
+      "text": "context? There is a mistake in the"
+    },
+    {
+      "start": 950.722,
+      "end": 953.885,
+      "text": "context. Quadrant DB is not giving you"
+    },
+    {
+      "start": 952.936,
+      "end": 956.373,
+      "text": "all the relevant lines. Now, recall"
+    },
+    {
+      "start": 955.437,
+      "end": 958.863,
+      "text": "measures exactly this. What does recall"
+    },
+    {
+      "start": 957.911,
+      "end": 961.092,
+      "text": "say? How many lines are actually"
+    },
+    {
+      "start": 960.138,
+      "end": 963.927,
+      "text": "relevant to me? I actually had two"
+    },
+    {
+      "start": 962.987,
+      "end": 966.514,
+      "text": "lines. How many did Quadrant give you?"
+    },
+    {
+      "start": 965.828,
+      "end": 969.497,
+      "text": "Meaning, how many were retrieved? One"
+    },
+    {
+      "start": 968.549,
+      "end": 971.539,
+      "text": "was retrieved, so what is your recall?"
+    },
+    {
+      "start": 971.379,
+      "end": 976.046,
+      "text": "50%, 50%recall. Recall means to"
+    },
+    {
+      "start": 975.097,
+      "end": 978.637,
+      "text": "remember. Recall means to remember."
+    },
+    {
+      "start": 977.997,
+      "end": 981.011,
+      "text": "People say, \"I can't recall that answer"
+    },
+    {
+      "start": 980.011,
+      "end": 982.9789999999999,
+      "text": ".\" Meaning, I cannot remember it right"
+    },
+    {
+      "start": 982.029,
+      "end": 985.712,
+      "text": "now. So, if your recall is 50%, it"
+    },
+    {
+      "start": 984.765,
+      "end": 987.756,
+      "text": "means you have all the information in"
+    },
+    {
+      "start": 986.81,
+      "end": 991.391,
+      "text": "your knowledge base. But due to some"
+    },
+    {
+      "start": 990.44,
+      "end": 993.075,
+      "text": "error, Quadrant is not retrieving"
+    },
+    {
+      "start": 992.125,
+      "end": 995.875,
+      "text": "everything. Quadrant should have"
+    },
+    {
+      "start": 994.928,
+      "end": 997.807,
+      "text": "retrieved both to give you the final"
+    },
+    {
+      "start": 996.859,
+      "end": 999.738,
+      "text": "answer; only when both are retrieved"
+    },
+    {
+      "start": 998.79,
+      "end": 1001.774,
+      "text": "will the LLM tell you the final answer"
+    },
+    {
+      "start": 1000.826,
+      "end": 1004.0160000000001,
+      "text": "that 12 + 3 is 15. If you are only"
+    },
+    {
+      "start": 1003.065,
+      "end": 1005.9390000000001,
+      "text": "retrieving one, the LLM will obviously"
+    },
+    {
+      "start": 1004.988,
+      "end": 1007.812,
+      "text": "tell you that you will get 12 days of"
+    },
+    {
+      "start": 1006.862,
+      "end": 1009.951,
+      "text": "leave. But this isn't right, you get 12"
+    },
+    {
+      "start": 1009.004,
+      "end": 1011.909,
+      "text": "+ 3 sick days, 15 days of leave, and"
+    },
+    {
+      "start": 1010.962,
+      "end": 1014.026,
+      "text": "your question was how many total leaves"
+    },
+    {
+      "start": 1013.079,
+      "end": 1015.742,
+      "text": "do you get? You didn't ask how many"
+    },
+    {
+      "start": 1014.785,
+      "end": 1017.406,
+      "text": "normal leaves and how many sick leaves"
+    },
+    {
+      "start": 1016.448,
+      "end": 1019.485,
+      "text": "you get. You asked for the total. Total"
+    },
+    {
+      "start": 1018.578,
+      "end": 1021.766,
+      "text": "is 15. So whose fault is this? It's"
+    },
+    {
+      "start": 1020.813,
+      "end": 1023.636,
+      "text": "Quadrant's fault. Quadrant should have"
+    },
+    {
+      "start": 1022.682,
+      "end": 1025.81,
+      "text": "given you both lines. That is why two"
+    },
+    {
+      "start": 1024.86,
+      "end": 1028.6399999999999,
+      "text": "things are used for context. Precision"
+    },
+    {
+      "start": 1027.693,
+      "end": 1031.305,
+      "text": "and Recall. So it is possible that in"
+    },
+    {
+      "start": 1030.364,
+      "end": 1033.661,
+      "text": "some cases you have 100%precision, like"
+    },
+    {
+      "start": 1032.72,
+      "end": 1036.7540000000001,
+      "text": "in this case. But look, your recall is"
+    },
+    {
+      "start": 1035.829,
+      "end": 1038.695,
+      "text": "50%. What does this mean? Whose fault"
+    },
+    {
+      "start": 1037.746,
+      "end": 1040.575,
+      "text": "is it? It is Quadrant's fault, my"
+    },
+    {
+      "start": 1039.63,
+      "end": 1043.853,
+      "text": "friend. It is also possible to have 50%"
+    },
+    {
+      "start": 1042.853,
+      "end": 1047.208,
+      "text": "precision and 100%recall. What could be"
+    },
+    {
+      "start": 1046.251,
+      "end": 1049.416,
+      "text": "an example of this? Suppose there is"
+    },
+    {
+      "start": 1048.467,
+      "end": 1051.267,
+      "text": "only one actual relevant line. The"
+    },
+    {
+      "start": 1050.319,
+      "end": 1052.961,
+      "text": "actual relevant line is one, and"
+    },
+    {
+      "start": 1052.013,
+      "end": 1055.0539999999999,
+      "text": "Quadrant gave it to you. But your"
+    },
+    {
+      "start": 1054.101,
+      "end": 1056.7990000000002,
+      "text": "Quadrant gave one additional useless"
+    },
+    {
+      "start": 1055.847,
+      "end": 1059.858,
+      "text": "line. Your Quadrant gave you two lines:"
+    },
+    {
+      "start": 1058.918,
+      "end": 1062.02,
+      "text": "\"take 12 days of leave\" and another"
+    },
+    {
+      "start": 1061.08,
+      "end": 1064.3629999999998,
+      "text": "line saying \"salary is 50,000 rupees.\""
+    },
+    {
+      "start": 1064.165,
+      "end": 1066.743,
+      "text": "Now assume that this is the only line"
+    },
+    {
+      "start": 1065.786,
+      "end": 1068.853,
+      "text": "that was relevant. So what will your"
+    },
+    {
+      "start": 1067.898,
+      "end": 1070.974,
+      "text": "recall be? How many lines were actually"
+    },
+    {
+      "start": 1070.022,
+      "end": 1073.348,
+      "text": "relevant in total? One. And how many"
+    },
+    {
+      "start": 1072.394,
+      "end": 1075.309,
+      "text": "relevant lines came from Quadrant? One"
+    },
+    {
+      "start": 1074.365,
+      "end": 1077.394,
+      "text": "relevant line. So one by one means"
+    },
+    {
+      "start": 1076.454,
+      "end": 1079.331,
+      "text": "recall is 100%, but what is the"
+    },
+    {
+      "start": 1078.391,
+      "end": 1081.23,
+      "text": "precision? How many did Quadrant send"
+    },
+    {
+      "start": 1080.273,
+      "end": 1082.9119999999998,
+      "text": "in total? Two lines, out of which how"
+    },
+    {
+      "start": 1081.954,
+      "end": 1084.614,
+      "text": "many were relevant, brother? Only one"
+    },
+    {
+      "start": 1083.661,
+      "end": 1086.3220000000001,
+      "text": "was relevant. We didn't need that"
+    },
+    {
+      "start": 1085.372,
+      "end": 1087.921,
+      "text": "50,000 one. What did the precision"
+    },
+    {
+      "start": 1086.962,
+      "end": 1091.174,
+      "text": "become? 50%, so precision 50%, recall"
+    },
+    {
+      "start": 1090.271,
+      "end": 1093.302,
+      "text": "100%. So you see, both measure two"
+    },
+    {
+      "start": 1092.354,
+      "end": 1095.416,
+      "text": "different things. Precision measures"
+    },
+    {
+      "start": 1094.461,
+      "end": 1097.077,
+      "text": "how many of the total lines received"
+    },
+    {
+      "start": 1096.122,
+      "end": 1098.9660000000001,
+      "text": "are actually relevant. That is what"
+    },
+    {
+      "start": 1098.017,
+      "end": 1101.058,
+      "text": "precision is. How much accuracy? What"
+    },
+    {
+      "start": 1100.109,
+      "end": 1103.089,
+      "text": "is recall? Whether all the actually"
+    },
+    {
+      "start": 1102.132,
+      "end": 1104.718,
+      "text": "relevant lines have been retrieved or"
+    },
+    {
+      "start": 1103.761,
+      "end": 1106.233,
+      "text": "not. Did it miss any of them? Is"
+    },
+    {
+      "start": 1105.281,
+      "end": 1108.261,
+      "text": "Quadrant keeping track or not? Quadrant"
+    },
+    {
+      "start": 1107.261,
+      "end": 1110.2649999999999,
+      "text": "...recall, so you found out about the"
+    },
+    {
+      "start": 1109.319,
+      "end": 1112.398,
+      "text": "two methods: precision and recall. You"
+    },
+    {
+      "start": 1111.444,
+      "end": 1114.144,
+      "text": "must hear that this model's precision"
+    },
+    {
+      "start": 1113.19,
+      "end": 1115.843,
+      "text": "is this much, this model's recall is"
+    },
+    {
+      "start": 1114.889,
+      "end": 1117.4969999999998,
+      "text": "that much; that is what it means in"
+    },
+    {
+      "start": 1116.543,
+      "end": 1119.54,
+      "text": "simple language. So, what are these two"
+    },
+    {
+      "start": 1118.592,
+      "end": 1121.7930000000001,
+      "text": "checks used for? Your context retrieval"
+    },
+    {
+      "start": 1120.793,
+      "end": 1124.309,
+      "text": ". What is the 'R' in RAG? Retrieval."
+    },
+    {
+      "start": 1124.52,
+      "end": 1126.969,
+      "text": "Whether your retrieval is working"
+    },
+    {
+      "start": 1126.013,
+      "end": 1130.934,
+      "text": "correctly or not. If your precision is"
+    },
+    {
+      "start": 1129.986,
+      "end": 1133.028,
+      "text": "low, or your recall is low, or both are"
+    },
+    {
+      "start": 1132.081,
+      "end": 1135.1229999999998,
+      "text": "low, it means your retrieval—what you"
+    },
+    {
+      "start": 1134.175,
+      "end": 1137.2169999999999,
+      "text": "are asking from Quadrant DB to give you"
+    },
+    {
+      "start": 1136.269,
+      "end": 1139.312,
+      "text": "top results—is not working correctly."
+    },
+    {
+      "start": 1140.105,
+      "end": 1144.251,
+      "text": "Go and check it, go debug it. If your"
+    },
+    {
+      "start": 1143.298,
+      "end": 1145.959,
+      "text": "precision is high and your recall is"
+    },
+    {
+      "start": 1145.005,
+      "end": 1147.6660000000002,
+      "text": "high, but the answer is still wrong,"
+    },
+    {
+      "start": 1146.712,
+      "end": 1149.8,
+      "text": "then where could the problem be? It"
+    },
+    {
+      "start": 1148.853,
+      "end": 1151.807,
+      "text": "could be in the LLM. That is the next"
+    },
+    {
+      "start": 1150.857,
+      "end": 1153.776,
+      "text": "stage. Let’s move on to that quickly,"
+    },
+    {
+      "start": 1152.822,
+      "end": 1155.7279999999998,
+      "text": "I will explain it to you. Now the next"
+    },
+    {
+      "start": 1154.776,
+      "end": 1157.5610000000001,
+      "text": "stage is, if your context is correct,"
+    },
+    {
+      "start": 1156.61,
+      "end": 1159.492,
+      "text": "your precision is good, and your recall"
+    },
+    {
+      "start": 1158.54,
+      "end": 1161.422,
+      "text": "is good, but the answer is still wrong,"
+    },
+    {
+      "start": 1160.47,
+      "end": 1163.332,
+      "text": "then what could be the issue? It could"
+    },
+    {
+      "start": 1162.377,
+      "end": 1165.355,
+      "text": "be an issue with your LLM. Now, how do"
+    },
+    {
+      "start": 1164.419,
+      "end": 1167.719,
+      "text": "you identify an LLM issue? There are"
+    },
+    {
+      "start": 1166.763,
+      "end": 1170.0249999999999,
+      "text": "three types of tests for this. The"
+    },
+    {
+      "start": 1169.078,
+      "end": 1172.0,
+      "text": "first is faithfulness. I will explain"
+    },
+    {
+      "start": 1171.047,
+      "end": 1174.309,
+      "text": "everything. Let me tell you. The first"
+    },
+    {
+      "start": 1173.362,
+      "end": 1177.134,
+      "text": "is faithfulness. The second is"
+    },
+    {
+      "start": 1176.188,
+      "end": 1180.534,
+      "text": "relevancy. What? Relevancy, and the"
+    },
+    {
+      "start": 1179.586,
+      "end": 1182.732,
+      "text": "third is correctness. What is it?"
+    },
+    {
+      "start": 1181.929,
+      "end": 1185.453,
+      "text": "Correctness. Among these, understanding"
+    },
+    {
+      "start": 1184.508,
+      "end": 1187.396,
+      "text": "relevancy is simple. Relevancy is"
+    },
+    {
+      "start": 1186.453,
+      "end": 1189.7359999999999,
+      "text": "simple. But just as there was a minute"
+    },
+    {
+      "start": 1188.777,
+      "end": 1191.3110000000001,
+      "text": "difference in precision and recall in"
+    },
+    {
+      "start": 1190.352,
+      "end": 1193.911,
+      "text": "what they both measure. In the same way"
+    },
+    {
+      "start": 1192.911,
+      "end": 1195.669,
+      "text": ", faithfulness and correctness also"
+    },
+    {
+      "start": 1194.719,
+      "end": 1197.4660000000001,
+      "text": "measure different things. They might"
+    },
+    {
+      "start": 1196.506,
+      "end": 1198.9560000000001,
+      "text": "sound the same because the same thing"
+    },
+    {
+      "start": 1197.995,
+      "end": 1200.6689999999999,
+      "text": "is happening here. I had a doubt about"
+    },
+    {
+      "start": 1199.715,
+      "end": 1202.1889999999999,
+      "text": "this too. But faithfulness and"
+    },
+    {
+      "start": 1201.235,
+      "end": 1203.9199999999998,
+      "text": "correctness measure different things."
+    },
+    {
+      "start": 1203.986,
+      "end": 1207.43,
+      "text": "What is faithfulness? Suppose your LLM"
+    },
+    {
+      "start": 1206.488,
+      "end": 1210.316,
+      "text": "got some context of one line. Your LLM"
+    },
+    {
+      "start": 1209.374,
+      "end": 1212.614,
+      "text": "received context that \"Employees get 12"
+    },
+    {
+      "start": 1211.672,
+      "end": 1215.258,
+      "text": "days of paid leave.\" Employees get 12"
+    },
+    {
+      "start": 1214.316,
+      "end": 1217.549,
+      "text": "days of paid leave. What is this? This"
+    },
+    {
+      "start": 1216.6,
+      "end": 1219.569,
+      "text": "is your context that came from Quadrant"
+    },
+    {
+      "start": 1218.619,
+      "end": 1221.616,
+      "text": "DB. Theoretically, the LLM has to"
+    },
+    {
+      "start": 1220.674,
+      "end": 1223.914,
+      "text": "answer after reading this context. The"
+    },
+    {
+      "start": 1222.965,
+      "end": 1225.789,
+      "text": "LLM should not answer by thinking on"
+    },
+    {
+      "start": 1224.839,
+      "end": 1227.434,
+      "text": "its own. If it had to answer by"
+    },
+    {
+      "start": 1226.483,
+      "end": 1229.414,
+      "text": "thinking on its own, why would we build"
+    },
+    {
+      "start": 1228.463,
+      "end": 1231.517,
+      "text": "RAG? RAG is always built when you need"
+    },
+    {
+      "start": 1230.561,
+      "end": 1232.896,
+      "text": "customized knowledge from your"
+    },
+    {
+      "start": 1231.94,
+      "end": 1234.6760000000002,
+      "text": "knowledge base. If you wanted general"
+    },
+    {
+      "start": 1233.722,
+      "end": 1236.474,
+      "text": "answers available on the internet, you"
+    },
+    {
+      "start": 1235.52,
+      "end": 1238.244,
+      "text": "would have asked ChatGPT, right? Why"
+    },
+    {
+      "start": 1237.293,
+      "end": 1240.1229999999998,
+      "text": "build your own RAG? So, what is the"
+    },
+    {
+      "start": 1239.176,
+      "end": 1242.0639999999999,
+      "text": "whole purpose of RAG? Understand that"
+    },
+    {
+      "start": 1241.11,
+      "end": 1243.935,
+      "text": "you need customized knowledge. We want"
+    },
+    {
+      "start": 1242.987,
+      "end": 1246.015,
+      "text": "the answer regarding Akamai's HR policy"
+    },
+    {
+      "start": 1245.015,
+      "end": 1247.344,
+      "text": ". Brother, we don't want general"
+    },
+    {
+      "start": 1246.383,
+      "end": 1248.835,
+      "text": "answers about what happens in general"
+    },
+    {
+      "start": 1247.874,
+      "end": 1250.865,
+      "text": "companies. No, we are Akamai's HR,"
+    },
+    {
+      "start": 1249.931,
+      "end": 1252.678,
+      "text": "right? Give us the answer according to"
+    },
+    {
+      "start": 1251.719,
+      "end": 1254.3,
+      "text": "Akamai's policy, based on the knowledge"
+    },
+    {
+      "start": 1253.341,
+      "end": 1255.7749999999999,
+      "text": "we provided. Don't give us general"
+    },
+    {
+      "start": 1254.815,
+      "end": 1257.308,
+      "text": "answers about what happens at Google."
+    },
+    {
+      "start": 1256.408,
+      "end": 1258.985,
+      "text": "What happens at Google? We have no"
+    },
+    {
+      "start": 1258.036,
+      "end": 1260.781,
+      "text": "concern with this. So, what is"
+    },
+    {
+      "start": 1259.847,
+      "end": 1262.805,
+      "text": "faithfulness? Suppose you were given"
+    },
+    {
+      "start": 1261.85,
+      "end": 1264.533,
+      "text": "the context that there are 12 days of"
+    },
+    {
+      "start": 1263.578,
+      "end": 1266.355,
+      "text": "paid leave. What was your question? It"
+    },
+    {
+      "start": 1265.406,
+      "end": 1268.337,
+      "text": "was simple. How many days of leave do I"
+    },
+    {
+      "start": 1267.384,
+      "end": 1270.953,
+      "text": "get? Suppose your LLM tells you in the"
+    },
+    {
+      "start": 1270.002,
+      "end": 1272.723,
+      "text": "answer that you get 10 days of paid"
+    },
+    {
+      "start": 1271.772,
+      "end": 1275.0149999999999,
+      "text": "leave. What does it get? It gets 10"
+    },
+    {
+      "start": 1274.066,
+      "end": 1277.073,
+      "text": "days of paid leave. Now, is this answer"
+    },
+    {
+      "start": 1276.122,
+      "end": 1279.075,
+      "text": "correct? No. It is not correct. HR"
+    },
+    {
+      "start": 1278.124,
+      "end": 1281.1870000000001,
+      "text": "knows that it is not 10 days. It is 12"
+    },
+    {
+      "start": 1280.255,
+      "end": 1282.778,
+      "text": "days. It is written in the knowledge"
+    },
+    {
+      "start": 1281.814,
+      "end": 1284.602,
+      "text": "base. What is this issue? Your LLM is"
+    },
+    {
+      "start": 1283.658,
+      "end": 1286.762,
+      "text": "not being faithful. Your LLM was given"
+    },
+    {
+      "start": 1285.814,
+      "end": 1288.8020000000001,
+      "text": "the context that 12 days of paid leave"
+    },
+    {
+      "start": 1287.854,
+      "end": 1290.608,
+      "text": "are provided. HR knows that this"
+    },
+    {
+      "start": 1289.663,
+      "end": 1292.67,
+      "text": "context is correct. This is the answer."
+    },
+    {
+      "start": 1291.77,
+      "end": 1294.399,
+      "text": "This should have been the answer. But"
+    },
+    {
+      "start": 1293.446,
+      "end": 1296.1999999999998,
+      "text": "your LLM went crazy in the middle and"
+    },
+    {
+      "start": 1295.247,
+      "end": 1297.9060000000002,
+      "text": "said that 10 days of paid leave are"
+    },
+    {
+      "start": 1296.954,
+      "end": 1300.955,
+      "text": "provided. What does this show? That"
+    },
+    {
+      "start": 1300.011,
+      "end": 1303.914,
+      "text": "your LLM is hallucinating. Your LLM is"
+    },
+    {
+      "start": 1302.976,
+      "end": 1306.325,
+      "text": "hallucinating. It is not reading the"
+    },
+    {
+      "start": 1305.369,
+      "end": 1308.494,
+      "text": "context to give the answer. Whose fault"
+    },
+    {
+      "start": 1307.549,
+      "end": 1311.4379999999999,
+      "text": "is this? It is your LLM's fault that it"
+    },
+    {
+      "start": 1310.488,
+      "end": 1313.3400000000001,
+      "text": "is not being faithful to the context."
+    },
+    {
+      "start": 1313.48,
+      "end": 1316.184,
+      "text": "It is not giving the answer based on"
+    },
+    {
+      "start": 1315.231,
+      "end": 1318.547,
+      "text": "the context. Now, if a teacher taught"
+    },
+    {
+      "start": 1317.597,
+      "end": 1320.189,
+      "text": "you, if a teacher taught you any"
+    },
+    {
+      "start": 1319.239,
+      "end": 1322.08,
+      "text": "concept, like there are three laws of"
+    },
+    {
+      "start": 1321.13,
+      "end": 1323.8000000000002,
+      "text": "Newton. And you wrote in the exam that"
+    },
+    {
+      "start": 1322.84,
+      "end": 1325.405,
+      "text": "there are four laws of Newton. Whose"
+    },
+    {
+      "start": 1324.453,
+      "end": 1327.219,
+      "text": "fault is it? It is your fault. Why are"
+    },
+    {
+      "start": 1326.252,
+      "end": 1328.4289999999999,
+      "text": "you not reading that there are three"
+    },
+    {
+      "start": 1327.462,
+      "end": 1329.794,
+      "text": "laws of Newton? Where did the fourth"
+    },
+    {
+      "start": 1328.831,
+      "end": 1331.253,
+      "text": "law come from? You are thinking of a"
+    },
+    {
+      "start": 1330.292,
+      "end": 1332.7089999999998,
+      "text": "fourth law from your own mind. That"
+    },
+    {
+      "start": 1331.751,
+      "end": 1334.155,
+      "text": "means you are not being faithful."
+    },
+    {
+      "start": 1333.255,
+      "end": 1335.939,
+      "text": "Meaning, you are not answering what you"
+    },
+    {
+      "start": 1334.982,
+      "end": 1337.879,
+      "text": "are taught. You are a bit unfaithful."
+    },
+    {
+      "start": 1336.979,
+      "end": 1339.492,
+      "text": "You are hallucinating and giving an"
+    },
+    {
+      "start": 1338.535,
+      "end": 1342.1370000000002,
+      "text": "answer. So, what is this? Faithfulness."
+    },
+    {
+      "start": 1341.796,
+      "end": 1344.699,
+      "text": "Is the LLM answering according to its"
+    },
+    {
+      "start": 1343.75,
+      "end": 1347.275,
+      "text": "context or not? Is it giving the"
+    },
+    {
+      "start": 1346.321,
+      "end": 1349.1219999999998,
+      "text": "correct answer based on the information"
+    },
+    {
+      "start": 1348.169,
+      "end": 1351.239,
+      "text": "in its context? This is called"
+    },
+    {
+      "start": 1350.29,
+      "end": 1353.555,
+      "text": "faithfulness. Be faithful to your"
+    },
+    {
+      "start": 1352.61,
+      "end": 1356.318,
+      "text": "context. Say only what you are taught."
+    },
+    {
+      "start": 1355.714,
+      "end": 1358.22,
+      "text": "Now, what is the second one?"
+    },
+    {
+      "start": 1357.32,
+      "end": 1360.375,
+      "text": "Correctness. Correctness. What is"
+    },
+    {
+      "start": 1359.423,
+      "end": 1363.29,
+      "text": "correctness? Suppose. Suppose the same,"
+    },
+    {
+      "start": 1362.351,
+      "end": 1366.538,
+      "text": "same example. Your context told you"
+    },
+    {
+      "start": 1365.589,
+      "end": 1369.472,
+      "text": "that you get 12 days of paid leave. You"
+    },
+    {
+      "start": 1368.529,
+      "end": 1371.552,
+      "text": "get 12 days of paid leave. And your"
+    },
+    {
+      "start": 1370.607,
+      "end": 1373.757,
+      "text": "LLM's answer is also that, yes, 12 days"
+    },
+    {
+      "start": 1372.812,
+      "end": 1375.7009999999998,
+      "text": "is your answer. What is the answer for?"
+    },
+    {
+      "start": 1374.801,
+      "end": 1377.49,
+      "text": "How many days of leave do you get? 12"
+    },
+    {
+      "start": 1376.588,
+      "end": 1380.6309999999999,
+      "text": "days. Now look here, is your LLM, is"
+    },
+    {
+      "start": 1379.695,
+      "end": 1383.932,
+      "text": "your LLM faithful to the context? It is"
+    },
+    {
+      "start": 1382.985,
+      "end": 1385.8539999999998,
+      "text": "absolutely faithful. And is your LLM"
+    },
+    {
+      "start": 1384.902,
+      "end": 1387.707,
+      "text": "providing the correct answer according"
+    },
+    {
+      "start": 1386.754,
+      "end": 1389.425,
+      "text": "to your context? It is providing the"
+    },
+    {
+      "start": 1388.468,
+      "end": 1391.46,
+      "text": "correct answer. So what is this? Your"
+    },
+    {
+      "start": 1390.522,
+      "end": 1394.6209999999999,
+      "text": "LLM is correct. But, but it is possible"
+    },
+    {
+      "start": 1393.668,
+      "end": 1396.2579999999998,
+      "text": "that there was an error in context"
+    },
+    {
+      "start": 1395.305,
+      "end": 1399.094,
+      "text": "retrieval. It accidentally got into"
+    },
+    {
+      "start": 1398.142,
+      "end": 1401.018,
+      "text": "your context that employees get 10 days"
+    },
+    {
+      "start": 1400.066,
+      "end": 1403.681,
+      "text": "of paid leave. And your LLM, after"
+    },
+    {
+      "start": 1402.731,
+      "end": 1405.45,
+      "text": "reading the context, told you that"
+    },
+    {
+      "start": 1404.5,
+      "end": 1408.779,
+      "text": "there are 10 days of paid leave. But HR"
+    },
+    {
+      "start": 1407.833,
+      "end": 1411.892,
+      "text": "knows the final correct answer. Assume"
+    },
+    {
+      "start": 1410.94,
+      "end": 1413.806,
+      "text": "that the ground truth that the HR knows"
+    },
+    {
+      "start": 1412.854,
+      "end": 1416.2450000000001,
+      "text": "is how things work in my company. The"
+    },
+    {
+      "start": 1415.309,
+      "end": 1418.841,
+      "text": "answer is 12 days. The answer is 12"
+    },
+    {
+      "start": 1417.906,
+      "end": 1422.5739999999998,
+      "text": "days. But now see what happened. Your"
+    },
+    {
+      "start": 1421.632,
+      "end": 1425.4930000000002,
+      "text": "LLM received an incorrect context. Your"
+    },
+    {
+      "start": 1424.552,
+      "end": 1427.538,
+      "text": "LLM received an incorrect context."
+    },
+    {
+      "start": 1426.998,
+      "end": 1429.92,
+      "text": "After reading that incorrect context,"
+    },
+    {
+      "start": 1428.972,
+      "end": 1431.999,
+      "text": "your LLM is giving you the wrong answer"
+    },
+    {
+      "start": 1431.051,
+      "end": 1435.241,
+      "text": "that it is 10 days. In this case, look,"
+    },
+    {
+      "start": 1434.293,
+      "end": 1437.2549999999999,
+      "text": "is this answer correct relative to the"
+    },
+    {
+      "start": 1436.306,
+      "end": 1441.205,
+      "text": "ground truth? No. This is an incorrect"
+    },
+    {
+      "start": 1440.266,
+      "end": 1445.297,
+      "text": "answer. But is your LLM faithful to its"
+    },
+    {
+      "start": 1444.353,
+      "end": 1449.2830000000001,
+      "text": "context? It absolutely is; your LLM"
+    },
+    {
+      "start": 1448.34,
+      "end": 1451.2289999999998,
+      "text": "answered exactly what the context"
+    },
+    {
+      "start": 1450.287,
+      "end": 1454.602,
+      "text": "explained to it. Suppose your teacher"
+    },
+    {
+      "start": 1453.65,
+      "end": 1456.4460000000001,
+      "text": "taught you that Newton has four laws."
+    },
+    {
+      "start": 1456.016,
+      "end": 1458.901,
+      "text": "You wrote in the exam that Newton has"
+    },
+    {
+      "start": 1457.952,
+      "end": 1461.044,
+      "text": "four laws. Is this answer correct? No,"
+    },
+    {
+      "start": 1460.104,
+      "end": 1463.682,
+      "text": "the answer is not correct. But as a"
+    },
+    {
+      "start": 1462.73,
+      "end": 1465.307,
+      "text": "student, are you faithful to your"
+    },
+    {
+      "start": 1464.355,
+      "end": 1468.221,
+      "text": "teacher? Yes, absolutely faithful. This"
+    },
+    {
+      "start": 1467.267,
+      "end": 1470.059,
+      "text": "is the distinction between faithfulness"
+    },
+    {
+      "start": 1469.105,
+      "end": 1472.156,
+      "text": "and correctness. What does correctness"
+    },
+    {
+      "start": 1471.2,
+      "end": 1475.04,
+      "text": "say? Does your final answer match the"
+    },
+    {
+      "start": 1474.084,
+      "end": 1477.748,
+      "text": "ground truth or not? Correctness means"
+    },
+    {
+      "start": 1476.793,
+      "end": 1479.4869999999999,
+      "text": "your paper is being graded. Everyone"
+    },
+    {
+      "start": 1478.53,
+      "end": 1480.992,
+      "text": "knows that there are three laws of"
+    },
+    {
+      "start": 1480.035,
+      "end": 1483.107,
+      "text": "Newton. You wrote in your paper that"
+    },
+    {
+      "start": 1482.156,
+      "end": 1485.238,
+      "text": "Newton has four laws. You are obviously"
+    },
+    {
+      "start": 1484.287,
+      "end": 1487.189,
+      "text": "incorrect, and you won't get any marks."
+    },
+    {
+      "start": 1486.657,
+      "end": 1491.447,
+      "text": "But what does faithfulness say? Are you"
+    },
+    {
+      "start": 1490.493,
+      "end": 1493.264,
+      "text": "faithful to what you were told and what"
+    },
+    {
+      "start": 1492.309,
+      "end": 1496.495,
+      "text": "was taught as context? That is"
+    },
+    {
+      "start": 1495.547,
+      "end": 1499.704,
+      "text": "faithfulness. So it is possible that an"
+    },
+    {
+      "start": 1498.76,
+      "end": 1503.4,
+      "text": "LLM is faithful. An LLM can be faithful"
+    },
+    {
+      "start": 1502.456,
+      "end": 1506.367,
+      "text": "but become incorrect. Become incorrect."
+    },
+    {
+      "start": 1505.467,
+      "end": 1509.4740000000002,
+      "text": "When? When the context is wrong. It is"
+    },
+    {
+      "start": 1508.53,
+      "end": 1511.708,
+      "text": "also possible that an LLM is unfaithful"
+    },
+    {
+      "start": 1510.708,
+      "end": 1515.582,
+      "text": ". Unfaithful. But its answer is correct"
+    },
+    {
+      "start": 1514.582,
+      "end": 1519.798,
+      "text": ". Meaning you were taught. Your teacher"
+    },
+    {
+      "start": 1518.848,
+      "end": 1523.519,
+      "text": "told you that Newton has four laws. But"
+    },
+    {
+      "start": 1522.56,
+      "end": 1524.979,
+      "text": "you used your own intelligence and"
+    },
+    {
+      "start": 1524.021,
+      "end": 1526.565,
+      "text": "wrote in the exam that there are only"
+    },
+    {
+      "start": 1525.607,
+      "end": 1529.46,
+      "text": "three laws of Newton. Are the three"
+    },
+    {
+      "start": 1528.505,
+      "end": 1531.5240000000001,
+      "text": "laws correct? Absolutely correct. But"
+    },
+    {
+      "start": 1530.566,
+      "end": 1533.1490000000001,
+      "text": "is writing three laws faithful to what"
+    },
+    {
+      "start": 1532.191,
+      "end": 1535.037,
+      "text": "you were taught? No. Because what were"
+    },
+    {
+      "start": 1534.088,
+      "end": 1536.787,
+      "text": "you taught? You were taught that there"
+    },
+    {
+      "start": 1535.826,
+      "end": 1538.508,
+      "text": "are four laws. You should have written"
+    },
+    {
+      "start": 1537.553,
+      "end": 1539.989,
+      "text": "four laws. So you see what the"
+    },
+    {
+      "start": 1539.036,
+      "end": 1542.22,
+      "text": "distinction is, right? If your LLM is"
+    },
+    {
+      "start": 1541.281,
+      "end": 1545.067,
+      "text": "unfaithful. If your LLM is unfaithful"
+    },
+    {
+      "start": 1544.119,
+      "end": 1547.9279999999999,
+      "text": "but its answer is correct. It means"
+    },
+    {
+      "start": 1546.986,
+      "end": 1550.986,
+      "text": "your LLM is hallucinating. Your LLM is"
+    },
+    {
+      "start": 1550.049,
+      "end": 1553.199,
+      "text": "hallucinating. It's not answering based"
+    },
+    {
+      "start": 1552.248,
+      "end": 1555.16,
+      "text": "on the context, but using its own brain"
+    },
+    {
+      "start": 1554.16,
+      "end": 1558.102,
+      "text": ". Stop that. What if your LLM is very"
+    },
+    {
+      "start": 1557.157,
+      "end": 1560.635,
+      "text": "faithful? But the answer is incorrect."
+    },
+    {
+      "start": 1559.735,
+      "end": 1562.205,
+      "text": "Where is the problem then? Then the"
+    },
+    {
+      "start": 1561.247,
+      "end": 1563.867,
+      "text": "problem is in the context itself. The"
+    },
+    {
+      "start": 1562.906,
+      "end": 1565.376,
+      "text": "problem lies in what it is being fed."
+    },
+    {
+      "start": 1564.476,
+      "end": 1567.449,
+      "text": "The LLM is working perfectly fine. It"
+    },
+    {
+      "start": 1566.489,
+      "end": 1568.948,
+      "text": "is reading the context and giving the"
+    },
+    {
+      "start": 1567.988,
+      "end": 1570.5810000000001,
+      "text": "right answer. But if the answer is"
+    },
+    {
+      "start": 1569.63,
+      "end": 1572.4930000000002,
+      "text": "still wrong, then whose problem is it,"
+    },
+    {
+      "start": 1571.542,
+      "end": 1574.6039999999998,
+      "text": "man? It is a context problem. Give it"
+    },
+    {
+      "start": 1573.655,
+      "end": 1576.568,
+      "text": "the correct context. It could be that"
+    },
+    {
+      "start": 1575.607,
+      "end": 1578.224,
+      "text": "your knowledge base has an issue. It"
+    },
+    {
+      "start": 1577.262,
+      "end": 1579.658,
+      "text": "could be that your knowledge base has"
+    },
+    {
+      "start": 1578.696,
+      "end": 1581.396,
+      "text": "an issue. Perhaps your knowledge base"
+    },
+    {
+      "start": 1580.443,
+      "end": 1582.937,
+      "text": "has a typo, say, a 10 printed by"
+    },
+    {
+      "start": 1581.984,
+      "end": 1584.705,
+      "text": "mistake. The LLM reads that and gives"
+    },
+    {
+      "start": 1583.749,
+      "end": 1586.367,
+      "text": "the answer. Do you understand what it"
+    },
+    {
+      "start": 1585.408,
+      "end": 1588.3349999999998,
+      "text": "means? Being faithful and being correct"
+    },
+    {
+      "start": 1587.335,
+      "end": 1590.257,
+      "text": ". I am stressing this so much because"
+    },
+    {
+      "start": 1589.303,
+      "end": 1593.5020000000002,
+      "text": "it will definitely be asked. If someone"
+    },
+    {
+      "start": 1592.547,
+      "end": 1595.19,
+      "text": "asks you about it, they will go deep"
+    },
+    {
+      "start": 1594.235,
+      "end": 1596.7859999999998,
+      "text": "and ask you what the difference is"
+    },
+    {
+      "start": 1595.832,
+      "end": 1598.566,
+      "text": "between faithful and correct, and what"
+    },
+    {
+      "start": 1597.611,
+      "end": 1601.202,
+      "text": "both are used for. By looking at both,"
+    },
+    {
+      "start": 1600.25,
+      "end": 1603.074,
+      "text": "what do you understand about where the"
+    },
+    {
+      "start": 1602.122,
+      "end": 1604.742,
+      "text": "error in my RAG () is? So, being"
+    },
+    {
+      "start": 1603.793,
+      "end": 1606.697,
+      "text": "faithful means the answer should come"
+    },
+    {
+      "start": 1605.748,
+      "end": 1608.703,
+      "text": "based on the provided context, even if"
+    },
+    {
+      "start": 1607.755,
+      "end": 1610.6370000000002,
+      "text": "the context itself is wrong. Correct"
+    },
+    {
+      "start": 1609.685,
+      "end": 1612.44,
+      "text": "means the answer must be correct, no"
+    },
+    {
+      "start": 1611.489,
+      "end": 1615.4660000000001,
+      "text": "matter what. Okay, relevancy. The third"
+    },
+    {
+      "start": 1614.517,
+      "end": 1617.497,
+      "text": "one is relevancy, which is quite simple"
+    },
+    {
+      "start": 1616.497,
+      "end": 1620.511,
+      "text": ". What does relevancy mean? Suppose you"
+    },
+    {
+      "start": 1619.562,
+      "end": 1622.7779999999998,
+      "text": "ask, \"When will I get promoted?\" When"
+    },
+    {
+      "start": 1621.823,
+      "end": 1624.404,
+      "text": "does promotion happen? Its correct"
+    },
+    {
+      "start": 1623.448,
+      "end": 1626.039,
+      "text": "answer was that promotion happens in"
+    },
+    {
+      "start": 1625.084,
+      "end": 1628.008,
+      "text": "November. Promotion happens in November"
+    },
+    {
+      "start": 1627.008,
+      "end": 1629.75,
+      "text": ". That was the correct answer. What?"
+    },
+    {
+      "start": 1628.85,
+      "end": 1631.4699999999998,
+      "text": "When does promotion happen? That was"
+    },
+    {
+      "start": 1630.512,
+      "end": 1633.788,
+      "text": "your question. Good. Your LLM did not"
+    },
+    {
+      "start": 1632.837,
+      "end": 1635.588,
+      "text": "tell you that. Your LLM did not tell"
+    },
+    {
+      "start": 1634.634,
+      "end": 1637.395,
+      "text": "you that. It went crazy in between."
+    },
+    {
+      "start": 1636.495,
+      "end": 1639.146,
+      "text": "Your LLM gave you the definition of"
+    },
+    {
+      "start": 1638.194,
+      "end": 1640.634,
+      "text": "promotion. Promotion refers to"
+    },
+    {
+      "start": 1639.68,
+      "end": 1642.844,
+      "text": "something something. What? Your LLM"
+    },
+    {
+      "start": 1641.894,
+      "end": 1644.756,
+      "text": "gave you the definition of promotion."
+    },
+    {
+      "start": 1644.15,
+      "end": 1647.269,
+      "text": "The dictionary one. Okay. Was that your"
+    },
+    {
+      "start": 1646.308,
+      "end": 1648.758,
+      "text": "question? Were you asking for the"
+    },
+    {
+      "start": 1647.801,
+      "end": 1650.6129999999998,
+      "text": "definition of a promotion? No. Were we"
+    },
+    {
+      "start": 1649.666,
+      "end": 1652.684,
+      "text": "interested in knowing what a promotion"
+    },
+    {
+      "start": 1651.737,
+      "end": 1654.6650000000002,
+      "text": "is? We know what a promotion is. What"
+    },
+    {
+      "start": 1653.702,
+      "end": 1656.24,
+      "text": "did we want to know from you? When does"
+    },
+    {
+      "start": 1655.282,
+      "end": 1657.8139999999999,
+      "text": "the promotion happen, brother? When"
+    },
+    {
+      "start": 1656.854,
+      "end": 1659.3700000000001,
+      "text": "does the promotion happen? When does"
+    },
+    {
+      "start": 1658.413,
+      "end": 1660.942,
+      "text": "the promotion happen at Akamai? It"
+    },
+    {
+      "start": 1659.991,
+      "end": 1662.575,
+      "text": "happens in November. Your LLM is"
+    },
+    {
+      "start": 1661.621,
+      "end": 1664.2730000000001,
+      "text": "telling you that promotion refers to"
+    },
+    {
+      "start": 1663.319,
+      "end": 1666.395,
+      "text": "something something something. Or the"
+    },
+    {
+      "start": 1665.438,
+      "end": 1667.976,
+      "text": "answer might be correct according to"
+    },
+    {
+      "start": 1667.019,
+      "end": 1670.743,
+      "text": "the definition. But do you care, do you"
+    },
+    {
+      "start": 1669.791,
+      "end": 1673.455,
+      "text": "care for this answer? No, is this"
+    },
+    {
+      "start": 1672.505,
+      "end": 1675.518,
+      "text": "answer relevant to your question? No,"
+    },
+    {
+      "start": 1674.573,
+      "end": 1677.6200000000001,
+      "text": "is this irrelevant to my question? We"
+    },
+    {
+      "start": 1676.667,
+      "end": 1679.368,
+      "text": "are asking when a promotion happens."
+    },
+    {
+      "start": 1678.468,
+      "end": 1681.2350000000001,
+      "text": "You are telling us what a promotion is."
+    },
+    {
+      "start": 1680.335,
+      "end": 1683.41,
+      "text": "Whose fault is this? It’s the LLM's"
+    },
+    {
+      "start": 1682.465,
+      "end": 1686.0839999999998,
+      "text": "fault. The LLM either doesn't"
+    },
+    {
+      "start": 1685.131,
+      "end": 1687.739,
+      "text": "understand the question or doesn't"
+    },
+    {
+      "start": 1686.787,
+      "end": 1690.488,
+      "text": "understand the context. One of these"
+    },
+    {
+      "start": 1689.531,
+      "end": 1692.682,
+      "text": "two things could be the case. Either it"
+    },
+    {
+      "start": 1691.723,
+      "end": 1693.979,
+      "text": "doesn't know the meaning of the"
+    },
+    {
+      "start": 1693.019,
+      "end": 1695.6,
+      "text": "question or the meaning of the context."
+    },
+    {
+      "start": 1694.777,
+      "end": 1697.23,
+      "text": "That is why it gives an irrelevant"
+    },
+    {
+      "start": 1696.272,
+      "end": 1699.095,
+      "text": "answer. So what are the three ways for"
+    },
+    {
+      "start": 1698.142,
+      "end": 1701.028,
+      "text": "an LLM? To judge if the LLM is working"
+    },
+    {
+      "start": 1700.076,
+      "end": 1703.021,
+      "text": "or not? Faithfulness: answer according"
+    },
+    {
+      "start": 1702.071,
+      "end": 1704.947,
+      "text": "to the context. Even if the context is"
+    },
+    {
+      "start": 1703.993,
+      "end": 1706.643,
+      "text": "wrong. Correctness: give the right"
+    },
+    {
+      "start": 1705.69,
+      "end": 1708.2430000000002,
+      "text": "answer based on ground truth, and"
+    },
+    {
+      "start": 1707.29,
+      "end": 1710.113,
+      "text": "relevant: give a relevant answer. Give"
+    },
+    {
+      "start": 1709.156,
+      "end": 1711.7939999999999,
+      "text": "the answer to what is being asked. So"
+    },
+    {
+      "start": 1710.842,
+      "end": 1713.6290000000001,
+      "text": "these are the three ways. So how many"
+    },
+    {
+      "start": 1712.674,
+      "end": 1715.979,
+      "text": "ways are there in total? Five ways. If"
+    },
+    {
+      "start": 1715.031,
+      "end": 1718.0,
+      "text": "I give you a summary, how many ways in"
+    },
+    {
+      "start": 1717.052,
+      "end": 1721.27,
+      "text": "total? Five ways. First, precision."
+    },
+    {
+      "start": 1720.413,
+      "end": 1723.709,
+      "text": "First, precision. Precision means total"
+    },
+    {
+      "start": 1722.757,
+      "end": 1725.5990000000002,
+      "text": "how many are relevant? How many total"
+    },
+    {
+      "start": 1724.647,
+      "end": 1727.578,
+      "text": "contexts did you get? And out of those,"
+    },
+    {
+      "start": 1726.626,
+      "end": 1729.356,
+      "text": "how many were relevant contexts? If"
+    },
+    {
+      "start": 1728.404,
+      "end": 1731.112,
+      "text": "your precision is low. What does that"
+    },
+    {
+      "start": 1730.151,
+      "end": 1732.909,
+      "text": "mean? That total context came to 10,"
+    },
+    {
+      "start": 1731.957,
+      "end": 1734.862,
+      "text": "and how many contexts were relevant out"
+    },
+    {
+      "start": 1733.911,
+      "end": 1736.885,
+      "text": "of that? Let's assume two. What is your"
+    },
+    {
+      "start": 1735.927,
+      "end": 1739.262,
+      "text": "precision? 20%. What will you do for"
+    },
+    {
+      "start": 1738.305,
+      "end": 1741.66,
+      "text": "this? Maybe you should reduce your"
+    },
+    {
+      "start": 1740.708,
+      "end": 1745.1860000000001,
+      "text": "top-k. Reduce the top-k. For example,"
+    },
+    {
+      "start": 1744.236,
+      "end": 1747.1550000000002,
+      "text": "you are asking how much paid leave you"
+    },
+    {
+      "start": 1746.206,
+      "end": 1749.032,
+      "text": "get. And you are saying, give me the"
+    },
+    {
+      "start": 1748.081,
+      "end": 1751.3829999999998,
+      "text": "top 10 results. Yes. Give me the top 10"
+    },
+    {
+      "start": 1750.433,
+      "end": 1753.389,
+      "text": "results. If it gives top 10 results,"
+    },
+    {
+      "start": 1752.442,
+      "end": 1755.381,
+      "text": "then obviously. Let's say your context"
+    },
+    {
+      "start": 1754.428,
+      "end": 1757.2900000000002,
+      "text": "only has two lines about leave. Then it"
+    },
+    {
+      "start": 1756.333,
+      "end": 1758.99,
+      "text": "will give the remaining eight lines of"
+    },
+    {
+      "start": 1758.033,
+      "end": 1760.6029999999998,
+      "text": "junk, which have very low similarity"
+    },
+    {
+      "start": 1759.646,
+      "end": 1764.925,
+      "text": "scores. So one way is to reduce your"
+    },
+    {
+      "start": 1763.98,
+      "end": 1766.636,
+      "text": "top-k a bit, brother, or add a"
+    },
+    {
+      "start": 1765.692,
+      "end": 1768.734,
+      "text": "threshold, or add a threshold that we"
+    },
+    {
+      "start": 1767.789,
+      "end": 1770.887,
+      "text": "only want vectors where the similarity"
+    },
+    {
+      "start": 1769.942,
+      "end": 1775.869,
+      "text": "score is greater than 0.5. Two things"
+    },
+    {
+      "start": 1774.919,
+      "end": 1778.635,
+      "text": "can happen. If in your knowledge, only"
+    },
+    {
+      "start": 1777.681,
+      "end": 1780.777,
+      "text": "two lines are written about leave. And"
+    },
+    {
+      "start": 1779.819,
+      "end": 1782.508,
+      "text": "the rest is about different things. You"
+    },
+    {
+      "start": 1781.553,
+      "end": 1784.172,
+      "text": "are asking it to give you the top 10"
+    },
+    {
+      "start": 1783.217,
+      "end": 1785.7990000000002,
+      "text": "lines. Obviously, it will give those"
+    },
+    {
+      "start": 1784.841,
+      "end": 1787.472,
+      "text": "two lines about leave and the remaining"
+    },
+    {
+      "start": 1786.514,
+      "end": 1789.1699999999998,
+      "text": "eight lines about salary. So, your"
+    },
+    {
+      "start": 1788.234,
+      "end": 1791.474,
+      "text": "precision came down to 20%. There are"
+    },
+    {
+      "start": 1790.52,
+      "end": 1793.25,
+      "text": "two ways to fix this. Either reduce"
+    },
+    {
+      "start": 1792.301,
+      "end": 1795.571,
+      "text": "your top-k or set a threshold. Only"
+    },
+    {
+      "start": 1794.63,
+      "end": 1797.842,
+      "text": "provide vectors that are more than 0.4"
+    },
+    {
+      "start": 1796.9,
+      "end": 1800.2540000000001,
+      "text": "similar. No matter what top-k says. So,"
+    },
+    {
+      "start": 1799.321,
+      "end": 1802.174,
+      "text": "that's done. What is the second one?"
+    },
+    {
+      "start": 1801.274,
+      "end": 1804.879,
+      "text": "Recall. Recall means whether all the"
+    },
+    {
+      "start": 1803.926,
+      "end": 1806.3909999999998,
+      "text": "total relevant context is being"
+    },
+    {
+      "start": 1805.438,
+      "end": 1808.9730000000002,
+      "text": "retrieved or not. Suppose there were"
+    },
+    {
+      "start": 1808.022,
+      "end": 1810.724,
+      "text": "two relevant lines in total. Your"
+    },
+    {
+      "start": 1809.774,
+      "end": 1812.61,
+      "text": "quadrant gave you only one line. How"
+    },
+    {
+      "start": 1811.656,
+      "end": 1815.1119999999999,
+      "text": "much recall do you have? 50%. How do"
+    },
+    {
+      "start": 1814.156,
+      "end": 1817.196,
+      "text": "you increase this? Increase your top-k"
+    },
+    {
+      "start": 1816.248,
+      "end": 1819.5,
+      "text": "a little bit. Now, suppose your top-k"
+    },
+    {
+      "start": 1818.564,
+      "end": 1821.439,
+      "text": "is one. You are saying, \"give me the"
+    },
+    {
+      "start": 1820.486,
+      "end": 1823.219,
+      "text": "best first line.\" Now, suppose there"
+    },
+    {
+      "start": 1822.265,
+      "end": 1825.143,
+      "text": "were two lines in there. You said top-k"
+    },
+    {
+      "start": 1824.191,
+      "end": 1827.058,
+      "text": "one, so obviously, it will give you one"
+    },
+    {
+      "start": 1826.106,
+      "end": 1829.084,
+      "text": "line. So, what is the point? Just do"
+    },
+    {
+      "start": 1828.131,
+      "end": 1831.2640000000001,
+      "text": "the opposite. Increase the top-k a bit."
+    },
+    {
+      "start": 1831.815,
+      "end": 1834.656,
+      "text": "Make top-k three or try reducing your"
+    },
+    {
+      "start": 1833.706,
+      "end": 1838.052,
+      "text": "threshold a bit. Now, you said, \"give"
+    },
+    {
+      "start": 1837.107,
+      "end": 1840.185,
+      "text": "me only the answer whose similarity is"
+    },
+    {
+      "start": 1839.24,
+      "end": 1842.1200000000001,
+      "text": "greater than 0.9.\" It is possible that"
+    },
+    {
+      "start": 1841.162,
+      "end": 1843.71,
+      "text": "a relevant context might be missed in"
+    },
+    {
+      "start": 1842.752,
+      "end": 1845.744,
+      "text": "this. So, there are two ways. Either"
+    },
+    {
+      "start": 1844.788,
+      "end": 1847.144,
+      "text": "increase the top-k or lower the"
+    },
+    {
+      "start": 1846.188,
+      "end": 1848.759,
+      "text": "threshold slightly. See, it was"
+    },
+    {
+      "start": 1847.817,
+      "end": 1850.839,
+      "text": "completely reversed. If precision is"
+    },
+    {
+      "start": 1849.889,
+      "end": 1853.1619999999998,
+      "text": "low, what should you do? Reduce top-k."
+    },
+    {
+      "start": 1852.711,
+      "end": 1855.799,
+      "text": "Lower the threshold a bit. What about"
+    },
+    {
+      "start": 1854.842,
+      "end": 1858.046,
+      "text": "this one? Increase top-k and lower the"
+    },
+    {
+      "start": 1857.098,
+      "end": 1859.971,
+      "text": "threshold. These are the two points."
+    },
+    {
+      "start": 1859.071,
+      "end": 1862.445,
+      "text": "After that, if your LLM is not faithful"
+    },
+    {
+      "start": 1861.445,
+      "end": 1865.0549999999998,
+      "text": ". If your LLM is not faithful. Pay"
+    },
+    {
+      "start": 1864.102,
+      "end": 1867.294,
+      "text": "attention to your system prompt. Pay"
+    },
+    {
+      "start": 1866.341,
+      "end": 1869.9109999999998,
+      "text": "attention to your system prompt. Tell"
+    },
+    {
+      "start": 1868.958,
+      "end": 1872.199,
+      "text": "it not to hallucinate. Faithful means"
+    },
+    {
+      "start": 1871.247,
+      "end": 1873.9750000000001,
+      "text": "it is not answering based on reading"
+    },
+    {
+      "start": 1873.023,
+      "end": 1875.668,
+      "text": "the context, right? It is answering"
+    },
+    {
+      "start": 1874.71,
+      "end": 1877.421,
+      "text": "based on its own understanding. So what"
+    },
+    {
+      "start": 1876.464,
+      "end": 1879.461,
+      "text": "does that mean? It is hallucinating. In"
+    },
+    {
+      "start": 1878.517,
+      "end": 1881.2530000000002,
+      "text": "your system prompt, say \"Do not"
+    },
+    {
+      "start": 1880.309,
+      "end": 1883.09,
+      "text": "hallucinate.\" If your answer is not"
+    },
+    {
+      "start": 1882.136,
+      "end": 1885.672,
+      "text": "correct. If your answer is not correct,"
+    },
+    {
+      "start": 1884.72,
+      "end": 1887.539,
+      "text": "it means the answer is coming based on"
+    },
+    {
+      "start": 1886.587,
+      "end": 1889.824,
+      "text": "the context. But the context itself is"
+    },
+    {
+      "start": 1888.877,
+      "end": 1892.231,
+      "text": "wrong. Then work on your context. Work"
+    },
+    {
+      "start": 1891.287,
+      "end": 1894.598,
+      "text": "on your context. Check your knowledge"
+    },
+    {
+      "start": 1893.639,
+      "end": 1896.135,
+      "text": "base. There might be an error in the"
+    },
+    {
+      "start": 1895.175,
+      "end": 1897.695,
+      "text": "knowledge base itself. There might be"
+    },
+    {
+      "start": 1896.735,
+      "end": 1899.154,
+      "text": "an error in the source. Focus on"
+    },
+    {
+      "start": 1898.204,
+      "end": 1901.003,
+      "text": "improving your precision and recall."
+    },
+    {
+      "start": 1900.539,
+      "end": 1904.854,
+      "text": "Okay? If your answer is not relevant,"
+    },
+    {
+      "start": 1903.902,
+      "end": 1906.798,
+      "text": "if your answer is not relevant, improve"
+    },
+    {
+      "start": 1905.847,
+      "end": 1910.199,
+      "text": "your system prompt. Is it understanding"
+    },
+    {
+      "start": 1909.242,
+      "end": 1912.181,
+      "text": "the question well? Tell him to answer"
+    },
+    {
+      "start": 1911.229,
+      "end": 1913.9660000000001,
+      "text": "to the point, brother, answer to the"
+    },
+    {
+      "start": 1913.014,
+      "end": 1915.53,
+      "text": "point. I didn't ask you for useless"
+    },
+    {
+      "start": 1914.57,
+      "end": 1916.897,
+      "text": "things, and I'm not interested in"
+    },
+    {
+      "start": 1915.938,
+      "end": 1918.422,
+      "text": "knowing them. You are just giving"
+    },
+    {
+      "start": 1917.467,
+      "end": 1920.4650000000001,
+      "text": "useless answers. So, look at this."
+    },
+    {
+      "start": 1920.124,
+      "end": 1922.925,
+      "text": "There are five methods, and each works"
+    },
+    {
+      "start": 1921.972,
+      "end": 1924.821,
+      "text": "differently, and based on all five, you"
+    },
+    {
+      "start": 1923.868,
+      "end": 1926.7169999999999,
+      "text": "can take different measures to fix your"
+    },
+    {
+      "start": 1925.764,
+      "end": 1930.5729999999999,
+      "text": "RAG. So, did you get the point? What do"
+    },
+    {
+      "start": 1929.624,
+      "end": 1933.854,
+      "text": "you call this entire process? RAG"
+    },
+    {
+      "start": 1932.922,
+      "end": 1937.794,
+      "text": "evaluation. RAG evaluation. Now, if"
+    },
+    {
+      "start": 1936.844,
+      "end": 1939.814,
+      "text": "anyone asks you any questions about RAG"
+    },
+    {
+      "start": 1938.864,
+      "end": 1941.632,
+      "text": "evaluation, you have the answers to"
+    },
+    {
+      "start": 1940.682,
+      "end": 1943.3990000000001,
+      "text": "everything, and in a very deep and"
+    },
+    {
+      "start": 1942.45,
+      "end": 1945.809,
+      "text": "effective way. Did you understand it or"
+    },
+    {
+      "start": 1944.852,
+      "end": 1947.507,
+      "text": "not? This was a very important topic"
+    },
+    {
+      "start": 1946.551,
+      "end": 1949.0639999999999,
+      "text": "and it is very necessary to learn."
+    },
+    {
+      "start": 1948.164,
+      "end": 1950.699,
+      "text": "Let's get to the code. Now look, there"
+    },
+    {
+      "start": 1949.74,
+      "end": 1952.292,
+      "text": "are 1000 lines of code, so some people"
+    },
+    {
+      "start": 1951.333,
+      "end": 1953.9260000000002,
+      "text": "might get nervous and wonder, how can I"
+    },
+    {
+      "start": 1952.967,
+      "end": 1955.5130000000001,
+      "text": "write this much? But get out of that"
+    },
+    {
+      "start": 1954.555,
+      "end": 1957.332,
+      "text": "thought process. Look, these days I am"
+    },
+    {
+      "start": 1956.38,
+      "end": 1959.063,
+      "text": "telling you repeatedly that writing"
+    },
+    {
+      "start": 1958.111,
+      "end": 1960.842,
+      "text": "code has become the last and easiest"
+    },
+    {
+      "start": 1959.89,
+      "end": 1962.7900000000002,
+      "text": "task. Actually, in these thousand lines"
+    },
+    {
+      "start": 1961.838,
+      "end": 1964.492,
+      "text": "of code, I haven't written a single"
+    },
+    {
+      "start": 1963.539,
+      "end": 1966.285,
+      "text": "line myself. Claude wrote everything."
+    },
+    {
+      "start": 1966.321,
+      "end": 1968.867,
+      "text": "But what to write and whether it is"
+    },
+    {
+      "start": 1967.911,
+      "end": 1970.546,
+      "text": "running correctly or not, that is the"
+    },
+    {
+      "start": 1969.59,
+      "end": 1974.038,
+      "text": "real skill. So never focus on the fact"
+    },
+    {
+      "start": 1973.099,
+      "end": 1976.4299999999998,
+      "text": "that, oh, 1000 lines can be written by"
+    },
+    {
+      "start": 1975.491,
+      "end": 1978.8799999999999,
+      "text": "AI, and we say no, don't do that. I"
+    },
+    {
+      "start": 1977.929,
+      "end": 1980.5700000000002,
+      "text": "don't remember the syntax. I will"
+    },
+    {
+      "start": 1979.614,
+      "end": 1982.06,
+      "text": "explain to you one by one what is"
+    },
+    {
+      "start": 1981.103,
+      "end": 1983.7820000000002,
+      "text": "happening. First of all, when a RAG"
+    },
+    {
+      "start": 1982.829,
+      "end": 1985.398,
+      "text": "system is built, what is created?"
+    },
+    {
+      "start": 1984.498,
+      "end": 1987.132,
+      "text": "Knowledge JSON, look, this is my"
+    },
+    {
+      "start": 1986.183,
+      "end": 1989.091,
+      "text": "knowledge JSON. What is in it? Remember"
+    },
+    {
+      "start": 1988.139,
+      "end": 1990.753,
+      "text": "the category. I taught you that every"
+    },
+    {
+      "start": 1989.792,
+      "end": 1992.2649999999999,
+      "text": "piece of knowledge has a category in a"
+    },
+    {
+      "start": 1991.304,
+      "end": 1993.9540000000002,
+      "text": "quadrant. And there is text like, this"
+    },
+    {
+      "start": 1992.997,
+      "end": 1995.585,
+      "text": "is how it looks, and plant leaves are"
+    },
+    {
+      "start": 1994.628,
+      "end": 1997.379,
+      "text": "like this or like that. Etc., etc.,"
+    },
+    {
+      "start": 1996.44,
+      "end": 1999.3700000000001,
+      "text": "look, the text is written in the"
+    },
+    {
+      "start": 1998.431,
+      "end": 2001.345,
+      "text": "knowledge JSON. Now what happens in"
+    },
+    {
+      "start": 2000.393,
+      "end": 2003.2250000000001,
+      "text": "evaluation? The kind of RAG you built."
+    },
+    {
+      "start": 2002.325,
+      "end": 2005.14,
+      "text": "Remember this in Qdrant, right? Look,"
+    },
+    {
+      "start": 2004.184,
+      "end": 2006.906,
+      "text": "the whole RAG was built, right? Build"
+    },
+    {
+      "start": 2005.954,
+      "end": 2008.856,
+      "text": "the same RAG. Exactly the same, no"
+    },
+    {
+      "start": 2007.915,
+      "end": 2010.306,
+      "text": "issues. All knowledge has to be"
+    },
+    {
+      "start": 2009.345,
+      "end": 2012.16,
+      "text": "inserted. In what? Put it in the vector"
+    },
+    {
+      "start": 2011.16,
+      "end": 2013.797,
+      "text": ", create embeddings, ask the LLM, print"
+    },
+    {
+      "start": 2012.839,
+      "end": 2015.6309999999999,
+      "text": "the answer. Everything is the same. But"
+    },
+    {
+      "start": 2014.681,
+      "end": 2017.751,
+      "text": "now we will also add an evaluation. Now"
+    },
+    {
+      "start": 2016.792,
+      "end": 2019.654,
+      "text": "what did I tell you? What is the very"
+    },
+    {
+      "start": 2018.702,
+      "end": 2021.827,
+      "text": "first step? Creating a golden dataset."
+    },
+    {
+      "start": 2020.927,
+      "end": 2023.759,
+      "text": "Look at this golden dataset. What is"
+    },
+    {
+      "start": 2022.81,
+      "end": 2026.022,
+      "text": "this? Golden dataset. Now look, where"
+    },
+    {
+      "start": 2025.08,
+      "end": 2028.072,
+      "text": "is it? Look, the golden dataset looks"
+    },
+    {
+      "start": 2027.123,
+      "end": 2030.701,
+      "text": "like this. ID, which ID? Forget about"
+    },
+    {
+      "start": 2029.753,
+      "end": 2032.4209999999998,
+      "text": "the ID. First question, how many"
+    },
+    {
+      "start": 2031.471,
+      "end": 2034.324,
+      "text": "vacations? What is this? This is your"
+    },
+    {
+      "start": 2033.369,
+      "end": 2036.2079999999999,
+      "text": "test case. What is this of yours? Test"
+    },
+    {
+      "start": 2035.277,
+      "end": 2038.272,
+      "text": "case. If your question is, \"How many"
+    },
+    {
+      "start": 2037.323,
+      "end": 2040.346,
+      "text": "vacations do I get?\" What is the ground"
+    },
+    {
+      "start": 2039.396,
+      "end": 2042.029,
+      "text": "truth, the actual answer to that?"
+    },
+    {
+      "start": 2041.129,
+      "end": 2044.1779999999999,
+      "text": "Forget what context came or what the AI"
+    },
+    {
+      "start": 2043.231,
+      "end": 2046.256,
+      "text": "thought. According to you, you have to"
+    },
+    {
+      "start": 2045.303,
+      "end": 2048.1420000000003,
+      "text": "sit and think about this golden dataset"
+    },
+    {
+      "start": 2047.142,
+      "end": 2049.838,
+      "text": ": what is the correct answer? The"
+    },
+    {
+      "start": 2048.893,
+      "end": 2051.943,
+      "text": "correct answer is, employees in India"
+    },
+    {
+      "start": 2050.998,
+      "end": 2054.159,
+      "text": "receive 24 days of paid leave per year."
+    },
+    {
+      "start": 2053.259,
+      "end": 2055.902,
+      "text": "Where did this ground truth come from?"
+    },
+    {
+      "start": 2055.002,
+      "end": 2058.094,
+      "text": "It came from knowledge.json. Look, it"
+    },
+    {
+      "start": 2057.138,
+      "end": 2060.0699999999997,
+      "text": "must be written somewhere here. See, 24"
+    },
+    {
+      "start": 2059.136,
+      "end": 2063.006,
+      "text": "days of paid leave per year. So, it is"
+    },
+    {
+      "start": 2062.054,
+      "end": 2064.757,
+      "text": "written here; your ground truth came"
+    },
+    {
+      "start": 2063.804,
+      "end": 2066.507,
+      "text": "from your knowledge, and in expected"
+    },
+    {
+      "start": 2065.555,
+      "end": 2068.305,
+      "text": "information, you write what should be"
+    },
+    {
+      "start": 2067.353,
+      "end": 2071.1420000000003,
+      "text": "in there. In expected information, it"
+    },
+    {
+      "start": 2070.194,
+      "end": 2073.022,
+      "text": "should be that employees receive 24"
+    },
+    {
+      "start": 2072.074,
+      "end": 2075.006,
+      "text": "days of paid leave per year. So, when"
+    },
+    {
+      "start": 2074.052,
+      "end": 2076.853,
+      "text": "the ground truth was already there, why"
+    },
+    {
+      "start": 2075.899,
+      "end": 2078.468,
+      "text": "was there a need to write expected"
+    },
+    {
+      "start": 2077.515,
+      "end": 2080.354,
+      "text": "information? For relevancy. It is"
+    },
+    {
+      "start": 2079.403,
+      "end": 2082.095,
+      "text": "possible that your LLM tells you 24"
+    },
+    {
+      "start": 2081.143,
+      "end": 2083.981,
+      "text": "days of paid leave, and after that, it"
+    },
+    {
+      "start": 2083.029,
+      "end": 2085.77,
+      "text": "writes Akamai's history, like Akamai"
+    },
+    {
+      "start": 2084.818,
+      "end": 2087.559,
+      "text": "was founded 20 years ago, and it was"
+    },
+    {
+      "start": 2086.607,
+      "end": 2089.338,
+      "text": "like this or that. That was not being"
+    },
+    {
+      "start": 2088.38,
+      "end": 2091.27,
+      "text": "asked of it, was it? So, what is this"
+    },
+    {
+      "start": 2090.329,
+      "end": 2093.277,
+      "text": "for? For relevancy. That, look, the"
+    },
+    {
+      "start": 2092.324,
+      "end": 2095.04,
+      "text": "information you are giving, we expect"
+    },
+    {
+      "start": 2094.086,
+      "end": 2096.828,
+      "text": "these things in it. We aren't asking"
+    },
+    {
+      "start": 2095.875,
+      "end": 2098.771,
+      "text": "for the name of Akamai's CEO's wife. We"
+    },
+    {
+      "start": 2097.813,
+      "end": 2100.589,
+      "text": "are not asking you all that. So, don't"
+    },
+    {
+      "start": 2099.644,
+      "end": 2102.673,
+      "text": "tell us that. This is for relevancy."
+    },
+    {
+      "start": 2101.877,
+      "end": 2104.769,
+      "text": "Now, what we do is, in the golden"
+    },
+    {
+      "start": 2103.826,
+      "end": 2107.063,
+      "text": "dataset, this right here is a test case"
+    },
+    {
+      "start": 2106.063,
+      "end": 2109.342,
+      "text": ". We run every test case on our real"
+    },
+    {
+      "start": 2108.396,
+      "end": 2112.244,
+      "text": "RAG. Every test case means every"
+    },
+    {
+      "start": 2111.294,
+      "end": 2114.254,
+      "text": "question; we send every question to our"
+    },
+    {
+      "start": 2113.304,
+      "end": 2116.855,
+      "text": "real RAG and look at its answer. We"
+    },
+    {
+      "start": 2115.895,
+      "end": 2119.182,
+      "text": "don't just look at the answer. We look"
+    },
+    {
+      "start": 2118.229,
+      "end": 2121.037,
+      "text": "at what context came from the quadrant"
+    },
+    {
+      "start": 2120.085,
+      "end": 2122.9410000000003,
+      "text": "for it, and then we evaluate its answer"
+    },
+    {
+      "start": 2121.941,
+      "end": 2125.384,
+      "text": ". How do we evaluate it? With these"
+    },
+    {
+      "start": 2124.435,
+      "end": 2127.307,
+      "text": "five parameters. What is the precision"
+    },
+    {
+      "start": 2126.353,
+      "end": 2129.227,
+      "text": "of that response? What is the recall?"
+    },
+    {
+      "start": 2128.414,
+      "end": 2131.588,
+      "text": "How much is the faithfulness? How much"
+    },
+    {
+      "start": 2130.634,
+      "end": 2133.3940000000002,
+      "text": "is the relevancy, and what do you call"
+    },
+    {
+      "start": 2132.441,
+      "end": 2135.406,
+      "text": "it? How much is the correctness? So"
+    },
+    {
+      "start": 2134.467,
+      "end": 2137.408,
+      "text": "look, first of all, precision is"
+    },
+    {
+      "start": 2136.469,
+      "end": 2140.2780000000002,
+      "text": "calculated. Precision means out of all"
+    },
+    {
+      "start": 2139.325,
+      "end": 2142.011,
+      "text": "the chunks that came in the context,"
+    },
+    {
+      "start": 2141.058,
+      "end": 2144.716,
+      "text": "how many lines were relevant? So, what"
+    },
+    {
+      "start": 2143.773,
+      "end": 2147.302,
+      "text": "do we use for precision? We use an LLM."
+    },
+    {
+      "start": 2146.402,
+      "end": 2149.245,
+      "text": "See, what is precision? What is"
+    },
+    {
+      "start": 2148.291,
+      "end": 2151.3990000000003,
+      "text": "precision? Look, retrieved documents."
+    },
+    {
+      "start": 2150.499,
+      "end": 2153.1659999999997,
+      "text": "The question you asked, let's say you"
+    },
+    {
+      "start": 2152.211,
+      "end": 2154.9689999999996,
+      "text": "asked, how many days of leave do I get?"
+    },
+    {
+      "start": 2154.069,
+      "end": 2157.021,
+      "text": "Yes, for that, those three documents,"
+    },
+    {
+      "start": 2156.074,
+      "end": 2159.132,
+      "text": "meaning those three lines that Quadrant"
+    },
+    {
+      "start": 2158.185,
+      "end": 2161.316,
+      "text": "DB sent you, how relevant was that? So,"
+    },
+    {
+      "start": 2160.378,
+      "end": 2163.5480000000002,
+      "text": "we used an LLM for this as well. We"
+    },
+    {
+      "start": 2162.597,
+      "end": 2165.186,
+      "text": "told it, \"You are evaluating the"
+    },
+    {
+      "start": 2164.235,
+      "end": 2167.1220000000003,
+      "text": "retrieval quality of a RAG system, and"
+    },
+    {
+      "start": 2166.171,
+      "end": 2169.058,
+      "text": "you tell me: is this chunk relevant to"
+    },
+    {
+      "start": 2168.107,
+      "end": 2170.85,
+      "text": "answering the question?\" So, let's"
+    },
+    {
+      "start": 2169.897,
+      "end": 2172.486,
+      "text": "assume the question was, \"How much"
+    },
+    {
+      "start": 2171.532,
+      "end": 2174.262,
+      "text": "money do you get for gym membership?\""
+    },
+    {
+      "start": 2173.362,
+      "end": 2176.332,
+      "text": "And your Quadrant is sending you, \"You"
+    },
+    {
+      "start": 2175.384,
+      "end": 2178.166,
+      "text": "get a salary of 500 rupees.\" It is"
+    },
+    {
+      "start": 2177.212,
+      "end": 2179.798,
+      "text": "slightly relevant. It is not very"
+    },
+    {
+      "start": 2178.845,
+      "end": 2181.5069999999996,
+      "text": "relevant. The question was, \"How much"
+    },
+    {
+      "start": 2180.55,
+      "end": 2183.1110000000003,
+      "text": "money do you get for gym membership?\""
+    },
+    {
+      "start": 2182.211,
+      "end": 2185.064,
+      "text": "Your Quadrant is sending you, \"You get"
+    },
+    {
+      "start": 2184.113,
+      "end": 2186.671,
+      "text": "24 days of paid leave.\" This is"
+    },
+    {
+      "start": 2185.719,
+      "end": 2188.654,
+      "text": "completely irrelevant. So, the LLM will"
+    },
+    {
+      "start": 2187.703,
+      "end": 2190.596,
+      "text": "read both these statements and tell you"
+    },
+    {
+      "start": 2189.645,
+      "end": 2192.5,
+      "text": "if it is relevant or irrelevant. So,"
+    },
+    {
+      "start": 2191.553,
+      "end": 2195.7529999999997,
+      "text": "what will this tell you? Whatever total"
+    },
+    {
+      "start": 2194.803,
+      "end": 2197.739,
+      "text": "amount came, what will we do with that?"
+    },
+    {
+      "start": 2197.598,
+      "end": 2200.346,
+      "text": "Relevant chunks divided by the length"
+    },
+    {
+      "start": 2199.393,
+      "end": 2202.011,
+      "text": "of retrieved docs. How much did the"
+    },
+    {
+      "start": 2201.052,
+      "end": 2203.393,
+      "text": "total Quadrant send? It sent a"
+    },
+    {
+      "start": 2202.438,
+      "end": 2204.966,
+      "text": "three-line answer. Out of that, how"
+    },
+    {
+      "start": 2204.004,
+      "end": 2206.449,
+      "text": "many lines were relevant? Yes, two"
+    },
+    {
+      "start": 2205.497,
+      "end": 2208.037,
+      "text": "lines were relevant. What does that"
+    },
+    {
+      "start": 2207.071,
+      "end": 2210.99,
+      "text": "come to? 2/3, 66%. So, what do we call"
+    },
+    {
+      "start": 2210.042,
+      "end": 2213.12,
+      "text": "this? We call it precision. Now, recall"
+    },
+    {
+      "start": 2212.12,
+      "end": 2214.941,
+      "text": "—recall means all the information"
+    },
+    {
+      "start": 2213.994,
+      "end": 2216.815,
+      "text": "available for it; let's say you are"
+    },
+    {
+      "start": 2215.867,
+      "end": 2219.349,
+      "text": "asking, \"How much leave is there?\" For"
+    },
+    {
+      "start": 2218.392,
+      "end": 2220.694,
+      "text": "leave, there were two lines of"
+    },
+    {
+      "start": 2219.738,
+      "end": 2222.344,
+      "text": "information written in your knowledge"
+    },
+    {
+      "start": 2221.387,
+      "end": 2224.007,
+      "text": "base. So look, for leave, let's say"
+    },
+    {
+      "start": 2223.051,
+      "end": 2225.802,
+      "text": "this one line is written for leave, and"
+    },
+    {
+      "start": 2224.847,
+      "end": 2227.554,
+      "text": "one line is written for planned leave."
+    },
+    {
+      "start": 2226.654,
+      "end": 2229.085,
+      "text": "And some other things are also written"
+    },
+    {
+      "start": 2228.123,
+      "end": 2230.929,
+      "text": "like that. So, did all of it come or"
+    },
+    {
+      "start": 2229.982,
+      "end": 2232.681,
+      "text": "not? Is it not the case that there were"
+    },
+    {
+      "start": 2231.721,
+      "end": 2234.189,
+      "text": "two lines in the knowledge base, and"
+    },
+    {
+      "start": 2233.23,
+      "end": 2235.739,
+      "text": "your Quadrant only sent you one line?"
+    },
+    {
+      "start": 2234.839,
+      "end": 2237.7039999999997,
+      "text": "So, what will decrease because of that?"
+    },
+    {
+      "start": 2236.804,
+      "end": 2239.7670000000003,
+      "text": "Recall will decrease. So, in this way,"
+    },
+    {
+      "start": 2238.819,
+      "end": 2241.608,
+      "text": "what does it call this? It calls it"
+    },
+    {
+      "start": 2240.654,
+      "end": 2243.108,
+      "text": "recall and gives you the answer."
+    },
+    {
+      "start": 2242.208,
+      "end": 2245.17,
+      "text": "Faithfulness—whatever context came,"
+    },
+    {
+      "start": 2244.223,
+      "end": 2247.291,
+      "text": "did your LLM's answer come from reading"
+    },
+    {
+      "start": 2246.344,
+      "end": 2249.306,
+      "text": "that context, or did it come from its"
+    },
+    {
+      "start": 2248.359,
+      "end": 2251.839,
+      "text": "own mind? Meaning, the information"
+    },
+    {
+      "start": 2250.887,
+      "end": 2253.6760000000004,
+      "text": "written in the context and the answer"
+    },
+    {
+      "start": 2252.724,
+      "end": 2256.255,
+      "text": "you received, do they both match? Is it"
+    },
+    {
+      "start": 2255.306,
+      "end": 2258.216,
+      "text": "not the case that the context said 15"
+    },
+    {
+      "start": 2257.268,
+      "end": 2260.177,
+      "text": "days of leave and your answer says 24"
+    },
+    {
+      "start": 2259.229,
+      "end": 2261.968,
+      "text": "days of leave? If that is the case,"
+    },
+    {
+      "start": 2261.014,
+      "end": 2263.7560000000003,
+      "text": "then where is this answer coming from?"
+    },
+    {
+      "start": 2262.904,
+      "end": 2266.679,
+      "text": "The LLM is hallucinating. After that,"
+    },
+    {
+      "start": 2265.745,
+      "end": 2269.2929999999997,
+      "text": "relevancy. After that, relevancy means"
+    },
+    {
+      "start": 2268.341,
+      "end": 2270.946,
+      "text": "whether the answer received is the"
+    },
+    {
+      "start": 2269.993,
+      "end": 2272.457,
+      "text": "correct answer according to the"
+    },
+    {
+      "start": 2271.504,
+      "end": 2275.216,
+      "text": "question or not. Does it match the"
+    },
+    {
+      "start": 2274.261,
+      "end": 2276.883,
+      "text": "expected information written in your"
+    },
+    {
+      "start": 2275.928,
+      "end": 2278.37,
+      "text": "golden dataset, or is it telling"
+    },
+    {
+      "start": 2277.415,
+      "end": 2280.895,
+      "text": "something else that we didn't ask? What"
+    },
+    {
+      "start": 2279.936,
+      "end": 2283.983,
+      "text": "do we call that? Relevancy. After that,"
+    },
+    {
+      "start": 2283.04,
+      "end": 2286.661,
+      "text": "answer correctness. Does the final"
+    },
+    {
+      "start": 2285.708,
+      "end": 2288.455,
+      "text": "answer exactly match the ground truth"
+    },
+    {
+      "start": 2287.502,
+      "end": 2291.625,
+      "text": "of the golden data set or not? If the"
+    },
+    {
+      "start": 2290.685,
+      "end": 2294.045,
+      "text": "ground truth says you get 3,000 for the"
+    },
+    {
+      "start": 2293.105,
+      "end": 2296.344,
+      "text": "gym, but your answer says you get ₹"
+    },
+    {
+      "start": 2295.404,
+      "end": 2299.302,
+      "text": "2,500, it doesn't match. Your answer is"
+    },
+    {
+      "start": 2298.348,
+      "end": 2302.471,
+      "text": "not correct. Look at your LLM. Look at"
+    },
+    {
+      "start": 2301.521,
+      "end": 2305.886,
+      "text": "your LLM and work on it. So, these five"
+    },
+    {
+      "start": 2304.943,
+      "end": 2308.1110000000003,
+      "text": "things, and when you run this, see how"
+    },
+    {
+      "start": 2307.169,
+      "end": 2311.004,
+      "text": "it will work. When you run this, what"
+    },
+    {
+      "start": 2310.056,
+      "end": 2314.139,
+      "text": "will it do? It will send every question"
+    },
+    {
+      "start": 2313.193,
+      "end": 2316.1310000000003,
+      "text": "from the golden data set to your RAG"
+    },
+    {
+      "start": 2315.185,
+      "end": 2318.285,
+      "text": "and generate a report for each, saying,"
+    },
+    {
+      "start": 2317.339,
+      "end": 2320.384,
+      "text": "\"Look, precision was good here, recall"
+    },
+    {
+      "start": 2319.438,
+      "end": 2322.107,
+      "text": "was low, faithfulness was okay,"
+    },
+    {
+      "start": 2321.161,
+      "end": 2323.992,
+      "text": "correctness was low, now make your"
+    },
+    {
+      "start": 2323.046,
+      "end": 2326.995,
+      "text": "decisions based on this.\" Let me show"
+    },
+    {
+      "start": 2326.047,
+      "end": 2329.506,
+      "text": "you by reading one question, see. Look,"
+    },
+    {
+      "start": 2328.56,
+      "end": 2331.336,
+      "text": "the first question was, \"How many"
+    },
+    {
+      "start": 2330.389,
+      "end": 2333.569,
+      "text": "vacation days do I get?\" How many"
+    },
+    {
+      "start": 2332.62,
+      "end": 2335.516,
+      "text": "vacation days do I get? For this, it"
+    },
+    {
+      "start": 2334.569,
+      "end": 2337.55,
+      "text": "retrieved these three lines. The first"
+    },
+    {
+      "start": 2336.595,
+      "end": 2339.386,
+      "text": "one retrieved was that they get 24 days"
+    },
+    {
+      "start": 2338.431,
+      "end": 2341.192,
+      "text": "of leave. That's a good line. It's a"
+    },
+    {
+      "start": 2340.239,
+      "end": 2342.993,
+      "text": "relevant line. The second one said that"
+    },
+    {
+      "start": 2342.035,
+      "end": 2344.662,
+      "text": "promotion cycles happen twice per year."
+    },
+    {
+      "start": 2343.762,
+      "end": 2346.436,
+      "text": "What is this about? I didn't ask about"
+    },
+    {
+      "start": 2345.482,
+      "end": 2348.3,
+      "text": "promotions. This is an irrelevant chunk"
+    },
+    {
+      "start": 2347.3,
+      "end": 2350.0,
+      "text": ". What is the third one? I follow a"
+    },
+    {
+      "start": 2349.054,
+      "end": 2352.2580000000003,
+      "text": "hybrid work model. It wasn't asked how"
+    },
+    {
+      "start": 2351.306,
+      "end": 2354.163,
+      "text": "many work days or office days there are"
+    },
+    {
+      "start": 2353.163,
+      "end": 2356.675,
+      "text": ", right? No, no. What is the precision?"
+    },
+    {
+      "start": 2356.254,
+      "end": 2359.4049999999997,
+      "text": "0.33, because out of the three lines"
+    },
+    {
+      "start": 2358.465,
+      "end": 2361.739,
+      "text": "retrieved, which one is relevant? Only"
+    },
+    {
+      "start": 2360.79,
+      "end": 2363.576,
+      "text": "this one line is relevant, man. The"
+    },
+    {
+      "start": 2362.616,
+      "end": 2365.156,
+      "text": "other two were irrelevant lines. So,"
+    },
+    {
+      "start": 2364.206,
+      "end": 2367.616,
+      "text": "what is the precision? 1/3, 33%, which"
+    },
+    {
+      "start": 2366.697,
+      "end": 2370.0190000000002,
+      "text": "is very, very low. What should you do?"
+    },
+    {
+      "start": 2369.119,
+      "end": 2372.387,
+      "text": "You should lower the top-k a bit. Or"
+    },
+    {
+      "start": 2371.435,
+      "end": 2374.267,
+      "text": "increase the score threshold slightly."
+    },
+    {
+      "start": 2373.82,
+      "end": 2376.317,
+      "text": "Look, what was the score of the"
+    },
+    {
+      "start": 2375.365,
+      "end": 2379.846,
+      "text": "relevant one? 0.49. So if we set our"
+    },
+    {
+      "start": 2378.906,
+      "end": 2382.267,
+      "text": "threshold to 0.4, meaning only retrieve"
+    },
+    {
+      "start": 2381.327,
+      "end": 2384.445,
+      "text": "scores 0.4 or higher, both of those"
+    },
+    {
+      "start": 2383.506,
+      "end": 2386.6369999999997,
+      "text": "will stop being retrieved. How high"
+    },
+    {
+      "start": 2385.682,
+      "end": 2388.694,
+      "text": "will your precision go? 100%, but don't"
+    },
+    {
+      "start": 2387.753,
+      "end": 2390.8030000000003,
+      "text": "make the decision yet. You have to read"
+    },
+    {
+      "start": 2389.844,
+      "end": 2394.322,
+      "text": "the rest. Recall. Recall says 100%. So,"
+    },
+    {
+      "start": 2393.373,
+      "end": 2396.305,
+      "text": "recall means: was there any other line"
+    },
+    {
+      "start": 2395.356,
+      "end": 2398.3390000000004,
+      "text": "related to leave in your knowledge base"
+    },
+    {
+      "start": 2397.339,
+      "end": 2400.0769999999998,
+      "text": "? Let's see what's related to leave in"
+    },
+    {
+      "start": 2399.115,
+      "end": 2401.627,
+      "text": "the knowledge base. In the knowledge"
+    },
+    {
+      "start": 2400.67,
+      "end": 2403.216,
+      "text": "base, there was one line, the 24-day"
+    },
+    {
+      "start": 2402.259,
+      "end": 2404.612,
+      "text": "one, that appeared. Planned leave"
+    },
+    {
+      "start": 2403.646,
+      "end": 2405.9590000000003,
+      "text": "should be applied only through Workday,"
+    },
+    {
+      "start": 2404.993,
+      "end": 2407.459,
+      "text": "but I didn't ask that. I asked how many"
+    },
+    {
+      "start": 2406.498,
+      "end": 2409.1440000000002,
+      "text": "days of leave I get. That is irrelevant"
+    },
+    {
+      "start": 2408.144,
+      "end": 2410.8239999999996,
+      "text": ". The hybrid work model is irrelevant."
+    },
+    {
+      "start": 2409.924,
+      "end": 2412.942,
+      "text": "₹ 2000 per month is irrelevant. 3000"
+    },
+    {
+      "start": 2411.992,
+      "end": 2414.666,
+      "text": "per month is irrelevant. Promotion"
+    },
+    {
+      "start": 2413.708,
+      "end": 2416.052,
+      "text": "irrelevant, learning development"
+    },
+    {
+      "start": 2415.094,
+      "end": 2417.884,
+      "text": "benefit irrelevant. All employees must"
+    },
+    {
+      "start": 2416.933,
+      "end": 2419.867,
+      "text": "complete mandatory security, irrelevant"
+    },
+    {
+      "start": 2418.867,
+      "end": 2421.661,
+      "text": ". Meaning, how many lines were relevant"
+    },
+    {
+      "start": 2420.706,
+      "end": 2423.434,
+      "text": "to the question in my knowledge? Just"
+    },
+    {
+      "start": 2422.485,
+      "end": 2425.231,
+      "text": "one line, and did your quadrant DB"
+    },
+    {
+      "start": 2424.282,
+      "end": 2426.9840000000004,
+      "text": "return that one line? It definitely"
+    },
+    {
+      "start": 2426.025,
+      "end": 2428.515,
+      "text": "returned it, so what will your recall"
+    },
+    {
+      "start": 2427.555,
+      "end": 2431.075,
+      "text": "become? 1 by 1, 100%. How much was"
+    },
+    {
+      "start": 2430.114,
+      "end": 2432.592,
+      "text": "relevant in total and how much of that"
+    },
+    {
+      "start": 2431.631,
+      "end": 2435.524,
+      "text": "was returned? 1 by 1, 100%. So, there"
+    },
+    {
+      "start": 2434.58,
+      "end": 2437.672,
+      "text": "is no issue with recall. Faithfulness:"
+    },
+    {
+      "start": 2436.723,
+      "end": 2439.335,
+      "text": "Did the answer you got come from"
+    },
+    {
+      "start": 2438.385,
+      "end": 2441.179,
+      "text": "reading your context? So, let's see"
+    },
+    {
+      "start": 2440.228,
+      "end": 2442.978,
+      "text": "what your answer was. Your answer must"
+    },
+    {
+      "start": 2442.017,
+      "end": 2444.497,
+      "text": "be written somewhere below. Where did"
+    },
+    {
+      "start": 2443.534,
+      "end": 2446.2850000000003,
+      "text": "it write the answer? Wait, did it not"
+    },
+    {
+      "start": 2445.343,
+      "end": 2448.4869999999996,
+      "text": "answer? Oh, the answer, yes, it's a"
+    },
+    {
+      "start": 2447.548,
+      "end": 2450.627,
+      "text": "generated answer, right? Look at what"
+    },
+    {
+      "start": 2449.671,
+      "end": 2452.848,
+      "text": "your answer was. You receive 24 days of"
+    },
+    {
+      "start": 2451.907,
+      "end": 2455.096,
+      "text": "paid vacation leave, in addition, you"
+    },
+    {
+      "start": 2454.155,
+      "end": 2457.306,
+      "text": "also get 12 public holidays. Where the"
+    },
+    {
+      "start": 2456.349,
+      "end": 2459.621,
+      "text": "hell did it ask this from? 12 public"
+    },
+    {
+      "start": 2458.688,
+      "end": 2462.299,
+      "text": "holidays, see, this is a hallucination."
+    },
+    {
+      "start": 2461.399,
+      "end": 2464.314,
+      "text": "This hallucination, 12 public holidays,"
+    },
+    {
+      "start": 2463.363,
+      "end": 2466.2509999999997,
+      "text": "is not written anywhere. See, 12 public"
+    },
+    {
+      "start": 2465.295,
+      "end": 2467.9500000000003,
+      "text": "holidays, I don't think it's anywhere."
+    },
+    {
+      "start": 2467.05,
+      "end": 2469.8250000000003,
+      "text": "Oh, oh, it is written. It is written."
+    },
+    {
+      "start": 2468.925,
+      "end": 2471.822,
+      "text": "Okay. Okay. Employees also receive 12"
+    },
+    {
+      "start": 2470.86,
+      "end": 2473.518,
+      "text": "public holidays. Right? The answer is a"
+    },
+    {
+      "start": 2472.556,
+      "end": 2474.7980000000002,
+      "text": "perfectly correct answer. And it"
+    },
+    {
+      "start": 2473.834,
+      "end": 2476.216,
+      "text": "provided that answer after reading your"
+    },
+    {
+      "start": 2475.252,
+      "end": 2478.496,
+      "text": "context. So, faithfulness is 100%."
+    },
+    {
+      "start": 2477.596,
+      "end": 2480.438,
+      "text": "Relevancy: based on your question, is"
+    },
+    {
+      "start": 2479.488,
+      "end": 2481.9649999999997,
+      "text": "this a relevant answer? It is"
+    },
+    {
+      "start": 2481.011,
+      "end": 2483.798,
+      "text": "absolutely a relevant answer. Does it"
+    },
+    {
+      "start": 2482.848,
+      "end": 2485.567,
+      "text": "tell you which holidays you get for"
+    },
+    {
+      "start": 2484.617,
+      "end": 2487.521,
+      "text": "Ganesh Chaturthi, Eid, or Muharram? It"
+    },
+    {
+      "start": 2486.563,
+      "end": 2489.1400000000003,
+      "text": "doesn't tell you. It is a relevant"
+    },
+    {
+      "start": 2488.188,
+      "end": 2491.145,
+      "text": "answer. Correctness: Does it match your"
+    },
+    {
+      "start": 2490.194,
+      "end": 2492.915,
+      "text": "ground truth, what you wrote in the"
+    },
+    {
+      "start": 2491.964,
+      "end": 2494.907,
+      "text": "ground truth? It absolutely matches."
+    },
+    {
+      "start": 2494.007,
+      "end": 2496.657,
+      "text": "This was your ground truth as well. So"
+    },
+    {
+      "start": 2495.703,
+      "end": 2498.433,
+      "text": "everything is correct. What is wrong?"
+    },
+    {
+      "start": 2497.533,
+      "end": 2500.33,
+      "text": "Your precision is wrong. What is your"
+    },
+    {
+      "start": 2499.372,
+      "end": 2502.663,
+      "text": "precision? 33%, and it tells you that"
+    },
+    {
+      "start": 2501.72,
+      "end": 2504.8529999999996,
+      "text": "the retrieval is returning irrelevant"
+    },
+    {
+      "start": 2503.91,
+      "end": 2507.8129999999996,
+      "text": "chunks. It is returning chunks that"
+    },
+    {
+      "start": 2506.856,
+      "end": 2510.2960000000003,
+      "text": "were not needed. So, this is how"
+    },
+    {
+      "start": 2509.352,
+      "end": 2512.21,
+      "text": "evaluation works, and this is how"
+    },
+    {
+      "start": 2511.267,
+      "end": 2514.79,
+      "text": "people make decisions. This is how you"
+    },
+    {
+      "start": 2513.838,
+      "end": 2516.71,
+      "text": "will decide what to change, adjust it a"
+    },
+    {
+      "start": 2515.757,
+      "end": 2518.581,
+      "text": "bit, increase it, decrease it, and you"
+    },
+    {
+      "start": 2517.629,
+      "end": 2520.4519999999998,
+      "text": "will keep doing this until your system"
+    },
+    {
+      "start": 2519.5,
+      "end": 2522.405,
+      "text": "becomes stable according to you. It is"
+    },
+    {
+      "start": 2521.459,
+      "end": 2524.562,
+      "text": "not necessary for everything to be 100%"
+    },
+    {
+      "start": 2523.562,
+      "end": 2526.6639999999998,
+      "text": ". There is no such perfect system where"
+    },
+    {
+      "start": 2525.717,
+      "end": 2528.6130000000003,
+      "text": "precision is 100%and recall is 100%;"
+    },
+    {
+      "start": 2527.666,
+      "end": 2530.576,
+      "text": "it's not like that. But it should reach"
+    },
+    {
+      "start": 2529.619,
+      "end": 2532.185,
+      "text": "a stable state. It should reach a"
+    },
+    {
+      "start": 2531.233,
+      "end": 2533.8390000000004,
+      "text": "satisfactory state, saying, well,"
+    },
+    {
+      "start": 2532.888,
+      "end": 2535.689,
+      "text": "there's a margin of error everywhere,"
+    },
+    {
+      "start": 2534.737,
+      "end": 2537.3920000000003,
+      "text": "but it should reach a satisfactory"
+    },
+    {
+      "start": 2536.441,
+      "end": 2539.196,
+      "text": "state. What is this entire process"
+    },
+    {
+      "start": 2538.247,
+      "end": 2541.5699999999997,
+      "text": "called? Evaluating a RAG: How do you"
+    },
+    {
+      "start": 2540.629,
+      "end": 2544.04,
+      "text": "evaluate a RAG you've built? So, when"
+    },
+    {
+      "start": 2543.093,
+      "end": 2546.171,
+      "text": "asked in an interview, where should you"
+    },
+    {
+      "start": 2545.225,
+      "end": 2549.535,
+      "text": "start? Starting from the golden dataset"
+    },
+    {
+      "start": 2548.535,
+      "end": 2551.3329999999996,
+      "text": ", you'll need to talk about all five"
+    },
+    {
+      "start": 2550.383,
+      "end": 2554.768,
+      "text": "methods, one by one. You’ll have to"
+    },
+    {
+      "start": 2553.812,
+      "end": 2556.4,
+      "text": "explain everything and also describe"
+    },
+    {
+      "start": 2555.444,
+      "end": 2558.476,
+      "text": "the action taken after each one. So, we"
+    },
+    {
+      "start": 2557.528,
+      "end": 2560.357,
+      "text": "hope there are no doubts left about"
+    },
+    {
+      "start": 2559.41,
+      "end": 2562.194,
+      "text": "what RAG evaluation is. If someone"
+    },
+    {
+      "start": 2561.242,
+      "end": 2563.8810000000003,
+      "text": "wakes you from sleep and asks what"
+    },
+    {
+      "start": 2562.929,
+      "end": 2565.503,
+      "text": "evaluation is? You will be able to"
+    },
+    {
+      "start": 2564.545,
+      "end": 2567.4010000000003,
+      "text": "answer. Does that make sense? Alright,"
+    },
+    {
+      "start": 2566.452,
+      "end": 2569.318,
+      "text": "so go ahead and do it. Can't understand"
+    },
+    {
+      "start": 2568.358,
+      "end": 2571.027,
+      "text": "or remember the code? No problem. I"
+    },
+    {
+      "start": 2570.061,
+      "end": 2572.2940000000003,
+      "text": "don't remember it either. Nobody"
+    },
+    {
+      "start": 2571.342,
+      "end": 2574.059,
+      "text": "remembers the syntax. Claude will write"
+    },
+    {
+      "start": 2573.095,
+      "end": 2575.6029999999996,
+      "text": "your code. Okay? When you join a"
+    },
+    {
+      "start": 2574.639,
+      "end": 2577.051,
+      "text": "company, Claude will be the one writing"
+    },
+    {
+      "start": 2576.087,
+      "end": 2578.561,
+      "text": "your code. What needs to be written? Is"
+    },
+    {
+      "start": 2577.6,
+      "end": 2580.125,
+      "text": "Claude writing it on its own? No. You"
+    },
+    {
+      "start": 2579.168,
+      "end": 2581.795,
+      "text": "are telling it what to write. You are"
+    },
+    {
+      "start": 2580.836,
+      "end": 2583.468,
+      "text": "making the decisions. That is software"
+    },
+    {
+      "start": 2582.511,
+      "end": 2584.875,
+      "text": "engineering. Writing code isn't"
+    },
+    {
+      "start": 2583.917,
+      "end": 2586.48,
+      "text": "software engineering. If writing code"
+    },
+    {
+      "start": 2585.519,
+      "end": 2588.0359999999996,
+      "text": "is all there is, then just keep sitting"
+    },
+    {
+      "start": 2587.075,
+      "end": 2589.866,
+      "text": "and writing code. Okay? So do all of"
+    },
+    {
+      "start": 2588.908,
+      "end": 2591.477,
+      "text": "this and see you in the next lecture."
+    },
+    {
+      "start": 2590.577,
+      "end": 2593.222,
+      "text": "Until then, thank you very much."
+    }
+  ],
+  "language": "en-US",
+  "language_name": "English (United States) (auto-generated)",
+  "is_generated": true,
+  "provider": "youtube",
+  "source_type": "youtube_generated",
+  "retrieved_at": "2026-09-22T18:16:42.369342+00:00"
+}
