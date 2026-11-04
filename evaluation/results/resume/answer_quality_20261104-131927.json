@@ -1,0 +1,405 @@
+{
+  "generated_at": "2026-11-04T13:19:27+00:00",
+  "git": {
+    "commit": "59d18fa052e1ec5137883e52b497db0863df9343",
+    "dirty": true
+  },
+  "eval_set": {
+    "path": "C:\\Users\\NIPUNN~1\\AppData\\Local\\Temp\\scrubgpt-faithfulness-no-enhance-9wiir0jx.json",
+    "entries": 10,
+    "skipped_stubs": 0,
+    "skipped_unreviewed": 0
+  },
+  "params": {
+    "metrics": [
+      "faithfulness"
+    ],
+    "enhance": "none",
+    "judge": [
+      "gemini",
+      "gemini-3.5-flash-lite"
+    ],
+    "answer_model": [
+      "gemini",
+      "gemini-3.5-flash"
+    ],
+    "judge_is_answer_model": false
+  },
+  "summary": {
+    "n_questions": 10,
+    "answered_rate": 1.0,
+    "refused_answerable": 0,
+    "judge_errors": 0,
+    "citation_coverage": 1.0,
+    "metrics": {
+      "faithfulness": {
+        "n": 10,
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "fraction_perfect": 1.0,
+        "n_not_applicable": 0,
+        "n_judge_failed": 0,
+        "by_category": {
+          "cross_video": {
+            "n": 5,
+            "mean": 1.0
+          },
+          "direct_fact": {
+            "n": 5,
+            "mean": 1.0
+          }
+        }
+      }
+    }
+  },
+  "llm_usage": {
+    "default": {
+      "calls": 10,
+      "errors": 0,
+      "seconds": 181.17901499965228,
+      "input_tokens": 10526,
+      "output_tokens": 3765,
+      "token_calls": 10
+    },
+    "judge": {
+      "calls": 10,
+      "errors": 0,
+      "seconds": 86.77242420008406,
+      "input_tokens": 11134,
+      "output_tokens": 1541,
+      "token_calls": 10
+    }
+  },
+  "errors": [],
+  "aborted": null,
+  "questions": [
+    {
+      "id": "kw-059",
+      "category": "direct_fact",
+      "question": "At which timestamp is ARC-AGI discussed?",
+      "refused": false,
+      "answer": "ARC-AGI is discussed starting at timestamp 0:00 [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 1,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "ARC-AGI is discussed starting at timestamp 0:00",
+              "supported": true,
+              "evidence": "\"OpenAI Is Lying to US! Full Truth About ARC AGI 3 Test\" (0:00)"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-060",
+      "category": "direct_fact",
+      "question": "At which timestamp is few-shot discussed?",
+      "refused": false,
+      "answer": "Few-shot prompting is discussed in the video \"Ep 07: Prompt Engineering in 30 mins | Free AI Engineer Course | 8 Weeks\" at the 18:41 timestamp [1].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 1,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Few-shot prompting is discussed in the video \"Ep 07: Prompt Engineering in 30 mins | Free AI Engineer Course | 8 Weeks\" at the 18:41 timestamp",
+              "supported": true,
+              "evidence": "[2] mentions few shot at 18:41"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-061",
+      "category": "direct_fact",
+      "question": "At which timestamp is JSON schema discussed?",
+      "refused": false,
+      "answer": "JSON schema (including `Model JSON Schema`) is discussed at timestamp 23:19, where creating a schema to instruct the LLM to respond with a JSON object is explained [1]. It is also discussed within the 32:38 - 35:18 timestamp range when setting up the class schema and specifying response formatting [2].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "JSON schema (including Model JSON Schema) is discussed at timestamp 23:19",
+              "supported": true,
+              "evidence": "\"Ep:05-Pydantic+JSON | AI Engineer Course | 8 Weeks\" (23:19)"
+            },
+            {
+              "claim": "at timestamp 23:19, creating a schema to instruct the LLM to respond with a JSON object is explained",
+              "supported": true,
+              "evidence": "After that, Model JSON Schema? What? Model JSON Schema... response format should be what? ... a JSON object."
+            },
+            {
+              "claim": "It is also discussed within the 32:38 - 35:18 timestamp range when setting up the class schema and specifying response formatting",
+              "supported": true,
+              "evidence": "\"Ep:05-Pydantic+JSON | AI Engineer Course | 8 Weeks\" (32:38 - 35:18) ... create a class named Ticket... create a schema... response_format = ... type should be a json object"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-062",
+      "category": "cross_video",
+      "question": "At which timestamp is chunking discussed?",
+      "refused": false,
+      "answer": "Chunking and data chunks are discussed in Video 11 at timestamp 15:09, where streaming data arriving in chunks is explained [1]. Chunking strategies for RAG, such as fixed size, paragraph, recursive, and semantic chunking, are discussed in Video 22 at timestamp 22:05 [2]. Further detail on recursive chunking, chunk overlap, and the importance of chunking is covered in Video 22 at timestamp 26:44 [3].",
+      "n_periods": 3,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 4,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Chunking and data chunks are discussed in Video 11 at timestamp 15:09",
+              "supported": true,
+              "evidence": "[1] Ep 10: Streaming (Like ChatGPT) | Free AI Engineer Course | 8 Weeks (15:09)"
+            },
+            {
+              "claim": "streaming data arriving in chunks is explained",
+              "supported": true,
+              "evidence": "[1] data comes chunk by chunk"
+            },
+            {
+              "claim": "Chunking strategies for RAG, such as fixed size, paragraph, recursive, and semantic chunking, are discussed in Video 22 at timestamp 22:05",
+              "supported": true,
+              "evidence": "[2] Chunking Strategies for RAG | Free AI Engineer Course | 8 Weeks (22:05)"
+            },
+            {
+              "claim": "Further detail on recursive chunking, chunk overlap, and the importance of chunking is covered in Video 22 at timestamp 26:44",
+              "supported": true,
+              "evidence": "[3] Chunking Strategies for RAG | Free AI Engineer Course | 8 Weeks (26:44)"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-063",
+      "category": "direct_fact",
+      "question": "At which timestamp is YAML discussed?",
+      "refused": false,
+      "answer": "YAML (specifically `config.yaml`) is discussed at the 8:10 timestamp [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 1,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "YAML (specifically config.yaml) is discussed at the 8:10 timestamp",
+              "supported": true,
+              "evidence": "8:10 ... config.yaml"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-064",
+      "category": "direct_fact",
+      "question": "At which timestamp is indexing discussed?",
+      "refused": false,
+      "answer": "Indexing is discussed in the timestamp range 23:17 to 27:07 [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 1,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Indexing is discussed in the timestamp range 23:17 to 27:07",
+              "supported": true,
+              "evidence": "Multi-Tenant RAG with Qdrant | Free AI Engineer Course | 8 Weeks\" (23:17 - 27:07) ... What does index mean?"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-065",
+      "category": "cross_video",
+      "question": "At which timestamp is agent evaluation discussed?",
+      "refused": false,
+      "answer": "Agent evaluation is first introduced at timestamp 34:52 in Video 32 as the topic of the next lesson [1]. The discussion of AI agent evaluation then begins at 0:00 in Video 33 [2] and continues through 3:32, where the levels and methods of evaluating agents are detailed [3].",
+      "n_periods": 3,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Agent evaluation is first introduced as the topic of the next lesson at timestamp 34:52 in Video 32",
+              "supported": true,
+              "evidence": "Meet me in the next video where we will study RAG—sorry, not RAG, agent evaluation."
+            },
+            {
+              "claim": "The discussion of AI agent evaluation begins at 0:00 in Video 33",
+              "supported": true,
+              "evidence": "AI agent evaluation—these topics here , these are the five questions asked in interviews... [0:00]"
+            },
+            {
+              "claim": "The discussion continues through 3:32, where the levels and methods of evaluating agents are detailed",
+              "supported": true,
+              "evidence": "[3] 'Enough For Any AI Agent Evaluation Interview | AI Engineer Series' (3:32)... AI agents have three levels. The first one is level one."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-066",
+      "category": "cross_video",
+      "question": "At which timestamp is Model Context Protocol discussed?",
+      "refused": false,
+      "answer": "Model Context Protocol (MCP) is discussed at timestamp 2:18 [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 1,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Model Context Protocol (MCP) is discussed at timestamp 2:18",
+              "supported": true,
+              "evidence": "(2:18) ... This, this language of English, is called MCP, Model Context Protocol."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-067",
+      "category": "cross_video",
+      "question": "At which timestamp is restaurant AI agent discussed?",
+      "refused": false,
+      "answer": "The restaurant AI agent is introduced at timestamp 0:00 of \"Week 4 Mini Project langgraph | Design Your Restaurant AI Agent,\" where the project requirements for building a restaurant AI agent using LangGraph are presented [1]. It is discussed again at timestamp 7:02 in the same video when detailing how to build the restaurant AI agent management system [2].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "The restaurant AI agent is introduced at timestamp 0:00 of Week 4 Mini Project langgraph | Design Your Restaurant AI Agent",
+              "supported": true,
+              "evidence": "Week 4 Mini Project langgraph | Design Your Restaurant AI Agent (0:00) ... this mini project is an AI agent for a restaurant using a Lang Graph."
+            },
+            {
+              "claim": "project requirements for building a restaurant AI agent using LangGraph are presented",
+              "supported": true,
+              "evidence": "explain the requirements... you'll have to create an AI agent for a restaurant... using a Lang Graph"
+            },
+            {
+              "claim": "It is discussed again at timestamp 7:02 in the same video when detailing how to build the restaurant AI agent management system",
+              "supported": true,
+              "evidence": "Week 4 Mini Project langgraph | Design Your Restaurant AI Agent (7:02)... What's the question? The question is, you want to build a restaurant management system. What do you want to build? You want to build a restaurant AI agent management system."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-068",
+      "category": "cross_video",
+      "question": "At which timestamp is function call discussed?",
+      "refused": false,
+      "answer": "Function calls are discussed across several timestamps: - In Video 13 at 17:36, calling a function (specifically calling `read_pdf` inside the home function) is discussed [1]. - In Video 25 at 32:40, how Python function calls—including what is passed and returned—are handled automatically by the LLM within an AI agent is discussed [2]. - In Video 39 at 7:05, what happens when a function is called (tracking its input, output, execution time, and errors within a span) is discussed [3].",
+      "n_periods": 3,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "In Video 13 at 17:36, calling a function (specifically calling read_pdf inside the home function) is discussed",
+              "supported": true,
+              "evidence": "Ep 11: Personal Portfolio AI (Mini Project)... read_pdf... Call this on your homepage... resume text is equal to what? This read_pdf."
+            },
+            {
+              "claim": "In Video 25 at 32:40, how Python function calls—including what is passed and returned—are handled automatically by the LLM within an AI agent is discussed",
+              "supported": true,
+              "evidence": "Our First AI Agent... The entire work of how the Python function call is happening, what is being passed in it, what is returning from there, the LLM will do all of this itself."
+            },
+            {
+              "claim": "In Video 39 at 7:05, what happens when a function is called (tracking its input, output, execution time, and errors within a span) is discussed",
+              "supported": true,
+              "evidence": "Most Imp For Any AI Engineer Interview... If a function is called, what went into the function's input? What came out of the function's output? ... How much time did the function take to run? And did any error occur while the function was running? This is called a span."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    }
+  ]
+}

@@ -1,0 +1,5520 @@
+{
+  "generated_at": "2026-11-02T21:06:17+00:00",
+  "git": {
+    "commit": "59d18fa052e1ec5137883e52b497db0863df9343",
+    "dirty": true
+  },
+  "eval_set": {
+    "path": "evaluation\\eval_set.json",
+    "entries": 104,
+    "skipped_stubs": 0,
+    "skipped_unreviewed": 0
+  },
+  "params": {
+    "k": 5,
+    "depth": 10,
+    "enhance": "history",
+    "retrieval_threshold": 0.85,
+    "max_results": 3,
+    "configured_sparse_weight": 1.0,
+    "configured_dense_weight": 0.0
+  },
+  "configs": [
+    {
+      "name": "dense-only",
+      "sparse": 0.0,
+      "dense": 1.0
+    },
+    {
+      "name": "sparse-only (default)",
+      "sparse": 1.0,
+      "dense": 0.0
+    },
+    {
+      "name": "hybrid 50/50",
+      "sparse": 0.5,
+      "dense": 0.5
+    },
+    {
+      "name": "hybrid 65/35",
+      "sparse": 0.65,
+      "dense": 0.35
+    },
+    {
+      "name": "hybrid 80/20",
+      "sparse": 0.8,
+      "dense": 0.2
+    }
+  ],
+  "n_questions": 104,
+  "left_out": {
+    "expects_refusal": 0,
+    "missing_gold_answer_contains": 0
+  },
+  "errors": [],
+  "unmatched_gold": [],
+  "corpus_scan": true,
+  "ranking": {
+    "dense-only": {
+      "n": 104,
+      "recall_at_k": 0.6538461538461539,
+      "recall_ci95": [
+        0.5584071487127773,
+        0.7383243537871855
+      ],
+      "mrr": 0.5553113553113553,
+      "precision_at_k": 0.23846153846153847,
+      "ndcg_at_k": 0.37673435824650087,
+      "chunk_recall_at_k": 0.2766345299999146,
+      "by_category": {
+        "cross_video": {
+          "n": 42,
+          "recall_at_k": 0.7142857142857143
+        },
+        "direct_fact": {
+          "n": 62,
+          "recall_at_k": 0.6129032258064516
+        }
+      },
+      "by_language": {
+        "bn": {
+          "n": 4,
+          "recall_at_k": 0.5
+        },
+        "en": {
+          "n": 24,
+          "recall_at_k": 0.75
+        },
+        "hi": {
+          "n": 76,
+          "recall_at_k": 0.631578947368421
+        }
+      }
+    },
+    "sparse-only (default)": {
+      "n": 104,
+      "recall_at_k": 0.9230769230769231,
+      "recall_ci95": [
+        0.855502912653361,
+        0.960508719221537
+      ],
+      "mrr": 0.8608974358974358,
+      "precision_at_k": 0.5,
+      "ndcg_at_k": 0.811972509815127,
+      "chunk_recall_at_k": 0.7548354957008804,
+      "by_category": {
+        "cross_video": {
+          "n": 42,
+          "recall_at_k": 0.9523809523809523
+        },
+        "direct_fact": {
+          "n": 62,
+          "recall_at_k": 0.9032258064516129
+        }
+      },
+      "by_language": {
+        "bn": {
+          "n": 4,
+          "recall_at_k": 0.5
+        },
+        "en": {
+          "n": 24,
+          "recall_at_k": 0.9166666666666666
+        },
+        "hi": {
+          "n": 76,
+          "recall_at_k": 0.9473684210526315
+        }
+      }
+    },
+    "hybrid 50/50": {
+      "n": 104,
+      "recall_at_k": 0.8269230769230769,
+      "recall_ci95": [
+        0.7429309619968649,
+        0.8876234808155561
+      ],
+      "mrr": 0.7133241758241758,
+      "precision_at_k": 0.34615384615384615,
+      "ndcg_at_k": 0.5587754909061504,
+      "chunk_recall_at_k": 0.4783603682642144,
+      "by_category": {
+        "cross_video": {
+          "n": 42,
+          "recall_at_k": 0.9047619047619048
+        },
+        "direct_fact": {
+          "n": 62,
+          "recall_at_k": 0.7741935483870968
+        }
+      },
+      "by_language": {
+        "bn": {
+          "n": 4,
+          "recall_at_k": 0.5
+        },
+        "en": {
+          "n": 24,
+          "recall_at_k": 0.8333333333333334
+        },
+        "hi": {
+          "n": 76,
+          "recall_at_k": 0.8421052631578947
+        }
+      }
+    },
+    "hybrid 65/35": {
+      "n": 104,
+      "recall_at_k": 0.8461538461538461,
+      "recall_ci95": [
+        0.7646180635038694,
+        0.9030278171210472
+      ],
+      "mrr": 0.7758012820512821,
+      "precision_at_k": 0.40384615384615385,
+      "ndcg_at_k": 0.6727614784743446,
+      "chunk_recall_at_k": 0.6026888175926637,
+      "by_category": {
+        "cross_video": {
+          "n": 42,
+          "recall_at_k": 0.8571428571428571
+        },
+        "direct_fact": {
+          "n": 62,
+          "recall_at_k": 0.8387096774193549
+        }
+      },
+      "by_language": {
+        "bn": {
+          "n": 4,
+          "recall_at_k": 0.5
+        },
+        "en": {
+          "n": 24,
+          "recall_at_k": 0.75
+        },
+        "hi": {
+          "n": 76,
+          "recall_at_k": 0.8947368421052632
+        }
+      }
+    },
+    "hybrid 80/20": {
+      "n": 104,
+      "recall_at_k": 0.8846153846153846,
+      "recall_ci95": [
+        0.8090778685477145,
+        0.9327508877021926
+      ],
+      "mrr": 0.782554945054945,
+      "precision_at_k": 0.4653846153846154,
+      "ndcg_at_k": 0.7370386944283637,
+      "chunk_recall_at_k": 0.7077025538564,
+      "by_category": {
+        "cross_video": {
+          "n": 42,
+          "recall_at_k": 0.8571428571428571
+        },
+        "direct_fact": {
+          "n": 62,
+          "recall_at_k": 0.9032258064516129
+        }
+      },
+      "by_language": {
+        "bn": {
+          "n": 4,
+          "recall_at_k": 0.5
+        },
+        "en": {
+          "n": 24,
+          "recall_at_k": 0.75
+        },
+        "hi": {
+          "n": 76,
+          "recall_at_k": 0.9473684210526315
+        }
+      }
+    }
+  },
+  "production": {
+    "dense-only": {
+      "n": 104,
+      "recall_at_k": 0.5384615384615384,
+      "recall_ci95": [
+        0.4429913038287475,
+        0.6311915717962432
+      ],
+      "mrr": 0.5192307692307693,
+      "precision_at_k": null,
+      "ndcg_at_k": null,
+      "chunk_recall_at_k": null,
+      "by_category": {
+        "cross_video": {
+          "n": 42,
+          "recall_at_k": 0.5238095238095238
+        },
+        "direct_fact": {
+          "n": 62,
+          "recall_at_k": 0.5483870967741935
+        }
+      },
+      "by_language": {
+        "bn": {
+          "n": 4,
+          "recall_at_k": 0.0
+        },
+        "en": {
+          "n": 24,
+          "recall_at_k": 0.5833333333333334
+        },
+        "hi": {
+          "n": 76,
+          "recall_at_k": 0.5526315789473685
+        }
+      }
+    },
+    "sparse-only (default)": {
+      "n": 104,
+      "recall_at_k": 0.9230769230769231,
+      "recall_ci95": [
+        0.855502912653361,
+        0.960508719221537
+      ],
+      "mrr": 0.8557692307692307,
+      "precision_at_k": null,
+      "ndcg_at_k": null,
+      "chunk_recall_at_k": null,
+      "by_category": {
+        "cross_video": {
+          "n": 42,
+          "recall_at_k": 0.9523809523809523
+        },
+        "direct_fact": {
+          "n": 62,
+          "recall_at_k": 0.9032258064516129
+        }
+      },
+      "by_language": {
+        "bn": {
+          "n": 4,
+          "recall_at_k": 0.5
+        },
+        "en": {
+          "n": 24,
+          "recall_at_k": 0.9166666666666666
+        },
+        "hi": {
+          "n": 76,
+          "recall_at_k": 0.9473684210526315
+        }
+      }
+    },
+    "hybrid 50/50": {
+      "n": 104,
+      "recall_at_k": 0.6730769230769231,
+      "recall_ci95": [
+        0.5781614312401357,
+        0.7556615090723227
+      ],
+      "mrr": 0.6185897435897435,
+      "precision_at_k": null,
+      "ndcg_at_k": null,
+      "chunk_recall_at_k": null,
+      "by_category": {
+        "cross_video": {
+          "n": 42,
+          "recall_at_k": 0.7142857142857143
+        },
+        "direct_fact": {
+          "n": 62,
+          "recall_at_k": 0.6451612903225806
+        }
+      },
+      "by_language": {
+        "bn": {
+          "n": 4,
+          "recall_at_k": 0.5
+        },
+        "en": {
+          "n": 24,
+          "recall_at_k": 0.6666666666666666
+        },
+        "hi": {
+          "n": 76,
+          "recall_at_k": 0.6842105263157895
+        }
+      }
+    },
+    "hybrid 65/35": {
+      "n": 104,
+      "recall_at_k": 0.7307692307692307,
+      "recall_ci95": [
+        0.6384286523740854,
+        0.8066686013758588
+      ],
+      "mrr": 0.6987179487179488,
+      "precision_at_k": null,
+      "ndcg_at_k": null,
+      "chunk_recall_at_k": null,
+      "by_category": {
+        "cross_video": {
+          "n": 42,
+          "recall_at_k": 0.8095238095238095
+        },
+        "direct_fact": {
+          "n": 62,
+          "recall_at_k": 0.6774193548387096
+        }
+      },
+      "by_language": {
+        "bn": {
+          "n": 4,
+          "recall_at_k": 0.5
+        },
+        "en": {
+          "n": 24,
+          "recall_at_k": 0.75
+        },
+        "hi": {
+          "n": 76,
+          "recall_at_k": 0.7368421052631579
+        }
+      }
+    },
+    "hybrid 80/20": {
+      "n": 104,
+      "recall_at_k": 0.7884615384615384,
+      "recall_ci95": [
+        0.7004227763289637,
+        0.8559487908584666
+      ],
+      "mrr": 0.7371794871794872,
+      "precision_at_k": null,
+      "ndcg_at_k": null,
+      "chunk_recall_at_k": null,
+      "by_category": {
+        "cross_video": {
+          "n": 42,
+          "recall_at_k": 0.8095238095238095
+        },
+        "direct_fact": {
+          "n": 62,
+          "recall_at_k": 0.7741935483870968
+        }
+      },
+      "by_language": {
+        "bn": {
+          "n": 4,
+          "recall_at_k": 0.5
+        },
+        "en": {
+          "n": 24,
+          "recall_at_k": 0.75
+        },
+        "hi": {
+          "n": 76,
+          "recall_at_k": 0.8157894736842105
+        }
+      }
+    }
+  },
+  "beats_default": [],
+  "questions": [
+    {
+      "id": "kw-01",
+      "category": "direct_fact",
+      "question": "When is zero-shot mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 5,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.3391602052736161,
+          "chunk_recall": 0.2
+        },
+        "sparse-only (default)": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.3391602052736161,
+          "chunk_recall": 0.2
+        },
+        "hybrid 65/35": {
+          "precision": 0.6,
+          "ndcg": 0.6843515475204855,
+          "chunk_recall": 0.6
+        },
+        "hybrid 80/20": {
+          "precision": 0.8,
+          "ndcg": 0.8687949224876582,
+          "chunk_recall": 0.8
+        }
+      }
+    },
+    {
+      "id": "kw-02",
+      "category": "direct_fact",
+      "question": "When is semantic search mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-03",
+      "category": "direct_fact",
+      "question": "When is RAG pipeline mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": 2
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": 2
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 0.6309297535714575,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-04",
+      "category": "direct_fact",
+      "question": "When is Matplotlib mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-05",
+      "category": "cross_video",
+      "question": "When is DSA playlist mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 4,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.3903800499921017,
+          "chunk_recall": 0.25
+        },
+        "sparse-only (default)": {
+          "precision": 0.8,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.3903800499921017,
+          "chunk_recall": 0.25
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 0.3903800499921017,
+          "chunk_recall": 0.25
+        },
+        "hybrid 80/20": {
+          "precision": 0.6,
+          "ndcg": 0.7095272044910244,
+          "chunk_recall": 0.75
+        }
+      }
+    },
+    {
+      "id": "kw-06",
+      "category": "direct_fact",
+      "question": "When is BaseModel mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 4,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.4,
+          "ndcg": 0.5855700749881525,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.8,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.4,
+          "ndcg": 0.6366824387328317,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.8,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.8,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-07",
+      "category": "direct_fact",
+      "question": "When is ARC-AGI mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.4,
+          "ndcg": 0.9197207891481876,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-08",
+      "category": "direct_fact",
+      "question": "When is few-shot mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 2
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 2
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 0.8503449055347546,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.4,
+          "ndcg": 0.9197207891481876,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 0.9197207891481876,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 0.6934264036172708,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-09",
+      "category": "direct_fact",
+      "question": "When is JSON schema mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 7,
+        "hybrid 65/35": 5,
+        "hybrid 80/20": 4
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 0.38685280723454163,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 0.43067655807339306,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-10",
+      "category": "cross_video",
+      "question": "When is chunking mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 22,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.22727272727272727
+        },
+        "sparse-only (default)": {
+          "precision": 0.8,
+          "ndcg": 0.7860137352654724,
+          "chunk_recall": 0.18181818181818182
+        },
+        "hybrid 50/50": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.22727272727272727
+        },
+        "hybrid 65/35": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.22727272727272727
+        },
+        "hybrid 80/20": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.22727272727272727
+        }
+      }
+    },
+    {
+      "id": "kw-11",
+      "category": "direct_fact",
+      "question": "When is YAML mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-12",
+      "category": "direct_fact",
+      "question": "When is indexing mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.4,
+          "ndcg": 0.8772153153380493,
+          "chunk_recall": 1.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-13",
+      "category": "cross_video",
+      "question": "When is agent evaluation mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 0.9197207891481876,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 0.9197207891481876,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-14",
+      "category": "cross_video",
+      "question": "When is Model Context Protocol mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 3,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.46927872602275644,
+          "chunk_recall": 0.3333333333333333
+        },
+        "sparse-only (default)": {
+          "precision": 0.6,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.46927872602275644,
+          "chunk_recall": 0.3333333333333333
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 0.7653606369886217,
+          "chunk_recall": 0.6666666666666666
+        },
+        "hybrid 80/20": {
+          "precision": 0.6,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-15",
+      "category": "cross_video",
+      "question": "When is restaurant AI agent mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 2,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 2,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 0.6509209298071326,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        }
+      }
+    },
+    {
+      "id": "kw-16",
+      "category": "cross_video",
+      "question": "When is function call mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 3,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 3,
+        "hybrid 50/50": 3,
+        "hybrid 65/35": 3,
+        "hybrid 80/20": 3
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 3,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 0.23463936301137822,
+          "chunk_recall": 0.3333333333333333
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.23463936301137822,
+          "chunk_recall": 0.3333333333333333
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 0.41618115554873086,
+          "chunk_recall": 0.6666666666666666
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 0.41618115554873086,
+          "chunk_recall": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "id": "kw-17",
+      "category": "direct_fact",
+      "question": "When is chunk overlap mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 3,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 2,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 2,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.4,
+          "ndcg": 0.7653606369886217,
+          "chunk_recall": 0.6666666666666666
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 0.4776237035032179,
+          "chunk_recall": 0.6666666666666666
+        },
+        "hybrid 50/50": {
+          "precision": 0.4,
+          "ndcg": 0.7653606369886217,
+          "chunk_recall": 0.6666666666666666
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 0.7039180890341347,
+          "chunk_recall": 0.6666666666666666
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 0.7039180890341347,
+          "chunk_recall": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "id": "kw-18",
+      "category": "cross_video",
+      "question": "When is structured output mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 8,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.4,
+          "ndcg": 0.5531464700081437,
+          "chunk_recall": 0.25
+        },
+        "sparse-only (default)": {
+          "precision": 0.8,
+          "ndcg": 0.8539316501572937,
+          "chunk_recall": 0.5
+        },
+        "hybrid 50/50": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.625
+        },
+        "hybrid 65/35": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.625
+        },
+        "hybrid 80/20": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.625
+        }
+      }
+    },
+    {
+      "id": "kw-19",
+      "category": "direct_fact",
+      "question": "When is faithfulness mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 13,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.38461538461538464
+        },
+        "sparse-only (default)": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.38461538461538464
+        },
+        "hybrid 50/50": {
+          "precision": 0.8,
+          "ndcg": 0.8687949224876582,
+          "chunk_recall": 0.3076923076923077
+        },
+        "hybrid 65/35": {
+          "precision": 0.8,
+          "ndcg": 0.8687949224876582,
+          "chunk_recall": 0.3076923076923077
+        },
+        "hybrid 80/20": {
+          "precision": 0.8,
+          "ndcg": 0.8687949224876582,
+          "chunk_recall": 0.3076923076923077
+        }
+      }
+    },
+    {
+      "id": "kw-20",
+      "category": "cross_video",
+      "question": "When is FastAPI mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 15,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.3333333333333333
+        },
+        "sparse-only (default)": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.3333333333333333
+        },
+        "hybrid 50/50": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.3333333333333333
+        },
+        "hybrid 65/35": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.3333333333333333
+        },
+        "hybrid 80/20": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "id": "kw-21",
+      "category": "direct_fact",
+      "question": "When is JSON output mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 3,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 5,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 3,
+        "hybrid 65/35": 3,
+        "hybrid 80/20": 3
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 3,
+        "hybrid 65/35": 3,
+        "hybrid 80/20": 3
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.18154179253735267,
+          "chunk_recall": 0.3333333333333333
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 0.6713860725233041,
+          "chunk_recall": 0.6666666666666666
+        },
+        "hybrid 50/50": {
+          "precision": 0.6,
+          "ndcg": 0.6182885020492784,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.6,
+          "ndcg": 0.6182885020492784,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.6,
+          "ndcg": 0.6182885020492784,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-22",
+      "category": "cross_video",
+      "question": "When is embedding model mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 5,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 2,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 2,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.21398626473452756,
+          "chunk_recall": 0.2
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 0.48522855511632257,
+          "chunk_recall": 0.4
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.3391602052736161,
+          "chunk_recall": 0.2
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 0.3391602052736161,
+          "chunk_recall": 0.2
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 0.3391602052736161,
+          "chunk_recall": 0.2
+        }
+      }
+    },
+    {
+      "id": "kw-23",
+      "category": "cross_video",
+      "question": "When is context window mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 8,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": 3,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.6,
+          "ndcg": 0.4468535299918563,
+          "chunk_recall": 0.375
+        },
+        "sparse-only (default)": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.625
+        },
+        "hybrid 50/50": {
+          "precision": 0.8,
+          "ndcg": 0.8687949224876582,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.8,
+          "ndcg": 0.8687949224876582,
+          "chunk_recall": 0.5
+        },
+        "hybrid 80/20": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.625
+        }
+      }
+    },
+    {
+      "id": "kw-24",
+      "category": "direct_fact",
+      "question": "When is conditional edge mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 10,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 2,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 2,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 2,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 2,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.6,
+          "ndcg": 0.5296347172140421,
+          "chunk_recall": 0.3
+        },
+        "sparse-only (default)": {
+          "precision": 0.8,
+          "ndcg": 0.830419897363192,
+          "chunk_recall": 0.4
+        },
+        "hybrid 50/50": {
+          "precision": 0.8,
+          "ndcg": 0.6608397947263839,
+          "chunk_recall": 0.4
+        },
+        "hybrid 65/35": {
+          "precision": 0.8,
+          "ndcg": 0.7860137352654724,
+          "chunk_recall": 0.4
+        },
+        "hybrid 80/20": {
+          "precision": 0.8,
+          "ndcg": 0.7860137352654724,
+          "chunk_recall": 0.4
+        }
+      }
+    },
+    {
+      "id": "kw-25",
+      "category": "cross_video",
+      "question": "When is search query mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 4,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.3903800499921017,
+          "chunk_recall": 0.25
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 0.6366824387328317,
+          "chunk_recall": 0.5
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.3903800499921017,
+          "chunk_recall": 0.25
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 0.3903800499921017,
+          "chunk_recall": 0.25
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 0.3903800499921017,
+          "chunk_recall": 0.25
+        }
+      }
+    },
+    {
+      "id": "kw-26",
+      "category": "direct_fact",
+      "question": "When is OpenAI API mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "bn",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 6,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": null,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        }
+      }
+    },
+    {
+      "id": "kw-27",
+      "category": "direct_fact",
+      "question": "When is Gemini API mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-28",
+      "category": "direct_fact",
+      "question": "When is Claude API mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 10,
+        "hybrid 50/50": 4,
+        "hybrid 65/35": 4,
+        "hybrid 80/20": 5
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": null,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.43067655807339306,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 0.43067655807339306,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 0.38685280723454163,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-29",
+      "category": "direct_fact",
+      "question": "When is text splitter mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 2,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.6309297535714575,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-30",
+      "category": "cross_video",
+      "question": "When is golden dataset mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 13,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.38461538461538464
+        },
+        "sparse-only (default)": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.38461538461538464
+        },
+        "hybrid 50/50": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.38461538461538464
+        },
+        "hybrid 65/35": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.38461538461538464
+        },
+        "hybrid 80/20": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.38461538461538464
+        }
+      }
+    },
+    {
+      "id": "kw-31",
+      "category": "direct_fact",
+      "question": "When is chain of thought mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 0.8772153153380493,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-32",
+      "category": "direct_fact",
+      "question": "When is tokenization mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": null,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": null,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        }
+      }
+    },
+    {
+      "id": "kw-33",
+      "category": "direct_fact",
+      "question": "When is Python package mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 3,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": 3
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 3,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 0.5,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 0.5,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-34",
+      "category": "cross_video",
+      "question": "When is tool calls mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 3,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": null,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": null,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        }
+      }
+    },
+    {
+      "id": "kw-35",
+      "category": "cross_video",
+      "question": "When is ReAct loop mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 4,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 7,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 3,
+        "hybrid 65/35": 2,
+        "hybrid 80/20": 2
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 3,
+        "hybrid 65/35": 2,
+        "hybrid 80/20": 2
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.8,
+          "ndcg": 0.9047172294870751,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.19519002499605084,
+          "chunk_recall": 0.25
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 0.24630238874073,
+          "chunk_recall": 0.25
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 0.24630238874073,
+          "chunk_recall": 0.25
+        }
+      }
+    },
+    {
+      "id": "kw-36",
+      "category": "cross_video",
+      "question": "When is calculator tool mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 9,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": 5,
+        "sparse-only (default)": 3,
+        "hybrid 50/50": 5,
+        "hybrid 65/35": 8,
+        "hybrid 80/20": 10
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 3,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.13120507751234178,
+          "chunk_recall": 0.1111111111111111
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 0.16958010263680806,
+          "chunk_recall": 0.1111111111111111
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.13120507751234178,
+          "chunk_recall": 0.1111111111111111
+        },
+        "hybrid 65/35": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        }
+      }
+    },
+    {
+      "id": "kw-37",
+      "category": "cross_video",
+      "question": "When is Qdrant client mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 6,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 4,
+        "sparse-only (default)": 2,
+        "hybrid 50/50": 2,
+        "hybrid 65/35": 2,
+        "hybrid 80/20": 2
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 2,
+        "hybrid 50/50": 2,
+        "hybrid 65/35": 2,
+        "hybrid 80/20": 2
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.14606834984270645,
+          "chunk_recall": 0.16666666666666666
+        },
+        "sparse-only (default)": {
+          "precision": 0.8,
+          "ndcg": 0.6608397947263839,
+          "chunk_recall": 0.6666666666666666
+        },
+        "hybrid 50/50": {
+          "precision": 0.6,
+          "ndcg": 0.5296347172140421,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.6,
+          "ndcg": 0.5296347172140421,
+          "chunk_recall": 0.5
+        },
+        "hybrid 80/20": {
+          "precision": 0.8,
+          "ndcg": 0.6608397947263839,
+          "chunk_recall": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "id": "kw-38",
+      "category": "direct_fact",
+      "question": "When is collection name mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 4,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 6,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 2,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 2,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.6,
+          "ndcg": 0.7365896932159578,
+          "chunk_recall": 0.75
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.24630238874073,
+          "chunk_recall": 0.25
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 0.3903800499921017,
+          "chunk_recall": 0.25
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 0.5413996682199069,
+          "chunk_recall": 0.5
+        }
+      }
+    },
+    {
+      "id": "kw-39",
+      "category": "cross_video",
+      "question": "When is environment variable mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 5,
+      "language": "bn",
+      "ranking_rank": {
+        "dense-only": 4,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.14606834984270645,
+          "chunk_recall": 0.2
+        },
+        "sparse-only (default)": {
+          "precision": 0.8,
+          "ndcg": 0.8539316501572937,
+          "chunk_recall": 0.8
+        },
+        "hybrid 50/50": {
+          "precision": 0.6,
+          "ndcg": 0.6843515475204855,
+          "chunk_recall": 0.6
+        },
+        "hybrid 65/35": {
+          "precision": 0.6,
+          "ndcg": 0.7227265726449519,
+          "chunk_recall": 0.6
+        },
+        "hybrid 80/20": {
+          "precision": 0.8,
+          "ndcg": 0.8687949224876582,
+          "chunk_recall": 0.8
+        }
+      }
+    },
+    {
+      "id": "kw-40",
+      "category": "cross_video",
+      "question": "When is Pinecone mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-41",
+      "category": "direct_fact",
+      "question": "When is ChromaDB mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-42",
+      "category": "direct_fact",
+      "question": "When is FAISS mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-43",
+      "category": "direct_fact",
+      "question": "When is Weaviate mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-44",
+      "category": "direct_fact",
+      "question": "When is yt-dlp mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 5,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.4,
+          "ndcg": 0.5531464700081437,
+          "chunk_recall": 0.4
+        },
+        "sparse-only (default)": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.6,
+          "ndcg": 0.6992148198508501,
+          "chunk_recall": 0.6
+        },
+        "hybrid 65/35": {
+          "precision": 0.8,
+          "ndcg": 0.8539316501572937,
+          "chunk_recall": 0.8
+        },
+        "hybrid 80/20": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-45",
+      "category": "cross_video",
+      "question": "When is sentence transformer mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 6,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.4,
+          "ndcg": 0.5531464700081437,
+          "chunk_recall": 0.3333333333333333
+        },
+        "sparse-only (default)": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.8333333333333334
+        },
+        "hybrid 50/50": {
+          "precision": 0.8,
+          "ndcg": 0.8687949224876582,
+          "chunk_recall": 0.6666666666666666
+        },
+        "hybrid 65/35": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.8333333333333334
+        },
+        "hybrid 80/20": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.8333333333333334
+        }
+      }
+    },
+    {
+      "id": "kw-46",
+      "category": "cross_video",
+      "question": "When is rate limit mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 7,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.4,
+          "ndcg": 0.5531464700081437,
+          "chunk_recall": 0.2857142857142857
+        },
+        "sparse-only (default)": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.7142857142857143
+        },
+        "hybrid 50/50": {
+          "precision": 0.4,
+          "ndcg": 0.5531464700081437,
+          "chunk_recall": 0.2857142857142857
+        },
+        "hybrid 65/35": {
+          "precision": 0.6,
+          "ndcg": 0.7227265726449519,
+          "chunk_recall": 0.42857142857142855
+        },
+        "hybrid 80/20": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.7142857142857143
+        }
+      }
+    },
+    {
+      "id": "kw-47",
+      "category": "cross_video",
+      "question": "When is Vercel mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 2,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.38685280723454163,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-48",
+      "category": "direct_fact",
+      "question": "When is prompt injection mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 5,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.4,
+          "ndcg": 0.5531464700081437,
+          "chunk_recall": 0.4
+        },
+        "sparse-only (default)": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.6,
+          "ndcg": 0.7227265726449519,
+          "chunk_recall": 0.6
+        },
+        "hybrid 65/35": {
+          "precision": 0.6,
+          "ndcg": 0.7227265726449519,
+          "chunk_recall": 0.6
+        },
+        "hybrid 80/20": {
+          "precision": 0.8,
+          "ndcg": 0.8687949224876582,
+          "chunk_recall": 0.8
+        }
+      }
+    },
+    {
+      "id": "kw-49",
+      "category": "direct_fact",
+      "question": "When is markdown mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-50",
+      "category": "direct_fact",
+      "question": "When is translation mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-51",
+      "category": "direct_fact",
+      "question": "When is conversation history mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": 10,
+        "hybrid 80/20": 7
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        }
+      }
+    },
+    {
+      "id": "kw-52",
+      "category": "direct_fact",
+      "question": "When is all-MiniLM mentioned?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 3,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.3065735963827292,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.4,
+          "ndcg": 0.8772153153380493,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-053",
+      "category": "direct_fact",
+      "question": "At which timestamp is zero-shot discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 5,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.3391602052736161,
+          "chunk_recall": 0.2
+        },
+        "sparse-only (default)": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.3391602052736161,
+          "chunk_recall": 0.2
+        },
+        "hybrid 65/35": {
+          "precision": 0.6,
+          "ndcg": 0.6843515475204855,
+          "chunk_recall": 0.6
+        },
+        "hybrid 80/20": {
+          "precision": 0.8,
+          "ndcg": 0.8687949224876582,
+          "chunk_recall": 0.8
+        }
+      }
+    },
+    {
+      "id": "kw-054",
+      "category": "direct_fact",
+      "question": "At which timestamp is semantic search discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-055",
+      "category": "direct_fact",
+      "question": "At which timestamp is RAG pipeline discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": 2
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": 2
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 0.6309297535714575,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-056",
+      "category": "direct_fact",
+      "question": "At which timestamp is Matplotlib discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-057",
+      "category": "cross_video",
+      "question": "At which timestamp is DSA playlist discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 4,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.3903800499921017,
+          "chunk_recall": 0.25
+        },
+        "sparse-only (default)": {
+          "precision": 0.8,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.3903800499921017,
+          "chunk_recall": 0.25
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 0.3903800499921017,
+          "chunk_recall": 0.25
+        },
+        "hybrid 80/20": {
+          "precision": 0.6,
+          "ndcg": 0.7095272044910244,
+          "chunk_recall": 0.75
+        }
+      }
+    },
+    {
+      "id": "kw-058",
+      "category": "direct_fact",
+      "question": "At which timestamp is BaseModel discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 4,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.4,
+          "ndcg": 0.5855700749881525,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.8,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.4,
+          "ndcg": 0.6366824387328317,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.8,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.8,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-059",
+      "category": "direct_fact",
+      "question": "At which timestamp is ARC-AGI discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.4,
+          "ndcg": 0.9197207891481876,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-060",
+      "category": "direct_fact",
+      "question": "At which timestamp is few-shot discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 2
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 2
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 0.8503449055347546,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.4,
+          "ndcg": 0.9197207891481876,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 0.9197207891481876,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 0.6934264036172708,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-061",
+      "category": "direct_fact",
+      "question": "At which timestamp is JSON schema discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 7,
+        "hybrid 65/35": 5,
+        "hybrid 80/20": 4
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 0.38685280723454163,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 0.43067655807339306,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-062",
+      "category": "cross_video",
+      "question": "At which timestamp is chunking discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 22,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.22727272727272727
+        },
+        "sparse-only (default)": {
+          "precision": 0.8,
+          "ndcg": 0.7860137352654724,
+          "chunk_recall": 0.18181818181818182
+        },
+        "hybrid 50/50": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.22727272727272727
+        },
+        "hybrid 65/35": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.22727272727272727
+        },
+        "hybrid 80/20": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.22727272727272727
+        }
+      }
+    },
+    {
+      "id": "kw-063",
+      "category": "direct_fact",
+      "question": "At which timestamp is YAML discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-064",
+      "category": "direct_fact",
+      "question": "At which timestamp is indexing discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.4,
+          "ndcg": 0.8772153153380493,
+          "chunk_recall": 1.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-065",
+      "category": "cross_video",
+      "question": "At which timestamp is agent evaluation discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 0.9197207891481876,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 0.9197207891481876,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-066",
+      "category": "cross_video",
+      "question": "At which timestamp is Model Context Protocol discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 3,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.46927872602275644,
+          "chunk_recall": 0.3333333333333333
+        },
+        "sparse-only (default)": {
+          "precision": 0.6,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.46927872602275644,
+          "chunk_recall": 0.3333333333333333
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 0.7653606369886217,
+          "chunk_recall": 0.6666666666666666
+        },
+        "hybrid 80/20": {
+          "precision": 0.6,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-067",
+      "category": "cross_video",
+      "question": "At which timestamp is restaurant AI agent discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 2,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 2,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 0.6509209298071326,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        }
+      }
+    },
+    {
+      "id": "kw-068",
+      "category": "cross_video",
+      "question": "At which timestamp is function call discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 3,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 3,
+        "hybrid 50/50": 3,
+        "hybrid 65/35": 3,
+        "hybrid 80/20": 3
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 3,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 0.23463936301137822,
+          "chunk_recall": 0.3333333333333333
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.23463936301137822,
+          "chunk_recall": 0.3333333333333333
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 0.41618115554873086,
+          "chunk_recall": 0.6666666666666666
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 0.41618115554873086,
+          "chunk_recall": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "id": "kw-069",
+      "category": "direct_fact",
+      "question": "At which timestamp is chunk overlap discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 3,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 2,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 2,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.4,
+          "ndcg": 0.7653606369886217,
+          "chunk_recall": 0.6666666666666666
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 0.4776237035032179,
+          "chunk_recall": 0.6666666666666666
+        },
+        "hybrid 50/50": {
+          "precision": 0.4,
+          "ndcg": 0.7653606369886217,
+          "chunk_recall": 0.6666666666666666
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 0.7039180890341347,
+          "chunk_recall": 0.6666666666666666
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 0.7039180890341347,
+          "chunk_recall": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "id": "kw-070",
+      "category": "cross_video",
+      "question": "At which timestamp is structured output discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 8,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.4,
+          "ndcg": 0.5531464700081437,
+          "chunk_recall": 0.25
+        },
+        "sparse-only (default)": {
+          "precision": 0.8,
+          "ndcg": 0.8539316501572937,
+          "chunk_recall": 0.5
+        },
+        "hybrid 50/50": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.625
+        },
+        "hybrid 65/35": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.625
+        },
+        "hybrid 80/20": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.625
+        }
+      }
+    },
+    {
+      "id": "kw-071",
+      "category": "direct_fact",
+      "question": "At which timestamp is faithfulness discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 13,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.38461538461538464
+        },
+        "sparse-only (default)": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.38461538461538464
+        },
+        "hybrid 50/50": {
+          "precision": 0.8,
+          "ndcg": 0.8687949224876582,
+          "chunk_recall": 0.3076923076923077
+        },
+        "hybrid 65/35": {
+          "precision": 0.8,
+          "ndcg": 0.8687949224876582,
+          "chunk_recall": 0.3076923076923077
+        },
+        "hybrid 80/20": {
+          "precision": 0.8,
+          "ndcg": 0.8687949224876582,
+          "chunk_recall": 0.3076923076923077
+        }
+      }
+    },
+    {
+      "id": "kw-072",
+      "category": "cross_video",
+      "question": "At which timestamp is FastAPI discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 15,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.3333333333333333
+        },
+        "sparse-only (default)": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.3333333333333333
+        },
+        "hybrid 50/50": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.3333333333333333
+        },
+        "hybrid 65/35": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.3333333333333333
+        },
+        "hybrid 80/20": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "id": "kw-073",
+      "category": "direct_fact",
+      "question": "At which timestamp is JSON output discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 3,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 5,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 3,
+        "hybrid 65/35": 3,
+        "hybrid 80/20": 3
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 3,
+        "hybrid 65/35": 3,
+        "hybrid 80/20": 3
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.18154179253735267,
+          "chunk_recall": 0.3333333333333333
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 0.6713860725233041,
+          "chunk_recall": 0.6666666666666666
+        },
+        "hybrid 50/50": {
+          "precision": 0.6,
+          "ndcg": 0.6182885020492784,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.6,
+          "ndcg": 0.6182885020492784,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.6,
+          "ndcg": 0.6182885020492784,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-074",
+      "category": "cross_video",
+      "question": "At which timestamp is embedding model discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 5,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 2,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 2,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.21398626473452756,
+          "chunk_recall": 0.2
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 0.48522855511632257,
+          "chunk_recall": 0.4
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.3391602052736161,
+          "chunk_recall": 0.2
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 0.3391602052736161,
+          "chunk_recall": 0.2
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 0.3391602052736161,
+          "chunk_recall": 0.2
+        }
+      }
+    },
+    {
+      "id": "kw-075",
+      "category": "cross_video",
+      "question": "At which timestamp is context window discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 8,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": 3,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.6,
+          "ndcg": 0.4468535299918563,
+          "chunk_recall": 0.375
+        },
+        "sparse-only (default)": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.625
+        },
+        "hybrid 50/50": {
+          "precision": 0.8,
+          "ndcg": 0.8687949224876582,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.8,
+          "ndcg": 0.8687949224876582,
+          "chunk_recall": 0.5
+        },
+        "hybrid 80/20": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.625
+        }
+      }
+    },
+    {
+      "id": "kw-076",
+      "category": "direct_fact",
+      "question": "At which timestamp is conditional edge discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 10,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 2,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 2,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 2,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 2,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.6,
+          "ndcg": 0.5296347172140421,
+          "chunk_recall": 0.3
+        },
+        "sparse-only (default)": {
+          "precision": 0.8,
+          "ndcg": 0.830419897363192,
+          "chunk_recall": 0.4
+        },
+        "hybrid 50/50": {
+          "precision": 0.8,
+          "ndcg": 0.6608397947263839,
+          "chunk_recall": 0.4
+        },
+        "hybrid 65/35": {
+          "precision": 0.8,
+          "ndcg": 0.7860137352654724,
+          "chunk_recall": 0.4
+        },
+        "hybrid 80/20": {
+          "precision": 0.8,
+          "ndcg": 0.7860137352654724,
+          "chunk_recall": 0.4
+        }
+      }
+    },
+    {
+      "id": "kw-077",
+      "category": "cross_video",
+      "question": "At which timestamp is search query discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 4,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.3903800499921017,
+          "chunk_recall": 0.25
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 0.6366824387328317,
+          "chunk_recall": 0.5
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.3903800499921017,
+          "chunk_recall": 0.25
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 0.3903800499921017,
+          "chunk_recall": 0.25
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 0.3903800499921017,
+          "chunk_recall": 0.25
+        }
+      }
+    },
+    {
+      "id": "kw-078",
+      "category": "direct_fact",
+      "question": "At which timestamp is OpenAI API discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "bn",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 6,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": null,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        }
+      }
+    },
+    {
+      "id": "kw-079",
+      "category": "direct_fact",
+      "question": "At which timestamp is Gemini API discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-080",
+      "category": "direct_fact",
+      "question": "At which timestamp is Claude API discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 10,
+        "hybrid 50/50": 4,
+        "hybrid 65/35": 4,
+        "hybrid 80/20": 5
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": null,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.43067655807339306,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 0.43067655807339306,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 0.38685280723454163,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-081",
+      "category": "direct_fact",
+      "question": "At which timestamp is text splitter discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 2,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.6309297535714575,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-082",
+      "category": "cross_video",
+      "question": "At which timestamp is golden dataset discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 13,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.38461538461538464
+        },
+        "sparse-only (default)": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.38461538461538464
+        },
+        "hybrid 50/50": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.38461538461538464
+        },
+        "hybrid 65/35": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.38461538461538464
+        },
+        "hybrid 80/20": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.38461538461538464
+        }
+      }
+    },
+    {
+      "id": "kw-083",
+      "category": "direct_fact",
+      "question": "At which timestamp is chain of thought discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 0.8772153153380493,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-084",
+      "category": "direct_fact",
+      "question": "At which timestamp is tokenization discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": null,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": null,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        }
+      }
+    },
+    {
+      "id": "kw-085",
+      "category": "direct_fact",
+      "question": "At which timestamp is Python package discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 3,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": 3
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 3,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 0.5,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 0.5,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-086",
+      "category": "cross_video",
+      "question": "At which timestamp is tool calls discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 3,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": null,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": null,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        }
+      }
+    },
+    {
+      "id": "kw-087",
+      "category": "cross_video",
+      "question": "At which timestamp is ReAct loop discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 4,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 7,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 3,
+        "hybrid 65/35": 2,
+        "hybrid 80/20": 2
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 3,
+        "hybrid 65/35": 2,
+        "hybrid 80/20": 2
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.8,
+          "ndcg": 0.9047172294870751,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.19519002499605084,
+          "chunk_recall": 0.25
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 0.24630238874073,
+          "chunk_recall": 0.25
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 0.24630238874073,
+          "chunk_recall": 0.25
+        }
+      }
+    },
+    {
+      "id": "kw-088",
+      "category": "cross_video",
+      "question": "At which timestamp is calculator tool discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 9,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": 5,
+        "sparse-only (default)": 3,
+        "hybrid 50/50": 5,
+        "hybrid 65/35": 8,
+        "hybrid 80/20": 10
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 3,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.13120507751234178,
+          "chunk_recall": 0.1111111111111111
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 0.16958010263680806,
+          "chunk_recall": 0.1111111111111111
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.13120507751234178,
+          "chunk_recall": 0.1111111111111111
+        },
+        "hybrid 65/35": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        }
+      }
+    },
+    {
+      "id": "kw-089",
+      "category": "cross_video",
+      "question": "At which timestamp is Qdrant client discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 6,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 4,
+        "sparse-only (default)": 2,
+        "hybrid 50/50": 2,
+        "hybrid 65/35": 2,
+        "hybrid 80/20": 2
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 2,
+        "hybrid 50/50": 2,
+        "hybrid 65/35": 2,
+        "hybrid 80/20": 2
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.14606834984270645,
+          "chunk_recall": 0.16666666666666666
+        },
+        "sparse-only (default)": {
+          "precision": 0.8,
+          "ndcg": 0.6608397947263839,
+          "chunk_recall": 0.6666666666666666
+        },
+        "hybrid 50/50": {
+          "precision": 0.6,
+          "ndcg": 0.5296347172140421,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.6,
+          "ndcg": 0.5296347172140421,
+          "chunk_recall": 0.5
+        },
+        "hybrid 80/20": {
+          "precision": 0.8,
+          "ndcg": 0.6608397947263839,
+          "chunk_recall": 0.6666666666666666
+        }
+      }
+    },
+    {
+      "id": "kw-090",
+      "category": "direct_fact",
+      "question": "At which timestamp is collection name discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 4,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 6,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 2,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 2,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.6,
+          "ndcg": 0.7365896932159578,
+          "chunk_recall": 0.75
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.24630238874073,
+          "chunk_recall": 0.25
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 0.3903800499921017,
+          "chunk_recall": 0.25
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 0.5413996682199069,
+          "chunk_recall": 0.5
+        }
+      }
+    },
+    {
+      "id": "kw-091",
+      "category": "cross_video",
+      "question": "At which timestamp is environment variable discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 5,
+      "language": "bn",
+      "ranking_rank": {
+        "dense-only": 4,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.14606834984270645,
+          "chunk_recall": 0.2
+        },
+        "sparse-only (default)": {
+          "precision": 0.8,
+          "ndcg": 0.8539316501572937,
+          "chunk_recall": 0.8
+        },
+        "hybrid 50/50": {
+          "precision": 0.6,
+          "ndcg": 0.6843515475204855,
+          "chunk_recall": 0.6
+        },
+        "hybrid 65/35": {
+          "precision": 0.6,
+          "ndcg": 0.7227265726449519,
+          "chunk_recall": 0.6
+        },
+        "hybrid 80/20": {
+          "precision": 0.8,
+          "ndcg": 0.8687949224876582,
+          "chunk_recall": 0.8
+        }
+      }
+    },
+    {
+      "id": "kw-092",
+      "category": "cross_video",
+      "question": "At which timestamp is Pinecone discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-093",
+      "category": "direct_fact",
+      "question": "At which timestamp is ChromaDB discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-094",
+      "category": "direct_fact",
+      "question": "At which timestamp is FAISS discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-095",
+      "category": "direct_fact",
+      "question": "At which timestamp is Weaviate discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-096",
+      "category": "direct_fact",
+      "question": "At which timestamp is yt-dlp discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 5,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.4,
+          "ndcg": 0.5531464700081437,
+          "chunk_recall": 0.4
+        },
+        "sparse-only (default)": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.6,
+          "ndcg": 0.6992148198508501,
+          "chunk_recall": 0.6
+        },
+        "hybrid 65/35": {
+          "precision": 0.8,
+          "ndcg": 0.8539316501572937,
+          "chunk_recall": 0.8
+        },
+        "hybrid 80/20": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-097",
+      "category": "cross_video",
+      "question": "At which timestamp is sentence transformer discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 6,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.4,
+          "ndcg": 0.5531464700081437,
+          "chunk_recall": 0.3333333333333333
+        },
+        "sparse-only (default)": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.8333333333333334
+        },
+        "hybrid 50/50": {
+          "precision": 0.8,
+          "ndcg": 0.8687949224876582,
+          "chunk_recall": 0.6666666666666666
+        },
+        "hybrid 65/35": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.8333333333333334
+        },
+        "hybrid 80/20": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.8333333333333334
+        }
+      }
+    },
+    {
+      "id": "kw-098",
+      "category": "cross_video",
+      "question": "At which timestamp is rate limit discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 7,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.4,
+          "ndcg": 0.5531464700081437,
+          "chunk_recall": 0.2857142857142857
+        },
+        "sparse-only (default)": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.7142857142857143
+        },
+        "hybrid 50/50": {
+          "precision": 0.4,
+          "ndcg": 0.5531464700081437,
+          "chunk_recall": 0.2857142857142857
+        },
+        "hybrid 65/35": {
+          "precision": 0.6,
+          "ndcg": 0.7227265726449519,
+          "chunk_recall": 0.42857142857142855
+        },
+        "hybrid 80/20": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 0.7142857142857143
+        }
+      }
+    },
+    {
+      "id": "kw-099",
+      "category": "cross_video",
+      "question": "At which timestamp is Vercel discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 2,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.38685280723454163,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-100",
+      "category": "direct_fact",
+      "question": "At which timestamp is prompt injection discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 5,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.4,
+          "ndcg": 0.5531464700081437,
+          "chunk_recall": 0.4
+        },
+        "sparse-only (default)": {
+          "precision": 1.0,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.6,
+          "ndcg": 0.7227265726449519,
+          "chunk_recall": 0.6
+        },
+        "hybrid 65/35": {
+          "precision": 0.6,
+          "ndcg": 0.7227265726449519,
+          "chunk_recall": 0.6
+        },
+        "hybrid 80/20": {
+          "precision": 0.8,
+          "ndcg": 0.8687949224876582,
+          "chunk_recall": 0.8
+        }
+      }
+    },
+    {
+      "id": "kw-101",
+      "category": "direct_fact",
+      "question": "At which timestamp is markdown discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "en",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 0.6131471927654584,
+          "chunk_recall": 0.5
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-102",
+      "category": "direct_fact",
+      "question": "At which timestamp is translation discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": 1,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    },
+    {
+      "id": "kw-103",
+      "category": "direct_fact",
+      "question": "At which timestamp is conversation history discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 1,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": 10,
+        "hybrid 80/20": 7
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": null,
+        "hybrid 65/35": null,
+        "hybrid 80/20": null
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "sparse-only (default)": {
+          "precision": 0.2,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.0,
+          "ndcg": 0.0,
+          "chunk_recall": 0.0
+        }
+      }
+    },
+    {
+      "id": "kw-104",
+      "category": "direct_fact",
+      "question": "At which timestamp is all-MiniLM discussed?",
+      "source_id": "PLW4OpyGE0RdY",
+      "total_relevant_chunks": 2,
+      "language": "hi",
+      "ranking_rank": {
+        "dense-only": 3,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "production_rank": {
+        "dense-only": null,
+        "sparse-only (default)": 1,
+        "hybrid 50/50": 1,
+        "hybrid 65/35": 1,
+        "hybrid 80/20": 1
+      },
+      "ranking_metrics": {
+        "dense-only": {
+          "precision": 0.2,
+          "ndcg": 0.3065735963827292,
+          "chunk_recall": 0.5
+        },
+        "sparse-only (default)": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 50/50": {
+          "precision": 0.4,
+          "ndcg": 0.8772153153380493,
+          "chunk_recall": 1.0
+        },
+        "hybrid 65/35": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        },
+        "hybrid 80/20": {
+          "precision": 0.4,
+          "ndcg": 1.0,
+          "chunk_recall": 1.0
+        }
+      }
+    }
+  ]
+}

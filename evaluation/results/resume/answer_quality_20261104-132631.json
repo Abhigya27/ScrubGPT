@@ -1,0 +1,418 @@
+{
+  "generated_at": "2026-11-04T13:26:31+00:00",
+  "git": {
+    "commit": "59d18fa052e1ec5137883e52b497db0863df9343",
+    "dirty": true
+  },
+  "eval_set": {
+    "path": "C:\\Users\\NIPUNN~1\\AppData\\Local\\Temp\\scrubgpt-faithfulness-no-enhance-k4or_gez.json",
+    "entries": 10,
+    "skipped_stubs": 0,
+    "skipped_unreviewed": 0
+  },
+  "params": {
+    "metrics": [
+      "faithfulness"
+    ],
+    "enhance": "none",
+    "judge": [
+      "gemini",
+      "gemini-3.5-flash-lite"
+    ],
+    "answer_model": [
+      "gemini",
+      "gemini-3.5-flash"
+    ],
+    "judge_is_answer_model": false
+  },
+  "summary": {
+    "n_questions": 9,
+    "answered_rate": 1.0,
+    "refused_answerable": 0,
+    "judge_errors": 0,
+    "citation_coverage": 0.9722222222222222,
+    "metrics": {
+      "faithfulness": {
+        "n": 9,
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "fraction_perfect": 1.0,
+        "n_not_applicable": 0,
+        "n_judge_failed": 0,
+        "by_category": {
+          "cross_video": {
+            "n": 5,
+            "mean": 1.0
+          },
+          "direct_fact": {
+            "n": 4,
+            "mean": 1.0
+          }
+        }
+      }
+    }
+  },
+  "llm_usage": {
+    "default": {
+      "calls": 10,
+      "errors": 1,
+      "seconds": 160.15911370050162,
+      "input_tokens": 12012,
+      "output_tokens": 4380,
+      "token_calls": 9
+    },
+    "judge": {
+      "calls": 9,
+      "errors": 0,
+      "seconds": 239.05937140015885,
+      "input_tokens": 12807,
+      "output_tokens": 1980,
+      "token_calls": 9
+    }
+  },
+  "errors": [],
+  "aborted": "quota exhausted at question 10 (kw-078): The language model's quota is used up. It should reset in about 18h 33m.",
+  "questions": [
+    {
+      "id": "kw-069",
+      "category": "direct_fact",
+      "question": "At which timestamp is chunk overlap discussed?",
+      "refused": false,
+      "answer": "Chunk overlap is discussed in the video \"Chunking Strategies for RAG | Free AI Engineer Course | 8 Weeks\" during the 17:26 - 20:05 segment, where overlap is explained using word examples [1]. It is discussed again at timestamp 26:44, where chunk overlap parameters and character-based overlaps are demonstrated [2].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 4,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Chunk overlap is discussed in the video during the 17:26 - 20:05 segment",
+              "supported": true,
+              "evidence": "[1]"
+            },
+            {
+              "claim": "overlap is explained using word examples in the 17:26 - 20:05 segment",
+              "supported": true,
+              "evidence": "[1]"
+            },
+            {
+              "claim": "Chunk overlap is discussed again at timestamp 26:44",
+              "supported": true,
+              "evidence": "[2]"
+            },
+            {
+              "claim": "chunk overlap parameters and character-based overlaps are demonstrated at timestamp 26:44",
+              "supported": true,
+              "evidence": "[2]"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-070",
+      "category": "cross_video",
+      "question": "At which timestamp is structured output discussed?",
+      "refused": false,
+      "answer": "Structured output is discussed at timestamp 12:46 in \"Ep:05-Pydantic+JSON | AI Engineer Course | 8 Weeks\", where it is explained as a necessary format when passing data to computer programs rather than sending raw strings [1]. It is discussed again in the same video between timestamps 18:38 and 21:18, where structured output is contrasted with unstructured output using a watchman's diary analogy and explained as a JSON format used before sending LLM responses forward [2].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 5,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Structured output is discussed at timestamp 12:46 in \"Ep:05-Pydantic+JSON | AI Engineer Course | 8 Weeks\"",
+              "supported": true,
+              "evidence": "\"Ep:05-Pydantic+JSON | AI Engineer Course | 8 Weeks\" (12:46)"
+            },
+            {
+              "claim": "structured output is explained as a necessary format when passing data to computer programs rather than sending raw strings",
+              "supported": true,
+              "evidence": "That's why you can't just pass a string output as is, especially when your end-user—or the person reading it—is also a computer program... You have to present a structured output there."
+            },
+            {
+              "claim": "It is discussed again in the same video between timestamps 18:38 and 21:18",
+              "supported": true,
+              "evidence": "\"Ep:05-Pydantic+JSON | AI Engineer Course | 8 Weeks\" (18:38 - 21:18)"
+            },
+            {
+              "claim": "structured output is contrasted with unstructured output using a watchman's diary analogy",
+              "supported": true,
+              "evidence": "suppose you are a watchman... writing a general language string... this is an unstructured output... You can note it like this too... this is a JSON output or a structured output"
+            },
+            {
+              "claim": "structured output is explained as a JSON format used before sending LLM responses forward",
+              "supported": true,
+              "evidence": "whatever output comes from our LLM... we will convert that output into a JSON format, always store it in JSON format, and only then send it forward."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-071",
+      "category": "direct_fact",
+      "question": "At which timestamp is faithfulness discussed?",
+      "refused": false,
+      "answer": "Faithfulness is discussed in the video \"RAG Evaluation | The Most Imp AI Interview Question\" starting at timestamp (18:40), where it is introduced as a test for identifying LLM issues and defined in relation to context [1]. It is discussed further in the same video between timestamps (22:10 - 25:56), where it is contrasted with correctness and explained in terms of whether the LLM answers strictly according to its context [2].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 4,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Faithfulness is discussed in the video 'RAG Evaluation | The Most Imp AI Interview Question' starting at timestamp (18:40).",
+              "supported": true,
+              "evidence": "\"RAG Evaluation | The Most Imp AI Interview Question\" (18:40)"
+            },
+            {
+              "claim": "At timestamp (18:40), faithfulness is introduced as a test for identifying LLM issues and defined in relation to context.",
+              "supported": true,
+              "evidence": "Now, how do you identify an LLM issue? There are three types of tests for this. The first is faithfulness... Suppose your LLM got some context of one line."
+            },
+            {
+              "claim": "Faithfulness is discussed further in the same video between timestamps (22:10 - 25:56).",
+              "supported": true,
+              "evidence": "\"RAG Evaluation | The Most Imp AI Interview Question\" (22:10 - 25:56)"
+            },
+            {
+              "claim": "In the segment from (22:10 - 25:56), faithfulness is contrasted with correctness and explained in terms of whether the LLM answers strictly according to its context.",
+              "supported": true,
+              "evidence": "is the distinction between faithfulness and correctness... Is the LLM answering according to its context or not? Is it giving the correct answer based on the information in its context? This is called faithfulness."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-072",
+      "category": "cross_video",
+      "question": "At which timestamp is FastAPI discussed?",
+      "refused": false,
+      "answer": "FastAPI is discussed in \"Ep 11: Personal Portfolio AI (Mini Project) | Free AI Engineer Course | 8 Weeks\" between timestamps 5:53 - 8:35 [1] and at timestamp 10:35 [2].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 1,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "FastAPI is discussed in Ep 11: Personal Portfolio AI (Mini Project) | Free AI Engineer Course | 8 Weeks between timestamps 5:53 - 8:35 and at timestamp 10:35",
+              "supported": true,
+              "evidence": "[1] and [2] timestamp headers"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-073",
+      "category": "direct_fact",
+      "question": "At which timestamp is JSON output discussed?",
+      "refused": false,
+      "answer": "JSON output is discussed at timestamp 19:48 in Video 6, where structured JSON outputs are explained and contrasted with unstructured outputs [1]. It is also discussed at timestamp 10:29 in Video 7 regarding receiving a job description analysis in the form of a JSON object [2]. Finally, JSON format output is discussed at timestamp 6:58 in Video 40 when explaining why code files require structured LLM responses [3].",
+      "n_periods": 3,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "JSON output is discussed at timestamp 19:48 in Video 6, where structured JSON outputs are explained and contrasted with unstructured outputs",
+              "supported": true,
+              "evidence": "Ep:05-Pydantic+JSON ... (19:48)"
+            },
+            {
+              "claim": "It is also discussed at timestamp 10:29 in Video 7 regarding receiving a job description analysis in the form of a JSON object",
+              "supported": true,
+              "evidence": "Ep 06: Our First AI Mini Project ... (10:29)"
+            },
+            {
+              "claim": "Finally, JSON format output is discussed at timestamp 6:58 in Video 40 when explaining why code files require structured LLM responses",
+              "supported": true,
+              "evidence": "Watch This Before Any AI Engineering Interview ... (6:58)"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-074",
+      "category": "cross_video",
+      "question": "At which timestamp is embedding model discussed?",
+      "refused": false,
+      "answer": "An embedding model is discussed at timestamp 17:33 in Video 17 regarding sentence transformers, vector sizes, and model encoding [1]. It is also discussed at timestamp 2:22 in Video 18 when setting up the embedding model alongside the Groq LLM [2], and at timestamp 22:13 in Video 19 when using the embedding model to encode text documents into vector embeddings [3].",
+      "n_periods": 3,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "An embedding model is discussed at timestamp 17:33 in Video 17 regarding sentence transformers, vector sizes, and model encoding",
+              "supported": true,
+              "evidence": "Ep 13. Embeddings Without MATH ... (17:33) sentence transformer ... model.encode"
+            },
+            {
+              "claim": "It is also discussed at timestamp 2:22 in Video 18 when setting up the embedding model alongside the Groq LLM",
+              "supported": true,
+              "evidence": "Ep 14 | Build Your First RAG SYSTEM! ... (2:22) let's create our embedding model. ... Create the Groq model as well."
+            },
+            {
+              "claim": "and at timestamp 22:13 in Video 19 when using the embedding model to encode text documents into vector embeddings",
+              "supported": true,
+              "evidence": "15 | Quadrant Vector Database ... (22:13) Create embeddings, just like we created last time. ... embeddings = model.encode documents."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-075",
+      "category": "cross_video",
+      "question": "At which timestamp is context window discussed?",
+      "refused": false,
+      "answer": "Context window is discussed in Video 31 between 10:36 and 14:24 [1] and in Video 37 at timestamp 1:10 [2].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Context window is discussed in Video 31 between 10:36 and 14:24",
+              "supported": true,
+              "evidence": "[1] \"Intro To Multi-Agent Systems | AI Engineer in 8 Weeks Series\" (10:36 - 14:24)"
+            },
+            {
+              "claim": "Context window is discussed in Video 37 at timestamp 1:10",
+              "supported": true,
+              "evidence": "[2] \"Week 5 Major Project | Design Your Coding Agent\" (1:10)"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-076",
+      "category": "direct_fact",
+      "question": "At which timestamp is conditional edge discussed?",
+      "refused": false,
+      "answer": "Conditional edges are discussed at the 9:19 timestamp when introducing edges that can be straight or conditional [1]. They are mentioned again at the 17:20 timestamp regarding how edges can be created conditionally [2], and at the 30:01 timestamp when explaining how to add a conditional edge using `builder.add_conditional_edges` based on a decision function [3].",
+      "n_periods": 3,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Conditional edges are discussed at the 9:19 timestamp when introducing edges that can be straight or conditional",
+              "supported": true,
+              "evidence": "[1]"
+            },
+            {
+              "claim": "They are mentioned again at the 17:20 timestamp regarding how edges can be created conditionally",
+              "supported": true,
+              "evidence": "[2]"
+            },
+            {
+              "claim": "at the 30:01 timestamp when explaining how to add a conditional edge using builder.add_conditional_edges based on a decision function",
+              "supported": true,
+              "evidence": "[3]"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-077",
+      "category": "cross_video",
+      "question": "At which timestamp is search query discussed?",
+      "refused": false,
+      "answer": "Query search and handling queries are discussed at the following timestamps:\n\n- At 4:40 in Video 18, creating a query embedding and scoring the query array against document arrays to find matching knowledge base content is discussed [1].\n- At 25:42 in Video 19, searching Qdrant by converting a query into a query vector to fetch top matching results is discussed [2].\n- At 16:16 in Video 25, defining web search function parameters that take a concise web search query as input is discussed [3].",
+      "n_periods": 3,
+      "citation_coverage": 0.75,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "At 4:40 in Video 18, creating a query embedding and scoring the query array against document arrays to find matching knowledge base content is discussed.",
+              "supported": true,
+              "evidence": "create the embedding of the query... q_embedding = model.encode(query)... start scoring the array of this query against the array of every document, and extract the document line that gets the highest score"
+            },
+            {
+              "claim": "At 25:42 in Video 19, searching Qdrant by converting a query into a query vector to fetch top matching results is discussed.",
+              "supported": true,
+              "evidence": "query vector means make your query an array as well... client.query points... top three points matching it that you have with you"
+            },
+            {
+              "claim": "At 16:16 in Video 25, defining web search function parameters that take a concise web search query as input is discussed.",
+              "supported": true,
+              "evidence": "web search takes a query... it will take a query as an input... This is a concise web search query."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    }
+  ]
+}

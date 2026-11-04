@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-11-03T06:37:21+00:00",
+  "git": {
+    "commit": "59d18fa052e1ec5137883e52b497db0863df9343",
+    "dirty": true
+  },
+  "origin": "data\\library.json",
+  "summary": {
+    "videos_translated": 1,
+    "videos_fully_cached": 0,
+    "languages": {
+      "ar": 1
+    },
+    "batches_attempted": 3,
+    "batches_fell_back_to_smaller": 0,
+    "batches_fell_back_to_individual": 0,
+    "fallback_batches": 0,
+    "chunks_translated": 17,
+    "chunks_from_cache": 0,
+    "fallbacks_total": 0,
+    "fallback_rate": 0.0,
+    "chunks_total": 17
+  },
+  "videos": [
+    {
+      "source_id": "PLW4OpyGE0RdY",
+      "video_id": "d_nb60ZigPU",
+      "title": "Week5  Project : Coding Agent | AI Engineer Series",
+      "language": "ar",
+      "translation": {
+        "batches_attempted": 3,
+        "batches_fell_back_to_smaller": 0,
+        "batches_fell_back_to_individual": 0,
+        "fallback_batches": 0,
+        "chunks_translated": 17,
+        "chunks_from_cache": 0,
+        "cache_hit": false,
+        "fallback_rate": 0.0
+      }
+    }
+  ]
+}

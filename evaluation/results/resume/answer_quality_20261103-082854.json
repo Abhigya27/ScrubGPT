@@ -1,0 +1,393 @@
+{
+  "generated_at": "2026-11-03T08:28:54+00:00",
+  "git": {
+    "commit": "59d18fa052e1ec5137883e52b497db0863df9343",
+    "dirty": true
+  },
+  "eval_set": {
+    "path": "evaluation\\eval_set.json",
+    "entries": 104,
+    "skipped_stubs": 0,
+    "skipped_unreviewed": 0
+  },
+  "params": {
+    "metrics": [
+      "faithfulness"
+    ],
+    "enhance": "full",
+    "judge": [
+      "gemini",
+      "gemini-3.5-flash-lite"
+    ],
+    "answer_model": [
+      "gemini",
+      "gemini-3.5-flash"
+    ],
+    "judge_is_answer_model": false
+  },
+  "summary": {
+    "n_questions": 10,
+    "answered_rate": 0.8,
+    "refused_answerable": 2,
+    "judge_errors": 0,
+    "citation_coverage": 1.0,
+    "metrics": {
+      "faithfulness": {
+        "n": 8,
+        "mean": 0.9166666666666666,
+        "ci95": [
+          0.75,
+          1.0
+        ],
+        "fraction_perfect": 0.875,
+        "n_not_applicable": 2,
+        "n_judge_failed": 0,
+        "by_category": {
+          "cross_video": {
+            "n": 2,
+            "mean": 1.0
+          },
+          "direct_fact": {
+            "n": 6,
+            "mean": 0.8888888888888888
+          }
+        }
+      }
+    }
+  },
+  "llm_usage": {
+    "enhance": {
+      "calls": 11,
+      "errors": 0,
+      "seconds": 62.719040900235996,
+      "input_tokens": 2852,
+      "output_tokens": 970,
+      "token_calls": 11
+    },
+    "default": {
+      "calls": 11,
+      "errors": 1,
+      "seconds": 94.3504573001992,
+      "input_tokens": 10888,
+      "output_tokens": 5877,
+      "token_calls": 10
+    },
+    "judge": {
+      "calls": 8,
+      "errors": 0,
+      "seconds": 48.73319429974072,
+      "input_tokens": 8810,
+      "output_tokens": 1466,
+      "token_calls": 8
+    }
+  },
+  "errors": [],
+  "aborted": "quota exhausted at question 11 (kw-11): The language model's quota is used up. It should reset in about 23h 31m.",
+  "questions": [
+    {
+      "id": "kw-01",
+      "category": "direct_fact",
+      "question": "When is zero-shot mentioned?",
+      "refused": false,
+      "answer": "Zero-shot is first mentioned as the fifth technique—alongside one-shot—used to make a prompt secure and stable [1]. It is mentioned again when explaining that writing a prompt without including any examples is called zero-shot [2].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Zero-shot is first mentioned as the fifth technique, alongside one-shot, used to make a prompt secure and stable.",
+              "supported": true,
+              "evidence": "the fifth, fifth, fifth is Zero-Shot or One-Shot—what is that? ... These six techniques you should use if you want to make your prompt completely secure and stable"
+            },
+            {
+              "claim": "It is mentioned again when explaining that writing a prompt without including any examples is called zero-shot.",
+              "supported": true,
+              "evidence": "If you didn't write examples right now, what would that be called? Zero-shot. There are no examples."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-02",
+      "category": "direct_fact",
+      "question": "When is semantic search mentioned?",
+      "refused": true,
+      "answer": "",
+      "n_periods": 3,
+      "citation_coverage": null,
+      "judge_calls": 0,
+      "scores": {},
+      "details": {},
+      "judge_errors": []
+    },
+    {
+      "id": "kw-03",
+      "category": "direct_fact",
+      "question": "When is RAG pipeline mentioned?",
+      "refused": true,
+      "answer": "",
+      "n_periods": 2,
+      "citation_coverage": null,
+      "judge_calls": 0,
+      "scores": {},
+      "details": {},
+      "judge_errors": []
+    },
+    {
+      "id": "kw-04",
+      "category": "direct_fact",
+      "question": "When is Matplotlib mentioned?",
+      "refused": false,
+      "answer": "Matplotlib is mentioned at timestamp 2:23 in the video \"Intro To Multi-Agent Systems | AI Engineer in 8 Weeks Series\" [1]. It is introduced as a Python function used for Tool Two to convert data into a graph format, such as a JPG image [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Matplotlib is mentioned at timestamp 2:23 in the video \"Intro To Multi-Agent Systems | AI Engineer in 8 Weeks Series\"",
+              "supported": true,
+              "evidence": "[1] \"Intro To Multi-Agent Systems | AI Engineer in 8 Weeks Series\" (2:23) ... Matplotlib"
+            },
+            {
+              "claim": "It is introduced as a Python function used for Tool Two to convert data into a graph format, such as a JPG image",
+              "supported": true,
+              "evidence": "Tool Two could be a Python function. You must have heard of Matplotlib, right? Whose? You must have heard of Matplotlib, it's a Python function that converts your data into a graph form; for example, a JPG image or anything, it will create a graph for you."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-05",
+      "category": "cross_video",
+      "question": "When is DSA playlist mentioned?",
+      "refused": false,
+      "answer": "A DSA playlist is first mentioned at timestamp 0:00 in the title \"I converted my 60 Hour DSA Playlist to a RAG!\", where the speaker talks about viewers watching their DSA playlist or the DSA pattern playlist [1]. The speaker also references a 60-hour DSA playlist by Striver ji [1]. Later, \"The Best Way to Start DSA\" is used as an example video title [2].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 4,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "A DSA playlist is first mentioned at timestamp 0:00 in the title 'I converted my 60 Hour DSA Playlist to a RAG!'",
+              "supported": true,
+              "evidence": "I converted my 60 Hour DSA Playlist to a RAG! (0:00)"
+            },
+            {
+              "claim": "the speaker talks about viewers watching their DSA playlist or the DSA pattern playlist",
+              "supported": true,
+              "evidence": "whoever has watched my DSA playlist—those watching the DSA pattern one, or who will watch it"
+            },
+            {
+              "claim": "The speaker also references a 60-hour DSA playlist by Striver ji",
+              "supported": true,
+              "evidence": "The total length becomes 60 hours for Striver ji"
+            },
+            {
+              "claim": "'The Best Way to Start DSA' is used as an example video title",
+              "supported": true,
+              "evidence": "The video title of chunk 1 will be 'The Best Way to Start DSA,' suppose the first video."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-06",
+      "category": "direct_fact",
+      "question": "When is BaseModel mentioned?",
+      "refused": false,
+      "answer": "BaseModel is mentioned in the video \"Ep:05-Pydantic+JSON | AI Engineer Course | 8 Weeks\" between 20:58 and 23:37 as a class imported from Pydantic to define the required fields and data types for an LLM's output, such as creating a `Ticket` class [1]. It is mentioned again later in the video at 32:38 when reviewing how to import `BaseModel` from Pydantic to structure the `Ticket` class and generate a JSON schema format [2].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "BaseModel is mentioned in the video \"Ep:05-Pydantic+JSON | AI Engineer Course | 8 Weeks\" between 20:58 and 23:37 as a class imported from Pydantic to define the required fields and data types for an LLM's output",
+              "supported": true,
+              "evidence": "from pydantic import, and there is a name in the library called BaseModel... If we are creating a customer complaint... We only need its name, email, and its category... whatever things you need, you just write them down, and what type are those things?"
+            },
+            {
+              "claim": "such as creating a Ticket class",
+              "supported": true,
+              "evidence": "For this, we create a class. Let's name that class Ticket."
+            },
+            {
+              "claim": "It is mentioned again later in the video at 32:38 when reviewing how to import BaseModel from Pydantic to structure the Ticket class and generate a JSON schema format",
+              "supported": true,
+              "evidence": "From which schema? So first, from pydantic what will we import? BaseModel... First, what will we do? We will create a class named Ticket... After that, what will we do? We will create a schema."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-07",
+      "category": "direct_fact",
+      "question": "When is ARC-AGI mentioned?",
+      "refused": false,
+      "answer": "ARC-AGI is mentioned at the 0:00 timestamp in both the video title and early in the transcript [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "ARC-AGI is mentioned at the 0:00 timestamp in the video title",
+              "supported": true,
+              "evidence": "\"OpenAI Is Lying to US! Full Truth About ARC AGI 3 Test\" (0:00)"
+            },
+            {
+              "claim": "ARC-AGI is mentioned early in the transcript",
+              "supported": true,
+              "evidence": "99.9% OpenAI, AGI—these two or three words... What is this test? What's happening in this test? And why does the test's website say 62.7 instead of 99.9? ... ARC-AGI-3—what does this mean?"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-08",
+      "category": "direct_fact",
+      "question": "When is few-shot mentioned?",
+      "refused": false,
+      "answer": "Few-shot (referred to as \"few shots\") is mentioned when explaining prompt engineering techniques; if you give the LLM more than one example, such as three examples, it is called few shots [1].",
+      "n_periods": 3,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Few-shot (referred to as \"few shots\") is mentioned when explaining prompt engineering techniques",
+              "supported": true,
+              "evidence": "Few what is called? [2]"
+            },
+            {
+              "claim": "if you give the LLM more than one example, such as three examples, it is called few shots",
+              "supported": true,
+              "evidence": "If you give more than one example, you can also give three examples, then it is called few shots."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-09",
+      "category": "direct_fact",
+      "question": "When is JSON schema mentioned?",
+      "refused": false,
+      "answer": "JSON schema is explicitly mentioned in Video 6 when explaining how to define LLM response formats using `Model JSON Schema` so the LLM outputs a JSON object rather than a string [1]. The concept of returning valid JSON matching a created schema is further discussed in Video 7 when prompting an LLM to extract structured job description details [2] and when setting up rules for a resume parsing schema [3].",
+      "n_periods": 3,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 0.3333333333333333
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [
+            "JSON schema is explicitly mentioned in Video 6 when explaining how to define LLM response formats using Model JSON Schema so the LLM outputs a JSON object rather than a string",
+            "The concept of returning valid JSON matching a created schema is further discussed in Video 7 when prompting an LLM to extract structured job description details"
+          ],
+          "claims": [
+            {
+              "claim": "JSON schema is explicitly mentioned in Video 6 when explaining how to define LLM response formats using Model JSON Schema so the LLM outputs a JSON object rather than a string",
+              "supported": false,
+              "evidence": "Video source numbers in the answer do not match the context numbering (Video 6/7 vs contexts [1], [2], [3])."
+            },
+            {
+              "claim": "The concept of returning valid JSON matching a created schema is further discussed in Video 7 when prompting an LLM to extract structured job description details",
+              "supported": false,
+              "evidence": "Video source number Video 7 does not correspond to the context numbering."
+            },
+            {
+              "claim": "The concept of returning valid JSON matching a created schema is discussed when setting up rules for a resume parsing schema",
+              "supported": true,
+              "evidence": "Context [3] mentions 'return only valid JSON matching this schema' for the resume schema."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-10",
+      "category": "cross_video",
+      "question": "When is chunking mentioned?",
+      "refused": false,
+      "answer": "Chunking is mentioned when explaining how extracting audio while preserving video IDs and timestamps generates chunk 1 starting at timestamp 00:00, followed by chunk 2 after 75 seconds at timestamp 01:15 [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Chunking is mentioned when explaining how extracting audio while preserving video IDs and timestamps generates chunk 1 starting at timestamp 00:00",
+              "supported": true,
+              "evidence": "chunk 1... video title... timestamp will be the beginning timestamp, 00 to 00"
+            },
+            {
+              "claim": "followed by chunk 2 after 75 seconds at timestamp 01:15",
+              "supported": true,
+              "evidence": "chunk 2... timestamp will be 0, sorry, 01 and 15—after 75 seconds"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    }
+  ]
+}

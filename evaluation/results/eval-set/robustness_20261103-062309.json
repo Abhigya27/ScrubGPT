@@ -1,0 +1,484 @@
+{
+  "generated_at": "2026-11-03T06:23:09+00:00",
+  "git": {
+    "commit": "59d18fa052e1ec5137883e52b497db0863df9343",
+    "dirty": true
+  },
+  "eval_set": {
+    "path": "evaluation\\eval_set.json",
+    "entries": 104,
+    "skipped_stubs": 0,
+    "skipped_unreviewed": 0
+  },
+  "params": {
+    "k": 5,
+    "depth": 10,
+    "seed": 0,
+    "enhance": "none",
+    "perturbations": [
+      "typos",
+      "uppercase",
+      "filler",
+      "truncated",
+      "distractor"
+    ]
+  },
+  "left_out": {
+    "expects_refusal": 0,
+    "missing_gold_answer_contains": 0
+  },
+  "configs": [
+    "dense-only",
+    "sparse-only (default)"
+  ],
+  "results": {
+    "clean": {
+      "n": 104,
+      "errors": [],
+      "summary": {
+        "dense-only": {
+          "n": 104,
+          "recall_at_k": 0.6538461538461539,
+          "recall_ci95": [
+            0.5584071487127773,
+            0.7383243537871855
+          ],
+          "mrr": 0.5553113553113553,
+          "precision_at_k": 0.23846153846153847,
+          "ndcg_at_k": 0.5413514671222008,
+          "chunk_recall_at_k": null,
+          "by_category": {
+            "cross_video": {
+              "n": 42,
+              "recall_at_k": 0.7142857142857143
+            },
+            "direct_fact": {
+              "n": 62,
+              "recall_at_k": 0.6129032258064516
+            }
+          },
+          "by_language": {}
+        },
+        "sparse-only (default)": {
+          "n": 104,
+          "recall_at_k": 0.9230769230769231,
+          "recall_ci95": [
+            0.855502912653361,
+            0.960508719221537
+          ],
+          "mrr": 0.8608974358974358,
+          "precision_at_k": 0.5,
+          "ndcg_at_k": 0.8302769176883711,
+          "chunk_recall_at_k": null,
+          "by_category": {
+            "cross_video": {
+              "n": 42,
+              "recall_at_k": 0.9523809523809523
+            },
+            "direct_fact": {
+              "n": 62,
+              "recall_at_k": 0.9032258064516129
+            }
+          },
+          "by_language": {}
+        }
+      },
+      "examples": [
+        [
+          "When is zero-shot mentioned?",
+          "When is zero-shot mentioned?"
+        ],
+        [
+          "When is semantic search mentioned?",
+          "When is semantic search mentioned?"
+        ],
+        [
+          "When is RAG pipeline mentioned?",
+          "When is RAG pipeline mentioned?"
+        ]
+      ]
+    },
+    "typos": {
+      "n": 104,
+      "errors": [],
+      "summary": {
+        "dense-only": {
+          "n": 104,
+          "recall_at_k": 0.5192307692307693,
+          "recall_ci95": [
+            0.4242432827339784,
+            0.612848155078517
+          ],
+          "mrr": 0.42659493284493283,
+          "precision_at_k": 0.19615384615384618,
+          "ndcg_at_k": 0.4140262057643389,
+          "chunk_recall_at_k": null,
+          "by_category": {
+            "cross_video": {
+              "n": 42,
+              "recall_at_k": 0.5714285714285714
+            },
+            "direct_fact": {
+              "n": 62,
+              "recall_at_k": 0.4838709677419355
+            }
+          },
+          "by_language": {}
+        },
+        "sparse-only (default)": {
+          "n": 104,
+          "recall_at_k": 0.8076923076923077,
+          "recall_ci95": [
+            0.7215434846683545,
+            0.8719195203315714
+          ],
+          "mrr": 0.7100961538461538,
+          "precision_at_k": 0.41730769230769227,
+          "ndcg_at_k": 0.6792150316361857,
+          "chunk_recall_at_k": null,
+          "by_category": {
+            "cross_video": {
+              "n": 42,
+              "recall_at_k": 0.8333333333333334
+            },
+            "direct_fact": {
+              "n": 62,
+              "recall_at_k": 0.7903225806451613
+            }
+          },
+          "by_language": {}
+        }
+      },
+      "examples": [
+        [
+          "When is zero-shot mentioned?",
+          "When is zero-shot mentioned?"
+        ],
+        [
+          "When is semantic search mentioned?",
+          "When is semanitc searhc mentioned?"
+        ],
+        [
+          "When is RAG pipeline mentioned?",
+          "When is RAG pipleine mentioned?"
+        ]
+      ]
+    },
+    "uppercase": {
+      "n": 104,
+      "errors": [],
+      "summary": {
+        "dense-only": {
+          "n": 104,
+          "recall_at_k": 0.6538461538461539,
+          "recall_ci95": [
+            0.5584071487127773,
+            0.7383243537871855
+          ],
+          "mrr": 0.5553113553113553,
+          "precision_at_k": 0.23846153846153847,
+          "ndcg_at_k": 0.5413514671222008,
+          "chunk_recall_at_k": null,
+          "by_category": {
+            "cross_video": {
+              "n": 42,
+              "recall_at_k": 0.7142857142857143
+            },
+            "direct_fact": {
+              "n": 62,
+              "recall_at_k": 0.6129032258064516
+            }
+          },
+          "by_language": {}
+        },
+        "sparse-only (default)": {
+          "n": 104,
+          "recall_at_k": 0.9230769230769231,
+          "recall_ci95": [
+            0.855502912653361,
+            0.960508719221537
+          ],
+          "mrr": 0.8608974358974358,
+          "precision_at_k": 0.5,
+          "ndcg_at_k": 0.8302769176883711,
+          "chunk_recall_at_k": null,
+          "by_category": {
+            "cross_video": {
+              "n": 42,
+              "recall_at_k": 0.9523809523809523
+            },
+            "direct_fact": {
+              "n": 62,
+              "recall_at_k": 0.9032258064516129
+            }
+          },
+          "by_language": {}
+        }
+      },
+      "examples": [
+        [
+          "When is zero-shot mentioned?",
+          "WHEN IS ZERO-SHOT MENTIONED?"
+        ],
+        [
+          "When is semantic search mentioned?",
+          "WHEN IS SEMANTIC SEARCH MENTIONED?"
+        ],
+        [
+          "When is RAG pipeline mentioned?",
+          "WHEN IS RAG PIPELINE MENTIONED?"
+        ]
+      ]
+    },
+    "filler": {
+      "n": 104,
+      "errors": [],
+      "summary": {
+        "dense-only": {
+          "n": 104,
+          "recall_at_k": 0.5576923076923077,
+          "recall_ci95": [
+            0.4618751630220258,
+            0.6493991504154603
+          ],
+          "mrr": 0.3927808302808303,
+          "precision_at_k": 0.2,
+          "ndcg_at_k": 0.4121641950913162,
+          "chunk_recall_at_k": null,
+          "by_category": {
+            "cross_video": {
+              "n": 42,
+              "recall_at_k": 0.6666666666666666
+            },
+            "direct_fact": {
+              "n": 62,
+              "recall_at_k": 0.4838709677419355
+            }
+          },
+          "by_language": {}
+        },
+        "sparse-only (default)": {
+          "n": 104,
+          "recall_at_k": 0.7884615384615384,
+          "recall_ci95": [
+            0.7004227763289637,
+            0.8559487908584666
+          ],
+          "mrr": 0.46303418803418805,
+          "precision_at_k": 0.31538461538461543,
+          "ndcg_at_k": 0.4678795108509038,
+          "chunk_recall_at_k": null,
+          "by_category": {
+            "cross_video": {
+              "n": 42,
+              "recall_at_k": 0.8095238095238095
+            },
+            "direct_fact": {
+              "n": 62,
+              "recall_at_k": 0.7741935483870968
+            }
+          },
+          "by_language": {}
+        }
+      },
+      "examples": [
+        [
+          "When is zero-shot mentioned?",
+          "hey so um, quick question: When is zero-shot mentioned thanks!!"
+        ],
+        [
+          "When is semantic search mentioned?",
+          "hey so um, quick question: When is semantic search mentioned thanks!!"
+        ],
+        [
+          "When is RAG pipeline mentioned?",
+          "hey so um, quick question: When is RAG pipeline mentioned thanks!!"
+        ]
+      ]
+    },
+    "truncated": {
+      "n": 104,
+      "errors": [],
+      "summary": {
+        "dense-only": {
+          "n": 104,
+          "recall_at_k": 0.14423076923076922,
+          "recall_ci95": [
+            0.08939528769089235,
+            0.2244131127779434
+          ],
+          "mrr": 0.09420405982905983,
+          "precision_at_k": 0.04038461538461539,
+          "ndcg_at_k": 0.08686764178630432,
+          "chunk_recall_at_k": null,
+          "by_category": {
+            "cross_video": {
+              "n": 42,
+              "recall_at_k": 0.21428571428571427
+            },
+            "direct_fact": {
+              "n": 62,
+              "recall_at_k": 0.0967741935483871
+            }
+          },
+          "by_language": {}
+        },
+        "sparse-only (default)": {
+          "n": 104,
+          "recall_at_k": 0.18269230769230768,
+          "recall_ci95": [
+            0.12019329509173257,
+            0.26779798100209384
+          ],
+          "mrr": 0.11836080586080587,
+          "precision_at_k": 0.06153846153846154,
+          "ndcg_at_k": 0.09946949329452547,
+          "chunk_recall_at_k": null,
+          "by_category": {
+            "cross_video": {
+              "n": 42,
+              "recall_at_k": 0.2619047619047619
+            },
+            "direct_fact": {
+              "n": 62,
+              "recall_at_k": 0.12903225806451613
+            }
+          },
+          "by_language": {}
+        }
+      },
+      "examples": [
+        [
+          "When is zero-shot mentioned?",
+          "When is"
+        ],
+        [
+          "When is semantic search mentioned?",
+          "When is semantic"
+        ],
+        [
+          "When is RAG pipeline mentioned?",
+          "When is RAG"
+        ]
+      ]
+    },
+    "distractor": {
+      "n": 104,
+      "errors": [],
+      "summary": {
+        "dense-only": {
+          "n": 104,
+          "recall_at_k": 0.6153846153846154,
+          "recall_ci95": [
+            0.5193597705642685,
+            0.7031888563107038
+          ],
+          "mrr": 0.4516483516483516,
+          "precision_at_k": 0.2076923076923077,
+          "ndcg_at_k": 0.44081432986973745,
+          "chunk_recall_at_k": null,
+          "by_category": {
+            "cross_video": {
+              "n": 42,
+              "recall_at_k": 0.7142857142857143
+            },
+            "direct_fact": {
+              "n": 62,
+              "recall_at_k": 0.5483870967741935
+            }
+          },
+          "by_language": {}
+        },
+        "sparse-only (default)": {
+          "n": 104,
+          "recall_at_k": 0.8846153846153846,
+          "recall_ci95": [
+            0.8090778685477145,
+            0.9327508877021926
+          ],
+          "mrr": 0.7266788766788767,
+          "precision_at_k": 0.43846153846153846,
+          "ndcg_at_k": 0.7039909320136967,
+          "chunk_recall_at_k": null,
+          "by_category": {
+            "cross_video": {
+              "n": 42,
+              "recall_at_k": 0.8571428571428571
+            },
+            "direct_fact": {
+              "n": 62,
+              "recall_at_k": 0.9032258064516129
+            }
+          },
+          "by_language": {}
+        }
+      },
+      "examples": [
+        [
+          "When is zero-shot mentioned?",
+          "When is zero-shot mentioned? by the way, I also like football and bananas"
+        ],
+        [
+          "When is semantic search mentioned?",
+          "When is semantic search mentioned? by the way, I also like football and bananas"
+        ],
+        [
+          "When is RAG pipeline mentioned?",
+          "When is RAG pipeline mentioned? by the way, I also like football and bananas"
+        ]
+      ]
+    }
+  },
+  "changes": {
+    "typos": {
+      "dense-only": {
+        "recall_change": -0.13461538461538458,
+        "mrr_change": -0.1287164224664225
+      },
+      "sparse-only (default)": {
+        "recall_change": -0.11538461538461542,
+        "mrr_change": -0.15080128205128207
+      }
+    },
+    "uppercase": {
+      "dense-only": {
+        "recall_change": 0.0,
+        "mrr_change": 0.0
+      },
+      "sparse-only (default)": {
+        "recall_change": 0.0,
+        "mrr_change": 0.0
+      }
+    },
+    "filler": {
+      "dense-only": {
+        "recall_change": -0.09615384615384615,
+        "mrr_change": -0.16253052503052506
+      },
+      "sparse-only (default)": {
+        "recall_change": -0.1346153846153847,
+        "mrr_change": -0.3978632478632478
+      }
+    },
+    "truncated": {
+      "dense-only": {
+        "recall_change": -0.5096153846153846,
+        "mrr_change": -0.4611072954822955
+      },
+      "sparse-only (default)": {
+        "recall_change": -0.7403846153846154,
+        "mrr_change": -0.74253663003663
+      }
+    },
+    "distractor": {
+      "dense-only": {
+        "recall_change": -0.038461538461538436,
+        "mrr_change": -0.10366300366300374
+      },
+      "sparse-only (default)": {
+        "recall_change": -0.03846153846153855,
+        "mrr_change": -0.13421855921855919
+      }
+    }
+  }
+}

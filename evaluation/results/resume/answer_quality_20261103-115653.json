@@ -1,0 +1,351 @@
+{
+  "generated_at": "2026-11-03T11:56:53+00:00",
+  "git": {
+    "commit": "59d18fa052e1ec5137883e52b497db0863df9343",
+    "dirty": true
+  },
+  "eval_set": {
+    "path": "C:\\Users\\NIPUNN~1\\AppData\\Local\\Temp\\scrubgpt-faithfulness-no-enhance-9uxfcg0_.json",
+    "entries": 10,
+    "skipped_stubs": 0,
+    "skipped_unreviewed": 0
+  },
+  "params": {
+    "metrics": [
+      "faithfulness"
+    ],
+    "enhance": "none",
+    "judge": [
+      "gemini",
+      "gemini-3.5-flash-lite"
+    ],
+    "answer_model": [
+      "gemini",
+      "gemini-3.5-flash"
+    ],
+    "judge_is_answer_model": false
+  },
+  "summary": {
+    "n_questions": 8,
+    "answered_rate": 1.0,
+    "refused_answerable": 0,
+    "judge_errors": 0,
+    "citation_coverage": 1.0,
+    "metrics": {
+      "faithfulness": {
+        "n": 8,
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "fraction_perfect": 1.0,
+        "n_not_applicable": 0,
+        "n_judge_failed": 0,
+        "by_category": {
+          "cross_video": {
+            "n": 3,
+            "mean": 1.0
+          },
+          "direct_fact": {
+            "n": 5,
+            "mean": 1.0
+          }
+        }
+      }
+    }
+  },
+  "llm_usage": {
+    "default": {
+      "calls": 9,
+      "errors": 1,
+      "seconds": 67.03112709964626,
+      "input_tokens": 6310,
+      "output_tokens": 3398,
+      "token_calls": 8
+    },
+    "judge": {
+      "calls": 8,
+      "errors": 0,
+      "seconds": 30.168990400154144,
+      "input_tokens": 6921,
+      "output_tokens": 1462,
+      "token_calls": 8
+    }
+  },
+  "errors": [],
+  "aborted": "quota exhausted at question 9 (kw-51): The language model's quota is used up. It should reset in about 20h 3m.",
+  "questions": [
+    {
+      "id": "kw-43",
+      "category": "direct_fact",
+      "question": "When is Weaviate mentioned?",
+      "refused": false,
+      "answer": "Weaviate is mentioned in the video \"15 | Quadrant Vector Database | Free AI Engineer Course | 8 Weeks\" during the segment from 4:41 to 7:21 [1]. It is first introduced as an example of another vector database, alongside ChromaDB, Faiss, Pinecone, and PGVector [1]. Later in the segment, it is brought up again to explain that it has a steep learning curve that takes a lot of time to learn, which is why Qdrant is taught instead [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Weaviate is mentioned in the video during the segment from 4:41 to 7:21.",
+              "supported": true,
+              "evidence": "\"15 | Quadrant Vector Database | Free AI Engineer Course | 8 Weeks\" (4:41 - 7:21)... software called Weaviate"
+            },
+            {
+              "claim": "It is first introduced as an example of another vector database, alongside ChromaDB, Faiss, Pinecone, and PGVector.",
+              "supported": true,
+              "evidence": "There is software called Weaviate. This is also like Qdrant. ChromaDB... Faiss... Pinecone... PGVector"
+            },
+            {
+              "claim": "Later in the segment, it is brought up again to explain that it has a steep learning curve that takes a lot of time to learn, which is why Qdrant is taught instead.",
+              "supported": true,
+              "evidence": "Weaviate has a steep learning curve. What is in it? Weaviate has steep learning. Understanding Weaviate, using Weaviate is very steep. Meaning it will take you a lot of time to learn it."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-44",
+      "category": "direct_fact",
+      "question": "When is yt-dlp mentioned?",
+      "refused": false,
+      "answer": "`yt-dlp` is mentioned at the 8:06 timestamp in the video \"I converted my 60 Hour DSA Playlist to a RAG!\" [1]. It is introduced as an API tool used to download YouTube videos [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "`yt-dlp` is mentioned at the 8:06 timestamp in the video \"I converted my 60 Hour DSA Playlist to a RAG!\"",
+              "supported": true,
+              "evidence": "\"I converted my 60 Hour DSA Playlist to a RAG!\" (8:06) ... `yt-dlp`"
+            },
+            {
+              "claim": "It is introduced as an API tool used to download YouTube videos",
+              "supported": true,
+              "evidence": "For this, there is a tool named `yt-dlp`. What is its name? `yt-dlp`. `yt-dlp` is an API. ... using this, you can download any YouTube video."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-45",
+      "category": "cross_video",
+      "question": "When is sentence transformer mentioned?",
+      "refused": false,
+      "answer": "Sentence transformers is mentioned at the 16:21 timestamp of Episode 13, where it is introduced as the tool used to view the vector of a sentence [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Sentence transformers is mentioned at the 16:21 timestamp of Episode 13",
+              "supported": true,
+              "evidence": "Ep 13. Embeddings Without MATH | Free AI Engineer Course | 8 Weeks (16:21) ... Its name is sentence transformers."
+            },
+            {
+              "claim": "It is introduced as the tool used to view the vector of a sentence",
+              "supported": true,
+              "evidence": "our work is to see the vector of the sentence. Its name is sentence transformers."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-46",
+      "category": "cross_video",
+      "question": "When is rate limit mentioned?",
+      "refused": false,
+      "answer": "A rate limit is mentioned when explaining why a 5-second sleep is added while processing multiple resumes, noting that LLMs impose rate limits to prevent sending requests too quickly and to protect against Denial of Service (DoS) attacks [1]. It is mentioned again when discussing placing a 5-second sleep between two LLM calls in an agent loop, warning that making rapid, repeated LLM calls will cause you to get rate-limited [2].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "A rate limit is mentioned when explaining why a 5-second sleep is added while processing multiple resumes",
+              "supported": true,
+              "evidence": "I have put a 5-second sleep here... Because you are handling four resumes. If you don't give this sleep, snap, snap, snap, snap—four calls will go out... Your LLM has a rate limit."
+            },
+            {
+              "claim": "LLMs impose rate limits to prevent sending requests too quickly and to protect against Denial of Service (DoS) attacks",
+              "supported": true,
+              "evidence": "A rate limit means you cannot call requests to the LLM very quickly... It is done to prevent a DoS attack. What is a DoS attack? Denial of Service."
+            },
+            {
+              "claim": "A 5-second sleep is also discussed between two LLM calls in an agent loop, warning that rapid, repeated calls cause rate-limiting",
+              "supported": true,
+              "evidence": "between two LLM calls, you want a 5-second sleep? Why? You will get rate-limited. If you run this 100 times, bang-bang... LLM calls are happening, right? You will get rate-limited."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-47",
+      "category": "cross_video",
+      "question": "When is Vercel mentioned?",
+      "refused": false,
+      "answer": "Vercel is mentioned in \"Ep 11: You Have All The Tools Now | Here's Your Challenge | AI Enginner Series\" at around the 7:03 mark as a free platform used to deploy the frontend of a website [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 1,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Vercel is mentioned in the specified episode at around the 7:03 mark as a free platform used to deploy the frontend of a website",
+              "supported": true,
+              "evidence": "Ep 11: You Have All The Tools Now | Here's Your Challenge | AI Enginner Series (7:03) ... And to deploy the frontend, Vercel. Vercel is a free platform."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-48",
+      "category": "direct_fact",
+      "question": "When is prompt injection mentioned?",
+      "refused": false,
+      "answer": "Prompt injection is first mentioned when the speaker instructs not to protect the LLM from prompt injection yet so it can be taught later [1]. It is mentioned again when preparing evaluation test cases to see if prompt injection can break the model [2]. Finally, it is brought up alongside guardrails to highlight that prompt injection can happen in ways people do not even think of [3].",
+      "n_periods": 3,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Prompt injection is first mentioned when the speaker instructs not to protect the LLM from prompt injection yet so it can be taught later",
+              "supported": true,
+              "evidence": "don't try to protect the LLM from any prompt injection or unrelated requests because I want to teach that later"
+            },
+            {
+              "claim": "It is mentioned again when preparing evaluation test cases to see if prompt injection can break the model",
+              "supported": true,
+              "evidence": "prepare a set of five test cases and see if they work. The eval will be evaluated on... whether any prompt injection can break the model."
+            },
+            {
+              "claim": "Finally, it is brought up alongside guardrails to highlight that prompt injection can happen in ways people do not even think of",
+              "supported": true,
+              "evidence": "While writing guardrails... Prompt injection can happen in ways people don't even think of."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-49",
+      "category": "direct_fact",
+      "question": "When is markdown mentioned?",
+      "refused": false,
+      "answer": "Markdown is mentioned when creating the file `prompt.md` for writing a prompt, where \"MD\" is explained to stand for a markdown file that is provided to Claude [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Markdown is mentioned when creating the file prompt.md for writing a prompt",
+              "supported": true,
+              "evidence": "what we create in it is prompt.md. MD means a markdown file."
+            },
+            {
+              "claim": "\"MD\" is explained to stand for a markdown file that is provided to Claude",
+              "supported": true,
+              "evidence": "MD means a markdown file. Which you tell Claude, \"Yes, this is my prompt.\""
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-50",
+      "category": "direct_fact",
+      "question": "When is translation mentioned?",
+      "refused": false,
+      "answer": "Translation is mentioned through an analogy of a hotel or restaurant waiter who acts as a translator because they understand both colloquial language and technical cooking terms [1]. The waiter goes inside to explain the translation of the customer's request to the cook using technical cooking terms [1]. This translating role represents an API (Application Programming Interface), which converts a user's website request into a technical format like Python [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Translation is mentioned through an analogy of a hotel or restaurant waiter who acts as a translator because they understand both colloquial language and technical cooking terms",
+              "supported": true,
+              "evidence": "what the hotel does for this is, it stations a waiter. The waiter knows both languages... The waiter understands my colloquial language as well, and the waiter also has knowledge of technical cooking terms."
+            },
+            {
+              "claim": "The waiter goes inside to explain the translation of the customer's request to the cook using technical cooking terms",
+              "supported": true,
+              "evidence": "The waiter will go inside and explain to the cook what the translation of whatever his cooking technical terms was."
+            },
+            {
+              "claim": "This translating role represents an API (Application Programming Interface), which converts a user's website request into a technical format like Python",
+              "supported": true,
+              "evidence": "This waiter... is called an API, Application Programming Interface... There will be an API in the middle which will convert this request... let's say Claude's program is written in Python, so it will convert it to Python"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    }
+  ]
+}

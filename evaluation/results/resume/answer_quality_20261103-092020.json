@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-11-03T09:20:20+00:00",
+  "git": {
+    "commit": "59d18fa052e1ec5137883e52b497db0863df9343",
+    "dirty": true
+  },
+  "eval_set": {
+    "path": "C:\\Users\\NIPUNN~1\\AppData\\Local\\Temp\\scrubgpt-faithfulness-31-40-oiqz5qri.json",
+    "entries": 10,
+    "skipped_stubs": 0,
+    "skipped_unreviewed": 0
+  },
+  "params": {
+    "metrics": [
+      "faithfulness"
+    ],
+    "enhance": "full",
+    "judge": [
+      "gemini",
+      "gemini-3.5-flash-lite"
+    ],
+    "answer_model": [
+      "gemini",
+      "gemini-3.5-flash"
+    ],
+    "judge_is_answer_model": false
+  },
+  "summary": {
+    "n_questions": 1,
+    "answered_rate": 1.0,
+    "refused_answerable": 0,
+    "judge_errors": 0,
+    "citation_coverage": 1.0,
+    "metrics": {
+      "faithfulness": {
+        "n": 1,
+        "mean": 1.0,
+        "ci95": null,
+        "fraction_perfect": 1.0,
+        "n_not_applicable": 0,
+        "n_judge_failed": 0,
+        "by_category": {
+          "direct_fact": {
+            "n": 1,
+            "mean": 1.0
+          }
+        }
+      }
+    }
+  },
+  "llm_usage": {
+    "enhance": {
+      "calls": 2,
+      "errors": 0,
+      "seconds": 2.5692010999191552,
+      "input_tokens": 519,
+      "output_tokens": 176,
+      "token_calls": 2
+    },
+    "default": {
+      "calls": 2,
+      "errors": 1,
+      "seconds": 38.49182829982601,
+      "input_tokens": 575,
+      "output_tokens": 287,
+      "token_calls": 1
+    },
+    "judge": {
+      "calls": 1,
+      "errors": 0,
+      "seconds": 1.5995096999686211,
+      "input_tokens": 645,
+      "output_tokens": 152,
+      "token_calls": 1
+    }
+  },
+  "errors": [],
+  "aborted": "quota exhausted at question 2 (kw-32): The language model's quota is used up. It should reset in about 22h 39m.",
+  "questions": [
+    {
+      "id": "kw-31",
+      "category": "direct_fact",
+      "question": "When is chain of thought mentioned?",
+      "refused": false,
+      "answer": "Chain of thought (COT) is mentioned in the video \"Why Can't LLMs Do Basic MATHS!\" at the 10:31 mark [1]. It is introduced as an approach developed by researchers to help LLMs solve difficult problems by breaking them down into smaller steps [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Chain of thought (COT) is mentioned in the video \"Why Can't LLMs Do Basic MATHS!\" at the 10:31 mark",
+              "supported": true,
+              "evidence": "[1] \"Why Can't LLMs Do Basic MATHS!\" (10:31) ... What is it called? Chain of Thought."
+            },
+            {
+              "claim": "It is introduced as an approach developed by researchers to help LLMs solve difficult problems by breaking them down into smaller steps",
+              "supported": true,
+              "evidence": "[1] researchers said, \"No, this won't work, let's try something else... It's called COT... breaking it down into smaller problems"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    }
+  ]
+}

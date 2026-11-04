@@ -1,0 +1,120 @@
+{
+  "generated_at": "2026-11-03T11:45:51+00:00",
+  "git": {
+    "commit": "59d18fa052e1ec5137883e52b497db0863df9343",
+    "dirty": true
+  },
+  "eval_set": {
+    "path": "C:\\Users\\NIPUNN~1\\AppData\\Local\\Temp\\scrubgpt-faithfulness-32-40-cjcn0w7g.json",
+    "entries": 9,
+    "skipped_stubs": 0,
+    "skipped_unreviewed": 0
+  },
+  "params": {
+    "metrics": [
+      "faithfulness"
+    ],
+    "enhance": "full",
+    "judge": [
+      "gemini",
+      "gemini-3.5-flash-lite"
+    ],
+    "answer_model": [
+      "gemini",
+      "gemini-3.5-flash"
+    ],
+    "judge_is_answer_model": false
+  },
+  "summary": {
+    "n_questions": 1,
+    "answered_rate": 1.0,
+    "refused_answerable": 0,
+    "judge_errors": 0,
+    "citation_coverage": 1.0,
+    "metrics": {
+      "faithfulness": {
+        "n": 1,
+        "mean": 0.6666666666666666,
+        "ci95": null,
+        "fraction_perfect": 0.0,
+        "n_not_applicable": 0,
+        "n_judge_failed": 0,
+        "by_category": {
+          "direct_fact": {
+            "n": 1,
+            "mean": 0.6666666666666666
+          }
+        }
+      }
+    }
+  },
+  "llm_usage": {
+    "enhance": {
+      "calls": 2,
+      "errors": 0,
+      "seconds": 12.023931999923661,
+      "input_tokens": 518,
+      "output_tokens": 177,
+      "token_calls": 2
+    },
+    "default": {
+      "calls": 2,
+      "errors": 1,
+      "seconds": 40.33388589997776,
+      "input_tokens": 1196,
+      "output_tokens": 322,
+      "token_calls": 1
+    },
+    "judge": {
+      "calls": 1,
+      "errors": 0,
+      "seconds": 1.286014199955389,
+      "input_tokens": 1245,
+      "output_tokens": 202,
+      "token_calls": 1
+    }
+  },
+  "errors": [],
+  "aborted": "quota exhausted at question 2 (kw-33): The language model's quota is used up. It should reset in about 20h 14m.",
+  "questions": [
+    {
+      "id": "kw-32",
+      "category": "direct_fact",
+      "question": "When is tokenization mentioned?",
+      "refused": false,
+      "answer": "Tokenizing is mentioned in Video 3 as a very interesting topic that will be discussed in detail later, with the speaker explaining that tokens are consumed whenever a message is sent and can roughly be understood as a word or about four characters depending on the algorithm [1].",
+      "n_periods": 3,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 0.6666666666666666
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [
+            "Tokenizing is mentioned in Video 3 as a very interesting topic that will be discussed in detail later"
+          ],
+          "claims": [
+            {
+              "claim": "Tokenizing is mentioned in Video 3 as a very interesting topic that will be discussed in detail later",
+              "supported": false,
+              "evidence": "Mentioned in Video 1 [1], not Video 3."
+            },
+            {
+              "claim": "the speaker explaining that tokens are consumed whenever a message is sent",
+              "supported": true,
+              "evidence": "tokens are consumed every time you send a message, right? [1]"
+            },
+            {
+              "claim": "tokens can roughly be understood as a word or about four characters depending on the algorithm",
+              "supported": true,
+              "evidence": "suppose a word or four characters or letters are considered as one token. [...] Usually, it depends on their algorithm and internal system. [1]"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    }
+  ]
+}

@@ -1,0 +1,375 @@
+{
+  "generated_at": "2026-11-03T08:23:39+00:00",
+  "git": {
+    "commit": "59d18fa052e1ec5137883e52b497db0863df9343",
+    "dirty": true
+  },
+  "eval_set": {
+    "path": "evaluation\\eval_set.json",
+    "entries": 104,
+    "skipped_stubs": 0,
+    "skipped_unreviewed": 0
+  },
+  "params": {
+    "metrics": [
+      "faithfulness"
+    ],
+    "enhance": "full",
+    "judge": [
+      "gemini",
+      "gemini-3.5-flash-lite"
+    ],
+    "answer_model": [
+      "gemini",
+      "gemini-3.5-flash"
+    ],
+    "judge_is_answer_model": false
+  },
+  "summary": {
+    "n_questions": 10,
+    "answered_rate": 0.8,
+    "refused_answerable": 2,
+    "judge_errors": 0,
+    "citation_coverage": 0.9375,
+    "metrics": {
+      "faithfulness": {
+        "n": 8,
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "fraction_perfect": 1.0,
+        "n_not_applicable": 2,
+        "n_judge_failed": 0,
+        "by_category": {
+          "cross_video": {
+            "n": 2,
+            "mean": 1.0
+          },
+          "direct_fact": {
+            "n": 6,
+            "mean": 1.0
+          }
+        }
+      }
+    }
+  },
+  "llm_usage": {
+    "enhance": {
+      "calls": 10,
+      "errors": 0,
+      "seconds": 57.624626900302246,
+      "input_tokens": 2594,
+      "output_tokens": 908,
+      "token_calls": 10
+    },
+    "default": {
+      "calls": 9,
+      "errors": 0,
+      "seconds": 35.07312140031718,
+      "input_tokens": 10516,
+      "output_tokens": 3514,
+      "token_calls": 9
+    },
+    "judge": {
+      "calls": 8,
+      "errors": 0,
+      "seconds": 40.82044040015899,
+      "input_tokens": 9757,
+      "output_tokens": 1114,
+      "token_calls": 8
+    }
+  },
+  "errors": [],
+  "aborted": null,
+  "questions": [
+    {
+      "id": "kw-01",
+      "category": "direct_fact",
+      "question": "When is zero-shot mentioned?",
+      "refused": false,
+      "answer": "Zero-shot is first listed alongside one-shot as the fifth technique used to render a prompt secure and stable [1]. It is later defined as prompting the LLM without giving it any real examples of what needs to be done [2]. Finally, it is mentioned again during a practical example, noting that omitting examples from your prompt is called zero-shot [3].",
+      "n_periods": 3,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Zero-shot is first listed alongside one-shot as the fifth technique used to render a prompt secure and stable.",
+              "supported": true,
+              "evidence": "And the fifth, fifth, fifth is Zero-Shot or One-Shot... These six techniques you should use if you want to make your prompt completely secure and stable."
+            },
+            {
+              "claim": "It is later defined as prompting the LLM without giving it any real examples of what needs to be done.",
+              "supported": true,
+              "evidence": "If you don't give any example, if you omit this, then it is called zero shot, meaning you are not explaining to the LLM by giving any example of what needs to be done."
+            },
+            {
+              "claim": "Finally, it is mentioned again during a practical example, noting that omitting examples from your prompt is called zero-shot.",
+              "supported": true,
+              "evidence": "If you didn't write examples right now, what would that be called? Zero-shot. There are no examples."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-02",
+      "category": "direct_fact",
+      "question": "When is semantic search mentioned?",
+      "refused": false,
+      "answer": "Semantic search is mentioned in Video 22, \"Chunking Strategies for RAG | Free AI Engineer Course | 8 Weeks\" at the 19:44 mark, where it is described as a fourth chunking method that is meaning-based and performs chunking according to where the text changes its meaning [1].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Semantic search is the fourth chunking method",
+              "supported": true,
+              "evidence": "What is the fourth method? Semantic search."
+            },
+            {
+              "claim": "Semantic search is meaning-based",
+              "supported": true,
+              "evidence": "Semantic means meaning-based."
+            },
+            {
+              "claim": "Semantic search performs chunking according to where the text changes its meaning",
+              "supported": true,
+              "evidence": "meaning-based means depending on where your text changes its meaning, chunking happens accordingly."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-03",
+      "category": "direct_fact",
+      "question": "When is RAG pipeline mentioned?",
+      "refused": true,
+      "answer": "",
+      "n_periods": 2,
+      "citation_coverage": null,
+      "judge_calls": 0,
+      "scores": {},
+      "details": {},
+      "judge_errors": []
+    },
+    {
+      "id": "kw-04",
+      "category": "direct_fact",
+      "question": "When is Matplotlib mentioned?",
+      "refused": true,
+      "answer": "",
+      "n_periods": 0,
+      "citation_coverage": null,
+      "judge_calls": 0,
+      "scores": {},
+      "details": {},
+      "judge_errors": []
+    },
+    {
+      "id": "kw-05",
+      "category": "cross_video",
+      "question": "When is DSA playlist mentioned?",
+      "refused": false,
+      "answer": "A DSA playlist is mentioned at the start of the video (0:00), specifically referring to a 60-hour DSA playlist and a DSA pattern playlist [1].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 1,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "A DSA playlist is mentioned at the start of the video (0:00), specifically referring to a 60-hour DSA playlist and a DSA pattern playlist.",
+              "supported": true,
+              "evidence": "I converted my 60 Hour DSA Playlist to a RAG! ... those watching the DSA pattern one"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-06",
+      "category": "direct_fact",
+      "question": "When is BaseModel mentioned?",
+      "refused": false,
+      "answer": "`BaseModel` is first mentioned as an import from the Pydantic library used to specify the exact fields needed from an LLM output [1]. It is mentioned again when demonstrating how to import `BaseModel` to create a `Ticket` class schema, and later when fixing an error by inheriting `BaseModel` in the `Ticket` class definition [2].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "BaseModel is first mentioned as an import from the Pydantic library used to specify the exact fields needed from an LLM output",
+              "supported": true,
+              "evidence": "pydantic what will we import? BaseModel... BaseModel means this is my base model, 'Hey, I need precisely these four things.'"
+            },
+            {
+              "claim": "It is mentioned again when demonstrating how to import BaseModel to create a Ticket class schema",
+              "supported": true,
+              "evidence": "First, what will we do? We will create a class named Ticket... From which schema? So first, from pydantic what will we import? BaseModel."
+            },
+            {
+              "claim": "It is later mentioned when fixing an error by inheriting BaseModel in the Ticket class definition",
+              "supported": true,
+              "evidence": "After class Ticket, you have to write BaseModel in brackets. That BaseModel we imported, why did we? We have to write that in class Ticket, right? So after class Ticket, give brackets and make it inherit BaseModel."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-07",
+      "category": "direct_fact",
+      "question": "When is ARC-AGI mentioned?",
+      "refused": false,
+      "answer": "ARC-AGI (specifically ARC-AGI-3) is mentioned at the beginning of the video titled \"OpenAI Is Lying to US! Full Truth About ARC AGI 3 Test\" at the 0:00 mark [1].",
+      "n_periods": 1,
+      "citation_coverage": 0.5,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 1,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "ARC-AGI (specifically ARC-AGI-3) is mentioned at the beginning of the video titled \"OpenAI Is Lying to US! Full Truth About ARC AGI 3 Test\" at the 0:00 mark.",
+              "supported": true,
+              "evidence": "[1] \"OpenAI Is Lying to US! Full Truth About ARC AGI 3 Test\" (0:00)... ARC-AGI-3"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-08",
+      "category": "direct_fact",
+      "question": "When is few-shot mentioned?",
+      "refused": false,
+      "answer": "Few-shot prompting is mentioned during a explanation of using examples in prompt engineering, where giving the LLM more than one example (such as three examples) to guide its response is called few-shot [1].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Few-shot prompting is mentioned during an explanation of using examples in prompt engineering",
+              "supported": true,
+              "evidence": "Next, next, next is called zero shot, or one shot, or it is called examples... You can also give three examples, then it is called few shots."
+            },
+            {
+              "claim": "giving the LLM more than one example (such as three examples) to guide its response is called few-shot",
+              "supported": true,
+              "evidence": "If you give more than one example, you can also give three examples, then it is called few shots."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-09",
+      "category": "direct_fact",
+      "question": "When is JSON schema mentioned?",
+      "refused": false,
+      "answer": "JSON schema is mentioned during a discussion on setting up an LLM's response framework using Pydantic, specifically when referencing `Model JSON Schema` to define the expected structure for the model's output [1].",
+      "n_periods": 3,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "JSON schema is mentioned during a discussion on setting up an LLM's response framework using Pydantic",
+              "supported": true,
+              "evidence": "After that, you write `Ticket`... After that, `Model` `JSON Schema`. What? `Model JSON Schema`, this becomes your schema. This schema—meaning a framework—is ready"
+            },
+            {
+              "claim": "specifically when referencing Model JSON Schema to define the expected structure for the model's output",
+              "supported": true,
+              "evidence": "Model JSON Schema`, this becomes your schema. This schema—meaning a framework—is ready for these three things. For these three things... Now you have to specify the response format to it."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-10",
+      "category": "cross_video",
+      "question": "When is chunking mentioned?",
+      "refused": false,
+      "answer": "Chunking is mentioned in the video segment from 10:28 to 15:27 during a discussion of chunking strategies like paragraph chunking and recursive chunking [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Chunking is mentioned in the video segment from 10:28 to 15:27",
+              "supported": true,
+              "evidence": "[1] \"Chunking Strategies for RAG | Free AI Engineer Course | 8 Weeks\" (10:28 - 15:27)"
+            },
+            {
+              "claim": "the discussion includes chunking strategies like paragraph chunking and recursive chunking",
+              "supported": true,
+              "evidence": "paragraph chunking... recursive chunking"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    }
+  ]
+}

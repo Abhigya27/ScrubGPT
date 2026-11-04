@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-11-03T06:37:35+00:00",
+  "git": {
+    "commit": "59d18fa052e1ec5137883e52b497db0863df9343",
+    "dirty": true
+  },
+  "params": {
+    "playlist_url": null,
+    "library": null,
+    "source": null,
+    "skip_corpus": false,
+    "mode": "http",
+    "api_url": "http://localhost:8000",
+    "phases": "cold,reuse",
+    "reset": false,
+    "yes": false,
+    "poll_interval": 1.0,
+    "timeout": 3600.0
+  },
+  "corpus": {
+    "sources": [
+      "PLW4OpyGE0RdY"
+    ],
+    "videos": 41,
+    "total_seconds": 66438,
+    "hours": 18.45,
+    "languages": {
+      "hi": 25,
+      "en": 14,
+      "bn": 1,
+      "ar": 1
+    },
+    "non_english_videos": 27,
+    "qdrant": {
+      "chunks_in_scope": 928,
+      "chunks_in_collection": 1596,
+      "collection": "ytrag_v2_384",
+      "per_video": {
+        "-aOdRksvZSo": 35,
+        "2CJAXE2JrsI": 17,
+        "5byRqd6mLs0": 13,
+        "5mnBxySd_xU": 10,
+        "7bxSYeNSWmQ": 27,
+        "8eACtzJnAoU": 8,
+        "9Ojj6tTYI9c": 45,
+        "F-Rz0EpBsfc": 18,
+        "HA-VXeBwmgs": 12,
+        "HBGzPkFbk8I": 25,
+        "KhHr4Y6v2TE": 37,
+        "RNj0AY4VueA": 28,
+        "U9za_updCsw": 16,
+        "Uf71it2BKgQ": 31,
+        "Vl2WcqdizZ0": 38,
+        "VlvVpDZuykA": 16,
+        "Wj5bX2uva4E": 17,
+        "XstMQwKpxcA": 11,
+        "Z3TGVruFSVI": 17,
+        "Z9CI_OVhXNs": 15,
+        "ZCNayichcKE": 31,
+        "ZvYU7OlLAAE": 36,
+        "aF0IK2sIQyY": 21,
+        "ahaLgJr3HcU": 4,
+        "anvXVT46Oog": 10,
+        "bm_0jH5ve8U": 25,
+        "cCAu3dFtoQ8": 16,
+        "dU5Nz-sMTdk": 25,
+        "d_nb60ZigPU": 17,
+        "e7oU6ZCvRrw": 33,
+        "fqf4pdGCev0": 22,
+        "hSDo59FppOU": 13,
+        "hveoP-ioP9I": 31,
+        "j7Re_09T-co": 32,
+        "l-WFxXyM66s": 27,
+        "lv_jSHwnDeI": 41,
+        "ruxb9RjAv4E": 22,
+        "sPounA3bkJk": 26,
+        "shSIHIpFjZY": 6,
+        "solZdnrrtG4": 33,
+        "teKavsgzpyo": 21
+      }
+    },
+    "qdrant_error": null
+  }
+}

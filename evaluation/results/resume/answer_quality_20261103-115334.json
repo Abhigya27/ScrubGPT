@@ -1,0 +1,407 @@
+{
+  "generated_at": "2026-11-03T11:53:34+00:00",
+  "git": {
+    "commit": "59d18fa052e1ec5137883e52b497db0863df9343",
+    "dirty": true
+  },
+  "eval_set": {
+    "path": "C:\\Users\\NIPUNN~1\\AppData\\Local\\Temp\\scrubgpt-faithfulness-33-42-i264nr69.json",
+    "entries": 10,
+    "skipped_stubs": 0,
+    "skipped_unreviewed": 0
+  },
+  "params": {
+    "metrics": [
+      "faithfulness"
+    ],
+    "enhance": "full",
+    "judge": [
+      "gemini",
+      "gemini-3.5-flash-lite"
+    ],
+    "answer_model": [
+      "gemini",
+      "gemini-3.5-flash"
+    ],
+    "judge_is_answer_model": false
+  },
+  "summary": {
+    "n_questions": 10,
+    "answered_rate": 1.0,
+    "refused_answerable": 0,
+    "judge_errors": 1,
+    "citation_coverage": 1.0,
+    "metrics": {
+      "faithfulness": {
+        "n": 9,
+        "mean": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "fraction_perfect": 1.0,
+        "n_not_applicable": 0,
+        "n_judge_failed": 1,
+        "by_category": {
+          "cross_video": {
+            "n": 5,
+            "mean": 1.0
+          },
+          "direct_fact": {
+            "n": 4,
+            "mean": 1.0
+          }
+        }
+      }
+    }
+  },
+  "llm_usage": {
+    "enhance": {
+      "calls": 10,
+      "errors": 0,
+      "seconds": 56.05776910018176,
+      "input_tokens": 2593,
+      "output_tokens": 884,
+      "token_calls": 10
+    },
+    "default": {
+      "calls": 10,
+      "errors": 0,
+      "seconds": 65.8616801998578,
+      "input_tokens": 11767,
+      "output_tokens": 4555,
+      "token_calls": 10
+    },
+    "judge": {
+      "calls": 10,
+      "errors": 0,
+      "seconds": 61.89599080034532,
+      "input_tokens": 12423,
+      "output_tokens": 1748,
+      "token_calls": 10
+    }
+  },
+  "errors": [],
+  "aborted": null,
+  "questions": [
+    {
+      "id": "kw-33",
+      "category": "direct_fact",
+      "question": "When is Python package mentioned?",
+      "refused": false,
+      "answer": "UV is mentioned as a package like pip after installing Git, specifically when explaining that UV is a faster version of `pip install` used in Python [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "UV is mentioned as a package like pip after installing Git",
+              "supported": true,
+              "evidence": "After Git, now we will install UV. UV is a package like pip."
+            },
+            {
+              "claim": "UV is a faster version of pip install used in Python",
+              "supported": true,
+              "evidence": "What is UV? If you have used Python, you must have done pip install something something, right? UV is a fast version of that."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-34",
+      "category": "cross_video",
+      "question": "When is tool calls mentioned?",
+      "refused": false,
+      "answer": "The LLM calling tools (or calling a specific tool like the calculator or web search) is discussed when explaining how an AI agent works [1]. The user does not call the tools directly; instead, the LLM reads the query and calls the specific tool itself [1].",
+      "n_periods": 3,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "The LLM calling tools (or calling a specific tool like the calculator or web search) is discussed when explaining how an AI agent works",
+              "supported": true,
+              "evidence": "You will never call the calculator yourself; the LLM will call the calculator or web search itself."
+            },
+            {
+              "claim": "The user does not call the tools directly; instead, the LLM reads the query and calls the specific tool itself",
+              "supported": true,
+              "evidence": "You don't talk to the tools. You will never call the calculator yourself; the LLM will call the calculator or web search itself. But how will the LLM read your query and understand that a specific tool needs to be called for this query?"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-35",
+      "category": "cross_video",
+      "question": "When is ReAct loop mentioned?",
+      "refused": false,
+      "answer": "The ReAct loop is mentioned in Episode 08 during the 15:09 to 18:57 timeframe, where it is defined as the continuous process of an LLM reasoning and acting in a loop using available tools to solve a prompt [1].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "The ReAct loop is mentioned in Episode 08 during the 15:09 to 18:57 timeframe",
+              "supported": true,
+              "evidence": "[2] \"Episode 08: ReAct Intro to AI Agents | Free AI Engineer Course | 8 Weeks\" (15:09 - 18:57)"
+            },
+            {
+              "claim": "It is defined as the continuous process of an LLM reasoning and acting in a loop using available tools to solve a prompt",
+              "supported": true,
+              "evidence": "[2] ...this entire process—what ChatGPT will do, read the prompt, do reasoning... thinking and going on to act on it, and running this in a loop until it gets the final answer for the entire prompt—this is what is called a ReAct loop."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-36",
+      "category": "cross_video",
+      "question": "When is calculator tool mentioned?",
+      "refused": false,
+      "answer": "Calculators and calculation tools are first mentioned when explaining that math should be handled by a calculator with 100% accuracy rather than an LLM, illustrating why AI needs tools [1]. In a multi-agent system setup, a calculator tool is specifically made accessible to a dedicated \"Ask Calculator\" or \"Ask Math LLM\" function to perform calculations [2]. Finally, it is mentioned in a prompt instructing a \"Math Specialist\" agent to use the calculate tool for every step and never compute math in its head [3].",
+      "n_periods": 3,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": null
+      },
+      "details": {
+        "faithfulness": {
+          "error": "expected a list under 'claims'"
+        }
+      },
+      "judge_errors": [
+        "faithfulness"
+      ]
+    },
+    {
+      "id": "kw-37",
+      "category": "cross_video",
+      "question": "When is Qdrant client mentioned?",
+      "refused": false,
+      "answer": "Qdrant client is mentioned at the 17:32 timestamp of the video \"15 | Quadrant Vector Database | Free AI Engineer Course | 8 Weeks\" [1]. It is referenced when adding `qdrant-client` using UV, importing `QdrantClient` from `qdrant_client`, and initializing a connection using `client = QdrantClient()` [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 4,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Qdrant client is mentioned at the 17:32 timestamp of the video \"15 | Quadrant Vector Database | Free AI Engineer Course | 8 Weeks\"",
+              "supported": true,
+              "evidence": "[1] \"15 | Quadrant Vector Database | Free AI Engineer Course | 8 Weeks\" (17:32)"
+            },
+            {
+              "claim": "It is referenced when adding qdrant-client using UV",
+              "supported": true,
+              "evidence": "[1] you need qdrant-client—QDRANT hyphen client, you need to add this. So I have already added it... Look at this, UV add"
+            },
+            {
+              "claim": "importing QdrantClient from qdrant_client",
+              "supported": true,
+              "evidence": "[1] from qdrant_client, QdrantClient, this client library is imported"
+            },
+            {
+              "claim": "initializing a connection using client = QdrantClient()",
+              "supported": true,
+              "evidence": "[1] client = QdrantClient()"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-38",
+      "category": "direct_fact",
+      "question": "When is collection name mentioned?",
+      "refused": false,
+      "answer": "Collection name is mentioned when explaining how to perform a search in Qdrant using `client.query points`, where the collection name (such as the knowledge collection) is passed as a parameter along with the query vector, result limit, and payload options [1].",
+      "n_periods": 3,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Collection name is mentioned when explaining how to perform a search in Qdrant using client.query points",
+              "supported": true,
+              "evidence": "What all will be passed in this? Collection name. Which collection? Knowledge collection. query = query vector."
+            },
+            {
+              "claim": "the collection name (such as the knowledge collection) is passed as a parameter along with the query vector, result limit, and payload options",
+              "supported": true,
+              "evidence": "Collection name. Which collection? Knowledge collection. query = query vector... Limit... and with payload = true."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-39",
+      "category": "cross_video",
+      "question": "When is environment variable mentioned?",
+      "refused": false,
+      "answer": "Environment variables are first mentioned in the context of loading secret API keys (like the Groq and Qdrant keys) into a Python program using `from dotenv import load_dotenv` and retrieving them with `os.getenv` [1]. Later in the video, environment variables are discussed when explaining that running `load_dotenv` imports those variables into your code, and copying the `.env` file into the Day 1 folder prevents path issues [2].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Environment variables are first mentioned in the context of loading secret API keys (like the Groq and Qdrant keys) into a Python program using from dotenv import load_dotenv and retrieving them with os.getenv",
+              "supported": true,
+              "evidence": "from dotenv import load_dotenv... The Grok API key, Qdrant API key, Qdrant URL have all now come into your program... API key = os.getenv"
+            },
+            {
+              "claim": "Later in the video, environment variables are discussed when explaining that running load_dotenv imports those variables into your code",
+              "supported": true,
+              "evidence": "Doing load_dotenv will import your environment variables."
+            },
+            {
+              "claim": "copying the .env file into the Day 1 folder prevents path issues",
+              "supported": true,
+              "evidence": "copy your .env file into the Day 1 folder. If you don't do it, you will need to resolve some paths... That way you won't have path issues."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-40",
+      "category": "cross_video",
+      "question": "When is Pinecone mentioned?",
+      "refused": false,
+      "answer": "Pinecone is first mentioned as a very famous vector database alternative to Qdrant where users have to pay money rather than getting free access [1]. It is mentioned again when describing Retrieval Augmented Generation (RAG), as an example of a vector database where knowledge base vectors are pushed [2].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Pinecone is first mentioned as a very famous vector database alternative to Qdrant",
+              "supported": true,
+              "evidence": "Pinecone is a very famous thing. ... Qdrant is just a vector DB. ... For example, if you use Pinecone, you will have to pay money."
+            },
+            {
+              "claim": "users have to pay money rather than getting free access to Pinecone",
+              "supported": true,
+              "evidence": "If you use Pinecone, you will have to pay money. You won't get any free access there. Qdrant gives you up to 1 GB... a free option is available in it"
+            },
+            {
+              "claim": "Pinecone is mentioned again when describing Retrieval Augmented Generation (RAG) as an example of a vector database where knowledge base vectors are pushed",
+              "supported": true,
+              "evidence": "Push everything into a vector database. Like Qdrant or Pinecone... This is RAG."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-41",
+      "category": "direct_fact",
+      "question": "When is ChromaDB mentioned?",
+      "refused": false,
+      "answer": "ChromaDB is mentioned in the video \"15 | Quadrant Vector Database | Free AI Engineer Course | 8 Weeks\" (at the 5:51 mark) as one of the alternative database options you can use instead of Qdrant [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 1,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "ChromaDB is mentioned in the video as one of the alternative database options you can use instead of Qdrant",
+              "supported": true,
+              "evidence": "You can use anything. ChromaDB and what else is there?"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-42",
+      "category": "direct_fact",
+      "question": "When is FAISS mentioned?",
+      "refused": false,
+      "answer": "Faiss is mentioned as one of several vector database options, alongside Weaviate, ChromaDB, and Qdrant [1].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 1,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Faiss is mentioned as one of several vector database options, alongside Weaviate, ChromaDB, and Qdrant",
+              "supported": true,
+              "evidence": "There is one called Faiss, which is also a vector DB. And Qdrant—so what is Qdrant? Qdrant is just a vector DB... For example, there is software called Weaviate. This is also like Qdrant. ChromaDB, this is also a vector DB."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    }
+  ]
+}

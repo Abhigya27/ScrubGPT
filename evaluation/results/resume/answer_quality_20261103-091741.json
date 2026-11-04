@@ -1,0 +1,406 @@
+{
+  "generated_at": "2026-11-03T09:17:41+00:00",
+  "git": {
+    "commit": "59d18fa052e1ec5137883e52b497db0863df9343",
+    "dirty": true
+  },
+  "eval_set": {
+    "path": "C:\\Users\\NIPUNN~1\\AppData\\Local\\Temp\\scrubgpt-faithfulness-21-30-uwze5lle.json",
+    "entries": 10,
+    "skipped_stubs": 0,
+    "skipped_unreviewed": 0
+  },
+  "params": {
+    "metrics": [
+      "faithfulness"
+    ],
+    "enhance": "full",
+    "judge": [
+      "gemini",
+      "gemini-3.5-flash-lite"
+    ],
+    "answer_model": [
+      "gemini",
+      "gemini-3.5-flash"
+    ],
+    "judge_is_answer_model": false
+  },
+  "summary": {
+    "n_questions": 10,
+    "answered_rate": 0.9,
+    "refused_answerable": 1,
+    "judge_errors": 0,
+    "citation_coverage": 1.0,
+    "metrics": {
+      "faithfulness": {
+        "n": 9,
+        "mean": 0.9444444444444444,
+        "ci95": [
+          0.8333333333333334,
+          1.0
+        ],
+        "fraction_perfect": 0.8888888888888888,
+        "n_not_applicable": 1,
+        "n_judge_failed": 0,
+        "by_category": {
+          "cross_video": {
+            "n": 4,
+            "mean": 1.0
+          },
+          "direct_fact": {
+            "n": 5,
+            "mean": 0.9
+          }
+        }
+      }
+    }
+  },
+  "llm_usage": {
+    "enhance": {
+      "calls": 10,
+      "errors": 0,
+      "seconds": 11.308203099993989,
+      "input_tokens": 2590,
+      "output_tokens": 865,
+      "token_calls": 10
+    },
+    "default": {
+      "calls": 10,
+      "errors": 0,
+      "seconds": 45.82808079966344,
+      "input_tokens": 10610,
+      "output_tokens": 5715,
+      "token_calls": 10
+    },
+    "judge": {
+      "calls": 9,
+      "errors": 0,
+      "seconds": 11.742395699489862,
+      "input_tokens": 10447,
+      "output_tokens": 1684,
+      "token_calls": 9
+    }
+  },
+  "errors": [],
+  "aborted": null,
+  "questions": [
+    {
+      "id": "kw-21",
+      "category": "direct_fact",
+      "question": "When is JSON output mentioned?",
+      "refused": false,
+      "answer": "In the video \"Ep:05-Pydantic+JSON | AI Engineer Course | 8 Weeks,\" JSON is first discussed at timestamp 13:56 as a data-sharing format created to solve structured output problems [1]. The term \"JSON output\" is then explicitly highlighted at timestamp 19:48 to describe a structured, easy-to-read format used to convert and store LLM responses before passing them along [2].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 0.5
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [
+            "In the video \"Ep:05-Pydantic+JSON | AI Engineer Course | 8 Weeks,\" JSON is first discussed at timestamp 13:56 as a data-sharing format created to solve structured output problems"
+          ],
+          "claims": [
+            {
+              "claim": "In the video \"Ep:05-Pydantic+JSON | AI Engineer Course | 8 Weeks,\" JSON is first discussed at timestamp 13:56 as a data-sharing format created to solve structured output problems",
+              "supported": false,
+              "evidence": "Context states JSON wasn't created just to solve this LLM issue; JSON has been around for a long time."
+            },
+            {
+              "claim": "The term \"JSON output\" is then explicitly highlighted at timestamp 19:48 to describe a structured, easy-to-read format used to convert and store LLM responses before passing them along",
+              "supported": true,
+              "evidence": "this that you are noting in this way, this is a JSON output or a structured output... easy to read as well... whatever output comes from our LLM... we will convert that output into a JSON format, always store it in JSON format, and only then send it forward"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-22",
+      "category": "cross_video",
+      "question": "When is embedding model mentioned?",
+      "refused": false,
+      "answer": "An embedding model is mentioned after importing `SentenceTransformer` to define a model (such as `all-MiniLM-L6-v2`) used to convert text into vector embeddings via `model.encode` [1]. It is mentioned again after reading a `knowledge.txt` file and building a document list, where the model is called to generate embeddings for each line in the document structure [2].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "An embedding model is mentioned after importing SentenceTransformer to define a model (such as all-MiniLM-L6-v2) used to convert text into vector embeddings via model.encode.",
+              "supported": true,
+              "evidence": "Model is equal to sentence transformer, look. What is this? All MiniLM L6 v2... result is equal to model.encode, put your text."
+            },
+            {
+              "claim": "It is mentioned again after reading a knowledge.txt file and building a document list, where the model is called to generate embeddings for each line in the document structure.",
+              "supported": true,
+              "evidence": "It read your knowledge.txt... That you got your documents list made through file handling. Now what will you do? Create embeddings... embeddings = model.encode documents."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-23",
+      "category": "cross_video",
+      "question": "When is context window mentioned?",
+      "refused": false,
+      "answer": "Context window is mentioned in the video \"Week 5 Major Project | Design Your Coding Agent\" at timestamp 1:10 [1]. It is explained as the limit of how much information an LLM can take in and understand at once, such as a limit of 1 million tokens [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Context window is mentioned in the video \"Week 5 Major Project | Design Your Coding Agent\" at timestamp 1:10",
+              "supported": true,
+              "evidence": "\"Week 5 Major Project | Design Your Coding Agent\" (1:10)... what is a context window?"
+            },
+            {
+              "claim": "It is explained as the limit of how much information an LLM can take in and understand at once",
+              "supported": true,
+              "evidence": "It is how much information the model can take in at once. How much can your LLM understand at once?"
+            },
+            {
+              "claim": "such as a limit of 1 million tokens",
+              "supported": true,
+              "evidence": "its context window is 1 million tokens"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-24",
+      "category": "direct_fact",
+      "question": "When is conditional edge mentioned?",
+      "refused": false,
+      "answer": "Conditional edges are first mentioned in the \"LangGraph Implementation | AI Engineer Course\" video at 9:19 as a type of connection between nodes that routes based on a condition rather than going straight to the next node [1]. They are mentioned again at 22:01 when introducing how to add direct and conditional edges in code [2]. Finally, at 30:01, conditional edges are discussed during a code demonstration using `builder.add_conditional_edges` to direct the execution path based on the output of a decision function [3].",
+      "n_periods": 3,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Conditional edges are first mentioned in the LangGraph Implementation AI Engineer Course video at 9:19 as a type of connection between nodes that routes based on a condition rather than going straight to the next node",
+              "supported": true,
+              "evidence": "Or these edges can be conditional edges... Meaning you have a person whose job is to make the backend."
+            },
+            {
+              "claim": "They are mentioned again at 22:01 when introducing how to add direct and conditional edges in code",
+              "supported": true,
+              "evidence": "You learn how conditional edges are added, and how direct edges are added."
+            },
+            {
+              "claim": "Finally, at 30:01, conditional edges are discussed during a code demonstration using builder.add_conditional_edges to direct the execution path based on the output of a decision function",
+              "supported": true,
+              "evidence": "We add it like this: builder.add_conditional_edges. It is a conditional edge, meaning the edge will go according to the condition."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-25",
+      "category": "cross_video",
+      "question": "When is search query mentioned?",
+      "refused": false,
+      "answer": "A user's query is mentioned at the 2:20 mark of the video when explaining how Qdrant and an LLM retrieve matching information [1]. When a user asks a question while studying or revising, Qdrant uses their query to return the matching transcription along with the video link and timestamp [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "A user's query is mentioned at the 2:20 mark of the video when explaining how Qdrant and an LLM retrieve matching information",
+              "supported": true,
+              "evidence": "Multi-Tenant RAG with Qdrant | Free AI Engineer Course | 8 Weeks (2:20)"
+            },
+            {
+              "claim": "When a user asks a question while studying or revising, Qdrant uses their query to return the matching transcription along with the video link and timestamp",
+              "supported": true,
+              "evidence": "whenever you need it while studying, while revising—... You will ask your LLM. What will the LLM do? The LLM will use your RAG. Qdrant will do all this work for you. ... Qdrant will return whatever transcription matches your query. And it will also give you the link to the video. ... At which timestamp was this discussed?"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-26",
+      "category": "direct_fact",
+      "question": "When is OpenAI API mentioned?",
+      "refused": false,
+      "answer": "OpenAI is first mentioned during a Python code walkthrough, where it is noted that if OpenAI were used instead of Groq, you would import OpenAI into the code [1]. It is mentioned again when creating a prompt for a single-agent system, referencing OpenAI's GPT-4o model [2].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "OpenAI is first mentioned during a Python code walkthrough, where it is noted that if OpenAI were used instead of Groq, you would import OpenAI into the code.",
+              "supported": true,
+              "evidence": "After that, since we are using Grok. We will write `from groq import Groq`. Since we are using Grok. If we ever use OpenAI, we will import OpenAI."
+            },
+            {
+              "claim": "It is mentioned again when creating a prompt for a single-agent system, referencing OpenAI's GPT-4o model.",
+              "supported": true,
+              "evidence": "I want to make a multi-agent system. Uh, first I want to make a single-agent system. Uh, it will have one LLM, let's say Groq... OpenAI's GPT-4o, it will understand because we have been using that for a long time"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-27",
+      "category": "direct_fact",
+      "question": "When is Gemini API mentioned?",
+      "refused": false,
+      "answer": "In the video \"How I Automated My Entire Job Search | SBKI JOB LGEGI,\" the Gemini API is mentioned at the 4:39 mark during a demonstration on how to generate a Gemini API key on the website and paste it into the `.env` file [1].",
+      "n_periods": 1,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "In the video \"How I Automated My Entire Job Search | SBKI JOB LGEGI,\" the Gemini API is mentioned at the 4:39 mark",
+              "supported": true,
+              "evidence": "\"How I Automated My Entire Job Search | SBKI JOB LGEGI\" (4:39)"
+            },
+            {
+              "claim": "a demonstration on how to generate a Gemini API key on the website and paste it into the .env file is provided",
+              "supported": true,
+              "evidence": "you have to click \"Create API key\" from here... paste your Gemini API key here... Now an .env file has been created for you"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-28",
+      "category": "direct_fact",
+      "question": "When is Claude API mentioned?",
+      "refused": true,
+      "answer": "",
+      "n_periods": 2,
+      "citation_coverage": null,
+      "judge_calls": 0,
+      "scores": {},
+      "details": {},
+      "judge_errors": []
+    },
+    {
+      "id": "kw-29",
+      "category": "direct_fact",
+      "question": "When is text splitter mentioned?",
+      "refused": false,
+      "answer": "Text splitters are mentioned when installing the `langchain-text-splitters` package and when introducing `CharacterTextSplitter` and `RecursiveCharacterTextSplitter` for chunking text [1].",
+      "n_periods": 2,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 2,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "Text splitters are mentioned when installing the langchain-text-splitters package",
+              "supported": true,
+              "evidence": "install this... uv add langchain-text-splitters"
+            },
+            {
+              "claim": "and when introducing CharacterTextSplitter and RecursiveCharacterTextSplitter for chunking text",
+              "supported": true,
+              "evidence": "you have to do two things: CharacterTextSplitter and RecursiveCharacterTextSplitter. Character text is used for your fixed and paragraphs. Recursive is used for your recursive."
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    },
+    {
+      "id": "kw-30",
+      "category": "cross_video",
+      "question": "When is golden dataset mentioned?",
+      "refused": false,
+      "answer": "The golden dataset is first mentioned in Video 23 (\"RAG Evaluation | The Most Imp AI Interview Question\") at timestamp 7:01 as a set of test cases created to evaluate a RAG system [1]. It is brought up again in Video 23 at timestamp 32:38 during a demonstration showing its structure, such as questions and ground truth answers [2]. Finally, it is mentioned in Video 33 (\"Enough For Any AI Agent Evaluation Interview | AI Engineer Series\") at timestamp 23:22, which discusses how many test cases to include and what elements make up a golden dataset [3].",
+      "n_periods": 3,
+      "citation_coverage": 1.0,
+      "judge_calls": 1,
+      "scores": {
+        "faithfulness": 1.0
+      },
+      "details": {
+        "faithfulness": {
+          "n_claims": 3,
+          "unsupported": [],
+          "claims": [
+            {
+              "claim": "The golden dataset is first mentioned in Video 23 (\"RAG Evaluation | The Most Imp AI Interview Question\") at timestamp 7:01 as a set of test cases created to evaluate a RAG system.",
+              "supported": true,
+              "evidence": "[1]"
+            },
+            {
+              "claim": "It is brought up again in Video 23 at timestamp 32:38 during a demonstration showing its structure, such as questions and ground truth answers.",
+              "supported": true,
+              "evidence": "[2]"
+            },
+            {
+              "claim": "Finally, it is mentioned in Video 33 (\"Enough For Any AI Agent Evaluation Interview | AI Engineer Series\") at timestamp 23:22, which discusses how many test cases to include and what elements make up a golden dataset.",
+              "supported": true,
+              "evidence": "[3]"
+            }
+          ]
+        }
+      },
+      "judge_errors": []
+    }
+  ]
+}
