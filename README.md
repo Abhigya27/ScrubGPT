@@ -1,6 +1,12 @@
 # ScrubGPT
 
-**ScrubGPT** turns YouTube playlist and into a searchable, timestamp-aware knowledge base. It combines YouTube metadata, transcript retrieval, multilingual translation, dense embeddings, BM25 keyword search, and grounded language-model answers in one small local-first application.
+[![CI](https://github.com/Abhigya27/ScrubGPT/actions/workflows/ci.yml/badge.svg)](https://github.com/Abhigya27/ScrubGPT/actions/workflows/ci.yml)
+
+<!-- After recording the demo (see evaluation/README.md, "Demo recording"), uncomment:
+![ScrubGPT demo](docs/demo.gif)
+-->
+
+**ScrubGPT** turns a YouTube playlist into a searchable, timestamp-aware knowledge base. It combines YouTube metadata, transcript retrieval, multilingual translation, dense embeddings, BM25 keyword search, and grounded language-model answers in one small local-first application.
 
 The project is designed for personal and local playlist-scale use. It favors resumability, caching, transparent progress, and a simple architecture over a distributed ingestion platform.
 
@@ -391,23 +397,72 @@ data/
 - `library.json` stores small source/video summaries for the frontend.
 - The cache is an optimization, not the source of truth. It can be removed if necessary; indexed Qdrant data remains available.
 
+<!-- RESULTS:START -->
+## Results
+
+Measured locally against the real Qdrant collection with the scripts in `evaluation/` (eval set: not measured). Source runs: no results yet.
+
+### Corpus
+
+| Videos | Hours | Chunks indexed | Languages (videos) |
+|---:|---:|---:|---|
+| not measured | not measured | not measured | not measured |
+
+### Hybrid retrieval ablation (Recall@5, MRR)
+
+not measured (`python -m evaluation.ablation_eval`)
+
+### Answer quality and ingestion
+
+| Metric | Value |
+|---|---:|
+| Timestamp accuracy (±15s / ±30s) | not measured (`evaluation.timestamp_accuracy_eval`) |
+| Refusal accuracy (unanswerable questions) | not measured |
+| False-refusal rate (answerable questions) | not measured |
+| Cold ingest | not measured |
+| Re-ingest | not measured |
+| Translation fallback rate | not measured |
+| Latency and LLM calls per question | not measured (`evaluation.performance_eval`) |
+| Automated tests (offline) | not measured |
+
+### Answer quality (LLM judge)
+
+not measured (`python -m evaluation.answer_quality_eval`)
+<!-- RESULTS:END -->
+
 ## Testing and Evaluation
 
-Run the dependency-light acceptance checks from the repository root:
+### Automated tests
 
 ```powershell
-& .\.venv\Scripts\python.exe -m tests.acceptance
+& .\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
+& .\.venv\Scripts\python.exe -m pytest -m "not integration" -q
 ```
 
-The checks cover URL parsing, transcript selection, generated-transcript behavior, pause semantics, local limits, translation batching, caching, and sequential job behavior without intentionally requiring live YouTube, Qdrant, or LLM calls.
+The offline suite covers URL parsing, transcript selection and retry behavior, chunk boundaries and overlap, translation batching and fallback (with a fake LLM), job state transitions and pause semantics, guardrails, hybrid score fusion, period grouping, and the evaluation scripts' own metric code. YouTube, Qdrant, and the LLM are faked, so it runs anywhere and in CI (`.github/workflows/ci.yml`). Tests that need live services are marked `integration`; run them locally with `pytest -m integration` once `.env` has your keys.
 
-Run retrieval evaluation with a configured Qdrant index:
+### Evaluation
 
-```powershell
-& .\.venv\Scripts\python.exe -m evaluation.run_eval run --set evaluation\eval_set.example.json
-```
+Run these locally, against the real Qdrant collection, because YouTube may block cloud IPs. Every script prints a table and writes a timestamped JSON file (with the git commit) to `evaluation/results/`. `evaluation/README.md` walks through the whole workflow, the eval-set format, and the demo recording checklist.
 
-Useful evaluation questions include direct facts, paraphrases, follow-ups, terminology mismatches, and questions whose answer spans multiple videos.
+| Script | Measures |
+|---|---|
+| `python -m evaluation.run_all` | runs everything below in one go (`--fast` skips the LLM-heavy steps) |
+| `python -m evaluation.draft_eval_set` | drafts eval questions and reference answers from your transcripts, for you to review |
+| `python -m evaluation.build_eval_template` | writes a skeleton `evaluation/eval_set.json` from your indexed library |
+| `python -m evaluation.ablation_eval` | Recall@5 (hit rate), MRR, Precision@5, nDCG@5, true chunk recall, by category and language, for dense-only, sparse-only and hybrid weightings |
+| `python -m evaluation.robustness_eval` | how much retrieval drops under typos, shouting, filler, truncated questions |
+| `python -m evaluation.timestamp_accuracy_eval` | how often a citation lands within ±15 s / ±30 s of the true moment |
+| `python -m evaluation.grounding_eval` | refusal accuracy on unanswerable questions, and the false-refusal rate on answerable ones |
+| `python -m evaluation.answer_quality_eval` | faithfulness, citation support, answer relevancy, correctness, context precision/recall (LLM judge) |
+| `python -m evaluation.performance_eval` | latency p50/p95 per stage, LLM calls and tokens per question, optional cost |
+| `python -m evaluation.ingestion_stats` | corpus size (videos, hours, chunks, languages) and cold vs re-ingest time |
+| `python -m evaluation.translation_stats` | how often batched translation had to fall back to smaller requests |
+| `python -m evaluation.render_results --write-readme` | refreshes the Results section above from the saved result files |
+
+`evaluation/run_eval.py` is the earlier per-video retrieval check with hand-labelled timestamp ranges (`python -m evaluation.run_eval run --set evaluation\eval_set.example.json`).
+
+Useful evaluation questions include direct facts, paraphrases, follow-ups, terminology mismatches, questions whose answer spans multiple videos, and deliberately unanswerable ones. The answer-quality metrics are scored by an LLM judge: point `EVAL_JUDGE_PROVIDER` / `EVAL_JUDGE_MODEL` at a different model from the one that writes answers (see `.env.example`), and spot-check it with `--audit`.
 
 ## Troubleshooting
 
