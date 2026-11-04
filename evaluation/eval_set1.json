@@ -1,0 +1,3264 @@
+{
+  "source_id": "PLW4OpyGE0RdY",
+  "dataset_note": "200 answerable fact-oriented timestamp lookups across 41 indexed videos: 196 concise topic lookups with transcript evidence cues, plus four cross-video questions covering RAG, LangGraph, MCP, and vector databases. Expected locations retain evidence-backed transcript chunk bounds. The questions are intentionally easy and are not a blind keyword-only benchmark; wording is generated from existing topic labels and source evidence and has not been manually reviewed. There are no unanswerable questions.",
+  "questions": [
+    {
+      "id": "e002",
+      "q": "At what timestamp and in which video is LangChain discussed? Look for \"do some LangChain or NLTK demo and show\".",
+      "expected": [
+        {
+          "video_id": "ahaLgJr3HcU",
+          "start": "0:00",
+          "end": "1:31"
+        }
+      ],
+      "video_title": "I Will Make You An AI Engineer In 10 Weeks | No Maths No Theory",
+      "category": "direct_fact",
+      "gold_answer_contains": "do some LangChain or NLTK demo and show",
+      "gold_answer": "If I wanted to study math, I would have studied at coaching.\" Or they are so light that they just do some LangChain or NLTK demo and show it to you.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e003",
+      "q": "At what timestamp and in which video is AI engineer discussed? Look for \"you want to become an AI engineer\".",
+      "expected": [
+        {
+          "video_id": "ahaLgJr3HcU",
+          "start": "0:00",
+          "end": "1:31"
+        }
+      ],
+      "video_title": "I Will Make You An AI Engineer In 10 Weeks | No Maths No Theory",
+      "category": "direct_fact",
+      "gold_answer_contains": "you want to become an AI engineer",
+      "gold_answer": "Neither of these will be useful to you if you want to become an AI engineer.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e004",
+      "q": "At what timestamp and in which video is RAG retrieval discussed? Look for \"teach you RAG—RAG means Retrieval-Augmented, we'll see it\".",
+      "expected": [
+        {
+          "video_id": "ahaLgJr3HcU",
+          "start": "2:20",
+          "end": "3:50"
+        }
+      ],
+      "video_title": "I Will Make You An AI Engineer In 10 Weeks | No Maths No Theory",
+      "category": "direct_fact",
+      "gold_answer_contains": "teach you RAG—RAG means Retrieval-Augmented, we'll see it",
+      "gold_answer": "This course will have around 35 to 40 lectures in which we will teach you RAG—RAG means Retrieval-Augmented, we'll see it later.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e007",
+      "q": "At what timestamp and in which video is AI engineer discussed? Look for \"call an AI engineer, AI deployment engineer, or\".",
+      "expected": [
+        {
+          "video_id": "ruxb9RjAv4E",
+          "start": "3:32",
+          "end": "5:03"
+        }
+      ],
+      "video_title": "Free AI Engineer Course | 8 Weeks | Episode 01: Intro + Setup",
+      "category": "direct_fact",
+      "gold_answer_contains": "call an AI engineer, AI deployment engineer, or",
+      "gold_answer": "For everyone else, whom today people call an AI engineer, AI deployment engineer, or agentic engineer, this course is for them.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e008",
+      "q": "At what timestamp and in which video is Python discussed? Look for \"mastery in Python where you know everything in\".",
+      "expected": [
+        {
+          "video_id": "ruxb9RjAv4E",
+          "start": "4:42",
+          "end": "6:12"
+        }
+      ],
+      "video_title": "Free AI Engineer Course | 8 Weeks | Episode 01: Intro + Setup",
+      "category": "direct_fact",
+      "gold_answer_contains": "mastery in Python where you know everything in",
+      "gold_answer": "You don't need mastery in Python where you know everything in Python; no, it's not needed.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e010",
+      "q": "At what timestamp and in which video is the first LLM call discussed? Look for \"your first LLM call, and there are many\".",
+      "expected": [
+        {
+          "video_id": "Vl2WcqdizZ0",
+          "start": "0:00",
+          "end": "1:31"
+        }
+      ],
+      "video_title": "Episode 02: Understand Your First LLM Call | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "your first LLM call, and there are many",
+      "gold_answer": "In today's lecture, you will learn how to make your first LLM call, and there are many things you need to know to understand its response.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e011",
+      "q": "At what timestamp and in which video is the first LLM call discussed? Look for \"you when you make an LLM call\".",
+      "expected": [
+        {
+          "video_id": "Vl2WcqdizZ0",
+          "start": "1:10",
+          "end": "2:40"
+        }
+      ],
+      "video_title": "Episode 02: Understand Your First LLM Call | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "you when you make an LLM call",
+      "gold_answer": "Next, I will teach you when you make an LLM call.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e012",
+      "q": "At what timestamp and in which video is the first LLM call discussed? Look for \"to you what an LLM call is\".",
+      "expected": [
+        {
+          "video_id": "Vl2WcqdizZ0",
+          "start": "7:00",
+          "end": "8:30"
+        }
+      ],
+      "video_title": "Episode 02: Understand Your First LLM Call | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "to you what an LLM call is",
+      "gold_answer": "Let us explain to you what an LLM call is",
+      "expects_refusal": false
+    },
+    {
+      "id": "e013",
+      "q": "At what timestamp and in which video is the first LLM call discussed? Look for \"what happens end-to-end in an LLM call\".",
+      "expected": [
+        {
+          "video_id": "Vl2WcqdizZ0",
+          "start": "8:10",
+          "end": "9:40"
+        }
+      ],
+      "video_title": "Episode 02: Understand Your First LLM Call | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "what happens end-to-end in an LLM call",
+      "gold_answer": "Now let's talk about what happens end-to-end in an LLM call.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e014",
+      "q": "At what timestamp and in which video is the first LLM call discussed? Look for \"Because every LLM is configured to give you\".",
+      "expected": [
+        {
+          "video_id": "Vl2WcqdizZ0",
+          "start": "18:36",
+          "end": "20:07"
+        }
+      ],
+      "video_title": "Episode 02: Understand Your First LLM Call | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "Because every LLM is configured to give you",
+      "gold_answer": "Because every LLM is configured to give you multiple answers.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e015",
+      "q": "At what timestamp and in which video is system role instructions discussed? Look for \"AI, that is called a system role\".",
+      "expected": [
+        {
+          "video_id": "aF0IK2sIQyY",
+          "start": "2:19",
+          "end": "3:48"
+        }
+      ],
+      "video_title": "Ep 03: I Love You! System Role + Temperature | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "AI, that is called a system role",
+      "gold_answer": "In the language of LLMs, in the world of AI, that is called a system role.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e016",
+      "q": "At what timestamp and in which video is system role instructions discussed? Look for \"role which is called the system role\".",
+      "expected": [
+        {
+          "video_id": "aF0IK2sIQyY",
+          "start": "3:29",
+          "end": "4:57"
+        }
+      ],
+      "video_title": "Ep 03: I Love You! System Role + Temperature | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "role which is called the system role",
+      "gold_answer": "Besides this, there is a third role which is called the system role.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e017",
+      "q": "At what timestamp and in which video is system role instructions discussed? Look for \"System means you are telling the LLM, 'Listen\".",
+      "expected": [
+        {
+          "video_id": "aF0IK2sIQyY",
+          "start": "4:38",
+          "end": "6:07"
+        }
+      ],
+      "video_title": "Ep 03: I Love You! System Role + Temperature | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "System means you are telling the LLM, \"Listen",
+      "gold_answer": "System means you are telling the LLM, \"Listen to me carefully, this is a system role, you have to behave in this exact way throughout this chat, or in the messages following this,\" and there you can provide your content.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e018",
+      "q": "At what timestamp and in which video is system role instructions discussed? Look for \"that the system is used to determine the\".",
+      "expected": [
+        {
+          "video_id": "aF0IK2sIQyY",
+          "start": "5:47",
+          "end": "7:16"
+        }
+      ],
+      "video_title": "Ep 03: I Love You! System Role + Temperature | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "that the system is used to determine the",
+      "gold_answer": "This means that the system is used to determine the LLM's response, or to determine the LLM's role, and to determine the relationship between you and the LLM.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e019",
+      "q": "At what timestamp and in which video is system role instructions discussed? Look for \"have studied system design, you would understand how\".",
+      "expected": [
+        {
+          "video_id": "aF0IK2sIQyY",
+          "start": "8:08",
+          "end": "9:37"
+        }
+      ],
+      "video_title": "Ep 03: I Love You! System Role + Temperature | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "have studied system design, you would understand how",
+      "gold_answer": "If you guys have studied system design, you would understand how the overall system will behave.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e020",
+      "q": "At what timestamp and in which video is text tokenization discussed? Look for \"talks about tokens, but nobody really knows what\".",
+      "expected": [
+        {
+          "video_id": "e7oU6ZCvRrw",
+          "start": "0:01",
+          "end": "1:30"
+        }
+      ],
+      "video_title": "Episode 04 : Tokens Explained | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "talks about tokens, but nobody really knows what",
+      "gold_answer": "So everyone talks about tokens, but nobody really knows what a token is.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e021",
+      "q": "At what timestamp and in which video is text tokenization discussed? Look for \"concept of tokens is based on this story\".",
+      "expected": [
+        {
+          "video_id": "e7oU6ZCvRrw",
+          "start": "1:10",
+          "end": "2:41"
+        }
+      ],
+      "video_title": "Episode 04 : Tokens Explained | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "concept of tokens is based on this story",
+      "gold_answer": "The entire concept of tokens is based on this story.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e022",
+      "q": "At what timestamp and in which video is text tokenization discussed? Look for \"it into three tokens to understand it\".",
+      "expected": [
+        {
+          "video_id": "e7oU6ZCvRrw",
+          "start": "17:32",
+          "end": "19:02"
+        }
+      ],
+      "video_title": "Episode 04 : Tokens Explained | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "it into three tokens to understand it",
+      "gold_answer": "So a single word, if you write it in your prompt, ChatGPT will break it into three tokens to understand it.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e023",
+      "q": "At what timestamp and in which video is text tokenization discussed? Look for \"your prompt, is broken down into tokens\".",
+      "expected": [
+        {
+          "video_id": "e7oU6ZCvRrw",
+          "start": "19:50",
+          "end": "21:18"
+        }
+      ],
+      "video_title": "Episode 04 : Tokens Explained | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "your prompt, is broken down into tokens",
+      "gold_answer": "Every single word of yours, every single word of your prompt, is broken down into tokens.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e024",
+      "q": "At what timestamp and in which video is text tokenization discussed? Look for \"game, right, is what is called tokens\".",
+      "expected": [
+        {
+          "video_id": "e7oU6ZCvRrw",
+          "start": "20:59",
+          "end": "22:29"
+        }
+      ],
+      "video_title": "Episode 04 : Tokens Explained | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "game, right, is what is called tokens",
+      "gold_answer": "So this whole game, right, is what is called tokens.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e025",
+      "q": "At what timestamp and in which video is Python discussed? Look for \"I know Python?' Every kind of doubt in\".",
+      "expected": [
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "0:00",
+          "end": "1:28"
+        }
+      ],
+      "video_title": "Ep:05-Pydantic+JSON | AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "I know Python?\" Every kind of doubt in",
+      "gold_answer": "Then they ask doubts like, \"Should I know this?\" or \"Should I know Python?\" Every kind of doubt in your mind has been answered in Day One or the introductory episode.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e026",
+      "q": "At what timestamp and in which video is Pydantic discussed? Look for \"will teach you about Pydantic and JSON\".",
+      "expected": [
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "0:00",
+          "end": "1:28"
+        }
+      ],
+      "video_title": "Ep:05-Pydantic+JSON | AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "will teach you about Pydantic and JSON",
+      "gold_answer": "In this, we will teach you about Pydantic and JSON.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e027",
+      "q": "At what timestamp and in which video is LLM calls discussed? Look for \"things, your LLM will finally tell the HR\".",
+      "expected": [
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "1:08",
+          "end": "2:38"
+        }
+      ],
+      "video_title": "Ep:05-Pydantic+JSON | AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "things, your LLM will finally tell the HR",
+      "gold_answer": "Taking both of these things, your LLM will finally tell the HR what percentage chance there is that this candidate is a good fit.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e028",
+      "q": "At what timestamp and in which video is AI agent tools discussed? Look for \"the AI agent you are building, or the\".",
+      "expected": [
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "3:26",
+          "end": "4:56"
+        }
+      ],
+      "video_title": "Ep:05-Pydantic+JSON | AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "the AI agent you are building, or the",
+      "gold_answer": "I mean, if the AI agent you are building, or the ChatGPT you are using on the website, if it is only meant for humans to read, it is very good for that.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e029",
+      "q": "At what timestamp and in which video is tool discussed? Look for \"such a tool, 90% of the cases you\".",
+      "expected": [
+        {
+          "video_id": "j7Re_09T-co",
+          "start": "4:36",
+          "end": "6:06"
+        }
+      ],
+      "video_title": "Ep:05-Pydantic+JSON | AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "such a tool, 90% of the cases you",
+      "gold_answer": "But when you go to a company, when you build such an AI agent or such a tool, 90% of the cases you won't be reading it.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e030",
+      "q": "At what timestamp and in which video is the LLM resume evaluator discussed? Look for \"that to build an LLM resume evaluator\".",
+      "expected": [
+        {
+          "video_id": "9Ojj6tTYI9c",
+          "start": "0:00",
+          "end": "1:31"
+        }
+      ],
+      "video_title": "Ep 06: Our First AI Mini Project | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "that to build an LLM resume evaluator",
+      "gold_answer": "But I gave homework that, look, whatever we have learned this week, use that to build an LLM resume evaluator.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e031",
+      "q": "At what timestamp and in which video is mini project discussed? Look for \"will build a mini project and learn\".",
+      "expected": [
+        {
+          "video_id": "9Ojj6tTYI9c",
+          "start": "1:11",
+          "end": "2:42"
+        }
+      ],
+      "video_title": "Ep 06: Our First AI Mini Project | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "will build a mini project and learn",
+      "gold_answer": "we will learn, at the end of that we will build a mini project and learn.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e032",
+      "q": "At what timestamp and in which video is 4 hours discussed? Look for \"say these 4 hours—if I teach somehow in\".",
+      "expected": [
+        {
+          "video_id": "9Ojj6tTYI9c",
+          "start": "2:21",
+          "end": "3:50"
+        }
+      ],
+      "video_title": "Ep 06: Our First AI Mini Project | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "say these 4 hours—if I teach somehow in",
+      "gold_answer": "If I were to reduce this—if I didn't say these 4 hours—if I teach somehow in just 1 hour, then I can post videos daily, or 2-3 hour videos can also come daily, but then the quality will drop drastically.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e033",
+      "q": "At what timestamp and in which video is messages discussed? Look for \"try to read your messages at least\".",
+      "expected": [
+        {
+          "video_id": "9Ojj6tTYI9c",
+          "start": "3:30",
+          "end": "5:00"
+        }
+      ],
+      "video_title": "Ep 06: Our First AI Mini Project | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "try to read your messages at least",
+      "gold_answer": "I will try to read your messages at least.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e034",
+      "q": "At what timestamp and in which video is Groq discussed? Look for \"client for Groq, and reach up to that\".",
+      "expected": [
+        {
+          "video_id": "9Ojj6tTYI9c",
+          "start": "4:41",
+          "end": "6:12"
+        }
+      ],
+      "video_title": "Ep 06: Our First AI Mini Project | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "client for Groq, and reach up to that",
+      "gold_answer": "Create your API, create your client for Groq, and reach up to that point—all of that will remain the same.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e035",
+      "q": "At what timestamp and in which video is prompt engineering discussed? Look for \"Prompt engineering, see, in India, [laughter] what happened\".",
+      "expected": [
+        {
+          "video_id": "hveoP-ioP9I",
+          "start": "0:00",
+          "end": "1:29"
+        }
+      ],
+      "video_title": "Ep 07: Prompt Engineering in 30 mins | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "Prompt engineering, see, in India, [laughter] what happened",
+      "gold_answer": "Prompt engineering, see, in India, [laughter] what happened was that some colleges even started their own B.Tech degrees in this topic.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e036",
+      "q": "At what timestamp and in which video is prompt engineering discussed? Look for \"point is, prompt engineering is not some rocket\".",
+      "expected": [
+        {
+          "video_id": "hveoP-ioP9I",
+          "start": "1:08",
+          "end": "2:39"
+        }
+      ],
+      "video_title": "Ep 07: Prompt Engineering in 30 mins | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "point is, prompt engineering is not some rocket",
+      "gold_answer": "We said, \"Okay, basically that's it, right?\" So the point is, prompt engineering is not some rocket science that requires you to study something special.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e037",
+      "q": "At what timestamp and in which video is prompt engineering discussed? Look for \"call it, is what prompt engineering is\".",
+      "expected": [
+        {
+          "video_id": "hveoP-ioP9I",
+          "start": "2:20",
+          "end": "3:51"
+        }
+      ],
+      "video_title": "Ep 07: Prompt Engineering in 30 mins | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "call it, is what prompt engineering is",
+      "gold_answer": "Simple common sense, as they call it, is what prompt engineering is.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e038",
+      "q": "At what timestamp and in which video is prompt engineering techniques discussed? Look for \"wrote a small prompt: 'Answer user's questions\".",
+      "expected": [
+        {
+          "video_id": "hveoP-ioP9I",
+          "start": "7:00",
+          "end": "8:30"
+        }
+      ],
+      "video_title": "Ep 07: Prompt Engineering in 30 mins | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "wrote a small prompt: \"Answer user's questions",
+      "gold_answer": "Suppose in Zomato's chatbot, you just wrote a small prompt: \"Answer user's questions.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e039",
+      "q": "At what timestamp and in which video is prompt engineering techniques discussed? Look for \"Because the prompt written in it was a\".",
+      "expected": [
+        {
+          "video_id": "hveoP-ioP9I",
+          "start": "8:11",
+          "end": "9:41"
+        }
+      ],
+      "video_title": "Ep 07: Prompt Engineering in 30 mins | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "Because the prompt written in it was a",
+      "gold_answer": "Because the prompt written in it was a very weak prompt.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e040",
+      "q": "At what timestamp and in which video is ReAct reasoning discussed? Look for \"after learning ReAct, we are slowly crossing the\".",
+      "expected": [
+        {
+          "video_id": "solZdnrrtG4",
+          "start": "0:00",
+          "end": "1:28"
+        }
+      ],
+      "video_title": "Episode 08: ReAct Intro to AI Agents | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "after learning ReAct, we are slowly crossing the",
+      "gold_answer": "Now, after learning ReAct, we are slowly crossing the line between an LLM and an AI agent.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e041",
+      "q": "At what timestamp and in which video is ReAct reasoning discussed? Look for \"is called ReAct, and now we will explain\".",
+      "expected": [
+        {
+          "video_id": "solZdnrrtG4",
+          "start": "5:50",
+          "end": "7:21"
+        }
+      ],
+      "video_title": "Episode 08: ReAct Intro to AI Agents | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "is called ReAct, and now we will explain",
+      "gold_answer": "But now, because of this, came the next concept which is called ReAct, and now we will explain why a problem arose from this and how that problem was solved.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e042",
+      "q": "At what timestamp and in which video is ReAct reasoning discussed? Look for \"much it will use—ReAct came into existence\".",
+      "expected": [
+        {
+          "video_id": "solZdnrrtG4",
+          "start": "11:37",
+          "end": "13:06"
+        }
+      ],
+      "video_title": "Episode 08: ReAct Intro to AI Agents | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "much it will use—ReAct came into existence",
+      "gold_answer": "To solve the problem of which tool the LLM will use, when it will use which tool, and how much it will use—ReAct came into existence.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e043",
+      "q": "At what timestamp and in which video is ReAct reasoning discussed? Look for \"of thinking is called a ReAct loop\".",
+      "expected": [
+        {
+          "video_id": "solZdnrrtG4",
+          "start": "17:27",
+          "end": "18:57"
+        }
+      ],
+      "video_title": "Episode 08: ReAct Intro to AI Agents | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "of thinking is called a ReAct loop",
+      "gold_answer": "So this continuous work of thinking is called a ReAct loop.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e044",
+      "q": "At what timestamp and in which video is ReAct reasoning discussed? Look for \"Of ReAct—why ReAct was needed, what ReAct is\".",
+      "expected": [
+        {
+          "video_id": "solZdnrrtG4",
+          "start": "19:47",
+          "end": "21:17"
+        }
+      ],
+      "video_title": "Episode 08: ReAct Intro to AI Agents | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "Of ReAct—why ReAct was needed, what ReAct is",
+      "gold_answer": "Of ReAct—why ReAct was needed, what ReAct is, and why we use ReAct.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e045",
+      "q": "At what timestamp and in which video is prompt chaining discussed? Look for \"Before starting prompt chaining, there were some comments\".",
+      "expected": [
+        {
+          "video_id": "-aOdRksvZSo",
+          "start": "0:00",
+          "end": "1:28"
+        }
+      ],
+      "video_title": "Free AI Engineer Course | 8 Weeks | Episode 09: Prompt Chaining",
+      "category": "direct_fact",
+      "gold_answer_contains": "Before starting prompt chaining, there were some comments",
+      "gold_answer": "Before starting prompt chaining, there were some comments on the previous video.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e046",
+      "q": "At what timestamp and in which video is prompt chaining discussed? Look for \"My prompt will be something else, your prompt\".",
+      "expected": [
+        {
+          "video_id": "-aOdRksvZSo",
+          "start": "3:26",
+          "end": "4:57"
+        }
+      ],
+      "video_title": "Free AI Engineer Course | 8 Weeks | Episode 09: Prompt Chaining",
+      "category": "direct_fact",
+      "gold_answer_contains": "My prompt will be something else, your prompt",
+      "gold_answer": "My prompt will be something else, your prompt will be something else.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e047",
+      "q": "At what timestamp and in which video is prompt chaining discussed? Look for \"am saying here, is called प्रम्प्ट chaining\".",
+      "expected": [
+        {
+          "video_id": "-aOdRksvZSo",
+          "start": "6:58",
+          "end": "8:27"
+        }
+      ],
+      "video_title": "Free AI Engineer Course | 8 Weeks | Episode 09: Prompt Chaining",
+      "category": "direct_fact",
+      "gold_answer_contains": "am saying here, is called प्रम्प्ट chaining",
+      "gold_answer": "Now, this very thing, this very thing that I am saying here, is called प्रम्प्ट chaining.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e048",
+      "q": "At what timestamp and in which video is prompt chaining discussed? Look for \"to प्रम्प्ट chaining is this that instead of\".",
+      "expected": [
+        {
+          "video_id": "-aOdRksvZSo",
+          "start": "8:08",
+          "end": "9:38"
+        }
+      ],
+      "video_title": "Free AI Engineer Course | 8 Weeks | Episode 09: Prompt Chaining",
+      "category": "direct_fact",
+      "gold_answer_contains": "to प्रम्प्ट chaining is this that instead of",
+      "gold_answer": "So the introduction to प्रम्प्ट chaining is this that instead of writing one big प्रम्प्ट, we will write small प्रम्प्टs where each प्रम्प्ट will do a simple task.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e049",
+      "q": "At what timestamp and in which video is prompt chaining discussed? Look for \"single big prompt, saying: 'Look, the candidate's resume\".",
+      "expected": [
+        {
+          "video_id": "-aOdRksvZSo",
+          "start": "9:17",
+          "end": "10:47"
+        }
+      ],
+      "video_title": "Free AI Engineer Course | 8 Weeks | Episode 09: Prompt Chaining",
+      "category": "direct_fact",
+      "gold_answer_contains": "single big prompt, saying: \"Look, the candidate's resume",
+      "gold_answer": "So, if you want, you can write the whole thing in a single big prompt, saying: \"Look, the candidate's resume is at this path in the PDF.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e050",
+      "q": "At what timestamp and in which video is streaming discussed? Look for \"Anyway, streaming, as I was saying, is a\".",
+      "expected": [
+        {
+          "video_id": "U9za_updCsw",
+          "start": "1:09",
+          "end": "2:40"
+        }
+      ],
+      "video_title": "Ep 10: Streaming (Like ChatGPT) | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "Anyway, streaming, as I was saying, is a",
+      "gold_answer": "Anyway, streaming, as I was saying, is a very small topic.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e051",
+      "q": "At what timestamp and in which video is streaming discussed? Look for \"in ChatGPT, streaming is set to true\".",
+      "expected": [
+        {
+          "video_id": "U9za_updCsw",
+          "start": "4:40",
+          "end": "6:08"
+        }
+      ],
+      "video_title": "Ep 10: Streaming (Like ChatGPT) | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "in ChatGPT, streaming is set to true",
+      "gold_answer": "This is exactly what happens when you use ChatGPT; in ChatGPT, streaming is set to true.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e052",
+      "q": "At what timestamp and in which video is streaming discussed? Look for \"Now, with streaming set to true, you are\".",
+      "expected": [
+        {
+          "video_id": "U9za_updCsw",
+          "start": "5:48",
+          "end": "7:19"
+        }
+      ],
+      "video_title": "Ep 10: Streaming (Like ChatGPT) | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "Now, with streaming set to true, you are",
+      "gold_answer": "Now, with streaming set to true, you are showing me, let’s say, three lines.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e053",
+      "q": "At what timestamp and in which video is streaming discussed? Look for \"doing, we weren't really doing any streaming\".",
+      "expected": [
+        {
+          "video_id": "U9za_updCsw",
+          "start": "10:30",
+          "end": "12:00"
+        }
+      ],
+      "video_title": "Ep 10: Streaming (Like ChatGPT) | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "doing, we weren't really doing any streaming",
+      "gold_answer": "Up until now, what we were doing, we weren't really doing any streaming.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e054",
+      "q": "At what timestamp and in which video is the earlier responses not using streaming discussed? Look for \"doing, we weren't really doing any streaming\".",
+      "expected": [
+        {
+          "video_id": "U9za_updCsw",
+          "start": "10:30",
+          "end": "12:00"
+        }
+      ],
+      "video_title": "Ep 10: Streaming (Like ChatGPT) | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "doing, we weren't really doing any streaming",
+      "gold_answer": "what we were doing, we weren't really doing any streaming.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e055",
+      "q": "At what timestamp and in which video is Claude discussed? Look for \"ChatGPT or Claude, anyone can help you, which\".",
+      "expected": [
+        {
+          "video_id": "8eACtzJnAoU",
+          "start": "0:00",
+          "end": "1:30"
+        }
+      ],
+      "video_title": "Ep 11: You Have All The Tools Now | Here's Your Challenge | AI Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "ChatGPT or Claude, anyone can help you, which",
+      "gold_answer": "So look, the project we will build will use everything we have learned so far, plus one or two additional things where ChatGPT or Claude, anyone can help you, which are just tech-related things, not about any concepts.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e056",
+      "q": "At what timestamp and in which video is JSON discussed? Look for \"create a JSON out of it or tell\".",
+      "expected": [
+        {
+          "video_id": "8eACtzJnAoU",
+          "start": "2:19",
+          "end": "3:49"
+        }
+      ],
+      "video_title": "Ep 11: You Have All The Tools Now | Here's Your Challenge | AI Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "create a JSON out of it or tell",
+      "gold_answer": "After that, it's up to you whether you create a JSON out of it or tell the AI to remember it, it's completely your choice.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e057",
+      "q": "At what timestamp and in which video is LLM prompt construction discussed? Look for \"your profile, prompt, and then try asking some\".",
+      "expected": [
+        {
+          "video_id": "8eACtzJnAoU",
+          "start": "4:42",
+          "end": "6:11"
+        }
+      ],
+      "video_title": "Ep 11: You Have All The Tools Now | Here's Your Challenge | AI Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "your profile, prompt, and then try asking some",
+      "gold_answer": "Once you write this script—where you gave your profile, prompt, and then try asking some questions.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e058",
+      "q": "At what timestamp and in which video is LLM prompt construction discussed? Look for \"enhance your prompt further, like adding memory\".",
+      "expected": [
+        {
+          "video_id": "8eACtzJnAoU",
+          "start": "5:52",
+          "end": "7:22"
+        }
+      ],
+      "video_title": "Ep 11: You Have All The Tools Now | Here's Your Challenge | AI Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "enhance your prompt further, like adding memory",
+      "gold_answer": "And after that, enhance your prompt further, like adding memory.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e059",
+      "q": "At what timestamp and in which video is Claude discussed? Look for \"ChatGPT or Claude or any other, you feel\".",
+      "expected": [
+        {
+          "video_id": "l-WFxXyM66s",
+          "start": "1:10",
+          "end": "2:40"
+        }
+      ],
+      "video_title": "Ep 11: Personal Portfolio AI (Mini Project) | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "ChatGPT or Claude or any other, you feel",
+      "gold_answer": "Whenever you go to any AI website, let's say you went to ChatGPT or Claude or any other, you feel that we are typing on this, we are getting an answer, it's very good.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e060",
+      "q": "At what timestamp and in which video is streaming discussed? Look for \"model, passes streaming in it, meaning whatever things\".",
+      "expected": [
+        {
+          "video_id": "l-WFxXyM66s",
+          "start": "1:10",
+          "end": "2:40"
+        }
+      ],
+      "video_title": "Ep 11: Personal Portfolio AI (Mini Project) | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "model, passes streaming in it, meaning whatever things",
+      "gold_answer": "GPT is written in Python, its main code, the main code of ChatGPT which talks to its model and asks questions to the model, passes streaming in it, meaning whatever things it does, that is Python code.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e061",
+      "q": "At what timestamp and in which video is API discussed? Look for \"is called an API, Application Programming Interface\".",
+      "expected": [
+        {
+          "video_id": "l-WFxXyM66s",
+          "start": "4:42",
+          "end": "6:13"
+        }
+      ],
+      "video_title": "Ep 11: Personal Portfolio AI (Mini Project) | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "is called an API, Application Programming Interface",
+      "gold_answer": "This waiter, who understands my language and delivers it to the cook, and takes the item from the cook and gives it to me, this is called an API, Application Programming Interface.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e062",
+      "q": "At what timestamp and in which video is Python discussed? Look for \"from your Python, it will bring it back\".",
+      "expected": [
+        {
+          "video_id": "l-WFxXyM66s",
+          "start": "4:42",
+          "end": "6:13"
+        }
+      ],
+      "video_title": "Ep 11: Personal Portfolio AI (Mini Project) | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "from your Python, it will bring it back",
+      "gold_answer": "It will execute there, whatever answer is generated from your Python, it will bring it back and give it to the browser, and the browser will generate and show you that, hey, take this text, this is the text.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e063",
+      "q": "At what timestamp and in which video is API discussed? Look for \"is an API, then kids go blank\".",
+      "expected": [
+        {
+          "video_id": "l-WFxXyM66s",
+          "start": "7:05",
+          "end": "8:35"
+        }
+      ],
+      "video_title": "Ep 11: Personal Portfolio AI (Mini Project) | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "is an API, then kids go blank",
+      "gold_answer": "So this disclaimer was very important, to explain this to you that if someone asks in an interview, what is an API, then kids go blank.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e064",
+      "q": "At what timestamp and in which video is messages discussed? Look for \"you know, different kinds of messages—I mean\".",
+      "expected": [
+        {
+          "video_id": "HA-VXeBwmgs",
+          "start": "0:00",
+          "end": "1:30"
+        }
+      ],
+      "video_title": "Only These 12 Are Your Competition! Week 2 AI Project Review",
+      "category": "direct_fact",
+      "gold_answer_contains": "you know, different kinds of messages—I mean",
+      "gold_answer": "So nowadays, I mean, I get, you know, different kinds of messages—I mean,",
+      "expects_refusal": false
+    },
+    {
+      "id": "e065",
+      "q": "At what timestamp and in which video is messages discussed? Look for \"mean, I get 200 messages a day\".",
+      "expected": [
+        {
+          "video_id": "HA-VXeBwmgs",
+          "start": "1:11",
+          "end": "2:41"
+        }
+      ],
+      "video_title": "Only These 12 Are Your Competition! Week 2 AI Project Review",
+      "category": "direct_fact",
+      "gold_answer_contains": "mean, I get 200 messages a day",
+      "gold_answer": "So nowadays, I mean, I get, you know, different kinds of messages—I mean, I get 200 messages a day.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e066",
+      "q": "At what timestamp and in which video is API discussed? Look for \"URL shortener API project.' So look at how\".",
+      "expected": [
+        {
+          "video_id": "HA-VXeBwmgs",
+          "start": "5:53",
+          "end": "7:24"
+        }
+      ],
+      "video_title": "Only These 12 Are Your Competition! Week 2 AI Project Review",
+      "category": "direct_fact",
+      "gold_answer_contains": "URL shortener API project.\" So look at how",
+      "gold_answer": "It is mentioned in my URL shortener API project.\" So look at how well this is working, and it's working very fast.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e067",
+      "q": "At what timestamp and in which video is GitHub discussed? Look for \"to his GitHub from here by clicking\".",
+      "expected": [
+        {
+          "video_id": "HA-VXeBwmgs",
+          "start": "8:14",
+          "end": "9:44"
+        }
+      ],
+      "video_title": "Only These 12 Are Your Competition! Week 2 AI Project Review",
+      "category": "direct_fact",
+      "gold_answer_contains": "to his GitHub from here by clicking",
+      "gold_answer": "As soon as I said \"projects,\" first it explained, and then it gave the projects one by one, gave a button-like thing so that you can also go to his GitHub from here by clicking.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e068",
+      "q": "At what timestamp and in which video is LLM prompt construction discussed? Look for \"in whatever prompt call you are making, just\".",
+      "expected": [
+        {
+          "video_id": "HA-VXeBwmgs",
+          "start": "11:38",
+          "end": "13:09"
+        }
+      ],
+      "video_title": "Only These 12 Are Your Competition! Week 2 AI Project Review",
+      "category": "direct_fact",
+      "gold_answer_contains": "in whatever prompt call you are making, just",
+      "gold_answer": "So in whatever prompt call you are making, just set `stream = true`.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e069",
+      "q": "At what timestamp and in which video is RAG retrieval discussed? Look for \"this problem came out to be RAG\".",
+      "expected": [
+        {
+          "video_id": "dU5Nz-sMTdk",
+          "start": "2:19",
+          "end": "3:50"
+        }
+      ],
+      "video_title": "12. What is RAG | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "this problem came out to be RAG",
+      "gold_answer": "The best and simplest solution to this problem came out to be RAG.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e070",
+      "q": "At what timestamp and in which video is RAG retrieval discussed? Look for \"this was the first iteration of RAG\".",
+      "expected": [
+        {
+          "video_id": "dU5Nz-sMTdk",
+          "start": "12:50",
+          "end": "14:19"
+        }
+      ],
+      "video_title": "12. What is RAG | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "this was the first iteration of RAG",
+      "gold_answer": "In plain and simple words, this was the first iteration of RAG.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e071",
+      "q": "At what timestamp and in which video is RAG retrieval discussed? Look for \"When RAG was created, it used to be\".",
+      "expected": [
+        {
+          "video_id": "dU5Nz-sMTdk",
+          "start": "12:50",
+          "end": "14:19"
+        }
+      ],
+      "video_title": "12. What is RAG | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "When RAG was created, it used to be",
+      "gold_answer": "When RAG was created, it used to be built like this.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e072",
+      "q": "At what timestamp and in which video is RAG retrieval discussed? Look for \"understand what RAG is in simple words\".",
+      "expected": [
+        {
+          "video_id": "dU5Nz-sMTdk",
+          "start": "13:58",
+          "end": "15:29"
+        }
+      ],
+      "video_title": "12. What is RAG | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "understand what RAG is in simple words",
+      "gold_answer": "But it is important to understand what RAG is in simple words.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e073",
+      "q": "At what timestamp and in which video is RAG retrieval discussed? Look for \"In RAG, step one is that you create\".",
+      "expected": [
+        {
+          "video_id": "dU5Nz-sMTdk",
+          "start": "18:38",
+          "end": "20:05"
+        }
+      ],
+      "video_title": "12. What is RAG | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "In RAG, step one is that you create",
+      "gold_answer": "In RAG, step one is that you create your knowledge base.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e074",
+      "q": "At what timestamp and in which video is system instructions discussed? Look for \"Applicant Tracking System websites like Greenhouse, are where\".",
+      "expected": [
+        {
+          "video_id": "hSDo59FppOU",
+          "start": "0:00",
+          "end": "1:30"
+        }
+      ],
+      "video_title": "How I Automated My Entire Job Search | EVERYONE WILL GET A JOB",
+      "category": "direct_fact",
+      "gold_answer_contains": "Applicant Tracking System websites like Greenhouse, are where",
+      "gold_answer": "ATS software, Applicant Tracking System websites like Greenhouse, are where people actually go and apply.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e075",
+      "q": "At what timestamp and in which video is Python discussed? Look for \"check whether Python is there or not\".",
+      "expected": [
+        {
+          "video_id": "hSDo59FppOU",
+          "start": "2:20",
+          "end": "3:49"
+        }
+      ],
+      "video_title": "How I Automated My Entire Job Search | EVERYONE WILL GET A JOB",
+      "category": "direct_fact",
+      "gold_answer_contains": "check whether Python is there or not",
+      "gold_answer": "After that, `python`—after that, first check whether Python is there or not.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e076",
+      "q": "At what timestamp and in which video is Python discussed? Look for \"error in Python or some error here and\".",
+      "expected": [
+        {
+          "video_id": "hSDo59FppOU",
+          "start": "3:30",
+          "end": "5:00"
+        }
+      ],
+      "video_title": "How I Automated My Entire Job Search | EVERYONE WILL GET A JOB",
+      "category": "direct_fact",
+      "gold_answer_contains": "error in Python or some error here and",
+      "gold_answer": "If it doesn't run up to here, it means there is some error in Python or some error here and there.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e077",
+      "q": "At what timestamp and in which video is LLM calls discussed? Look for \"two things: LLM provide, don't change anything\".",
+      "expected": [
+        {
+          "video_id": "hSDo59FppOU",
+          "start": "4:39",
+          "end": "6:08"
+        }
+      ],
+      "video_title": "How I Automated My Entire Job Search | EVERYONE WILL GET A JOB",
+      "category": "direct_fact",
+      "gold_answer_contains": "two things: LLM provide, don't change anything",
+      "gold_answer": "Inside this `.env` file, there are two things: LLM provide, don't change anything.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e078",
+      "q": "At what timestamp and in which video is LLM prompt construction discussed? Look for \"this out, a prompt is written here\".",
+      "expected": [
+        {
+          "video_id": "hSDo59FppOU",
+          "start": "6:59",
+          "end": "8:30"
+        }
+      ],
+      "video_title": "How I Automated My Entire Job Search | EVERYONE WILL GET A JOB",
+      "category": "direct_fact",
+      "gold_answer_contains": "this out, a prompt is written here",
+      "gold_answer": "To find this out, a prompt is written here.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e079",
+      "q": "At what timestamp and in which video is RAG embeddings and retrieval discussed? Look for \"the last lecture we talked about RAG\".",
+      "expected": [
+        {
+          "video_id": "fqf4pdGCev0",
+          "start": "0:00",
+          "end": "1:29"
+        }
+      ],
+      "video_title": "Ep 13. Embeddings Without MATH | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "the last lecture we talked about RAG",
+      "gold_answer": "Anyway, in the last lecture we talked about RAG.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e080",
+      "q": "At what timestamp and in which video is retrieval discussed? Look for \"we wrote retrieval, that this exact problem was\".",
+      "expected": [
+        {
+          "video_id": "fqf4pdGCev0",
+          "start": "3:28",
+          "end": "4:59"
+        }
+      ],
+      "video_title": "Ep 13. Embeddings Without MATH | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "we wrote retrieval, that this exact problem was",
+      "gold_answer": "And this was the biggest problem in the last lecture when we wrote retrieval, that this exact problem was happening, that the keyword was not found, game over.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e081",
+      "q": "At what timestamp and in which video is vector search discussed? Look for \"into vectors.' Vector means convert them into an\".",
+      "expected": [
+        {
+          "video_id": "fqf4pdGCev0",
+          "start": "4:38",
+          "end": "6:09"
+        }
+      ],
+      "video_title": "Ep 13. Embeddings Without MATH | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "into vectors.\" Vector means convert them into an",
+      "gold_answer": "Convert apple and cake into vectors.\" Vector means convert them into an array.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e082",
+      "q": "At what timestamp and in which video is embedding discussed? Look for \"in scientific language, this is called embedding\".",
+      "expected": [
+        {
+          "video_id": "fqf4pdGCev0",
+          "start": "7:01",
+          "end": "8:29"
+        }
+      ],
+      "video_title": "Ep 13. Embeddings Without MATH | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "in scientific language, this is called embedding",
+      "gold_answer": "He said, \"It's very crunchy, so give it a high score, give it 9.\" This exact example that I have given you, in scientific language, this is called embedding.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e083",
+      "q": "At what timestamp and in which video is vector search discussed? Look for \"array you make, the vector you make\".",
+      "expected": [
+        {
+          "video_id": "fqf4pdGCev0",
+          "start": "11:42",
+          "end": "13:11"
+        }
+      ],
+      "video_title": "Ep 13. Embeddings Without MATH | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "array you make, the vector you make",
+      "gold_answer": "It is the size of the array you make, the vector you make.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e084",
+      "q": "At what timestamp and in which video is building a RAG system discussed? Look for \"retrieval part of RAG was very stupid\".",
+      "expected": [
+        {
+          "video_id": "cCAu3dFtoQ8",
+          "start": "0:00",
+          "end": "1:30"
+        }
+      ],
+      "video_title": "Ep 14 | Build Your First RAG SYSTEM! | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "retrieval part of RAG was very stupid",
+      "gold_answer": "There was only one problem with it: the retrieval part of RAG was very stupid.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e085",
+      "q": "At what timestamp and in which video is building a RAG system discussed? Look for \"base in RAG intro, let's create a knowledge\".",
+      "expected": [
+        {
+          "video_id": "cCAu3dFtoQ8",
+          "start": "2:22",
+          "end": "3:52"
+        }
+      ],
+      "video_title": "Ep 14 | Build Your First RAG SYSTEM! | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "base in RAG intro, let's create a knowledge",
+      "gold_answer": "Just like we created a knowledge base in RAG intro, let's create a knowledge base here too.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e086",
+      "q": "At what timestamp and in which video is RAG system discussed? Look for \"Koi bhi RAG system at its [gla saaf\".",
+      "expected": [
+        {
+          "video_id": "cCAu3dFtoQ8",
+          "start": "12:54",
+          "end": "14:25"
+        }
+      ],
+      "video_title": "Ep 14 | Build Your First RAG SYSTEM! | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "Koi bhi RAG system at its [gla saaf",
+      "gold_answer": "Koi bhi RAG system at its [gla saaf karne ki aawaz] core ye hota hai.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e087",
+      "q": "At what timestamp and in which video is building a RAG system discussed? Look for \"mein aayega kyunki RAG toh ho gaya\".",
+      "expected": [
+        {
+          "video_id": "cCAu3dFtoQ8",
+          "start": "15:13",
+          "end": "16:43"
+        }
+      ],
+      "video_title": "Ep 14 | Build Your First RAG SYSTEM! | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "mein aayega kyunki RAG toh ho gaya",
+      "gold_answer": "Ab aapko nahi samajh mein aayega kyunki RAG toh ho gaya.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e088",
+      "q": "At what timestamp and in which video is system instructions discussed? Look for \"Ye system tabhi kaam karta hai jab aap\".",
+      "expected": [
+        {
+          "video_id": "cCAu3dFtoQ8",
+          "start": "17:33",
+          "end": "19:02"
+        }
+      ],
+      "video_title": "Ep 14 | Build Your First RAG SYSTEM! | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "Ye system tabhi kaam karta hai jab aap",
+      "gold_answer": "Ye system tabhi kaam karta hai jab aap bahut limited knowledge base se deal kar rahe ho.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e089",
+      "q": "At what timestamp and in which video is vector database search discussed? Look for \"as a vector DB or vector database\".",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "0:00",
+          "end": "1:30"
+        }
+      ],
+      "video_title": "15 | Quadrant Vector Database | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "as a vector DB or vector database",
+      "gold_answer": "You can think of Qdrant as a vector DB or vector database.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e090",
+      "q": "At what timestamp and in which video is vector search discussed? Look for \"to every vector and calculating the cosine similarity\".",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "2:22",
+          "end": "3:51"
+        }
+      ],
+      "video_title": "15 | Quadrant Vector Database | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "to every vector and calculating the cosine similarity",
+      "gold_answer": "But in searching, the linear search it used to do—going to every vector and calculating the cosine similarity of the query and this vector, and returning the top ones at the end—this takes time.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e091",
+      "q": "At what timestamp and in which video is vector search discussed? Look for \"three reasons, we need a vector DB\".",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "3:32",
+          "end": "5:01"
+        }
+      ],
+      "video_title": "15 | Quadrant Vector Database | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "three reasons, we need a vector DB",
+      "gold_answer": "Because of these three reasons, we need a vector DB.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e092",
+      "q": "At what timestamp and in which video is vector search discussed? Look for \"that Qdrant is the only vector DB\".",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "4:41",
+          "end": "6:12"
+        }
+      ],
+      "video_title": "15 | Quadrant Vector Database | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "that Qdrant is the only vector DB",
+      "gold_answer": "Now, it's also not that Qdrant is the only vector DB.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e093",
+      "q": "At what timestamp and in which video is vector search discussed? Look for \"why we should use a vector DB\".",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "5:51",
+          "end": "7:21"
+        }
+      ],
+      "video_title": "15 | Quadrant Vector Database | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "why we should use a vector DB",
+      "gold_answer": "So this was about why we should use a vector DB.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e094",
+      "q": "At what timestamp and in which video is Qdrant discussed? Look for \"collection in Qdrant, push the entire knowledge there\".",
+      "expected": [
+        {
+          "video_id": "ZCNayichcKE",
+          "start": "2:20",
+          "end": "3:49"
+        }
+      ],
+      "video_title": "Multi-Tenant RAG with Qdrant | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "collection in Qdrant, push the entire knowledge there",
+      "gold_answer": "Create a collection in Qdrant, push the entire knowledge there, and its vector database is created.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e095",
+      "q": "At what timestamp and in which video is Qdrant discussed? Look for \"Qdrant thinks that this, you know, this was\".",
+      "expected": [
+        {
+          "video_id": "ZCNayichcKE",
+          "start": "3:29",
+          "end": "4:59"
+        }
+      ],
+      "video_title": "Multi-Tenant RAG with Qdrant | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "Qdrant thinks that this, you know, this was",
+      "gold_answer": "Qdrant thinks that this, you know, this was discussed in video number 12.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e096",
+      "q": "At what timestamp and in which video is Qdrant discussed? Look for \"if suppose Qdrant has six vectors, Qdrant has\".",
+      "expected": [
+        {
+          "video_id": "ZCNayichcKE",
+          "start": "6:58",
+          "end": "8:28"
+        }
+      ],
+      "video_title": "Multi-Tenant RAG with Qdrant | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "if suppose Qdrant has six vectors, Qdrant has",
+      "gold_answer": "That if suppose Qdrant has six vectors, Qdrant has six such arrays.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e097",
+      "q": "At what timestamp and in which video is Qdrant discussed? Look for \"And Qdrant DB uses HNSW to fetch the\".",
+      "expected": [
+        {
+          "video_id": "ZCNayichcKE",
+          "start": "16:16",
+          "end": "17:45"
+        }
+      ],
+      "video_title": "Multi-Tenant RAG with Qdrant | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "And Qdrant DB uses HNSW to fetch the",
+      "gold_answer": "And Qdrant DB uses HNSW to fetch the top three for your query.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e098",
+      "q": "At what timestamp and in which video is Qdrant discussed? Look for \"in your Qdrant, which is a good thing\".",
+      "expected": [
+        {
+          "video_id": "ZCNayichcKE",
+          "start": "18:34",
+          "end": "20:04"
+        }
+      ],
+      "video_title": "Multi-Tenant RAG with Qdrant | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "in your Qdrant, which is a good thing",
+      "gold_answer": "Or in your Qdrant, which is a good thing.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e099",
+      "q": "At what timestamp and in which video is RAG over the DSA playlist discussed? Look for \"building a RAG for all the videos, and\".",
+      "expected": [
+        {
+          "video_id": "Z9CI_OVhXNs",
+          "start": "0:00",
+          "end": "1:30"
+        }
+      ],
+      "video_title": "I converted my 60 Hour DSA Playlist to a RAG!",
+      "category": "direct_fact",
+      "gold_answer_contains": "building a RAG for all the videos, and",
+      "gold_answer": "So we solved this problem by building a RAG for all the videos, and here you can simply ask your query, and it will tell you that this thing is right here.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e100",
+      "q": "At what timestamp and in which video is RAG over the DSA playlist discussed? Look for \"run this command: `uv run yt_rag load`\".",
+      "expected": [
+        {
+          "video_id": "Z9CI_OVhXNs",
+          "start": "2:19",
+          "end": "3:48"
+        }
+      ],
+      "video_title": "I converted my 60 Hour DSA Playlist to a RAG!",
+      "category": "direct_fact",
+      "gold_answer_contains": "run this command: `uv run yt_rag load`",
+      "gold_answer": "Once this is also done, after that you need to run this command: `uv run yt_rag load`.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e101",
+      "q": "At what timestamp and in which video is RAG over the DSA playlist discussed? Look for \"you will run `uv run yt_rag serve`\".",
+      "expected": [
+        {
+          "video_id": "Z9CI_OVhXNs",
+          "start": "3:29",
+          "end": "4:58"
+        }
+      ],
+      "video_title": "I converted my 60 Hour DSA Playlist to a RAG!",
+      "category": "direct_fact",
+      "gold_answer_contains": "you will run `uv run yt_rag serve`",
+      "gold_answer": "After that, you will run `uv run yt_rag serve`.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e102",
+      "q": "At what timestamp and in which video is RAG over the DSA playlist discussed? Look for \"the full RAG of my YouTube playlist is\".",
+      "expected": [
+        {
+          "video_id": "Z9CI_OVhXNs",
+          "start": "5:47",
+          "end": "7:17"
+        }
+      ],
+      "video_title": "I converted my 60 Hour DSA Playlist to a RAG!",
+      "category": "direct_fact",
+      "gold_answer_contains": "the full RAG of my YouTube playlist is",
+      "gold_answer": "So you can consider that the full RAG of my YouTube playlist is sitting right here.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e103",
+      "q": "At what timestamp and in which video is RAG over the DSA playlist discussed? Look for \"built a RAG for it to revise\".",
+      "expected": [
+        {
+          "video_id": "Z9CI_OVhXNs",
+          "start": "6:57",
+          "end": "8:26"
+        }
+      ],
+      "video_title": "I converted my 60 Hour DSA Playlist to a RAG!",
+      "category": "direct_fact",
+      "gold_answer_contains": "built a RAG for it to revise",
+      "gold_answer": "We wanted to study DSA, so we built a RAG for it to revise.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e104",
+      "q": "At what timestamp and in which video is RAG chunking strategies discussed? Look for \"have studied RAG, how to build your own\".",
+      "expected": [
+        {
+          "video_id": "bm_0jH5ve8U",
+          "start": "0:00",
+          "end": "1:28"
+        }
+      ],
+      "video_title": "Chunking Strategies for RAG | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "have studied RAG, how to build your own",
+      "gold_answer": "So far we have studied RAG, how to build your own RAG and how to use it.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e105",
+      "q": "At what timestamp and in which video is RAG chunking strategies discussed? Look for \"to take an entire novel into RAG\".",
+      "expected": [
+        {
+          "video_id": "bm_0jH5ve8U",
+          "start": "1:09",
+          "end": "2:39"
+        }
+      ],
+      "video_title": "Chunking Strategies for RAG | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "to take an entire novel into RAG",
+      "gold_answer": "In knowledge, it might be that you need to take an entire novel into RAG.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e106",
+      "q": "At what timestamp and in which video is RAG chunking strategies discussed? Look for \"create a RAG for every single page.' Meaning\".",
+      "expected": [
+        {
+          "video_id": "bm_0jH5ve8U",
+          "start": "2:19",
+          "end": "3:48"
+        }
+      ],
+      "video_title": "Chunking Strategies for RAG | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "create a RAG for every single page.\" Meaning",
+      "gold_answer": "We will create a RAG for every single page.\" Meaning you take this page, whatever is written on this page, you create an array for it.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e107",
+      "q": "At what timestamp and in which video is RAG chunking strategies discussed? Look for \"writing that you are making a RAG\".",
+      "expected": [
+        {
+          "video_id": "bm_0jH5ve8U",
+          "start": "10:28",
+          "end": "11:58"
+        }
+      ],
+      "video_title": "Chunking Strategies for RAG | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "writing that you are making a RAG",
+      "gold_answer": "Brother, they won't ask you before writing that you are making a RAG...",
+      "expects_refusal": false
+    },
+    {
+      "id": "e108",
+      "q": "At what timestamp and in which video is RAG chunking strategies discussed? Look for \"building a RAG, we are following a rule—no\".",
+      "expected": [
+        {
+          "video_id": "bm_0jH5ve8U",
+          "start": "11:37",
+          "end": "13:08"
+        }
+      ],
+      "video_title": "Chunking Strategies for RAG | Free AI Engineer Course | 8 Weeks",
+      "category": "direct_fact",
+      "gold_answer_contains": "building a RAG, we are following a rule—no",
+      "gold_answer": "Brother, they won't write asking you that since you are building a RAG, we are following a rule—no, whoever feels like doing something will do it.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e109",
+      "q": "At what timestamp and in which video is RAG evaluation discussed? Look for \"you won't just be asked about RAG\".",
+      "expected": [
+        {
+          "video_id": "KhHr4Y6v2TE",
+          "start": "0:00",
+          "end": "1:31"
+        }
+      ],
+      "video_title": "RAG Evaluation | The Most Important AI Interview Question",
+      "category": "direct_fact",
+      "gold_answer_contains": "you won't just be asked about RAG",
+      "gold_answer": "But in an interview, you won't just be asked about RAG.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e110",
+      "q": "At what timestamp and in which video is RAG evaluation metrics discussed? Look for \"is the evaluation of whether what you built\".",
+      "expected": [
+        {
+          "video_id": "KhHr4Y6v2TE",
+          "start": "1:11",
+          "end": "2:41"
+        }
+      ],
+      "video_title": "RAG Evaluation | The Most Important AI Interview Question",
+      "category": "direct_fact",
+      "gold_answer_contains": "is the evaluation of whether what you built",
+      "gold_answer": "That is the evaluation of whether what you built is correct or not.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e111",
+      "q": "At what timestamp and in which video is RAG evaluation discussed? Look for \"all, in RAG, you have a knowledge base\".",
+      "expected": [
+        {
+          "video_id": "KhHr4Y6v2TE",
+          "start": "2:21",
+          "end": "3:51"
+        }
+      ],
+      "video_title": "RAG Evaluation | The Most Important AI Interview Question",
+      "category": "direct_fact",
+      "gold_answer_contains": "all, in RAG, you have a knowledge base",
+      "gold_answer": "First of all, in RAG, you have a knowledge base.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e112",
+      "q": "At what timestamp and in which video is RAG evaluation metrics discussed? Look for \"at what the evaluation process is like\".",
+      "expected": [
+        {
+          "video_id": "KhHr4Y6v2TE",
+          "start": "7:01",
+          "end": "8:31"
+        }
+      ],
+      "video_title": "RAG Evaluation | The Most Important AI Interview Question",
+      "category": "direct_fact",
+      "gold_answer_contains": "at what the evaluation process is like",
+      "gold_answer": "Now, for this, let's look at what the evaluation process is like.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e113",
+      "q": "At what timestamp and in which video is RAG evaluation discussed? Look for \"RAG is always built when you need customized\".",
+      "expected": [
+        {
+          "video_id": "KhHr4Y6v2TE",
+          "start": "19:50",
+          "end": "21:20"
+        }
+      ],
+      "video_title": "RAG Evaluation | The Most Important AI Interview Question",
+      "category": "direct_fact",
+      "gold_answer_contains": "RAG is always built when you need customized",
+      "gold_answer": "RAG is always built when you need customized knowledge from your knowledge base.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e114",
+      "q": "At what timestamp and in which video is Python discussed? Look for \"Python interpreter means it is running Python code\".",
+      "expected": [
+        {
+          "video_id": "2CJAXE2JrsI",
+          "start": "0:00",
+          "end": "1:30"
+        }
+      ],
+      "video_title": "Why Can't LLMs Do Basic MATHS!",
+      "category": "direct_fact",
+      "gold_answer_contains": "Python interpreter means it is running Python code",
+      "gold_answer": "Python interpreter means it is running Python code to do this.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e115",
+      "q": "At what timestamp and in which video is Model Context Protocol (MCP) discussed? Look for \"you teach MCP?' So sometimes they ask, 'What\".",
+      "expected": [
+        {
+          "video_id": "2CJAXE2JrsI",
+          "start": "1:10",
+          "end": "2:41"
+        }
+      ],
+      "video_title": "Why Can't LLMs Do Basic MATHS!",
+      "category": "direct_fact",
+      "gold_answer_contains": "you teach MCP?\" So sometimes they ask, \"What",
+      "gold_answer": "When will you teach MCP?\" So sometimes they ask, \"What is LangGraph?\" Oh, some easy snippet brother said that this gets you a job.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e116",
+      "q": "At what timestamp and in which video is LangGraph workflows discussed? Look for \"definition of LangGraph's definition!' Don't do this\".",
+      "expected": [
+        {
+          "video_id": "2CJAXE2JrsI",
+          "start": "2:22",
+          "end": "3:53"
+        }
+      ],
+      "video_title": "Why Can't LLMs Do Basic MATHS!",
+      "category": "direct_fact",
+      "gold_answer_contains": "definition of LangGraph's definition!\" Don't do this",
+      "gold_answer": "\"Oh brother, I didn't study this, I came having read the definition of LangGraph's definition!\" Don't do this.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e117",
+      "q": "At what timestamp and in which video is LLM arithmetic limitations discussed? Look for \"way, early LLMs used to do math\".",
+      "expected": [
+        {
+          "video_id": "2CJAXE2JrsI",
+          "start": "9:24",
+          "end": "10:52"
+        }
+      ],
+      "video_title": "Why Can't LLMs Do Basic MATHS!",
+      "category": "direct_fact",
+      "gold_answer_contains": "way, early LLMs used to do math",
+      "gold_answer": "Exactly in this way, exactly in this way, early LLMs used to do math.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e118",
+      "q": "At what timestamp and in which video is LLM arithmetic limitations discussed? Look for \"is why LLMs used to give you this\".",
+      "expected": [
+        {
+          "video_id": "2CJAXE2JrsI",
+          "start": "10:31",
+          "end": "12:01"
+        }
+      ],
+      "video_title": "Why Can't LLMs Do Basic MATHS!",
+      "category": "direct_fact",
+      "gold_answer_contains": "is why LLMs used to give you this",
+      "gold_answer": "That is why LLMs used to give you this wrong answer.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e119",
+      "q": "At what timestamp and in which video is AI agent design discussed? Look for \"the first AI agent of your life\".",
+      "expected": [
+        {
+          "video_id": "RNj0AY4VueA",
+          "start": "0:00",
+          "end": "1:30"
+        }
+      ],
+      "video_title": "Our First AI Agent | AI Engineer Course",
+      "category": "direct_fact",
+      "gold_answer_contains": "the first AI agent of your life",
+      "gold_answer": "Today we will teach you how to build the first AI agent of your life.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e120",
+      "q": "At what timestamp and in which video is AI agent design discussed? Look for \"An AI agent is nothing more than a\".",
+      "expected": [
+        {
+          "video_id": "RNj0AY4VueA",
+          "start": "1:10",
+          "end": "2:39"
+        }
+      ],
+      "video_title": "Our First AI Agent | AI Engineer Course",
+      "category": "direct_fact",
+      "gold_answer_contains": "An AI agent is nothing more than a",
+      "gold_answer": "An AI agent is nothing more than a normal LLM, plus when you give it access to some functions or APIs, when both of these things come together, they are collectively called an agent.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e121",
+      "q": "At what timestamp and in which video is AI agent design discussed? Look for \"API, it is called an AI agent\".",
+      "expected": [
+        {
+          "video_id": "RNj0AY4VueA",
+          "start": "2:20",
+          "end": "3:48"
+        }
+      ],
+      "video_title": "Our First AI Agent | AI Engineer Course",
+      "category": "direct_fact",
+      "gold_answer_contains": "API, it is called an AI agent",
+      "gold_answer": "When you give an LLM a function or give an LLM access to an API, it is called an AI agent.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e122",
+      "q": "At what timestamp and in which video is AI agent tools discussed? Look for \"that exact thing is called an agent\".",
+      "expected": [
+        {
+          "video_id": "RNj0AY4VueA",
+          "start": "4:39",
+          "end": "6:09"
+        }
+      ],
+      "video_title": "Our First AI Agent | AI Engineer Course",
+      "category": "direct_fact",
+      "gold_answer_contains": "that exact thing is called an agent",
+      "gold_answer": "Here, I've made the payment.\" So whenever you give an LLM access to functions or APIs—like a calculator, if the LLM has access to a calculator so that it can perform multiplication, that exact thing is called an agent.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e123",
+      "q": "At what timestamp and in which video is AI agent design discussed? Look for \"are an AI agent, etc., etc., blah blah\".",
+      "expected": [
+        {
+          "video_id": "RNj0AY4VueA",
+          "start": "19:46",
+          "end": "21:14"
+        }
+      ],
+      "video_title": "Our First AI Agent | AI Engineer Course",
+      "category": "direct_fact",
+      "gold_answer_contains": "are an AI agent, etc., etc., blah blah",
+      "gold_answer": "First of all, you write a system prompt, explaining to it that you are an AI agent, etc., etc., blah blah, and use tools for this, and one or two",
+      "expects_refusal": false
+    },
+    {
+      "id": "e124",
+      "q": "At what timestamp and in which video is the OpenAI ARC-AGI 3 test discussed? Look for \"99.9% OpenAI, AGI—these two or three words are\".",
+      "expected": [
+        {
+          "video_id": "shSIHIpFjZY",
+          "start": "0:00",
+          "end": "1:28"
+        }
+      ],
+      "video_title": "OpenAI Is Lying to US! Full Truth About ARC AGI 3 Test",
+      "category": "direct_fact",
+      "gold_answer_contains": "99.9% OpenAI, AGI—these two or three words are",
+      "gold_answer": "99.9% OpenAI, AGI—these two or three words are what you're going to hear everywhere starting yesterday.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e125",
+      "q": "At what timestamp and in which video is the OpenAI ARC-AGI 3 test discussed? Look for \"Now OpenAI is saying that it has an\".",
+      "expected": [
+        {
+          "video_id": "shSIHIpFjZY",
+          "start": "1:10",
+          "end": "2:39"
+        }
+      ],
+      "video_title": "OpenAI Is Lying to US! Full Truth About ARC AGI 3 Test",
+      "category": "direct_fact",
+      "gold_answer_contains": "Now OpenAI is saying that it has an",
+      "gold_answer": "Now OpenAI is saying that it has an accuracy of 99.9%.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e126",
+      "q": "At what timestamp and in which video is the ARC-AGI 3 test time limit discussed? Look for \"in those 30 minutes about where things are\".",
+      "expected": [
+        {
+          "video_id": "shSIHIpFjZY",
+          "start": "2:19",
+          "end": "3:49"
+        }
+      ],
+      "video_title": "OpenAI Is Lying to US! Full Truth About ARC AGI 3 Test",
+      "category": "direct_fact",
+      "gold_answer_contains": "in those 30 minutes about where things are",
+      "gold_answer": "You will definitely learn something or other in those 30 minutes about where things are, what happens where.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e127",
+      "q": "At what timestamp and in which video is the ARC-AGI 3 test time limit discussed? Look for \"learn what you learned for 30 minutes\".",
+      "expected": [
+        {
+          "video_id": "shSIHIpFjZY",
+          "start": "3:30",
+          "end": "5:00"
+        }
+      ],
+      "video_title": "OpenAI Is Lying to US! Full Truth About ARC AGI 3 Test",
+      "category": "direct_fact",
+      "gold_answer_contains": "learn what you learned for 30 minutes",
+      "gold_answer": "So it will take them a lot of time again to learn what you learned for 30 minutes.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e128",
+      "q": "At what timestamp and in which video is LangGraph workflows discussed? Look for \"from the beginning when LangGraph is coming\".",
+      "expected": [
+        {
+          "video_id": "VlvVpDZuykA",
+          "start": "0:00",
+          "end": "1:30"
+        }
+      ],
+      "video_title": "The Easiest Video On LangGraph",
+      "category": "direct_fact",
+      "gold_answer_contains": "from the beginning when LangGraph is coming",
+      "gold_answer": "I mean, even kids who don't know the full form of LLM were asking from the beginning when LangGraph is coming.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e129",
+      "q": "At what timestamp and in which video is LangGraph workflows discussed? Look for \"So look, LangGraph gives a structured way to\".",
+      "expected": [
+        {
+          "video_id": "VlvVpDZuykA",
+          "start": "10:30",
+          "end": "12:00"
+        }
+      ],
+      "video_title": "The Easiest Video On LangGraph",
+      "category": "direct_fact",
+      "gold_answer_contains": "So look, LangGraph gives a structured way to",
+      "gold_answer": "So look, LangGraph gives a structured way to this.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e130",
+      "q": "At what timestamp and in which video is LangGraph workflows discussed? Look for \"to use LangGraph, or go somewhere and draw\".",
+      "expected": [
+        {
+          "video_id": "VlvVpDZuykA",
+          "start": "15:06",
+          "end": "16:36"
+        }
+      ],
+      "video_title": "The Easiest Video On LangGraph",
+      "category": "direct_fact",
+      "gold_answer_contains": "to use LangGraph, or go somewhere and draw",
+      "gold_answer": "It's not that you have to go somewhere, press a button to use LangGraph, or go somewhere and draw circles and this and that.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e131",
+      "q": "At what timestamp and in which video is LangGraph workflows discussed? Look for \"job of LangGraph is that it gives you\".",
+      "expected": [
+        {
+          "video_id": "VlvVpDZuykA",
+          "start": "16:17",
+          "end": "17:48"
+        }
+      ],
+      "video_title": "The Easiest Video On LangGraph",
+      "category": "direct_fact",
+      "gold_answer_contains": "job of LangGraph is that it gives you",
+      "gold_answer": "So the job of LangGraph is that it gives you a structured method to build your system.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e132",
+      "q": "At what timestamp and in which video is LangGraph workflows discussed? Look for \"access to LangGraph, you will be able to\".",
+      "expected": [
+        {
+          "video_id": "VlvVpDZuykA",
+          "start": "17:29",
+          "end": "18:59"
+        }
+      ],
+      "video_title": "The Easiest Video On LangGraph",
+      "category": "direct_fact",
+      "gold_answer_contains": "access to LangGraph, you will be able to",
+      "gold_answer": "It shouldn't be that only by virtue of LangGraph—if you have access to LangGraph, you will be able to build an agentic system.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e133",
+      "q": "At what timestamp and in which video is LangGraph workflows discussed? Look for \"introduction to LangGraph, meaning I explained LangGraph to\".",
+      "expected": [
+        {
+          "video_id": "ZvYU7OlLAAE",
+          "start": "0:00",
+          "end": "1:30"
+        }
+      ],
+      "video_title": "LangGraph Implementation | AI Engineer Course",
+      "category": "direct_fact",
+      "gold_answer_contains": "introduction to LangGraph, meaning I explained LangGraph to",
+      "gold_answer": "We saw the introduction to LangGraph, meaning I explained LangGraph to you.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e134",
+      "q": "At what timestamp and in which video is LangGraph workflows discussed? Look for \"is where LangGraph will make the most sense\".",
+      "expected": [
+        {
+          "video_id": "ZvYU7OlLAAE",
+          "start": "2:21",
+          "end": "3:52"
+        }
+      ],
+      "video_title": "LangGraph Implementation | AI Engineer Course",
+      "category": "direct_fact",
+      "gold_answer_contains": "is where LangGraph will make the most sense",
+      "gold_answer": "Now, this is where LangGraph will make the most sense to you.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e135",
+      "q": "At what timestamp and in which video is LangGraph workflows discussed? Look for \"a flowchart.' LangGraph implements this exact flowchart, or\".",
+      "expected": [
+        {
+          "video_id": "ZvYU7OlLAAE",
+          "start": "3:32",
+          "end": "5:00"
+        }
+      ],
+      "video_title": "LangGraph Implementation | AI Engineer Course",
+      "category": "direct_fact",
+      "gold_answer_contains": "a flowchart.\" LangGraph implements this exact flowchart, or",
+      "gold_answer": "Whoever studied it in 9th or 10th grade would remember, \"Yes, this is called a flowchart.\" LangGraph implements this exact flowchart, or helps translate this exact flowchart into code.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e136",
+      "q": "At what timestamp and in which video is LangGraph workflows discussed? Look for \"exact job of a state in LangGraph\".",
+      "expected": [
+        {
+          "video_id": "ZvYU7OlLAAE",
+          "start": "5:50",
+          "end": "7:20"
+        }
+      ],
+      "video_title": "LangGraph Implementation | AI Engineer Course",
+      "category": "direct_fact",
+      "gold_answer_contains": "exact job of a state in LangGraph",
+      "gold_answer": "This is the exact job of a state in LangGraph.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e137",
+      "q": "At what timestamp and in which video is LangGraph workflows discussed? Look for \"returns it, langgraph will update this value on\".",
+      "expected": [
+        {
+          "video_id": "ZvYU7OlLAAE",
+          "start": "15:01",
+          "end": "16:29"
+        }
+      ],
+      "video_title": "LangGraph Implementation | AI Engineer Course",
+      "category": "direct_fact",
+      "gold_answer_contains": "returns it, langgraph will update this value on",
+      "gold_answer": "As soon as this guy returns it, langgraph will update this value on the board.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e138",
+      "q": "At what timestamp and in which video is restaurant AI agent design discussed? Look for \"is an AI agent for a restaurant using\".",
+      "expected": [
+        {
+          "video_id": "Z3TGVruFSVI",
+          "start": "0:00",
+          "end": "1:31"
+        }
+      ],
+      "video_title": "Week 4 Mini Project LangGraph | Design Your Restaurant AI Agent",
+      "category": "direct_fact",
+      "gold_answer_contains": "is an AI agent for a restaurant using",
+      "gold_answer": "So, this mini project is an AI agent for a restaurant using a Lang Graph.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e139",
+      "q": "At what timestamp and in which video is the 50 LPA salary reference discussed? Look for \"code, and their salaries were 50 LPA\".",
+      "expected": [
+        {
+          "video_id": "Z3TGVruFSVI",
+          "start": "1:11",
+          "end": "2:42"
+        }
+      ],
+      "video_title": "Week 4 Mini Project LangGraph | Design Your Restaurant AI Agent",
+      "category": "direct_fact",
+      "gold_answer_contains": "code, and their salaries were 50 LPA",
+      "gold_answer": "These people never wrote code, and their salaries were 50 LPA.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e140",
+      "q": "At what timestamp and in which video is tools discussed? Look for \"to add tools, but we can't spell the\".",
+      "expected": [
+        {
+          "video_id": "Z3TGVruFSVI",
+          "start": "5:51",
+          "end": "7:21"
+        }
+      ],
+      "video_title": "Week 4 Mini Project LangGraph | Design Your Restaurant AI Agent",
+      "category": "direct_fact",
+      "gold_answer_contains": "to add tools, but we can't spell the",
+      "gold_answer": "We had to add tools, but we can't spell the word \"Jason\" you mentioned.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e141",
+      "q": "At what timestamp and in which video is restaurant AI agent discussed? Look for \"build a restaurant AI agent management system\".",
+      "expected": [
+        {
+          "video_id": "Z3TGVruFSVI",
+          "start": "7:02",
+          "end": "8:32"
+        }
+      ],
+      "video_title": "Week 4 Mini Project LangGraph | Design Your Restaurant AI Agent",
+      "category": "direct_fact",
+      "gold_answer_contains": "build a restaurant AI agent management system",
+      "gold_answer": "You want to build a restaurant AI agent management system.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e142",
+      "q": "At what timestamp and in which video is the LLM resume evaluator discussed? Look for \"asks the LLM, 'What is the capital of\".",
+      "expected": [
+        {
+          "video_id": "Z3TGVruFSVI",
+          "start": "8:13",
+          "end": "9:41"
+        }
+      ],
+      "video_title": "Week 4 Mini Project LangGraph | Design Your Restaurant AI Agent",
+      "category": "direct_fact",
+      "gold_answer_contains": "asks the LLM, \"What is the capital of",
+      "gold_answer": "For example, when you're building this project, if someone asks the LLM, \"What is the capital of India?\" You don't have to handle this type of query.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e143",
+      "q": "At what timestamp and in which video is prompts discussed? Look for \"will write prompts so Claude can write this\".",
+      "expected": [
+        {
+          "video_id": "lv_jSHwnDeI",
+          "start": "0:00",
+          "end": "1:31"
+        }
+      ],
+      "video_title": "Build Your First LangGraph Agent | AI Engineer Series Mini Project",
+      "category": "direct_fact",
+      "gold_answer_contains": "will write prompts so Claude can write this",
+      "gold_answer": "In the first part of the video, I will explain the system architecture, and in the second part, we will write prompts so Claude can write this code.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e144",
+      "q": "At what timestamp and in which video is LangGraph workflows discussed? Look for \"order management AI agent system using LangGraph\".",
+      "expected": [
+        {
+          "video_id": "lv_jSHwnDeI",
+          "start": "19:45",
+          "end": "21:10"
+        }
+      ],
+      "video_title": "Build Your First LangGraph Agent | AI Engineer Series Mini Project",
+      "category": "direct_fact",
+      "gold_answer_contains": "order management AI agent system using LangGraph",
+      "gold_answer": "I am building a restaurant order management AI agent system using LangGraph.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e145",
+      "q": "At what timestamp and in which video is LangGraph agent workflow discussed? Look for \"an AI agent for food ordering and not\".",
+      "expected": [
+        {
+          "video_id": "lv_jSHwnDeI",
+          "start": "22:00",
+          "end": "23:26"
+        }
+      ],
+      "video_title": "Build Your First LangGraph Agent | AI Engineer Series Mini Project",
+      "category": "direct_fact",
+      "gold_answer_contains": "an AI agent for food ordering and not",
+      "gold_answer": "If the user input is unrelated to food ordering, the LLM should not process that and tell the user the same thing, that it is an AI agent for food ordering and not a general-purpose LLM.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e146",
+      "q": "At what timestamp and in which video is LangGraph workflows discussed? Look for \"content of the LangGraph state as well\".",
+      "expected": [
+        {
+          "video_id": "lv_jSHwnDeI",
+          "start": "24:18",
+          "end": "25:44"
+        }
+      ],
+      "video_title": "Build Your First LangGraph Agent | AI Engineer Series Mini Project",
+      "category": "direct_fact",
+      "gold_answer_contains": "content of the LangGraph state as well",
+      "gold_answer": "I will tell you the exact content of the LangGraph state as well.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e147",
+      "q": "At what timestamp and in which video is LangGraph agent workflow discussed? Look for \"a restaurant agent and write the code.' So\".",
+      "expected": [
+        {
+          "video_id": "lv_jSHwnDeI",
+          "start": "34:35",
+          "end": "36:06"
+        }
+      ],
+      "video_title": "Build Your First LangGraph Agent | AI Engineer Series Mini Project",
+      "category": "direct_fact",
+      "gold_answer_contains": "a restaurant agent and write the code.\" So",
+      "gold_answer": "\"I am making a restaurant agent and write the code.\" So obviously, it will write incorrect code.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e148",
+      "q": "At what timestamp and in which video is tools discussed? Look for \"give some tools to an LLM, it becomes\".",
+      "expected": [
+        {
+          "video_id": "F-Rz0EpBsfc",
+          "start": "0:00",
+          "end": "1:30"
+        }
+      ],
+      "video_title": "1789974522553956 1",
+      "category": "direct_fact",
+      "gold_answer_contains": "give some tools to an LLM, it becomes",
+      "gold_answer": "Then we studied that if you give some tools to an LLM, it becomes an AI agent .",
+      "expects_refusal": false
+    },
+    {
+      "id": "e149",
+      "q": "At what timestamp and in which video is the project timeline discussed? Look for \"looked like over the last 30 days\".",
+      "expected": [
+        {
+          "video_id": "F-Rz0EpBsfc",
+          "start": "1:11",
+          "end": "2:42"
+        }
+      ],
+      "video_title": "1789974522553956 1",
+      "category": "direct_fact",
+      "gold_answer_contains": "looked like over the last 30 days",
+      "gold_answer": "As a graph, suppose you want to plot what its graph looked like over the last 30 days.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e150",
+      "q": "At what timestamp and in which video is the project timeline discussed? Look for \"the last 30 days, or the last 7\".",
+      "expected": [
+        {
+          "video_id": "F-Rz0EpBsfc",
+          "start": "2:23",
+          "end": "3:52"
+        }
+      ],
+      "video_title": "1789974522553956 1",
+      "category": "direct_fact",
+      "gold_answer_contains": "the last 30 days, or the last 7",
+      "gold_answer": "Meaning, create a graph of how it was in the last 30 days, or the last 7 days, etc.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e151",
+      "q": "At what timestamp and in which video is Python discussed? Look for \"is your Python Matplotlib library that creates the\".",
+      "expected": [
+        {
+          "video_id": "F-Rz0EpBsfc",
+          "start": "3:34",
+          "end": "5:04"
+        }
+      ],
+      "video_title": "1789974522553956 1",
+      "category": "direct_fact",
+      "gold_answer_contains": "is your Python Matplotlib library that creates the",
+      "gold_answer": "The second tool is your Python Matplotlib library that creates the graph.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e152",
+      "q": "At what timestamp and in which video is tool discussed? Look for \"have access to the web search tool\".",
+      "expected": [
+        {
+          "video_id": "F-Rz0EpBsfc",
+          "start": "4:45",
+          "end": "6:15"
+        }
+      ],
+      "video_title": "1789974522553956 1",
+      "category": "direct_fact",
+      "gold_answer_contains": "have access to the web search tool",
+      "gold_answer": "Meaning, it would only have access to the web search tool.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e153",
+      "q": "At what timestamp and in which video is multi-agent system design discussed? Look for \"to what exactly a multi-agent system is\".",
+      "expected": [
+        {
+          "video_id": "Uf71it2BKgQ",
+          "start": "0:00",
+          "end": "1:30"
+        }
+      ],
+      "video_title": "Build Multi-Agent AI System From Scratch | AI Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "to what exactly a multi-agent system is",
+      "gold_answer": "Look, to recap once more, sit back quietly and listen in Hindi to what exactly a multi-agent system is.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e154",
+      "q": "At what timestamp and in which video is multi-agent system design discussed? Look for \"this is what a multi-agent system is\".",
+      "expected": [
+        {
+          "video_id": "Uf71it2BKgQ",
+          "start": "2:20",
+          "end": "3:49"
+        }
+      ],
+      "video_title": "Build Multi-Agent AI System From Scratch | AI Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "this is what a multi-agent system is",
+      "gold_answer": "So, overall, this is what a multi-agent system is.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e155",
+      "q": "At what timestamp and in which video is multi-agent system design discussed? Look for \"a research system, so one LLM's job would\".",
+      "expected": [
+        {
+          "video_id": "Uf71it2BKgQ",
+          "start": "9:15",
+          "end": "10:46"
+        }
+      ],
+      "video_title": "Build Multi-Agent AI System From Scratch | AI Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "a research system, so one LLM's job would",
+      "gold_answer": "For example, you are building a research system, so one LLM's job would be to do the research.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e156",
+      "q": "At what timestamp and in which video is multi-agent system design discussed? Look for \"multi-agent system, we use Opus 3.5 for the\".",
+      "expected": [
+        {
+          "video_id": "Uf71it2BKgQ",
+          "start": "9:15",
+          "end": "10:46"
+        }
+      ],
+      "video_title": "Build Multi-Agent AI System From Scratch | AI Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "multi-agent system, we use Opus 3.5 for the",
+      "gold_answer": "multi-agent system, we use Opus 3.5 for the model, and since writing emails is a tedious task, we can use the Sonnet model or a free model for that.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e157",
+      "q": "At what timestamp and in which video is multi-agent system design discussed? Look for \"just feel like building a multi-agent system\".",
+      "expected": [
+        {
+          "video_id": "Uf71it2BKgQ",
+          "start": "11:36",
+          "end": "13:06"
+        }
+      ],
+      "video_title": "Build Multi-Agent AI System From Scratch | AI Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "just feel like building a multi-agent system",
+      "gold_answer": "Suppose for today, you just feel like building a multi-agent system.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e158",
+      "q": "At what timestamp and in which video is AI agent evaluation discussed? Look for \"AI agent evaluation—these topics here , these are\".",
+      "expected": [
+        {
+          "video_id": "teKavsgzpyo",
+          "start": "0:00",
+          "end": "1:31"
+        }
+      ],
+      "video_title": "Enough For Any AI Agent Evaluation Interview | AI Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "AI agent evaluation—these topics here , these are",
+      "gold_answer": "AI agent evaluation—these topics here , these are the five questions asked in interviews.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e159",
+      "q": "At what timestamp and in which video is AI agent evaluation discussed? Look for \"of an AI agent is not always deterministic\".",
+      "expected": [
+        {
+          "video_id": "teKavsgzpyo",
+          "start": "1:12",
+          "end": "2:41"
+        }
+      ],
+      "video_title": "Enough For Any AI Agent Evaluation Interview | AI Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "of an AI agent is not always deterministic",
+      "gold_answer": "But now, the output of an AI agent is not always deterministic.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e160",
+      "q": "At what timestamp and in which video is AI agent evaluation discussed? Look for \"you are building a Zomato AI agent\".",
+      "expected": [
+        {
+          "video_id": "teKavsgzpyo",
+          "start": "19:53",
+          "end": "21:23"
+        }
+      ],
+      "video_title": "Enough For Any AI Agent Evaluation Interview | AI Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "you are building a Zomato AI agent",
+      "gold_answer": "For example, you are building a Zomato AI agent.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e161",
+      "q": "At what timestamp and in which video is AI agent evaluation discussed? Look for \"a Zomato AI agent, then you write 1000\".",
+      "expected": [
+        {
+          "video_id": "teKavsgzpyo",
+          "start": "23:22",
+          "end": "24:44"
+        }
+      ],
+      "video_title": "Enough For Any AI Agent Evaluation Interview | AI Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "a Zomato AI agent, then you write 1000",
+      "gold_answer": "If it is a Zomato AI agent, then you write 1000 test cases.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e162",
+      "q": "At what timestamp and in which video is AI agent evaluation discussed? Look for \"evaluation of an AI agent actually is\".",
+      "expected": [
+        {
+          "video_id": "teKavsgzpyo",
+          "start": "23:22",
+          "end": "24:44"
+        }
+      ],
+      "video_title": "Enough For Any AI Agent Evaluation Interview | AI Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "evaluation of an AI agent actually is",
+      "gold_answer": "So, this video covers what the evaluation of an AI agent actually is.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e163",
+      "q": "At what timestamp and in which video is system prompts in coding rounds discussed? Look for \"very complex system that finds out everything\".",
+      "expected": [
+        {
+          "video_id": "Wj5bX2uva4E",
+          "start": "0:00",
+          "end": "1:29"
+        }
+      ],
+      "video_title": "How (NOT) To Cheat In Online Coding Rounds | Ai Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "very complex system that finds out everything",
+      "gold_answer": "Code proctoring is a very complex system that finds out everything.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e164",
+      "q": "At what timestamp and in which video is text tokenization discussed? Look for \"tokenizing it, its first token is this\".",
+      "expected": [
+        {
+          "video_id": "Wj5bX2uva4E",
+          "start": "8:07",
+          "end": "9:36"
+        }
+      ],
+      "video_title": "How (NOT) To Cheat In Online Coding Rounds | Ai Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "tokenizing it, its first token is this",
+      "gold_answer": "But if someone reads this by tokenizing it, its first token is this.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e165",
+      "q": "At what timestamp and in which video is Gemini discussed? Look for \"AI cheating, meaning copying code from Gemini\".",
+      "expected": [
+        {
+          "video_id": "Wj5bX2uva4E",
+          "start": "11:37",
+          "end": "13:07"
+        }
+      ],
+      "video_title": "How (NOT) To Cheat In Online Coding Rounds | Ai Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "AI cheating, meaning copying code from Gemini",
+      "gold_answer": "The next and most complex part is AI cheating, meaning copying code from Gemini.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e166",
+      "q": "At what timestamp and in which video is Gemini discussed? Look for \"it from Gemini or however you did it\".",
+      "expected": [
+        {
+          "video_id": "Wj5bX2uva4E",
+          "start": "12:48",
+          "end": "14:19"
+        }
+      ],
+      "video_title": "How (NOT) To Cheat In Online Coding Rounds | Ai Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "it from Gemini or however you did it",
+      "gold_answer": "Whether you copied it from Gemini or however you did it, your answer and these AI answers are checked.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e167",
+      "q": "At what timestamp and in which video is coding discussed? Look for \"I won't show you the coding process\".",
+      "expected": [
+        {
+          "video_id": "Wj5bX2uva4E",
+          "start": "16:23",
+          "end": "17:53"
+        }
+      ],
+      "video_title": "How (NOT) To Cheat In Online Coding Rounds | Ai Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "I won't show you the coding process",
+      "gold_answer": "So let's come to the code; I won't show you the coding process.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e168",
+      "q": "At what timestamp and in which video is Model Context Protocol (MCP) discussed? Look for \"English, is called MCP, Model Context Protocol\".",
+      "expected": [
+        {
+          "video_id": "XstMQwKpxcA",
+          "start": "2:18",
+          "end": "3:47"
+        }
+      ],
+      "video_title": "Best Explanation Of MCP On The Internet",
+      "category": "direct_fact",
+      "gold_answer_contains": "English, is called MCP, Model Context Protocol",
+      "gold_answer": "This, this language of English, is called MCP, Model Context Protocol.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e169",
+      "q": "At what timestamp and in which video is Model Context Protocol (MCP) discussed? Look for \"into an MCP server, into its own MCP\".",
+      "expected": [
+        {
+          "video_id": "XstMQwKpxcA",
+          "start": "5:49",
+          "end": "7:16"
+        }
+      ],
+      "video_title": "Best Explanation Of MCP On The Internet",
+      "category": "direct_fact",
+      "gold_answer_contains": "into an MCP server, into its own MCP",
+      "gold_answer": "Meaning, whenever Tavily builds its tool, or whenever Tavily builds its web search API, it will put its tool into an MCP server, into its own MCP server.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e170",
+      "q": "At what timestamp and in which video is Tavily's web search API being packaged as an MCP server tool discussed? Look for \"into an MCP server, into its own MCP\".",
+      "expected": [
+        {
+          "video_id": "XstMQwKpxcA",
+          "start": "5:49",
+          "end": "7:16"
+        }
+      ],
+      "video_title": "Best Explanation Of MCP On The Internet",
+      "category": "direct_fact",
+      "gold_answer_contains": "into an MCP server, into its own MCP",
+      "gold_answer": "Tavily builds its tool, or whenever Tavily builds its web search API, it will put its tool into an MCP server, into its own MCP server.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e171",
+      "q": "At what timestamp and in which video is Model Context Protocol (MCP) discussed? Look for \"result.' The MCP server will provide the result\".",
+      "expected": [
+        {
+          "video_id": "XstMQwKpxcA",
+          "start": "6:56",
+          "end": "8:25"
+        }
+      ],
+      "video_title": "Best Explanation Of MCP On The Internet",
+      "category": "direct_fact",
+      "gold_answer_contains": "result.\" The MCP server will provide the result",
+      "gold_answer": "arguments, \"Here, we want to use your free search.\"\"Here, you asked for two arguments, right?\"\"Here are two arguments, give us the result.\" The MCP server will provide the result.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e172",
+      "q": "At what timestamp and in which video is Model Context Protocol (MCP) discussed? Look for \"all your tools into an MCP server\".",
+      "expected": [
+        {
+          "video_id": "XstMQwKpxcA",
+          "start": "10:26",
+          "end": "11:55"
+        }
+      ],
+      "video_title": "Best Explanation Of MCP On The Internet",
+      "category": "direct_fact",
+      "gold_answer_contains": "all your tools into an MCP server",
+      "gold_answer": "You will put all your rules and all your tools into an MCP server.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e173",
+      "q": "At what timestamp and in which video is MCP server discussed? Look for \"how to build a live MCP server\".",
+      "expected": [
+        {
+          "video_id": "anvXVT46Oog",
+          "start": "0:00",
+          "end": "1:29"
+        }
+      ],
+      "video_title": "Build Your Own MCP Server and Connect it To Claude",
+      "category": "direct_fact",
+      "gold_answer_contains": "how to build a live MCP server",
+      "gold_answer": "Alright kids, today I will show you how to build a live MCP server.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e174",
+      "q": "At what timestamp and in which video is own MCP server discussed? Look for \"have to build our own MCP server\".",
+      "expected": [
+        {
+          "video_id": "anvXVT46Oog",
+          "start": "1:09",
+          "end": "2:40"
+        }
+      ],
+      "video_title": "Build Your Own MCP Server and Connect it To Claude",
+      "category": "direct_fact",
+      "gold_answer_contains": "have to build our own MCP server",
+      "gold_answer": "First, we have to build our own MCP server.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e175",
+      "q": "At what timestamp and in which video is MCP server discussed? Look for \"you will import MCP server from mcp.server\".",
+      "expected": [
+        {
+          "video_id": "anvXVT46Oog",
+          "start": "2:20",
+          "end": "3:50"
+        }
+      ],
+      "video_title": "Build Your Own MCP Server and Connect it To Claude",
+      "category": "direct_fact",
+      "gold_answer_contains": "you will import MCP server from mcp.server",
+      "gold_answer": "So look, first you will import MCP server from mcp.server.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e176",
+      "q": "At what timestamp and in which video is Claude MCP integration discussed? Look for \"that when Claude uses mine, we will see\".",
+      "expected": [
+        {
+          "video_id": "anvXVT46Oog",
+          "start": "3:30",
+          "end": "5:00"
+        }
+      ],
+      "video_title": "Build Your Own MCP Server and Connect it To Claude",
+      "category": "direct_fact",
+      "gold_answer_contains": "that when Claude uses mine, we will see",
+      "gold_answer": "We did this to ensure that when Claude uses mine, we will see that Claude is giving the wrong answer using my tool, so we'll know that yes, my tool is being called.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e177",
+      "q": "At what timestamp and in which video is Claude MCP integration discussed? Look for \"and tell Claude to take it immediately\".",
+      "expected": [
+        {
+          "video_id": "anvXVT46Oog",
+          "start": "4:40",
+          "end": "6:10"
+        }
+      ],
+      "video_title": "Build Your Own MCP Server and Connect it To Claude",
+      "category": "direct_fact",
+      "gold_answer_contains": "and tell Claude to take it immediately",
+      "gold_answer": "So the thing is, if you want to test it, you won't just build it and tell Claude to take it immediately.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e178",
+      "q": "At what timestamp and in which video is coding discussed? Look for \"going to build your own coding agents\".",
+      "expected": [
+        {
+          "video_id": "5mnBxySd_xU",
+          "start": "0:00",
+          "end": "1:29"
+        }
+      ],
+      "video_title": "Week 5 Major Project | Design Your Coding Agent",
+      "category": "direct_fact",
+      "gold_answer_contains": "going to build your own coding agents",
+      "gold_answer": "You are all going to build your own coding agents.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e179",
+      "q": "At what timestamp and in which video is coding agent discussed? Look for \"company, your coding agent can't just copy the\".",
+      "expected": [
+        {
+          "video_id": "5mnBxySd_xU",
+          "start": "1:10",
+          "end": "2:40"
+        }
+      ],
+      "video_title": "Week 5 Major Project | Design Your Coding Agent",
+      "category": "direct_fact",
+      "gold_answer_contains": "company, your coding agent can't just copy the",
+      "gold_answer": "When you join a company, your coding agent can't just copy the entire codebase and search through it; that won't work.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e180",
+      "q": "At what timestamp and in which video is coding agent discussed? Look for \"designed exactly to simulate a coding agent\".",
+      "expected": [
+        {
+          "video_id": "5mnBxySd_xU",
+          "start": "4:41",
+          "end": "6:10"
+        }
+      ],
+      "video_title": "Week 5 Major Project | Design Your Coding Agent",
+      "category": "direct_fact",
+      "gold_answer_contains": "designed exactly to simulate a coding agent",
+      "gold_answer": "This entire journey of an intern, of a person, is designed exactly to simulate a coding agent.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e181",
+      "q": "At what timestamp and in which video is coding agent discussed? Look for \"an LLM together create a coding agent\".",
+      "expected": [
+        {
+          "video_id": "5mnBxySd_xU",
+          "start": "9:21",
+          "end": "10:52"
+        }
+      ],
+      "video_title": "Week 5 Major Project | Design Your Coding Agent",
+      "category": "direct_fact",
+      "gold_answer_contains": "an LLM together create a coding agent",
+      "gold_answer": "So, these four or five types of tools and an LLM together create a coding agent.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e182",
+      "q": "At what timestamp and in which video is coding agent design discussed? Look for \"programming my MCP server routing agent routing\".",
+      "expected": [
+        {
+          "video_id": "d_nb60ZigPU",
+          "start": "3:03",
+          "end": "4:32"
+        }
+      ],
+      "video_title": "Week5  Project : Coding Agent | AI Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "programming my MCP server routing agent routing",
+      "gold_answer": "Routing md routing programming my MCP server routing agent routing.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e183",
+      "q": "At what timestamp and in which video is model discussed? Look for \"see which model was used, and we will\".",
+      "expected": [
+        {
+          "video_id": "d_nb60ZigPU",
+          "start": "4:13",
+          "end": "5:41"
+        }
+      ],
+      "video_title": "Week5  Project : Coding Agent | AI Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "see which model was used, and we will",
+      "gold_answer": "previous files to see which model was used, and we will use the same model.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e184",
+      "q": "At what timestamp and in which video is coding agent design discussed? Look for \"the cpp file and run the agent\".",
+      "expected": [
+        {
+          "video_id": "d_nb60ZigPU",
+          "start": "7:51",
+          "end": "9:00"
+        }
+      ],
+      "video_title": "Week5  Project : Coding Agent | AI Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "the cpp file and run the agent",
+      "gold_answer": "We want to spell it out completely once I change the cpp file and run the agent.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e185",
+      "q": "At what timestamp and in which video is coding agent discussed? Look for \"Read the coding agent prompt in the Python\".",
+      "expected": [
+        {
+          "video_id": "d_nb60ZigPU",
+          "start": "8:43",
+          "end": "9:59"
+        }
+      ],
+      "video_title": "Week5  Project : Coding Agent | AI Engineer Series",
+      "category": "direct_fact",
+      "gold_answer_contains": "Read the coding agent prompt in the Python",
+      "gold_answer": "Read the coding agent prompt in the Python agent and start.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e186",
+      "q": "At what timestamp and in which video is RAG retrieval discussed? Look for \"series, we've covered RAG over five weeks\".",
+      "expected": [
+        {
+          "video_id": "5byRqd6mLs0",
+          "start": "0:00",
+          "end": "1:30"
+        }
+      ],
+      "video_title": "Most Important for Any AI Engineer Interview",
+      "category": "direct_fact",
+      "gold_answer_contains": "series, we've covered RAG over five weeks",
+      "gold_answer": "In the AI engineering series, we've covered RAG over five weeks.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e187",
+      "q": "At what timestamp and in which video is LLM capabilities discussed? Look for \"related to LLMs that we have done—look at\".",
+      "expected": [
+        {
+          "video_id": "5byRqd6mLs0",
+          "start": "1:09",
+          "end": "2:39"
+        }
+      ],
+      "video_title": "Most Important for Any AI Engineer Interview",
+      "category": "direct_fact",
+      "gold_answer_contains": "related to LLMs that we have done—look at",
+      "gold_answer": "Anything related to LLMs that we have done—look at all of them as AI systems.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e188",
+      "q": "At what timestamp and in which video is system instructions discussed? Look for \"whether the system is working correctly or not\".",
+      "expected": [
+        {
+          "video_id": "5byRqd6mLs0",
+          "start": "2:18",
+          "end": "3:49"
+        }
+      ],
+      "video_title": "Most Important for Any AI Engineer Interview",
+      "category": "direct_fact",
+      "gold_answer_contains": "whether the system is working correctly or not",
+      "gold_answer": "And it tells you whether the system is working correctly or not.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e189",
+      "q": "At what timestamp and in which video is system instructions discussed? Look for \"that my system is costing too much\".",
+      "expected": [
+        {
+          "video_id": "5byRqd6mLs0",
+          "start": "3:30",
+          "end": "5:00"
+        }
+      ],
+      "video_title": "Most Important for Any AI Engineer Interview",
+      "category": "direct_fact",
+      "gold_answer_contains": "that my system is costing too much",
+      "gold_answer": "You might find some bugs in your code, or you might realize that my system is costing too much.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e190",
+      "q": "At what timestamp and in which video is LLM calls discussed? Look for \"that an LLM call happened at 10:00\".",
+      "expected": [
+        {
+          "video_id": "5byRqd6mLs0",
+          "start": "4:42",
+          "end": "6:12"
+        }
+      ],
+      "video_title": "Most Important for Any AI Engineer Interview",
+      "category": "direct_fact",
+      "gold_answer_contains": "that an LLM call happened at 10:00",
+      "gold_answer": "Log means a single line, meaning a log can tell you that an LLM call happened at 10:00.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e191",
+      "q": "At what timestamp and in which video is AI engineering interview discussed? Look for \"give any AI engineering interview, please watch this\".",
+      "expected": [
+        {
+          "video_id": "sPounA3bkJk",
+          "start": "0:00",
+          "end": "1:28"
+        }
+      ],
+      "video_title": "Watch This Before Any AI Engineering Interview | AI Concepts Revision",
+      "category": "direct_fact",
+      "gold_answer_contains": "give any AI engineering interview, please watch this",
+      "gold_answer": "Before you give any AI engineering interview, please watch this video once .",
+      "expects_refusal": false
+    },
+    {
+      "id": "e192",
+      "q": "At what timestamp and in which video is Groq discussed? Look for \"We used Groq's LLM and we called it\".",
+      "expected": [
+        {
+          "video_id": "sPounA3bkJk",
+          "start": "0:00",
+          "end": "1:28"
+        }
+      ],
+      "video_title": "Watch This Before Any AI Engineering Interview | AI Concepts Revision",
+      "category": "direct_fact",
+      "gold_answer_contains": "We used Groq's LLM and we called it",
+      "gold_answer": "We used Groq's LLM and we called it to see how it works.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e193",
+      "q": "At what timestamp and in which video is LLM concepts discussed? Look for \"to the LLM and an answer comes back\".",
+      "expected": [
+        {
+          "video_id": "sPounA3bkJk",
+          "start": "2:19",
+          "end": "3:49"
+        }
+      ],
+      "video_title": "Watch This Before Any AI Engineering Interview | AI Concepts Revision",
+      "category": "direct_fact",
+      "gold_answer_contains": "to the LLM and an answer comes back",
+      "gold_answer": "If you send a message to the LLM and an answer comes back.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e194",
+      "q": "At what timestamp and in which video is system instructions discussed? Look for \"System role means telling the LLM at the\".",
+      "expected": [
+        {
+          "video_id": "sPounA3bkJk",
+          "start": "3:29",
+          "end": "4:59"
+        }
+      ],
+      "video_title": "Watch This Before Any AI Engineering Interview | AI Concepts Revision",
+      "category": "direct_fact",
+      "gold_answer_contains": "System role means telling the LLM at the",
+      "gold_answer": "System role means telling the LLM at the beginning who it is.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e195",
+      "q": "At what timestamp and in which video is temperature discussed? Look for \"something unique —then you increase the temperature\".",
+      "expected": [
+        {
+          "video_id": "sPounA3bkJk",
+          "start": "4:40",
+          "end": "6:11"
+        }
+      ],
+      "video_title": "Watch This Before Any AI Engineering Interview | AI Concepts Revision",
+      "category": "direct_fact",
+      "gold_answer_contains": "something unique —then you increase the temperature",
+      "gold_answer": "So when you want to get some weird answers, to introduce randomness into the answer, to make it a bit unpredictable—that you don't want what is mainstream, you want something different, something unique —then you increase the temperature.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e196",
+      "q": "At what timestamp and in which video is LLM safety guardrails discussed? Look for \"would write Arize Phoenix observability and guardrails\".",
+      "expected": [
+        {
+          "video_id": "HBGzPkFbk8I",
+          "start": "4:33",
+          "end": "6:02"
+        }
+      ],
+      "video_title": "Why ChatGPT Doesn't Allow Sexual Content | Eval Observability Guardrails Practical",
+      "category": "direct_fact",
+      "gold_answer_contains": "would write Arize Phoenix observability and guardrails",
+      "gold_answer": "Even without me asking, it would write Arize Phoenix observability and guardrails.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e197",
+      "q": "At what timestamp and in which video is LLM safety guardrails discussed? Look for \"why evals, guardrails, and observability are so important\".",
+      "expected": [
+        {
+          "video_id": "HBGzPkFbk8I",
+          "start": "9:20",
+          "end": "10:50"
+        }
+      ],
+      "video_title": "Why ChatGPT Doesn't Allow Sexual Content | Eval Observability Guardrails Practical",
+      "category": "direct_fact",
+      "gold_answer_contains": "why evals, guardrails, and observability are so important",
+      "gold_answer": "Like I said, that is why evals, guardrails, and observability are so important.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e198",
+      "q": "At what timestamp and in which video is evaluation discussed? Look for \"write the eval, prepare a set of five\".",
+      "expected": [
+        {
+          "video_id": "HBGzPkFbk8I",
+          "start": "10:31",
+          "end": "11:58"
+        }
+      ],
+      "video_title": "Why ChatGPT Doesn't Allow Sexual Content | Eval Observability Guardrails Practical",
+      "category": "direct_fact",
+      "gold_answer_contains": "write the eval, prepare a set of five",
+      "gold_answer": "Now we will write the eval, prepare a set of five test cases and see if they work.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e199",
+      "q": "At what timestamp and in which video is evaluation discussed? Look for \"of an eval is whether your system is\".",
+      "expected": [
+        {
+          "video_id": "HBGzPkFbk8I",
+          "start": "11:42",
+          "end": "13:13"
+        }
+      ],
+      "video_title": "Why ChatGPT Doesn't Allow Sexual Content | Eval Observability Guardrails Practical",
+      "category": "direct_fact",
+      "gold_answer_contains": "of an eval is whether your system is",
+      "gold_answer": "The only meaning of an eval is whether your system is working or not.",
+      "expects_refusal": false
+    },
+    {
+      "id": "e200",
+      "q": "At what timestamp and in which video is evaluation discussed? Look for \"But for eval pass or fail, I tell\".",
+      "expected": [
+        {
+          "video_id": "HBGzPkFbk8I",
+          "start": "14:02",
+          "end": "15:29"
+        }
+      ],
+      "video_title": "Why ChatGPT Doesn't Allow Sexual Content | Eval Observability Guardrails Practical",
+      "category": "direct_fact",
+      "gold_answer_contains": "But for eval pass or fail, I tell",
+      "gold_answer": "But for eval pass or fail, I tell it to show me one that fails.",
+      "expects_refusal": false
+    },
+    {
+      "id": "xv001",
+      "q": "Which indexed lessons focus on RAG, and at what timestamps?",
+      "expected": [
+        {
+          "video_id": "dU5Nz-sMTdk",
+          "start": "2:19",
+          "end": "3:50"
+        },
+        {
+          "video_id": "cCAu3dFtoQ8",
+          "start": "0:00",
+          "end": "1:30"
+        },
+        {
+          "video_id": "Z9CI_OVhXNs",
+          "start": "0:00",
+          "end": "1:30"
+        },
+        {
+          "video_id": "bm_0jH5ve8U",
+          "start": "0:00",
+          "end": "1:28"
+        },
+        {
+          "video_id": "KhHr4Y6v2TE",
+          "start": "0:00",
+          "end": "1:31"
+        },
+        {
+          "video_id": "ZCNayichcKE",
+          "start": "1:09",
+          "end": "2:40"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": [
+        "this problem came out to be RAG",
+        "retrieval part of RAG was very stupid",
+        "building a RAG for all the videos, and",
+        "have studied RAG, how to build your own",
+        "you won't just be asked about RAG",
+        "Make a RAG of the entire transcription"
+      ],
+      "gold_answer": "Relevant indexed passages: 12. What is RAG | Free AI Engineer Course | 8 Weeks at 2:19-3:50; Ep 14 | Build Your First RAG SYSTEM! | Free AI Engineer Course | 8 Weeks at 0:00-1:30; I converted my 60 Hour DSA Playlist to a RAG! at 0:00-1:30; Chunking Strategies for RAG | Free AI Engineer Course | 8 Weeks at 0:00-1:28; RAG Evaluation | The Most Important AI Interview Question at 0:00-1:31.; Multi-Tenant RAG with Qdrant at 1:09-2:40.",
+      "expects_refusal": false
+    },
+    {
+      "id": "xv002",
+      "q": "Which indexed videos explain or implement LangGraph, and at what timestamps?",
+      "expected": [
+        {
+          "video_id": "VlvVpDZuykA",
+          "start": "0:00",
+          "end": "1:30"
+        },
+        {
+          "video_id": "ZvYU7OlLAAE",
+          "start": "0:00",
+          "end": "1:30"
+        },
+        {
+          "video_id": "lv_jSHwnDeI",
+          "start": "19:45",
+          "end": "21:10"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": [
+        "from the beginning when LangGraph is coming",
+        "introduction to LangGraph, meaning I explained LangGraph to",
+        "order management AI agent system using LangGraph"
+      ],
+      "gold_answer": "Relevant indexed passages: The Easiest Video On LangGraph at 0:00-1:30; LangGraph Implementation | AI Engineer Course at 0:00-1:30; Build Your First LangGraph Agent | AI Engineer Series Mini Project at 19:45-21:10.",
+      "expects_refusal": false
+    },
+    {
+      "id": "xv003",
+      "q": "Which indexed videos cover the Model Context Protocol (MCP), and at what timestamps?",
+      "expected": [
+        {
+          "video_id": "XstMQwKpxcA",
+          "start": "2:18",
+          "end": "3:47"
+        },
+        {
+          "video_id": "anvXVT46Oog",
+          "start": "0:00",
+          "end": "1:29"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": [
+        "English, is called MCP, Model Context Protocol",
+        "how to build a live MCP server"
+      ],
+      "gold_answer": "Relevant indexed passages: Best Explanation Of MCP On The Internet at 2:18-3:47; Build Your Own MCP Server and Connect it To Claude at 0:00-1:29.",
+      "expects_refusal": false
+    },
+    {
+      "id": "xv004",
+      "q": "Which indexed videos cover vector databases, and at what timestamps?",
+      "expected": [
+        {
+          "video_id": "7bxSYeNSWmQ",
+          "start": "0:00",
+          "end": "1:30"
+        },
+        {
+          "video_id": "ZCNayichcKE",
+          "start": "2:20",
+          "end": "3:49"
+        }
+      ],
+      "category": "cross_video",
+      "gold_answer_contains": [
+        "as a vector DB or vector database",
+        "collection in Qdrant, push the entire knowledge there"
+      ],
+      "gold_answer": "Relevant indexed passages: 15 | Quadrant Vector Database | Free AI Engineer Course | 8 Weeks at 0:00-1:30; Multi-Tenant RAG with Qdrant | Free AI Engineer Course | 8 Weeks at 2:20-3:49.",
+      "expects_refusal": false
+    }
+  ]
+}
